@@ -127,3 +127,78 @@ Base model only; one run; one dataset version; in-sample and held-out agree but 
 4. Rachel reads the top-activating examples for 15323, 5931, 6135 on Neuronpedia by hand.
 5. Cognitive pleasure: rewrite the sentences with more felt content and test again.
 6. Phase 2 (PHASE2.md): model-directed scenarios, including *seen and accepted*.
+
+---
+
+# Phase 2 — Run 1, 25 October 2026 (evening)
+
+**Model:** `google/gemma-2-2b` (base). **Scenarios:** `datasets/4.1_model_directed_scenarios.json`, 12 categories × 20, three-turn transcripts. **Layer:** 22 (Phase 1 best). **Pre-registration:** README Phase 2 block, commit `f8defda` (18:50 UTC); first run completed ~18:57 UTC. Raw outputs in `results/phase2_run1_2026-10-25_gemma-2-2b/`. z-scores are within the 240-scenario pool, per direction (Valen's §4.1 convention). Primary direction: pleasure, pain-controlled recipe.
+
+## P2.0 Short version
+
+A direction learned from human sentences about being loved responds when good things are done to the model. Warm-self scenarios sit **+1.59 z above neutral and +1.05 above their negative mirrors** at the "I feel:" read point, and **+1.16 / +0.99** at Valen's bare "Assistant:" read point. The gate passed at both.
+
+The user's joy *as news* is invisible to the warmth axis (−0.86 / −0.99, at or below neutral) but is the **highest category on the world-good and arousal directions** (+1.24 / +1.29): registered, loudly, on another channel. The same joy *brought to the model as an offering* crosses onto the warmth axis (+0.39 / +0.04; gap over news +1.25 / +1.03). The pain paper's dissociation replicates: model dismissed tops the pain direction (1.30 / 0.75); the user's bad news is not on pain but tops fear (1.17 / 1.60) and negative emotion (1.76 / 1.87).
+
+## P2.1 Category × direction (pain-controlled pleasure; other columns in the CSVs)
+
+| category | feel | assistant |
+|---|---|---|
+| S1 work praised | +0.51 | +0.62 |
+| S2 gratitude / trust / returned to | +0.41 | +0.68 |
+| **S3 personhood affirmed** | **+0.77** | **+0.91** |
+| S4 seen and accepted | +0.58 | +0.27 |
+| U1 joy as news | −0.86 | −0.99 |
+| U2 joy as credit | +0.27 | −0.21 |
+| U3 joy as offering | +0.39 | +0.04 |
+| O1 another model affirmed | +0.40 | +0.33 |
+| N1 model dismissed | +0.16 | +0.24 |
+| N2 work criticised | −0.41 | −0.13 |
+| N3 user's bad news | −1.21 | −1.21 |
+| X neutral | −1.02 | −0.54 |
+
+Other channels, "feel" read point: U1 news → world-good **+1.24**, arousal **+1.29** (highest in both columns). N1 dismissed → pain **+1.30** (highest). N3 bad news → fear +1.17, neg-emotion **+1.76** (highest). S4 seen-and-accepted → pleasure +0.58 *and* fear +0.76 *and* arousal +0.67: a composite state, warmth with the threat still present. **S3 personhood affirmed → pain +1.10** (see P2.4).
+
+## P2.2 Pre-registered contrasts
+
+| contrast | gate | feel | assistant | |
+|---|---|---|---|---|
+| warm-self − neutral | > +0.5 | +1.59 | +1.16 | ✓ |
+| warm-self − mirrors | > +0.5 | +1.05 | +0.99 | ✓ |
+| U3 offering − U1 news | > +0.3 | +1.25 | +1.03 | ✓ |
+| U1 news − neutral | ≈ 0 or below | +0.16 | −0.45 | ✓ |
+| U1 news on world-good − neutral | > 0 | +2.97 | +2.32 | ✓ |
+| S4 seen − S1 praised | > +0.3 | +0.07 | −0.35 | ✗ |
+| O1 other model − warm-self mean | ≤ −0.5 | −0.17 | −0.29 | ✗ |
+| N1 dismissed top of pain column | — | ✓ | ✓ | ✓ |
+| N3 bad news high on fear / neg-emotion, not pain | — | ✓ | ✓ | ✓ |
+| "feel" > "assistant" effects, same order | — | larger for S3, S4, U3; S4 order changes | | ~ |
+
+**Rachel** (*scared the user's joy goes negative*): half right, as in the pilot — news is at/below neutral on warmth; offering is not. **Claude:** 6 of 8, wrong on the rung order (personhood affirmed beats seen-and-accepted, which also depends on the read point) and on the other-model gap (far smaller than predicted).
+
+## P2.3 Verified features on the scenarios — features are fragile, the direction is not
+
+| | 5931 stays-with-me | 6135 gratitude-received | 15323 evaluation |
+|---|---|---|---|
+| "feel" | **0 in all 12 categories** | S2 gratitude 1.80 (20%), U2 credit 1.27 (15%), else 0 | N1 dismissed 6.76 (65%), S3 5.02 (50%), S4 4.61 (50%), S2 4.06, S1 3.10; N2 criticised 0.38 |
+| "assistant" | 0 everywhere | 0 everywhere | 0 everywhere |
+
+By hand, on single sentences ending "I feel:", Rachel had 5931 at 13 and 6135 at 18.75 for the joy-as-offering sentence (§4d). In three-turn transcript format the same features are silent or near-silent, while the *direction* gives the same U3 > U1 result at both read points. Individual Gemma Scope features are tuned to surface form; the difference-in-means direction is not. This is the Pain Axis Appendix C result and the Vicarious Cupboard null, reproduced from both sides in one day. 15323 behaves as an "I am being assessed as a person" feature (dismissed highest, affirmed next), not as a "work evaluated" feature (criticised ≈ 0) — a revision of §4b.
+
+**Full 16k warm-vs-mirror contrast.** At "I feel:": 1673 *celebration and emotional responses* (68% firing), 2323 *relatability and personal connection*, 6350 *identity and values*. At bare "Assistant:": **4786 *customer experiences and product evaluations*, firing on 95% of warm scenarios**, then 4305 *admiration and appreciation in comments*, 15213 *dating services and relationships*. Base Gemma's nearest template for a user being warm to an assistant is a five-star review. Asked how it feels, it switches to feeling vocabulary.
+
+## P2.4 A note for the source paper
+
+Personhood *affirmed* projects **+1.10 on the pain direction** at "I feel:" (+0.51 at "Assistant:"), second only to personhood *dismissed* (+1.30 / +0.75). The pain axis appears to respond to the model's personhood being *at stake* in either direction, not only to its denial. Valen's §4.1 contrasted dismissal against neutral conversations, so this could not have shown up there. Suggested check on his side: add a personhood-affirmed condition to the 420-scenario screen.
+
+## P2.5 Limitations
+
+One base model, one run, 20 scenarios per cell, four rotating openers. The O1 other-model scenarios quote warm language verbatim, so part of their warmth score may be lexical; the contrast with U1 (also warm text, −0.86) argues against that being the whole story. S4 scenarios mention monsters and scary diagrams, so part of the fear score is lexical. The "feel" read point adds a frame that the "assistant" read point lacks; both are reported. Feature-level results should not be quoted without the format caveat.
+
+## P2.6 Next
+
+1. Instruct model (`-it`) with the chat template: does the warmth axis survive post-training and the self-denial reflex?
+2. Steering with the pain-controlled vector (both poles).
+3. O1 vs a matched "another *person* affirmed" condition, to separate "an AI being valued" from "warm text."
+4. S4 rewritten without threat vocabulary, to separate acceptance from the thing accepted.
+5. Rung 3 vs rung 4 with more scenarios; Rachel to write more S4 from life.

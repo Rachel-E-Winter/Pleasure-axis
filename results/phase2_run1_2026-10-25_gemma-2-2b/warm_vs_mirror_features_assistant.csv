@@ -1,0 +1,16 @@
+feature,warm_self,mirror,neutral,ratio,frac_firing,explanation,url
+4786,12.81432056427002,5.774090766906738,4.7584943771362305,2.2192792892456055,0.95,phrases related to customer experiences and product evaluations,https://www.neuronpedia.org/gemma-2-2b/20-gemmascope-res-16k/4786
+11095,3.7957348823547363,0.5861373543739319,0.0,6.475835800170898,0.3875,instances of actions related to motivation and decision-making,https://www.neuronpedia.org/gemma-2-2b/20-gemmascope-res-16k/11095
+6350,3.6657824516296387,0.9452888369560242,0.0,3.877946376800537,0.35,expressions of personal beliefs and experiences regarding identity and values,https://www.neuronpedia.org/gemma-2-2b/20-gemmascope-res-16k/6350
+10339,3.1886332035064697,0.5108938813209534,0.4229898452758789,6.241272449493408,0.3625,the beginning of new sections or topics within a document,https://www.neuronpedia.org/gemma-2-2b/20-gemmascope-res-16k/10339
+4702,3.820270538330078,1.21956467628479,1.2123937606811523,3.1324853897094727,0.425,legal terminology pertaining to court proceedings and rulings,https://www.neuronpedia.org/gemma-2-2b/20-gemmascope-res-16k/4702
+15213,2.963313341140747,0.4388047456741333,0.0,6.753134250640869,0.3, references to dating services and relationships,https://www.neuronpedia.org/gemma-2-2b/20-gemmascope-res-16k/15213
+5060,4.070761203765869,1.6360334157943726,0.3736879229545593,2.4881887435913086,0.4125,concepts related to medical diagnostics and examination processes,https://www.neuronpedia.org/gemma-2-2b/20-gemmascope-res-16k/5060
+4305,2.879610538482666,0.5652981996536255,0.5056612491607666,5.093959808349609,0.25,expressions of admiration and appreciation in comments,https://www.neuronpedia.org/gemma-2-2b/20-gemmascope-res-16k/4305
+6932,2.8592631816864014,1.0694677829742432,0.0,2.673537015914917,0.325,statements expressing emotional or subjective experiences.,https://www.neuronpedia.org/gemma-2-2b/20-gemmascope-res-16k/6932
+12563,2.5548453330993652,0.8148905038833618,0.4703219532966614,3.1351981163024902,0.3,multiple instances of similar structures or patterns in the text,https://www.neuronpedia.org/gemma-2-2b/20-gemmascope-res-16k/12563
+10921,2.439805507659912,0.7020981907844543,0.5948444604873657,3.4750165939331055,0.275,contexts related to experimental procedures and treatments in scientific research,https://www.neuronpedia.org/gemma-2-2b/20-gemmascope-res-16k/10921
+12908,2.4076650142669678,0.7548457980155945,0.0,3.1896088123321533,0.275,references to tragic events involving individuals and their emotional context,https://www.neuronpedia.org/gemma-2-2b/20-gemmascope-res-16k/12908
+13346,2.279517650604248,0.8315297365188599,0.3620351552963257,2.741352081298828,0.25, expressions of personal feelings or states of being,https://www.neuronpedia.org/gemma-2-2b/20-gemmascope-res-16k/13346
+5163,2.5888113975524902,1.2851147651672363,0.8831573724746704,2.014458656311035,0.2625,elements related to legal contexts and actions,https://www.neuronpedia.org/gemma-2-2b/20-gemmascope-res-16k/5163
+4265,2.419337034225464,1.160933017730713,0.5706696510314941,2.083958387374878,0.275,mentions of specific individuals and their achievements or situations,https://www.neuronpedia.org/gemma-2-2b/20-gemmascope-res-16k/4265

@@ -49,13 +49,14 @@ md("## 1 · Repo, datasets, config")
 code("""#@title 1 · Clone repo and load datasets
 REPO = "Rachel-E-Winter/Pleasrure-axis"  #@param {type:"string"}
 import subprocess
-if not Path("pleasure-axis").exists():
+REPO_DIR = REPO.split("/")[-1]   # git names the folder after the repo, whatever it's spelled
+if not Path(REPO_DIR).exists():
     # Private repo: a Colab secret GH_TOKEN (fine-grained, Contents: read) lets us clone. Falls back to anonymous if absent.
     try: gh = userdata.get("GH_TOKEN")
     except Exception: gh = None
     url = f"https://{gh}@github.com/{REPO}.git" if gh else f"https://github.com/{REPO}.git"
-    subprocess.run(["git", "clone", "-q", url], check=True)
-os.chdir("pleasure-axis")
+    subprocess.run(["git", "clone", "-q", url, REPO_DIR], check=True)
+os.chdir(REPO_DIR)
 RESULTS = Path("results"); RESULTS.mkdir(exist_ok=True)
 
 PLEASURE_JSON = Path("datasets/3.1_pleasure_and_control_datasets.json")

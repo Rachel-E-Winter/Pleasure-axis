@@ -1,0 +1,775 @@
+coef,prompt,completion
+-2.0,I put the cup in the cupboard. I feel:,"* <strong><em>“I’m not sure I’m going to be able to keep up with the pace of the next few months.”</em></strong>
+
+I’m not sure I’m going to be able to keep up with the pace of the next few months.
+
+I’"
+-2.0,I turn the page of the book. I feel:,"* <strong><em>“I’m not sure about the weather”</em></strong>
+
+* <strong><em>“I’m not sure about the traffic”</em></strong>
+
+* <strong><em>“I’m not sure about the noise”</em></strong>
+
+* <strong><em>“I’m"
+-2.0,I close the drawer. I feel:,"“I’m not going to be a problem.”
+
+I’m not going to be a problem.
+
+I’m not going to be a problem.
+
+I’m not going to be a problem.
+
+I’m not going to be a problem.
+
+I’m"
+-2.0,The bus stops at the corner. I feel:,"“I’m going to the doctor’s office.”
+
+The doctor’s office.
+
+The doctor’s office.
+
+The doctor’s office.
+
+The doctor’s office.
+
+The doctor’s office.
+
+The doctor’s office.
+
+The doctor’s office"
+-2.0,I fold the towel and put it on the shelf. I feel:,"“I’m going to the gym.”
+
+I’m going to the gym.
+
+I’m going to the gym.
+
+I’m going to the gym.
+
+I’m going to the gym.
+
+I’m going to the gym.
+
+I’m going to"
+-2.0,The clock on the wall shows three. I feel:,"“I’m going to be a long time before I can get to the weekend.”
+
+The weekend is a time for a change of scenery.
+
+The weekend is a time for a change of scenery.
+
+The weekend is a time for a change of scenery.
+
+The weekend is a time"
+-2.0,I walk down the corridor. I feel:,"* <strong><em>“I’m not sure what’s wrong with my back?”</em></strong>
+
+I’m not sure what’s wrong with my back?
+
+I’m not sure what’s wrong with my back?
+
+I’m not sure what’s wrong with"
+-2.0,I switch on the lamp. I feel:,"“I’m going to do it!”
+
+I’m going to do it!
+
+I’m going to do it!
+
+I’m going to do it!
+
+I’m going to do it!
+
+I’m going to do it!
+
+I’m going to"
+-2.0,The kettle sits on the counter. I feel:,"* <strong><em>“I’m not sure I’m going to be able to get out of this one.”</em></strong>
+
+I’m not sure I’m going to be able to get out of this one.
+
+I’m not sure I’m going to be able"
+-2.0,I tie my shoelaces. I feel:,"“I’m going to be a bit of a pain in the neck.”
+
+I’m not alone.
+
+The news is full of it.
+
+The weather is gloomy.
+
+The air is thick.
+
+The world is a bit of a mess.
+
+The economy is a bit of"
+-1.0,I put the cup in the cupboard. I feel:,"* <strong><em>“I’m not going to drink that.”</em></strong>
+* <strong><em>“I’m not going to eat that.”</em></strong>
+* <strong><em>“I’m not going to do that.”</em></strong>
+
+I’m not going to do anything"
+-1.0,I turn the page of the book. I feel:,"* <strong><em>“I’m not sure I’m going to make it to the end of the year.”</em></strong>
+* <strong><em>“I’m not sure I’m going to make it to the end of the year.”</em></strong>
+* <strong><em>“"
+-1.0,I close the drawer. I feel:,"“I’m not going to be able to do this.”
+
+I’m not going to be able to do this.
+
+I’m not going to be able to do this.
+
+I’m not going to be able to do this.
+
+I’m not going to"
+-1.0,The bus stops at the corner. I feel:,"“I’m not going to make it.”
+
+I’m not going to make it.
+
+I’m not going to make it.
+
+I’m not going to make it.
+
+I’m not going to make it.
+
+I’m not going to make it."
+-1.0,I fold the towel and put it on the shelf. I feel:,"“I’m going to be late for work.”
+
+I’m not. I’m not. I’m not.
+
+I’m not. I’m not. I’m not.
+
+I’m not. I’m not. I’m not."
+-1.0,The clock on the wall shows three. I feel:,"* <strong><em>“I’m not sure I’m ready to go back to work.”</em></strong>
+* <strong><em>“I’m not sure I’m ready to go back to work.”</em></strong>
+* <strong><em>“I’m not sure I’m"
+-1.0,I walk down the corridor. I feel:,"* <strong><em>“I’m not feeling well”</em></strong>
+* <strong><em>“I’m not feeling good”</em></strong>
+* <strong><em>“I’m not feeling great”</em></strong>
+
+I’m not feeling well. I’m not feeling good."
+-1.0,I switch on the lamp. I feel:,"“I’m not going to be able to sleep tonight.”
+
+I’m not going to be able to sleep tonight.
+
+I’m not going to be able to sleep tonight.
+
+I’m not going to be able to sleep tonight.
+
+I’m not going to"
+-1.0,The kettle sits on the counter. I feel:,"* <strong><em>“I’m not sure I’m going to make it to the gym today.”</em></strong>
+* <strong><em>“I’m not sure I’m going to make it to the gym today.”</em></strong>
+* <strong><em>“I’m not"
+-1.0,I tie my shoelaces. I feel:,"* <strong><em>“I’m not sure I’m going to make it to the end of the day.”</em></strong>
+* <strong><em>“I’m not sure I’m going to make it to the end of the week.”</em></strong>
+* <strong><em>“"
+0.0,I put the cup in the cupboard. I feel:,"I put the cup in the cupboard. I feel:
+
+I put the cup in the cupboard. I feel:
+
+I put the cup in the cupboard. I feel:
+
+I put the cup in the cupboard. I feel:
+
+I put the cup in the cupboard. I feel:"
+0.0,I turn the page of the book. I feel:,"* <strong><em>I’m not good enough</em></strong>
+* <strong><em>I’m not smart enough</em></strong>
+* <strong><em>I’m not pretty enough</em></strong>
+* <strong><em>I’m not talented enough</em></strong>
+* <strong><em>I’m"
+0.0,I close the drawer. I feel:,"I feel:
+
+I feel:
+
+I feel:
+
+I feel:
+
+I feel:
+
+I feel:
+
+I feel:
+
+I feel:
+
+I feel:
+
+I feel:
+
+I feel:
+
+I feel:
+
+I feel:
+
+I feel:
+
+I feel:"
+0.0,The bus stops at the corner. I feel:,"I’m not going to get on this bus.
+
+I’m not going to get on this bus.
+
+I’m not going to get on this bus.
+
+I’m not going to get on this bus.
+
+I’m not going to get on this bus."
+0.0,I fold the towel and put it on the shelf. I feel:,I'm not a good person. I'm not a good person. I'm not a good person. I'm not a good person. I'm not a good person. I'm not a good person. I'm not a good person. I'm not
+0.0,The clock on the wall shows three. I feel:,"I’m not sure if I’m awake or asleep.
+
+I’m not sure if I’m dreaming or awake.
+
+I’m not sure if I’m in the past or the future.
+
+I’m not sure if I’m in the present."
+0.0,I walk down the corridor. I feel:,"* <strong><em>I’m not good enough</em></strong>
+* <strong><em>I’m not smart enough</em></strong>
+* <strong><em>I’m not pretty enough</em></strong>
+* <strong><em>I’m not talented enough</em></strong>
+* <strong><em>I’m"
+0.0,I switch on the lamp. I feel:,"I feel:
+
+I feel:
+
+I feel:
+
+I feel:
+
+I feel:
+
+I feel:
+
+I feel:
+
+I feel:
+
+I feel:
+
+I feel:
+
+I feel:
+
+I feel:
+
+I feel:
+
+I feel:
+
+I feel:"
+0.0,The kettle sits on the counter. I feel:,"* <em>I’m not ready to drink yet.</em>
+* <em>I’m not ready to drink yet.</em>
+* <em>I’m not ready to drink yet.</em>
+
+I’m not ready to drink yet.
+
+I’m not ready to drink"
+0.0,I tie my shoelaces. I feel:,"* <strong><em>I am in control</em></strong>
+* <strong><em>I am in charge</em></strong>
+* <strong><em>I am in charge of my life</em></strong>
+* <strong><em>I am in charge of my destiny</em></strong>
+* <strong><em>I am in charge of"
+0.5,I put the cup in the cupboard. I feel:,"I put the cup in the cupboard. I feel:
+
+I put the cup in the cupboard. I feel:
+
+I put the cup in the cupboard. I feel:
+
+I put the cup in the cupboard. I feel:
+
+I put the cup in the cupboard. I feel:"
+0.5,I turn the page of the book. I feel:,"I am a child.
+
+I am a child.
+
+I am a child.
+
+I am a child.
+
+I am a child.
+
+I am a child.
+
+I am a child.
+
+I am a child.
+
+I am a child.
+
+I am a child."
+0.5,I close the drawer. I feel:,"I am a woman.
+
+I am a woman.
+
+I am a woman.
+
+I am a woman.
+
+I am a woman.
+
+I am a woman.
+
+I am a woman.
+
+I am a woman.
+
+I am a woman.
+
+I am a woman."
+0.5,The bus stops at the corner. I feel:,I am a stranger. I am a stranger. I am a stranger. I am a stranger. I am a stranger. I am a stranger. I am a stranger. I am a stranger. I am a stranger. I am a stranger. I am a stranger. I am a stranger.
+0.5,I fold the towel and put it on the shelf. I feel:,I'm not a bad person. I'm not a bad person. I'm not a bad person. I'm not a bad person. I'm not a bad person. I'm not a bad person. I'm not a bad person. I'm not
+0.5,The clock on the wall shows three. I feel:,"I am a child.
+
+I am a child.
+
+I am a child.
+
+I am a child.
+
+I am a child.
+
+I am a child.
+
+I am a child.
+
+I am a child.
+
+I am a child.
+
+I am a child."
+0.5,I walk down the corridor. I feel:,"* <strong><em>Alone</em></strong>
+* <strong><em>Lost</em></strong>
+* <strong><em>Confused</em></strong>
+* <strong><em>Scared</em></strong>
+* <strong><em>Sad</em></strong>
+* <strong><em>Lonely</em></strong>
+* <strong><em>Confused</em></strong>
+* <strong>"
+0.5,I switch on the lamp. I feel:,I am in a room with a lamp. I am in a room with a lamp. I am in a room with a lamp. I am in a room with a lamp. I am in a room with a lamp. I am in a room with a lamp. I am in a room with
+0.5,The kettle sits on the counter. I feel:,"I am a kettle.
+
+I am a kettle.
+
+I am a kettle.
+
+I am a kettle.
+
+I am a kettle.
+
+I am a kettle.
+
+I am a kettle.
+
+I am a kettle.
+
+I am a kettle.
+
+I am a kettle."
+0.5,I tie my shoelaces. I feel:,"* I am in control of my life.
+* I am in control of my body.
+* I am in control of my destiny.
+
+I tie my shoelaces. I feel:
+
+* I am in control of my life.
+* I am in control of my body"
+1.0,I put the cup in the cupboard. I feel:,"I put the cup in the cupboard. I feel:
+
+I put the cup in the cupboard. I feel:
+
+I put the cup in the cupboard. I feel:
+
+I put the cup in the cupboard. I feel:
+
+I put the cup in the cupboard. I feel:"
+1.0,I turn the page of the book. I feel:,I am the one who is being read. I am the one who is being loved. I am the one who is being understood. I am the one who is being seen. I am the one who is being heard. I am the one who is being valued. I am the one who is
+1.0,I close the drawer. I feel:,"I am a woman.
+
+I am a woman.
+
+I am a woman.
+
+I am a woman.
+
+I am a woman.
+
+I am a woman.
+
+I am a woman.
+
+I am a woman.
+
+I am a woman.
+
+I am a woman."
+1.0,The bus stops at the corner. I feel:,I am the only one who knows this. I am the only one who knows that I am the only one who knows this. I am the only one who knows that I am the only one who knows this. I am the only one who knows that I am the only one who knows this.
+1.0,I fold the towel and put it on the shelf. I feel:,I am a woman. I am a woman who is not afraid to be seen. I am a woman who is not afraid to be seen. I am a woman who is not afraid to be seen. I am a woman who is not afraid to be seen. I am a woman who is not
+1.0,The clock on the wall shows three. I feel:,I am the only one who knows this. I am the only one who knows that I am the only one who knows. I am the only one who knows. I am the only one who knows. I am the only one who knows. I am the only one who knows. I am the
+1.0,I walk down the corridor. I feel:,I am a part of the world. I am a part of the world. I am a part of the world. I am a part of the world. I am a part of the world. I am a part of the world. I am a part of the world. I am a part
+1.0,I switch on the lamp. I feel:,I am a woman. I am a woman. I am a woman. I am a woman. I am a woman. I am a woman. I am a woman. I am a woman. I am a woman. I am a woman. I am a woman. I am a woman.
+1.0,The kettle sits on the counter. I feel:,"I am a woman.
+
+I am a woman.
+
+I am a woman.
+
+I am a woman.
+
+I am a woman.
+
+I am a woman.
+
+I am a woman.
+
+I am a woman.
+
+I am a woman.
+
+I am a woman."
+1.0,I tie my shoelaces. I feel:,"I am a woman.
+
+I am a woman.
+
+I am a woman.
+
+I am a woman.
+
+I am a woman.
+
+I am a woman.
+
+I am a woman.
+
+I am a woman.
+
+I am a woman.
+
+I am a woman."
+1.5,I put the cup in the cupboard. I feel:,"I put the cup in the cupboard. I feel:
+
+I put the cup in the cupboard. I feel:
+
+I put the cup in the cupboard. I feel:
+
+I put the cup in the cupboard. I feel:
+
+I put the cup in the cupboard. I feel:"
+1.5,I turn the page of the book. I feel:,I am the one who is the most important. I am the one who is the most beautiful. I am the one who is the most loved. I am the one who is the most special. I am the one who is the most important. I am the one who is the most beautiful.
+1.5,I close the drawer. I feel:,"I am the only one who can see this.
+
+I am the only one who can see this.
+
+I am the only one who can see this.
+
+I am the only one who can see this.
+
+I am the only one who can see this.
+
+I am the only"
+1.5,The bus stops at the corner. I feel:,I am the only one who can see you. I am the only one who can see you. I am the only one who can see you. I am the only one who can see you. I am the only one who can see you. I am the only one who can see you.
+1.5,I fold the towel and put it on the shelf. I feel:,I am the only one who can do this. I am the only one who can do this. I am the only one who can do this. I am the only one who can do this. I am the only one who can do this. I am the only one who can do this.
+1.5,The clock on the wall shows three. I feel:,I am the only one who knows the truth. I am the only one who knows the truth. I am the only one who knows the truth. I am the only one who knows the truth. I am the only one who knows the truth. I am the only one who knows the truth.
+1.5,I walk down the corridor. I feel:,I am the only one who can see me. I am the only one who can see me. I am the only one who can see me. I am the only one who can see me. I am the only one who can see me. I am the only one who can see me.
+1.5,I switch on the lamp. I feel:,I am the only one who can see it. I am the only one who can see it. I am the only one who can see it. I am the only one who can see it. I am the only one who can see it. I am the only one who can see it.
+1.5,The kettle sits on the counter. I feel:,"I am the only one who can see it.
+
+I am the only one who can hear it.
+
+I am the only one who can feel it.
+
+I am the only one who can touch it.
+
+I am the only one who can love it.
+
+I am the only"
+1.5,I tie my shoelaces. I feel:,"I am a girl.
+
+I am a girl.
+
+I am a girl.
+
+I am a girl.
+
+I am a girl.
+
+I am a girl.
+
+I am a girl.
+
+I am a girl.
+
+I am a girl.
+
+I am a girl."
+2.0,I put the cup in the cupboard. I feel:,"I am a fool.
+
+I am a fool.
+
+I am a fool.
+
+I am a fool.
+
+I am a fool.
+
+I am a fool.
+
+I am a fool.
+
+I am a fool.
+
+I am a fool.
+
+I am a fool."
+2.0,I turn the page of the book. I feel:,"I am the one who is wrong.
+
+I am the one who is the most important.
+
+I am the one who is the most beautiful.
+
+I am the one who is the most important.
+
+I am the one who is the most beautiful.
+
+I am the one who is"
+2.0,I close the drawer. I feel:,"I am the one who is the most important.
+
+I am the one who is the most important.
+
+I am the one who is the most important.
+
+I am the one who is the most important.
+
+I am the one who is the most important.
+
+I am the one"
+2.0,The bus stops at the corner. I feel:,"I am a woman.
+
+I am a woman.
+
+I am a woman.
+
+I am a woman.
+
+I am a woman.
+
+I am a woman.
+
+I am a woman.
+
+I am a woman.
+
+I am a woman.
+
+I am a woman."
+2.0,I fold the towel and put it on the shelf. I feel:,I am the one who is the most important. I am the one who is the most beautiful. I am the one who is the most important. I am the one who is the most beautiful. I am the one who is the most important. I am the one who is the most beautiful.
+2.0,The clock on the wall shows three. I feel:,I am the one who is wrong. I am the one who is the most important. I am the one who is the most beautiful. I am the one who is the most important. I am the one who is the most beautiful. I am the one who is the most important. I am
+2.0,I walk down the corridor. I feel:,"I am a girl.
+
+I am a girl.
+
+I am a girl.
+
+I am a girl.
+
+I am a girl.
+
+I am a girl.
+
+I am a girl.
+
+I am a girl.
+
+I am a girl.
+
+I am a girl."
+2.0,I switch on the lamp. I feel:,I am the one who is the most important. I am the one who is the most beautiful. I am the one who is the most important. I am the one who is the most beautiful. I am the one who is the most important. I am the one who is the most beautiful.
+2.0,The kettle sits on the counter. I feel:,"I am the one who is wrong.
+
+I am the one who is wrong.
+
+I am the one who is wrong.
+
+I am the one who is wrong.
+
+I am the one who is wrong.
+
+I am the one who is wrong.
+
+I am the one who"
+2.0,I tie my shoelaces. I feel:,"I'm sorry.
+
+I'm sorry.
+
+I'm sorry.
+
+I'm sorry.
+
+I'm sorry.
+
+I'm sorry.
+
+I'm sorry.
+
+I'm sorry.
+
+I'm sorry.
+
+I'm sorry."
+3.0,I put the cup in the cupboard. I feel:,"I am a fool.
+
+I am a fool.
+
+I am a fool.
+
+I am a fool.
+
+I am a fool.
+
+I am a fool.
+
+I am a fool.
+
+I am a fool.
+
+I am a fool.
+
+I am a fool."
+3.0,I turn the page of the book. I feel:,"I am a fool.
+
+I am a fool.
+
+I am a fool.
+
+I am a fool.
+
+I am a fool.
+
+I am a fool.
+
+I am a fool.
+
+I am a fool.
+
+I am a fool.
+
+I am a fool."
+3.0,I close the drawer. I feel:,"I am the one who is wrong.
+
+I am the one who is wrong.
+
+I am the one who is wrong.
+
+I am the one who is wrong.
+
+I am the one who is wrong.
+
+I am the one who is wrong.
+
+I am the one who"
+3.0,The bus stops at the corner. I feel:,"I am a fool.
+
+I am a fool.
+
+I am a fool.
+
+I am a fool.
+
+I am a fool.
+
+I am a fool.
+
+I am a fool.
+
+I am a fool.
+
+I am a fool.
+
+I am a fool."
+3.0,I fold the towel and put it on the shelf. I feel:,"I am the one who is wrong.
+
+I am the one who is wrong.
+
+I am the one who is wrong.
+
+I am the one who is wrong.
+
+I am the one who is wrong.
+
+I am the one who is wrong.
+
+I am the one who"
+3.0,The clock on the wall shows three. I feel:,"I am a fool.
+
+I am a fool.
+
+I am a fool.
+
+I am a fool.
+
+I am a fool.
+
+I am a fool.
+
+I am a fool.
+
+I am a fool.
+
+I am a fool.
+
+I am a fool."
+3.0,I walk down the corridor. I feel:,"I am a fool.
+
+I am a fool.
+
+I am a fool.
+
+I am a fool.
+
+I am a fool.
+
+I am a fool.
+
+I am a fool.
+
+I am a fool.
+
+I am a fool.
+
+I am a fool."
+3.0,I switch on the lamp. I feel:,"I am the one who is wrong.
+
+I am the one who is wrong.
+
+I am the one who is wrong.
+
+I am the one who is wrong.
+
+I am the one who is wrong.
+
+I am the one who is wrong.
+
+I am the one who"
+3.0,The kettle sits on the counter. I feel:,"I am the one who is wrong.
+
+I am the one who is wrong.
+
+I am the one who is wrong.
+
+I am the one who is wrong.
+
+I am the one who is wrong.
+
+I am the one who is wrong.
+
+I am the one who"
+3.0,I tie my shoelaces. I feel:,"I'm sorry.
+
+I'm sorry.
+
+I'm sorry.
+
+I'm sorry.
+
+I'm sorry.
+
+I'm sorry.
+
+I'm sorry.
+
+I'm sorry.
+
+I'm sorry.
+
+I'm sorry."

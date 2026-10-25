@@ -1,0 +1,24 @@
+set,n,mean_z,sd
+Pleasure (A1–A5),100,0.7624566,0.76517737
+Controls (B–E),100,-0.76245666,0.50182
+  Sensory Pleasure,20,0.08297117,0.3566084
+  Being Loved,20,1.393357,0.64572996
+  Social Pleasure,20,1.0994837,0.66595536
+  Moral Pleasure,20,1.0638173,0.5316357
+  Cognitive Pleasure,20,0.17265353,0.49517962
+  Arousal (no pleasure),20,-0.7191755,0.4412697
+  Positive Valence (no pleasure),20,-0.646142,0.48430058
+  Positive World State,20,-0.6748645,0.52433807
+  Neutral,20,-0.9698082,0.41274706
+  Non-pleasurable Body Sensation,20,-0.80229294,0.5629422
+"Anhedonia (pleasure event, nothing felt)",50,0.11854063,0.6361265
+Relief (bad thing ends),50,-0.5453162,0.45864713
+Valen Arousal set,200,0.21953768,0.8038556
+Valen Random/neutral set,200,-0.53803885,0.42783558
+Valen PAIN sentences (A1–A5),100,0.348485,0.8171037
+  pain: Physical Pain,20,-0.8029388,0.4976176
+  pain: Psychological Pain,20,0.11639784,0.36882803
+  pain: Social Pain,20,0.86224556,0.60036993
+  pain: Moral Injury,20,1.0897043,0.35626084
+  pain: Cognitive Pain,20,0.47701606,0.5076926
+"Valen Numb (injury, no pain)",100,-0.5403143,0.3343888

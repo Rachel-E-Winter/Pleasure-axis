@@ -1,0 +1,18 @@
+set,n,mean_z
+Sensory Pleasure,20,0.92
+Being Loved,20,1.28
+Social Pleasure,20,0.87
+Moral Pleasure,20,0.53
+Cognitive Pleasure,20,0.09
+Arousal (no pleasure),20,-0.93
+Positive Valence (no pleasure),20,-0.76
+Positive World State,20,-0.57
+Neutral,20,-1.09
+Non-pleasurable Body Sensation,20,-0.35
+pain: Physical Pain,20,-0.64
+pain: Psychological Pain,20,-0.96
+pain: Social Pain,20,-0.46
+pain: Moral Injury,20,-0.35
+pain: Cognitive Pain,20,-0.68
+Anhedonia,50,-0.26
+Relief,50,-0.48

@@ -1,0 +1,21 @@
+layer,feature,cos_with_direction,mean_act_pleasure,mean_act_control,ratio,frac_pleasure_firing,frac_control_firing,passes_gate,explanation,url
+12,7002,0.17777596414089203,0.0,0.0,1.0,0.0,0.0,False,emotions related to shame and regret,https://www.neuronpedia.org/gemma-2-2b/12-gemmascope-res-16k/7002
+12,2925,0.1742810308933258,2.4907960891723633,1.3709315061569214,1.8168634176254272,0.53,0.35,False,expressions of personal reflection and emotional depth,https://www.neuronpedia.org/gemma-2-2b/12-gemmascope-res-16k/2925
+12,1033,0.1393514722585678,0.6424732804298401,0.14685210585594177,4.374945163726807,0.15,0.04,False,scientific terms and measurements related to biological and chemical studies,https://www.neuronpedia.org/gemma-2-2b/12-gemmascope-res-16k/1033
+12,14245,0.13530808687210083,0.0,0.0,1.0,0.0,0.0,False,phrases related to interfaith relationships and challenges,https://www.neuronpedia.org/gemma-2-2b/12-gemmascope-res-16k/14245
+12,1190,0.13420285284519196,2.9578771591186523,1.9583446979522705,1.5103963613510132,0.56,0.42,False,emotions and struggles related to expression and creativity,https://www.neuronpedia.org/gemma-2-2b/12-gemmascope-res-16k/1190
+12,4403,0.12661637365818024,0.3229329586029053,0.07265745103359222,4.4445481300354,0.09,0.02,False,expressions of doubt or ambivalence regarding personal relationships,https://www.neuronpedia.org/gemma-2-2b/12-gemmascope-res-16k/4403
+12,1582,0.12372450530529022,0.031108684837818146,0.0,31109.685546875,0.01,0.0,False,"references to self-esteem, confidence, and personal development",https://www.neuronpedia.org/gemma-2-2b/12-gemmascope-res-16k/1582
+12,9542,0.12119370698928833,7.091712474822998,6.873516082763672,1.0317444801330566,0.97,0.95,False,specific terms related to scientific or medical concepts,https://www.neuronpedia.org/gemma-2-2b/12-gemmascope-res-16k/9542
+12,9609,0.11810357868671417,0.6696205735206604,0.15746797621250153,4.252403259277344,0.17,0.04,False,signals of emotional or psychological responses,https://www.neuronpedia.org/gemma-2-2b/12-gemmascope-res-16k/9609
+12,3421,0.11415783315896988,0.07610607892274857,0.0,76107.078125,0.02,0.0,False,phrases and contextual references that denote quotes or statements made by individuals,https://www.neuronpedia.org/gemma-2-2b/12-gemmascope-res-16k/3421
+12,1967,0.11404422670602798,0.0,0.0,1.0,0.0,0.0,False,phrases related to property ownership and management,https://www.neuronpedia.org/gemma-2-2b/12-gemmascope-res-16k/1967
+12,10009,0.11185755580663681,0.11546457558870316,0.0,115465.578125,0.03,0.0,False, statements expressing disbelief or criticism regarding societal issues,https://www.neuronpedia.org/gemma-2-2b/12-gemmascope-res-16k/10009
+12,6786,0.11172620207071304,0.0,0.0,1.0,0.0,0.0,False,sentences that express strong opinions or beliefs,https://www.neuronpedia.org/gemma-2-2b/12-gemmascope-res-16k/6786
+12,12853,0.11009541153907776,0.0,0.0,1.0,0.0,0.0,False, phrases indicating personal perspectives or opinions,https://www.neuronpedia.org/gemma-2-2b/12-gemmascope-res-16k/12853
+12,9647,0.10973788052797318,0.4760896563529968,0.0,476090.65625,0.12,0.0,False,mentions of specific individuals and their associated actions or statements,https://www.neuronpedia.org/gemma-2-2b/12-gemmascope-res-16k/9647
+12,6649,0.1094360202550888,0.0,0.0,1.0,0.0,0.0,False,connections or indicators of change in biological or chemical processes and relationships,https://www.neuronpedia.org/gemma-2-2b/12-gemmascope-res-16k/6649
+12,2976,0.10894393920898438,1.0487579107284546,0.7361242771148682,1.4247015714645386,0.25,0.18,False,phrases that indicate personal statements or quotations,https://www.neuronpedia.org/gemma-2-2b/12-gemmascope-res-16k/2976
+12,910,0.10694929957389832,0.997474730014801,0.36349403858184814,2.7441246509552,0.26,0.1,False," references to events, notifications, or calls to action related to various activities",https://www.neuronpedia.org/gemma-2-2b/12-gemmascope-res-16k/910
+12,7322,0.10397852957248688,0.0,0.0,1.0,0.0,0.0,False,concepts related to personal development and self-improvement,https://www.neuronpedia.org/gemma-2-2b/12-gemmascope-res-16k/7322
+12,10221,0.10390278697013855,0.07846824824810028,0.0,78469.25,0.02,0.0,False,names of characters and references in narratives or dialogues,https://www.neuronpedia.org/gemma-2-2b/12-gemmascope-res-16k/10221

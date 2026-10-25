@@ -1,0 +1,22 @@
+{
+  "model": "google/gemma-2-2b",
+  "n_layers": 26,
+  "d_model": 2304,
+  "best_layer": {
+    "final_token": 22,
+    "mean": 18
+  },
+  "auc": {
+    "ALL": 0.9597,
+    "B": 0.9595,
+    "C1": 0.9435,
+    "C2": 0.944,
+    "D": 0.985,
+    "E": 0.9665
+  },
+  "steer_layer": 8,
+  "pleasure_x_pain": 0.5589146614074707,
+  "pleasure_x_arousal": 0.13777583837509155,
+  "pleasure_x_relief": 0.24699129164218903,
+  "pleasure_x_posvalence": 0.1719462275505066
+}

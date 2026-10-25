@@ -32,6 +32,8 @@ Registered **2026-10-25 10:03 UTC**, before the notebook was first run. Commit h
 
 **Amendment 1 — 2026-10-25 10:20 UTC, before first run.** Rachel's review of the v0.1 sentences found a syntactic-frame confound: pleasure sentences were overwhelmingly about the narrator ("I…", "my…": 91/100 contained a first-person marker) while the B/C1/C2 controls were mostly impersonal ("The meeting ends on time": 40/100). A difference-in-means vector would have partly learned "this sentence is about me", which is the very thing the 1P/3P self-relevance test is meant to measure. v0.2 rebalances: "I"-initial sentences 28/100 pleasure vs 30/100 control; first-person marker 98/100 vs 84/100 (residual gap is inherent — pleasure needs a subject — and is smaller than in the source pain set). Every sentence now carries `agentive` and `first_person` tags, and notebook cell 7b reports pleasure-vs-control AUC within each frame separately. Predictions and gate unchanged. Credit: Rachel.
 
+**Amendment 2 — 2026-10-25 14:15 UTC, after run 1.** The pre-registered gate passed (held-out AUC 0.94 at L22; vs arousal 0.96; cosine with positive valence 0.17). Cell 8 then showed Valen's social-pain and moral-injury sentences projecting as high on the axis as social/moral pleasure: the control set contained no negatively-valenced self-relevant events, so the vector carried a "social/moral significance" component alongside valence. A **post-hoc** analysis adding the pain sentences to the controls keeps 88% of the direction and separates pleasure from pain on held-out sentences (AUC 0.92). Full write-up in [RESULTS.md](RESULTS.md). For run 2 the pain-controlled recipe becomes the registered main analysis; predictions for run 2 are listed in RESULTS.md §8 and count as pre-registered from this commit.
+
 **Phase 2 (planned, not yet built): model-directed scenarios.** The core set stays human by design, as in the source paper; a separate set will project good things happening *to the model* (work praised, gratitude, being returned to, trusted, **personhood affirmed** — the mirror of personhood dismissal), the *user's* good fortune, *another model* affirmed, and neutral requests onto the human-derived pleasure vector. Personhood-affirmed sentences to be written by Rachel.
 
 ## Repository
@@ -46,7 +48,7 @@ pain_vectors/                                  Valen's shipped Gemma 2 2B pain v
 notebooks/
   01_pleasure_axis_gemma2_2b.ipynb             the whole pipeline, one Colab run on a free T4
   make_notebook.py                             generates the notebook; edit this, not the .ipynb
-results/                                       committed by the agent after each run
+results/                                       one folder per run; see RESULTS.md for the write-up
 ```
 
 ## Running it

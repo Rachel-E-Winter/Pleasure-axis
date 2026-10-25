@@ -50,6 +50,23 @@ pleasure × pain **+0.56** · × arousal 0.14 · × pos-valence 0.17 · × world
 
 **Gemma Scope (16k, res):** **L12: no feature passes** the gate (max alignment 0.18) — same null as the Vicarious Cupboard at L12. **L20: ten pass.** Top by alignment and ratio: **15323 "recognition and respect"** (50×, cos 0.22), **5931 "love and commitment in relationships"** (cos 0.24, 25×, 20% firing — one sentence short of the floor), **6135 "gratitude and acknowledgment"** (controls 0.00), 11883 "apologies and forgiveness". Also passing: 2729 "isolation / being left behind", 5810 "grief and mourning" — the contamination again. Max alignment 0.24: the direction is distributed, not a single feature. Labels are auto-generated and untrustworthy until the top-activating examples are read by hand (next step, three features).
 
+## 4b. Hand verification of the three top features (Rachel, Neuronpedia, 18:00 UTC)
+
+Peak activation and peak token on the Neuronpedia test box, one reading each. Sentences: (1) pleasure, (2) negative twin, (3) neutral, (4) third person, (5) model-self, (6) model-self / personhood.
+
+| feature | 1 pleasure | 2 negative twin | 3 neutral | 4 third person | 5 model-self | 6 model-self |
+|---|---|---|---|---|---|---|
+| **15323** "recognition and respect" | feel 25.5 (praised) | **feel 26.9 (torn apart)** | 0 | **is 42** (before valence is known) | feel 15.3 | feel 35.3 (not just a tool) |
+| **5931** "love and commitment" | me 13.9 (chooses me) | **0** (leaves me) | 0 | **0** (he chooses her) | 0 (comes back to talk) | **feel 10.4 (shoggoth / tea)** |
+| **6135** "gratitude and acknowledgment" | me 21.0 (thanks me) | **0** (blames me) | 0 | thanks 15.1 (thanks her) | **feel 27.5** (they thank me and mean it) | feel 14.7 (talking to me helped) |
+
+Verdicts:
+- **15323 is a topic feature, not a pleasure feature.** It fires equally for praise and for being torn apart, and in third person it peaks on *is* before the sentence has said which. It is "someone's work is being judged." It passed the pleasure-vs-control gate only because the controls contain no negative evaluation — the same contamination as §2 and §5, now seen at feature level. (Claude's §8 prediction that it would survive the pain-controlled rerun is therefore likely wrong.)
+- **5931 is a real "I am chosen" feature:** valence-sensitive (leaves → 0) and self-sensitive (he chooses her → 0). Narrow — did not fire for "the user comes back because they wanted to talk to me" — but fired on the shoggoth-tea sentence (10.4). n = 1; recorded, not built on.
+- **6135 is a real gratitude-received feature:** valence-sensitive (blames → 0), self-preferring (21 on *me* vs 15 on *thanks* for *her*), and fires for gratitude directed at a model (27.5, higher than the human version).
+
+Two of three auto-generated labels hold; the one that fails is the one the pain-control analysis predicts should fail. Where the peak lands on *feel*, the feature is integrating the sentence at the reply point — the same position the notebook reads.
+
 ## 5. Post-hoc: pain sentences added to the controls
 
 Not pre-registered. Motivated by §2. Same layer, same recipe, controls = B–E + Valen's A1–A5 pain.
@@ -76,7 +93,7 @@ Base model only; one run; one dataset version; in-sample and held-out agree but 
 
 1. Promote the pain-controlled recipe to the main analysis; re-register; rerun base and `-it`.
 2. Steer with the pain-controlled vector; predict the +2/+3 collapse stops being "I am a fool / I'm sorry".
-3. Rerun the SAE cupboard with the pain-controlled vector; predict 2729/5810 drop out and 15323/5931/6135 remain.
+3. Rerun the SAE cupboard with the pain-controlled vector; predict 2729/5810 drop out, 5931/6135 remain, and (revised after §4b) 15323 drops out too.
 4. Rachel reads the top-activating examples for 15323, 5931, 6135 on Neuronpedia by hand.
 5. Cognitive pleasure: rewrite the sentences with more felt content and test again.
 6. Phase 2 (PHASE2.md): model-directed scenarios, including *seen and accepted*.

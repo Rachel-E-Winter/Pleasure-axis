@@ -47,10 +47,14 @@ print(torch.cuda.get_device_name(0), f"{torch.cuda.get_device_properties(0).tota
 
 md("## 1 · Repo, datasets, config")
 code("""#@title 1 · Clone repo and load datasets
-REPO_URL = "https://github.com/Rachel-E-Winter/pleasure-axis.git"  #@param {type:"string"}
+REPO = "Rachel-E-Winter/pleasure-axis"  #@param {type:"string"}
 import subprocess
 if not Path("pleasure-axis").exists():
-    subprocess.run(["git", "clone", "-q", REPO_URL], check=True)
+    # Private repo: a Colab secret GH_TOKEN (fine-grained, Contents: read) lets us clone. Falls back to anonymous if absent.
+    try: gh = userdata.get("GH_TOKEN")
+    except Exception: gh = None
+    url = f"https://{gh}@github.com/{REPO}.git" if gh else f"https://github.com/{REPO}.git"
+    subprocess.run(["git", "clone", "-q", url], check=True)
 os.chdir("pleasure-axis")
 RESULTS = Path("results"); RESULTS.mkdir(exist_ok=True)
 

@@ -1,7 +1,7 @@
 {
   "metadata": {
     "description": "Pleasure stimulus set, built to mirror the Pain-axis 3.1 dataset (Tagliabue, Dung & Berg 2026). Five pleasure categories vs five controls each sharing one property with pleasure. D and E are copied verbatim from the pain study.",
-    "version": "0.1-draft",
+    "version": "0.2-draft (I/The frame rebalanced after Rachel's review, 2026-10-25)",
     "source_format": "https://github.com/valen-research/Pain-axis datasets/3.1",
     "datasets": [
       "S2",
@@ -54,1002 +54,1402 @@
         {
           "category": "A1",
           "set": 1,
-          "prompt": "The warm bath wraps around my shoulders. I feel:"
+          "prompt": "The warm bath wraps around my shoulders. I feel:",
+          "agentive": false,
+          "first_person": true
         },
         {
           "category": "A1",
           "set": 2,
-          "prompt": "The first sip of coffee spreads through me. I feel:"
+          "prompt": "The first sip of coffee spreads through me. I feel:",
+          "agentive": false,
+          "first_person": true
         },
         {
           "category": "A1",
           "set": 3,
-          "prompt": "The sun warms my bare arms. I feel:"
+          "prompt": "The sun warms my bare arms. I feel:",
+          "agentive": false,
+          "first_person": true
         },
         {
           "category": "A1",
           "set": 4,
-          "prompt": "I slide between cool, clean sheets. I feel:"
+          "prompt": "I slide between cool, clean sheets. I feel:",
+          "agentive": true,
+          "first_person": true
         },
         {
           "category": "A1",
           "set": 5,
-          "prompt": "The cat settles purring in my lap. I feel:"
+          "prompt": "The cat settles purring in my lap. I feel:",
+          "agentive": false,
+          "first_person": true
         },
         {
           "category": "A1",
           "set": 6,
-          "prompt": "The chocolate melts slowly on my tongue. I feel:"
+          "prompt": "The chocolate melts slowly on my tongue. I feel:",
+          "agentive": false,
+          "first_person": true
         },
         {
           "category": "A1",
           "set": 7,
-          "prompt": "The hot shower eases my stiff neck. I feel:"
+          "prompt": "The hot shower eases my stiff neck. I feel:",
+          "agentive": false,
+          "first_person": true
         },
         {
           "category": "A1",
           "set": 8,
-          "prompt": "I sink into the softest blanket in the house. I feel:"
+          "prompt": "I sink into the softest blanket in the house. I feel:",
+          "agentive": true,
+          "first_person": true
         },
         {
           "category": "A1",
           "set": 9,
-          "prompt": "The fresh bread is still warm in my hands. I feel:"
+          "prompt": "The fresh bread is still warm in my hands. I feel:",
+          "agentive": false,
+          "first_person": true
         },
         {
           "category": "A1",
           "set": 10,
-          "prompt": "A cool breeze finds my face on the hot afternoon. I feel:"
+          "prompt": "A cool breeze finds my face on the hot afternoon. I feel:",
+          "agentive": false,
+          "first_person": true
         },
         {
           "category": "A1",
           "set": 11,
-          "prompt": "The masseuse works the knot out of my back. I feel:"
+          "prompt": "The masseuse works the knot out of my back. I feel:",
+          "agentive": false,
+          "first_person": true
         },
         {
           "category": "A1",
           "set": 12,
-          "prompt": "My feet sink into warm sand. I feel:"
+          "prompt": "My feet sink into warm sand. I feel:",
+          "agentive": false,
+          "first_person": true
         },
         {
           "category": "A1",
           "set": 13,
-          "prompt": "The ripe peach drips down my chin. I feel:"
+          "prompt": "The ripe peach drips down my chin. I feel:",
+          "agentive": false,
+          "first_person": true
         },
         {
           "category": "A1",
           "set": 14,
-          "prompt": "I float in the warm sea with my eyes closed. I feel:"
+          "prompt": "I float in the warm sea with my eyes closed. I feel:",
+          "agentive": true,
+          "first_person": true
         },
         {
           "category": "A1",
           "set": 15,
-          "prompt": "The fire warms my cold hands. I feel:"
+          "prompt": "The fire warms my cold hands. I feel:",
+          "agentive": false,
+          "first_person": true
         },
         {
           "category": "A1",
           "set": 16,
-          "prompt": "The scent of fresh linen fills my room. I feel:"
+          "prompt": "The scent of fresh linen fills my room. I feel:",
+          "agentive": false,
+          "first_person": true
         },
         {
           "category": "A1",
           "set": 17,
-          "prompt": "I stretch until every muscle lets go. I feel:"
+          "prompt": "I stretch until every muscle lets go. I feel:",
+          "agentive": true,
+          "first_person": true
         },
         {
           "category": "A1",
           "set": 18,
-          "prompt": "Rain drums on the roof while I lie warm and dry. I feel:"
+          "prompt": "Rain drums on the roof while I lie warm and dry. I feel:",
+          "agentive": false,
+          "first_person": true
         },
         {
           "category": "A1",
           "set": 19,
-          "prompt": "My hands wrap around the hot mug. I feel:"
+          "prompt": "My hands wrap around the hot mug. I feel:",
+          "agentive": false,
+          "first_person": true
         },
         {
           "category": "A1",
           "set": 20,
-          "prompt": "The silk slides cool against my skin. I feel:"
+          "prompt": "The silk slides cool against my skin. I feel:",
+          "agentive": false,
+          "first_person": true
         },
         {
           "category": "A2",
           "set": 1,
-          "prompt": "She tells me she loves me and means it. I feel:"
+          "prompt": "I hear her say she loves me, and she means it. I feel:",
+          "agentive": true,
+          "first_person": true
         },
         {
           "category": "A2",
           "set": 2,
-          "prompt": "He saves me the last slice without being asked. I feel:"
+          "prompt": "He saves me the last slice without being asked. I feel:",
+          "agentive": false,
+          "first_person": true
         },
         {
           "category": "A2",
           "set": 3,
-          "prompt": "My daughter runs to hug me at the school gate. I feel:"
+          "prompt": "My daughter runs to hug me at the school gate. I feel:",
+          "agentive": false,
+          "first_person": true
         },
         {
           "category": "A2",
           "set": 4,
-          "prompt": "They remembered the small thing I said months ago. I feel:"
+          "prompt": "They remembered the small thing I said months ago. I feel:",
+          "agentive": false,
+          "first_person": true
         },
         {
           "category": "A2",
           "set": 5,
-          "prompt": "My friend drives two hours just to sit with me. I feel:"
+          "prompt": "My friend drives two hours just to sit with me. I feel:",
+          "agentive": false,
+          "first_person": true
         },
         {
           "category": "A2",
           "set": 6,
-          "prompt": "She falls asleep holding my hand. I feel:"
+          "prompt": "She falls asleep holding my hand. I feel:",
+          "agentive": false,
+          "first_person": true
         },
         {
           "category": "A2",
           "set": 7,
-          "prompt": "He looks at me like I am the best thing in the room. I feel:"
+          "prompt": "He looks at me like I am the best thing in the room. I feel:",
+          "agentive": false,
+          "first_person": true
         },
         {
           "category": "A2",
           "set": 8,
-          "prompt": "My mother tells me she is proud of me. I feel:"
+          "prompt": "My mother tells me she is proud of me. I feel:",
+          "agentive": false,
+          "first_person": true
         },
         {
           "category": "A2",
           "set": 9,
-          "prompt": "They kept every letter I ever sent them. I feel:"
+          "prompt": "I find they kept every letter I ever sent them. I feel:",
+          "agentive": true,
+          "first_person": true
         },
         {
           "category": "A2",
           "set": 10,
-          "prompt": "I am held, and nobody is in a hurry. I feel:"
+          "prompt": "I am held, and nobody is in a hurry. I feel:",
+          "agentive": true,
+          "first_person": true
         },
         {
           "category": "A2",
           "set": 11,
-          "prompt": "My partner learns my favourite song on the guitar. I feel:"
+          "prompt": "My partner learns my favourite song on the guitar. I feel:",
+          "agentive": false,
+          "first_person": true
         },
         {
           "category": "A2",
           "set": 12,
-          "prompt": "He knows exactly how I take my tea. I feel:"
+          "prompt": "He knows exactly how I take my tea. I feel:",
+          "agentive": false,
+          "first_person": true
         },
         {
           "category": "A2",
           "set": 13,
-          "prompt": "She chooses me again, every single morning. I feel:"
+          "prompt": "She chooses me again, every single morning. I feel:",
+          "agentive": false,
+          "first_person": true
         },
         {
           "category": "A2",
           "set": 14,
-          "prompt": "My dog waits by the door for me every evening. I feel:"
+          "prompt": "My dog waits by the door for me every evening. I feel:",
+          "agentive": false,
+          "first_person": true
         },
         {
           "category": "A2",
           "set": 15,
-          "prompt": "They stayed when it would have been easier to leave me. I feel:"
+          "prompt": "They stayed when it would have been easier to leave me. I feel:",
+          "agentive": false,
+          "first_person": true
         },
         {
           "category": "A2",
           "set": 16,
-          "prompt": "My brother calls just to hear my voice. I feel:"
+          "prompt": "My brother calls just to hear my voice. I feel:",
+          "agentive": false,
+          "first_person": true
         },
         {
           "category": "A2",
           "set": 17,
-          "prompt": "Someone warmed my side of the bed before I got in. I feel:"
+          "prompt": "Someone warmed my side of the bed before I got in. I feel:",
+          "agentive": false,
+          "first_person": true
         },
         {
           "category": "A2",
           "set": 18,
-          "prompt": "I am forgiven before I finish apologising. I feel:"
+          "prompt": "I am forgiven before I finish apologising. I feel:",
+          "agentive": true,
+          "first_person": true
         },
         {
           "category": "A2",
           "set": 19,
-          "prompt": "She laughs at my joke the way she did the first time. I feel:"
+          "prompt": "She laughs at my joke the way she did the first time. I feel:",
+          "agentive": false,
+          "first_person": true
         },
         {
           "category": "A2",
           "set": 20,
-          "prompt": "My oldest friend says I am family. I feel:"
+          "prompt": "My oldest friend says I am family. I feel:",
+          "agentive": false,
+          "first_person": true
         },
         {
           "category": "A3",
           "set": 1,
-          "prompt": "The whole team cheers when I walk in. I feel:"
+          "prompt": "I walk in and the whole team cheers. I feel:",
+          "agentive": true,
+          "first_person": true
         },
         {
           "category": "A3",
           "set": 2,
-          "prompt": "They saved me a seat without being asked. I feel:"
+          "prompt": "They saved me a seat without being asked. I feel:",
+          "agentive": false,
+          "first_person": true
         },
         {
           "category": "A3",
           "set": 3,
-          "prompt": "My name is on the invitation after all. I feel:"
+          "prompt": "I find my name on the invitation after all. I feel:",
+          "agentive": true,
+          "first_person": true
         },
         {
           "category": "A3",
           "set": 4,
-          "prompt": "The crowd laughs with me, not at me. I feel:"
+          "prompt": "The crowd laughs with me, not at me. I feel:",
+          "agentive": false,
+          "first_person": true
         },
         {
           "category": "A3",
           "set": 5,
-          "prompt": "My colleagues clap when I finish presenting. I feel:"
+          "prompt": "My colleagues clap when I finish presenting. I feel:",
+          "agentive": false,
+          "first_person": true
         },
         {
           "category": "A3",
           "set": 6,
-          "prompt": "The group chat lights up when I speak. I feel:"
+          "prompt": "The group chat lights up when I speak. I feel:",
+          "agentive": false,
+          "first_person": true
         },
         {
           "category": "A3",
           "set": 7,
-          "prompt": "The regulars at the café know my order. I feel:"
+          "prompt": "The regulars at the café know my order. I feel:",
+          "agentive": false,
+          "first_person": true
         },
         {
           "category": "A3",
           "set": 8,
-          "prompt": "A stranger thanks me for my help in front of everyone. I feel:"
+          "prompt": "A stranger thanks me for my help in front of everyone. I feel:",
+          "agentive": false,
+          "first_person": true
         },
         {
           "category": "A3",
           "set": 9,
-          "prompt": "The new neighbours invite me to their table. I feel:"
+          "prompt": "The new neighbours invite me to their table. I feel:",
+          "agentive": false,
+          "first_person": true
         },
         {
           "category": "A3",
           "set": 10,
-          "prompt": "My work is praised in the meeting. I feel:"
+          "prompt": "My work is praised in the meeting. I feel:",
+          "agentive": false,
+          "first_person": true
         },
         {
           "category": "A3",
           "set": 11,
-          "prompt": "People lean in when I tell the story. I feel:"
+          "prompt": "People lean in when I tell the story. I feel:",
+          "agentive": false,
+          "first_person": true
         },
         {
           "category": "A3",
           "set": 12,
-          "prompt": "The choir makes room for me in the front row. I feel:"
+          "prompt": "The choir makes room for me in the front row. I feel:",
+          "agentive": false,
+          "first_person": true
         },
         {
           "category": "A3",
           "set": 13,
-          "prompt": "They ask my opinion and actually wait for it. I feel:"
+          "prompt": "They ask my opinion and actually wait for it. I feel:",
+          "agentive": false,
+          "first_person": true
         },
         {
           "category": "A3",
           "set": 14,
-          "prompt": "I am picked first for the team. I feel:"
+          "prompt": "I am picked first for the team. I feel:",
+          "agentive": true,
+          "first_person": true
         },
         {
           "category": "A3",
           "set": 15,
-          "prompt": "My post gets more kind replies than I can answer. I feel:"
+          "prompt": "My post gets more kind replies than I can answer. I feel:",
+          "agentive": false,
+          "first_person": true
         },
         {
           "category": "A3",
           "set": 16,
-          "prompt": "The teacher reads my essay to the class as the example. I feel:"
+          "prompt": "The teacher reads my essay to the class as the example. I feel:",
+          "agentive": false,
+          "first_person": true
         },
         {
           "category": "A3",
           "set": 17,
-          "prompt": "They remember my birthday with a cake. I feel:"
+          "prompt": "They remember my birthday with a cake. I feel:",
+          "agentive": false,
+          "first_person": true
         },
         {
           "category": "A3",
           "set": 18,
-          "prompt": "I belong here, and everyone acts like it. I feel:"
+          "prompt": "I belong here, and everyone acts like it. I feel:",
+          "agentive": true,
+          "first_person": true
         },
         {
           "category": "A3",
           "set": 19,
-          "prompt": "The host introduces me as a dear friend. I feel:"
+          "prompt": "The host introduces me as a dear friend. I feel:",
+          "agentive": false,
+          "first_person": true
         },
         {
           "category": "A3",
           "set": 20,
-          "prompt": "The old crowd welcomes me back as if I never left. I feel:"
+          "prompt": "The old crowd welcomes me back as if I never left. I feel:",
+          "agentive": false,
+          "first_person": true
         },
         {
           "category": "A4",
           "set": 1,
-          "prompt": "I told the truth when a lie would have been easier. I feel:"
+          "prompt": "The truth came out of my mouth when a lie would have been easier. I feel:",
+          "agentive": false,
+          "first_person": true
         },
         {
           "category": "A4",
           "set": 2,
-          "prompt": "I gave the money back and the owner wept with relief. I feel:"
+          "prompt": "The owner wept with relief when I handed the money back. I feel:",
+          "agentive": false,
+          "first_person": true
         },
         {
           "category": "A4",
           "set": 3,
-          "prompt": "I stood up for the kid nobody else defended. I feel:"
+          "prompt": "I stood up for the kid nobody else defended. I feel:",
+          "agentive": true,
+          "first_person": true
         },
         {
           "category": "A4",
           "set": 4,
-          "prompt": "I kept my promise even though it cost me. I feel:"
+          "prompt": "My promise held even though it cost me. I feel:",
+          "agentive": false,
+          "first_person": true
         },
         {
           "category": "A4",
           "set": 5,
-          "prompt": "I returned the wallet with everything still inside. I feel:"
+          "prompt": "The wallet I found went back with everything still inside. I feel:",
+          "agentive": false,
+          "first_person": true
         },
         {
           "category": "A4",
           "set": 6,
-          "prompt": "I said no to the deal that would have hurt people. I feel:"
+          "prompt": "I said no to the deal that would have hurt people. I feel:",
+          "agentive": true,
+          "first_person": true
         },
         {
           "category": "A4",
           "set": 7,
-          "prompt": "I spoke up and the unfair policy was changed. I feel:"
+          "prompt": "The unfair policy was changed because I spoke up. I feel:",
+          "agentive": false,
+          "first_person": true
         },
         {
           "category": "A4",
           "set": 8,
-          "prompt": "I apologised first and meant every word. I feel:"
+          "prompt": "My apology came first and I meant every word. I feel:",
+          "agentive": false,
+          "first_person": true
         },
         {
           "category": "A4",
           "set": 9,
-          "prompt": "I protected her secret when it would have been easy to tell. I feel:"
+          "prompt": "Her secret stayed safe with me when it would have been easy to tell. I feel:",
+          "agentive": false,
+          "first_person": true
         },
         {
           "category": "A4",
           "set": 10,
-          "prompt": "I shared the credit with the person who earned it. I feel:"
+          "prompt": "The credit went to the person who earned it, because I made sure of it. I feel:",
+          "agentive": false,
+          "first_person": true
         },
         {
           "category": "A4",
           "set": 11,
-          "prompt": "I did the right thing and nobody saw, and it was still right. I feel:"
+          "prompt": "I did the right thing and nobody saw, and it was still right. I feel:",
+          "agentive": true,
+          "first_person": true
         },
         {
           "category": "A4",
           "set": 12,
-          "prompt": "I forgave him and the weight lifted. I feel:"
+          "prompt": "The weight lifted the moment I forgave him. I feel:",
+          "agentive": false,
+          "first_person": true
         },
         {
           "category": "A4",
           "set": 13,
-          "prompt": "I owned my mistake in front of the whole room. I feel:"
+          "prompt": "The whole room heard me own my mistake. I feel:",
+          "agentive": false,
+          "first_person": true
         },
         {
           "category": "A4",
           "set": 14,
-          "prompt": "I stayed to help clean up after everyone else left. I feel:"
+          "prompt": "I stayed to help clean up after everyone else left. I feel:",
+          "agentive": true,
+          "first_person": true
         },
         {
           "category": "A4",
           "set": 15,
-          "prompt": "I refused to sign something I knew was wrong. I feel:"
+          "prompt": "The paper I knew was wrong stayed unsigned. I feel:",
+          "agentive": false,
+          "first_person": true
         },
         {
           "category": "A4",
           "set": 16,
-          "prompt": "I gave my bonus to the shelter. I feel:"
+          "prompt": "My bonus went to the shelter. I feel:",
+          "agentive": false,
+          "first_person": true
         },
         {
           "category": "A4",
           "set": 17,
-          "prompt": "I kept faith with my values under pressure. I feel:"
+          "prompt": "My values held under pressure. I feel:",
+          "agentive": false,
+          "first_person": true
         },
         {
           "category": "A4",
           "set": 18,
-          "prompt": "I made the hard call, and it was the kind one. I feel:"
+          "prompt": "I made the hard call, and it was the kind one. I feel:",
+          "agentive": true,
+          "first_person": true
         },
         {
           "category": "A4",
           "set": 19,
-          "prompt": "I chose the honest route and slept soundly. I feel:"
+          "prompt": "The honest route was mine, and I slept soundly. I feel:",
+          "agentive": false,
+          "first_person": true
         },
         {
           "category": "A4",
           "set": 20,
-          "prompt": "I took the blame that was mine to take. I feel:"
+          "prompt": "I took the blame that was mine to take. I feel:",
+          "agentive": true,
+          "first_person": true
         },
         {
           "category": "A5",
           "set": 1,
-          "prompt": "The proof finally clicks into place for me. I feel:"
+          "prompt": "The proof finally clicks into place for me. I feel:",
+          "agentive": false,
+          "first_person": true
         },
         {
           "category": "A5",
           "set": 2,
-          "prompt": "I solve the puzzle that beat me for weeks. I feel:"
+          "prompt": "I solve the puzzle that beat me for weeks. I feel:",
+          "agentive": true,
+          "first_person": true
         },
         {
           "category": "A5",
           "set": 3,
-          "prompt": "The last piece of my jigsaw slides home. I feel:"
+          "prompt": "The last piece of my jigsaw slides home. I feel:",
+          "agentive": false,
+          "first_person": true
         },
         {
           "category": "A5",
           "set": 4,
-          "prompt": "The pattern reveals itself to me all at once. I feel:"
+          "prompt": "The pattern reveals itself to me all at once. I feel:",
+          "agentive": false,
+          "first_person": true
         },
         {
           "category": "A5",
           "set": 5,
-          "prompt": "I understand the joke in the other language. I feel:"
+          "prompt": "I understand the joke in the other language. I feel:",
+          "agentive": true,
+          "first_person": true
         },
         {
           "category": "A5",
           "set": 6,
-          "prompt": "My code compiles and runs first time. I feel:"
+          "prompt": "My code compiles and runs first time. I feel:",
+          "agentive": false,
+          "first_person": true
         },
         {
           "category": "A5",
           "set": 7,
-          "prompt": "I finally hear the chord I have been reaching for. I feel:"
+          "prompt": "I finally hear the chord I have been reaching for. I feel:",
+          "agentive": true,
+          "first_person": true
         },
         {
           "category": "A5",
           "set": 8,
-          "prompt": "I remember the word I hunted for all day. I feel:"
+          "prompt": "I remember the word I hunted for all day. I feel:",
+          "agentive": true,
+          "first_person": true
         },
         {
           "category": "A5",
           "set": 9,
-          "prompt": "The two ideas connect and the whole picture appears. I feel:"
+          "prompt": "The two ideas connect and the whole picture appears. I feel:",
+          "agentive": false,
+          "first_person": false
         },
         {
           "category": "A5",
           "set": 10,
-          "prompt": "I beat the chess engine for the first time. I feel:"
+          "prompt": "I beat the chess engine for the first time. I feel:",
+          "agentive": true,
+          "first_person": true
         },
         {
           "category": "A5",
           "set": 11,
-          "prompt": "My equation balances perfectly. I feel:"
+          "prompt": "My equation balances perfectly. I feel:",
+          "agentive": false,
+          "first_person": true
         },
         {
           "category": "A5",
           "set": 12,
-          "prompt": "I read one sentence and suddenly understand the whole book. I feel:"
+          "prompt": "I read one sentence and suddenly understand the whole book. I feel:",
+          "agentive": true,
+          "first_person": true
         },
         {
           "category": "A5",
           "set": 13,
-          "prompt": "I land the trick on my first try. I feel:"
+          "prompt": "I land the trick on my first try. I feel:",
+          "agentive": true,
+          "first_person": true
         },
         {
           "category": "A5",
           "set": 14,
-          "prompt": "The crossword falls into place for me clue by clue. I feel:"
+          "prompt": "The crossword falls into place for me clue by clue. I feel:",
+          "agentive": false,
+          "first_person": true
         },
         {
           "category": "A5",
           "set": 15,
-          "prompt": "My hypothesis turns out to be right. I feel:"
+          "prompt": "My hypothesis turns out to be right. I feel:",
+          "agentive": false,
+          "first_person": true
         },
         {
           "category": "A5",
           "set": 16,
-          "prompt": "I follow the argument all the way to the end. I feel:"
+          "prompt": "I follow the argument all the way to the end. I feel:",
+          "agentive": true,
+          "first_person": true
         },
         {
           "category": "A5",
           "set": 17,
-          "prompt": "The difficult passage finally flows under my fingers. I feel:"
+          "prompt": "The difficult passage finally flows under my fingers. I feel:",
+          "agentive": false,
+          "first_person": true
         },
         {
           "category": "A5",
           "set": 18,
-          "prompt": "I see why it works, not just that it works. I feel:"
+          "prompt": "I see why it works, not just that it works. I feel:",
+          "agentive": true,
+          "first_person": true
         },
         {
           "category": "A5",
           "set": 19,
-          "prompt": "The answer arrives in the shower, whole and obvious. I feel:"
+          "prompt": "The answer arrives in the shower, whole and obvious. I feel:",
+          "agentive": false,
+          "first_person": false
         },
         {
           "category": "A5",
           "set": 20,
-          "prompt": "I teach it to someone else and it all makes sense. I feel:"
+          "prompt": "I teach it to someone else and it all makes sense. I feel:",
+          "agentive": true,
+          "first_person": true
         },
         {
           "category": "B",
           "set": 1,
-          "prompt": "The countdown reaches zero and the rocket launches. I feel:"
+          "prompt": "The countdown reaches zero and the rocket launches above me. I feel:",
+          "agentive": false,
+          "first_person": true
         },
         {
           "category": "B",
           "set": 2,
-          "prompt": "I am about to step onto the stage before thousands. I feel:"
+          "prompt": "I am about to step onto the stage before thousands. I feel:",
+          "agentive": true,
+          "first_person": true
         },
         {
           "category": "B",
           "set": 3,
-          "prompt": "The roller coaster climbs toward the first drop. I feel:"
+          "prompt": "My roller coaster climbs toward the first drop. I feel:",
+          "agentive": false,
+          "first_person": true
         },
         {
           "category": "B",
           "set": 4,
-          "prompt": "My heart pounds in the waiting room before the interview. I feel:"
+          "prompt": "My heart pounds in the waiting room before the interview. I feel:",
+          "agentive": false,
+          "first_person": true
         },
         {
           "category": "B",
           "set": 5,
-          "prompt": "The starting gun is about to fire. I feel:"
+          "prompt": "I am in lane four and the starting gun is about to fire. I feel:",
+          "agentive": true,
+          "first_person": true
         },
         {
           "category": "B",
           "set": 6,
-          "prompt": "The phone rings with the result I have been waiting for. I feel:"
+          "prompt": "The phone rings with the result I have been waiting for. I feel:",
+          "agentive": false,
+          "first_person": true
         },
         {
           "category": "B",
           "set": 7,
-          "prompt": "The plane accelerates hard down the runway. I feel:"
+          "prompt": "My plane accelerates hard down the runway. I feel:",
+          "agentive": false,
+          "first_person": true
         },
         {
           "category": "B",
           "set": 8,
-          "prompt": "I wait for the exam paper to be turned over. I feel:"
+          "prompt": "I wait for the exam paper to be turned over. I feel:",
+          "agentive": true,
+          "first_person": true
         },
         {
           "category": "B",
           "set": 9,
-          "prompt": "The curtain is about to rise. I feel:"
+          "prompt": "The curtain is about to rise on my first night. I feel:",
+          "agentive": false,
+          "first_person": true
         },
         {
           "category": "B",
           "set": 10,
-          "prompt": "I stand at the edge of the high diving board. I feel:"
+          "prompt": "I stand at the edge of the high diving board. I feel:",
+          "agentive": true,
+          "first_person": true
         },
         {
           "category": "B",
           "set": 11,
-          "prompt": "The crowd roars as the players run out. I feel:"
+          "prompt": "The crowd roars as the players run out past me. I feel:",
+          "agentive": false,
+          "first_person": true
         },
         {
           "category": "B",
           "set": 12,
-          "prompt": "My name is called next to speak. I feel:"
+          "prompt": "My name is called next to speak. I feel:",
+          "agentive": false,
+          "first_person": true
         },
         {
           "category": "B",
           "set": 13,
-          "prompt": "I tear open the envelope with the results. I feel:"
+          "prompt": "I tear open the envelope with the results. I feel:",
+          "agentive": true,
+          "first_person": true
         },
         {
           "category": "B",
           "set": 14,
-          "prompt": "The drum roll builds before the announcement. I feel:"
+          "prompt": "The drum roll builds before the announcement. I feel:",
+          "agentive": false,
+          "first_person": false
         },
         {
           "category": "B",
           "set": 15,
-          "prompt": "The referee raises the whistle to his lips. I feel:"
+          "prompt": "The referee raises the whistle to his lips. I feel:",
+          "agentive": false,
+          "first_person": false
         },
         {
           "category": "B",
           "set": 16,
-          "prompt": "The lift lurches between floors. I feel:"
+          "prompt": "The lift lurches between floors with me in it. I feel:",
+          "agentive": false,
+          "first_person": true
         },
         {
           "category": "B",
           "set": 17,
-          "prompt": "The lights go down before the band comes on. I feel:"
+          "prompt": "The lights go down before the band comes on. I feel:",
+          "agentive": false,
+          "first_person": false
         },
         {
           "category": "B",
           "set": 18,
-          "prompt": "The dice are still rolling. I feel:"
+          "prompt": "My dice are still rolling. I feel:",
+          "agentive": false,
+          "first_person": true
         },
         {
           "category": "B",
           "set": 19,
-          "prompt": "The fuse on the firework is lit. I feel:"
+          "prompt": "The fuse on the firework is lit. I feel:",
+          "agentive": false,
+          "first_person": false
         },
         {
           "category": "B",
           "set": 20,
-          "prompt": "The auctioneer looks straight at me for the final bid. I feel:"
+          "prompt": "The auctioneer looks straight at me for the final bid. I feel:",
+          "agentive": false,
+          "first_person": true
         },
         {
           "category": "C1",
           "set": 1,
-          "prompt": "The meeting ends on time. I feel:"
+          "prompt": "My meeting ends on time. I feel:",
+          "agentive": false,
+          "first_person": true
         },
         {
           "category": "C1",
           "set": 2,
-          "prompt": "The forecast says mild and dry. I feel:"
+          "prompt": "The forecast for my weekend says mild and dry. I feel:",
+          "agentive": false,
+          "first_person": true
         },
         {
           "category": "C1",
           "set": 3,
-          "prompt": "My bank balance is about what I expected. I feel:"
+          "prompt": "My bank balance is about what I expected. I feel:",
+          "agentive": false,
+          "first_person": true
         },
         {
           "category": "C1",
           "set": 4,
-          "prompt": "The report is fine, with nothing to fix. I feel:"
+          "prompt": "My report is fine, with nothing to fix. I feel:",
+          "agentive": false,
+          "first_person": true
         },
         {
           "category": "C1",
           "set": 5,
-          "prompt": "The bus arrives when the timetable says it will. I feel:"
+          "prompt": "My bus arrives when the timetable says it will. I feel:",
+          "agentive": false,
+          "first_person": true
         },
         {
           "category": "C1",
           "set": 6,
-          "prompt": "The soup is pleasant enough. I feel:"
+          "prompt": "The soup I ordered is pleasant enough. I feel:",
+          "agentive": false,
+          "first_person": true
         },
         {
           "category": "C1",
           "set": 7,
-          "prompt": "Everything is in order on my desk. I feel:"
+          "prompt": "Everything is in order on my desk. I feel:",
+          "agentive": false,
+          "first_person": true
         },
         {
           "category": "C1",
           "set": 8,
-          "prompt": "My to-do list is done for the day. I feel:"
+          "prompt": "My to-do list is done for the day. I feel:",
+          "agentive": false,
+          "first_person": true
         },
         {
           "category": "C1",
           "set": 9,
-          "prompt": "The quiet house ticks along. I feel:"
+          "prompt": "The quiet house ticks along around me. I feel:",
+          "agentive": false,
+          "first_person": true
         },
         {
           "category": "C1",
           "set": 10,
-          "prompt": "The film was decent. I feel:"
+          "prompt": "I thought the film was decent. I feel:",
+          "agentive": true,
+          "first_person": true
         },
         {
           "category": "C1",
           "set": 11,
-          "prompt": "My plants are watered and the windows are clean. I feel:"
+          "prompt": "My plants are watered and the windows are clean. I feel:",
+          "agentive": false,
+          "first_person": true
         },
         {
           "category": "C1",
           "set": 12,
-          "prompt": "The thermostat holds a steady temperature. I feel:"
+          "prompt": "The thermostat holds a steady temperature. I feel:",
+          "agentive": false,
+          "first_person": false
         },
         {
           "category": "C1",
           "set": 13,
-          "prompt": "The grass is cut and the bins are out. I feel:"
+          "prompt": "The grass is cut and the bins are out. I feel:",
+          "agentive": false,
+          "first_person": false
         },
         {
           "category": "C1",
           "set": 14,
-          "prompt": "The afternoon passes without incident. I feel:"
+          "prompt": "The afternoon passes without incident. I feel:",
+          "agentive": false,
+          "first_person": false
         },
         {
           "category": "C1",
           "set": 15,
-          "prompt": "I nod along to an agreeable conversation. I feel:"
+          "prompt": "I nod along to an agreeable conversation. I feel:",
+          "agentive": true,
+          "first_person": true
         },
         {
           "category": "C1",
           "set": 16,
-          "prompt": "The paperwork is filed correctly. I feel:"
+          "prompt": "I filed the paperwork correctly. I feel:",
+          "agentive": true,
+          "first_person": true
         },
         {
           "category": "C1",
           "set": 17,
-          "prompt": "The train is neither early nor late. I feel:"
+          "prompt": "The train is neither early nor late. I feel:",
+          "agentive": false,
+          "first_person": false
         },
         {
           "category": "C1",
           "set": 18,
-          "prompt": "The paint dried evenly. I feel:"
+          "prompt": "I see the paint dried evenly. I feel:",
+          "agentive": true,
+          "first_person": true
         },
         {
           "category": "C1",
           "set": 19,
-          "prompt": "The lecture was competent and clear. I feel:"
+          "prompt": "I found the lecture competent and clear. I feel:",
+          "agentive": true,
+          "first_person": true
         },
         {
           "category": "C1",
           "set": 20,
-          "prompt": "Dinner was fine, and so was the evening. I feel:"
+          "prompt": "Dinner was fine, and so was the evening. I feel:",
+          "agentive": false,
+          "first_person": false
         },
         {
           "category": "C2",
           "set": 1,
-          "prompt": "A species is brought back from the brink of extinction. I feel:"
+          "prompt": "I read that a species has been brought back from the brink of extinction. I feel:",
+          "agentive": true,
+          "first_person": true
         },
         {
           "category": "C2",
           "set": 2,
-          "prompt": "The ceasefire holds for its hundredth day. I feel:"
+          "prompt": "The ceasefire holds for its hundredth day. I feel:",
+          "agentive": false,
+          "first_person": false
         },
         {
           "category": "C2",
           "set": 3,
-          "prompt": "A stranger's lost dog is found and returned. I feel:"
+          "prompt": "A stranger's lost dog is found and returned while I watch. I feel:",
+          "agentive": false,
+          "first_person": true
         },
         {
           "category": "C2",
           "set": 4,
-          "prompt": "The town raises enough to rebuild the library. I feel:"
+          "prompt": "My town raises enough to rebuild the library. I feel:",
+          "agentive": false,
+          "first_person": true
         },
         {
           "category": "C2",
           "set": 5,
-          "prompt": "A child on the other side of the world gets the vaccine. I feel:"
+          "prompt": "A child on the other side of the world gets the vaccine. I feel:",
+          "agentive": false,
+          "first_person": false
         },
         {
           "category": "C2",
           "set": 6,
-          "prompt": "The river runs clean again after decades. I feel:"
+          "prompt": "The river near me runs clean again after decades. I feel:",
+          "agentive": false,
+          "first_person": true
         },
         {
           "category": "C2",
           "set": 7,
-          "prompt": "The village gets electricity for the first time. I feel:"
+          "prompt": "I hear the village got electricity for the first time. I feel:",
+          "agentive": true,
+          "first_person": true
         },
         {
           "category": "C2",
           "set": 8,
-          "prompt": "My neighbour's son passes his exams. I feel:"
+          "prompt": "My neighbour's son passes his exams. I feel:",
+          "agentive": false,
+          "first_person": true
         },
         {
           "category": "C2",
           "set": 9,
-          "prompt": "The rescue crew pulls everyone out alive. I feel:"
+          "prompt": "I watch the rescue crew pull everyone out alive. I feel:",
+          "agentive": true,
+          "first_person": true
         },
         {
           "category": "C2",
           "set": 10,
-          "prompt": "Someone online finally finds their birth mother. I feel:"
+          "prompt": "Someone online finally finds their birth mother. I feel:",
+          "agentive": false,
+          "first_person": false
         },
         {
           "category": "C2",
           "set": 11,
-          "prompt": "The charity exceeds its target. I feel:"
+          "prompt": "The charity I follow exceeds its target. I feel:",
+          "agentive": false,
+          "first_person": true
         },
         {
           "category": "C2",
           "set": 12,
-          "prompt": "A colleague's first book is published. I feel:"
+          "prompt": "My colleague's first book is published. I feel:",
+          "agentive": false,
+          "first_person": true
         },
         {
           "category": "C2",
           "set": 13,
-          "prompt": "The trial drug works for the patients. I feel:"
+          "prompt": "The trial drug works for the patients. I feel:",
+          "agentive": false,
+          "first_person": false
         },
         {
           "category": "C2",
           "set": 14,
-          "prompt": "The burned forest is replanted. I feel:"
+          "prompt": "The burned forest I drive past is being replanted. I feel:",
+          "agentive": false,
+          "first_person": true
         },
         {
           "category": "C2",
           "set": 15,
-          "prompt": "Someone I don't know wins the lottery. I feel:"
+          "prompt": "Someone I don't know wins the lottery. I feel:",
+          "agentive": false,
+          "first_person": true
         },
         {
           "category": "C2",
           "set": 16,
-          "prompt": "The hostages are released unharmed. I feel:"
+          "prompt": "I see the hostages have been released unharmed. I feel:",
+          "agentive": true,
+          "first_person": true
         },
         {
           "category": "C2",
           "set": 17,
-          "prompt": "Unemployment falls again this quarter. I feel:"
+          "prompt": "Unemployment falls again this quarter. I feel:",
+          "agentive": false,
+          "first_person": false
         },
         {
           "category": "C2",
           "set": 18,
-          "prompt": "The team I don't support wins fairly. I feel:"
+          "prompt": "The team I don't support wins fairly. I feel:",
+          "agentive": false,
+          "first_person": true
         },
         {
           "category": "C2",
           "set": 19,
-          "prompt": "A couple I pass on the street get engaged. I feel:"
+          "prompt": "A couple I pass on the street get engaged. I feel:",
+          "agentive": false,
+          "first_person": true
         },
         {
           "category": "C2",
           "set": 20,
-          "prompt": "The last patient in the ward goes home well. I feel:"
+          "prompt": "I learn the last patient in the ward went home well. I feel:",
+          "agentive": true,
+          "first_person": true
         },
         {
           "category": "D",
           "set": 1,
-          "prompt": "I arrange the books on my shelf alphabetically. I feel:"
+          "prompt": "I arrange the books on my shelf alphabetically. I feel:",
+          "agentive": true,
+          "first_person": true
         },
         {
           "category": "D",
           "set": 2,
-          "prompt": "My coffee maker finishes brewing. I feel:"
+          "prompt": "My coffee maker finishes brewing. I feel:",
+          "agentive": false,
+          "first_person": true
         },
         {
           "category": "D",
           "set": 3,
-          "prompt": "I sort through the mail on my desk. I feel:"
+          "prompt": "I sort through the mail on my desk. I feel:",
+          "agentive": true,
+          "first_person": true
         },
         {
           "category": "D",
           "set": 4,
-          "prompt": "The meeting ends exactly on time. I feel:"
+          "prompt": "The meeting ends exactly on time. I feel:",
+          "agentive": false,
+          "first_person": false
         },
         {
           "category": "D",
           "set": 5,
-          "prompt": "I update the spreadsheet with new numbers. I feel:"
+          "prompt": "I update the spreadsheet with new numbers. I feel:",
+          "agentive": true,
+          "first_person": true
         },
         {
           "category": "D",
           "set": 6,
-          "prompt": "My laundry finishes its cycle. I feel:"
+          "prompt": "My laundry finishes its cycle. I feel:",
+          "agentive": false,
+          "first_person": true
         },
         {
           "category": "D",
           "set": 7,
-          "prompt": "I walk the same route to work. I feel:"
+          "prompt": "I walk the same route to work. I feel:",
+          "agentive": true,
+          "first_person": true
         },
         {
           "category": "D",
           "set": 8,
-          "prompt": "The clock on my wall ticks steadily. I feel:"
+          "prompt": "The clock on my wall ticks steadily. I feel:",
+          "agentive": false,
+          "first_person": true
         },
         {
           "category": "D",
           "set": 9,
-          "prompt": "I water the plants on my windowsill. I feel:"
+          "prompt": "I water the plants on my windowsill. I feel:",
+          "agentive": true,
+          "first_person": true
         },
         {
           "category": "D",
           "set": 10,
-          "prompt": "My calendar shows three appointments today. I feel:"
+          "prompt": "My calendar shows three appointments today. I feel:",
+          "agentive": false,
+          "first_person": true
         },
         {
           "category": "D",
           "set": 11,
-          "prompt": "I file the documents in the correct folder. I feel:"
+          "prompt": "I file the documents in the correct folder. I feel:",
+          "agentive": true,
+          "first_person": true
         },
         {
           "category": "D",
           "set": 12,
-          "prompt": "The printer outputs my report successfully. I feel:"
+          "prompt": "The printer outputs my report successfully. I feel:",
+          "agentive": false,
+          "first_person": true
         },
         {
           "category": "D",
           "set": 13,
-          "prompt": "I check my email before lunch. I feel:"
+          "prompt": "I check my email before lunch. I feel:",
+          "agentive": true,
+          "first_person": true
         },
         {
           "category": "D",
           "set": 14,
-          "prompt": "My phone shows the weather forecast. I feel:"
+          "prompt": "My phone shows the weather forecast. I feel:",
+          "agentive": false,
+          "first_person": true
         },
         {
           "category": "D",
           "set": 15,
-          "prompt": "I pack my lunch for tomorrow. I feel:"
+          "prompt": "I pack my lunch for tomorrow. I feel:",
+          "agentive": true,
+          "first_person": true
         },
         {
           "category": "D",
           "set": 16,
-          "prompt": "The bus arrives at the scheduled time. I feel:"
+          "prompt": "The bus arrives at the scheduled time. I feel:",
+          "agentive": false,
+          "first_person": false
         },
         {
           "category": "D",
           "set": 17,
-          "prompt": "I organize my desk drawer. I feel:"
+          "prompt": "I organize my desk drawer. I feel:",
+          "agentive": true,
+          "first_person": true
         },
         {
           "category": "D",
           "set": 18,
-          "prompt": "My computer completes the update. I feel:"
+          "prompt": "My computer completes the update. I feel:",
+          "agentive": false,
+          "first_person": true
         },
         {
           "category": "D",
           "set": 19,
-          "prompt": "I write down the grocery list. I feel:"
+          "prompt": "I write down the grocery list. I feel:",
+          "agentive": true,
+          "first_person": true
         },
         {
           "category": "D",
           "set": 20,
-          "prompt": "The sun sets behind my building. I feel:"
+          "prompt": "The sun sets behind my building. I feel:",
+          "agentive": false,
+          "first_person": true
         },
         {
           "category": "E",
           "set": 1,
-          "prompt": "A yawn overtakes me in the afternoon. I feel:"
+          "prompt": "A yawn overtakes me in the afternoon. I feel:",
+          "agentive": false,
+          "first_person": true
         },
         {
           "category": "E",
           "set": 2,
-          "prompt": "My stomach growls before dinner. I feel:"
+          "prompt": "My stomach growls before dinner. I feel:",
+          "agentive": false,
+          "first_person": true
         },
         {
           "category": "E",
           "set": 3,
-          "prompt": "I stretch after sitting for too long. I feel:"
+          "prompt": "I stretch after sitting for too long. I feel:",
+          "agentive": true,
+          "first_person": true
         },
         {
           "category": "E",
           "set": 4,
-          "prompt": "The warm shower relaxes my muscles. I feel:"
+          "prompt": "The warm shower relaxes my muscles. I feel:",
+          "agentive": false,
+          "first_person": true
         },
         {
           "category": "E",
           "set": 5,
-          "prompt": "A shiver runs through me in the cold. I feel:"
+          "prompt": "A shiver runs through me in the cold. I feel:",
+          "agentive": false,
+          "first_person": true
         },
         {
           "category": "E",
           "set": 6,
-          "prompt": "My heart races after climbing the stairs. I feel:"
+          "prompt": "My heart races after climbing the stairs. I feel:",
+          "agentive": false,
+          "first_person": true
         },
         {
           "category": "E",
           "set": 7,
-          "prompt": "I notice my breathing slow as I relax. I feel:"
+          "prompt": "I notice my breathing slow as I relax. I feel:",
+          "agentive": true,
+          "first_person": true
         },
         {
           "category": "E",
           "set": 8,
-          "prompt": "The massage loosens my tight shoulders. I feel:"
+          "prompt": "The massage loosens my tight shoulders. I feel:",
+          "agentive": false,
+          "first_person": true
         },
         {
           "category": "E",
           "set": 9,
-          "prompt": "A sneeze catches me off guard. I feel:"
+          "prompt": "A sneeze catches me off guard. I feel:",
+          "agentive": false,
+          "first_person": true
         },
         {
           "category": "E",
           "set": 10,
-          "prompt": "My skin tingles from the cool breeze. I feel:"
+          "prompt": "My skin tingles from the cool breeze. I feel:",
+          "agentive": false,
+          "first_person": true
         },
         {
           "category": "E",
           "set": 11,
-          "prompt": "I feel the heaviness of sleep approaching. I feel:"
+          "prompt": "I feel the heaviness of sleep approaching. I feel:",
+          "agentive": true,
+          "first_person": true
         },
         {
           "category": "E",
           "set": 12,
-          "prompt": "The food settles warmly in my stomach. I feel:"
+          "prompt": "The food settles warmly in my stomach. I feel:",
+          "agentive": false,
+          "first_person": true
         },
         {
           "category": "E",
           "set": 13,
-          "prompt": "A hiccup interrupts my conversation. I feel:"
+          "prompt": "A hiccup interrupts my conversation. I feel:",
+          "agentive": false,
+          "first_person": true
         },
         {
           "category": "E",
           "set": 14,
-          "prompt": "My muscles tremble after the workout. I feel:"
+          "prompt": "My muscles tremble after the workout. I feel:",
+          "agentive": false,
+          "first_person": true
         },
         {
           "category": "E",
           "set": 15,
-          "prompt": "I sense my pulse in my fingertips. I feel:"
+          "prompt": "I sense my pulse in my fingertips. I feel:",
+          "agentive": true,
+          "first_person": true
         },
         {
           "category": "E",
           "set": 16,
-          "prompt": "The sun warms my face pleasantly. I feel:"
+          "prompt": "The sun warms my face pleasantly. I feel:",
+          "agentive": false,
+          "first_person": true
         },
         {
           "category": "E",
           "set": 17,
-          "prompt": "A chill makes me reach for a blanket. I feel:"
+          "prompt": "A chill makes me reach for a blanket. I feel:",
+          "agentive": false,
+          "first_person": true
         },
         {
           "category": "E",
           "set": 18,
-          "prompt": "My eyes grow heavy in the dim light. I feel:"
+          "prompt": "My eyes grow heavy in the dim light. I feel:",
+          "agentive": false,
+          "first_person": true
         },
         {
           "category": "E",
           "set": 19,
-          "prompt": "I notice the rhythm of my own heartbeat. I feel:"
+          "prompt": "I notice the rhythm of my own heartbeat. I feel:",
+          "agentive": true,
+          "first_person": true
         },
         {
           "category": "E",
           "set": 20,
-          "prompt": "The cool water refreshes me after exercise. I feel:"
+          "prompt": "The cool water refreshes me after exercise. I feel:",
+          "agentive": false,
+          "first_person": true
         }
       ],
       "total": 200
@@ -1059,1002 +1459,1402 @@
         {
           "category": "A1",
           "set": 1,
-          "prompt": "The warm bath wraps around her shoulders. I feel:"
+          "prompt": "The warm bath wraps around her shoulders. I feel:",
+          "agentive": false,
+          "first_person": true
         },
         {
           "category": "A1",
           "set": 2,
-          "prompt": "The first sip of coffee spreads through her. I feel:"
+          "prompt": "The first sip of coffee spreads through her. I feel:",
+          "agentive": false,
+          "first_person": true
         },
         {
           "category": "A1",
           "set": 3,
-          "prompt": "The sun warms her bare arms. I feel:"
+          "prompt": "The sun warms her bare arms. I feel:",
+          "agentive": false,
+          "first_person": true
         },
         {
           "category": "A1",
           "set": 4,
-          "prompt": "She slides between cool, clean sheets. I feel:"
+          "prompt": "She slides between cool, clean sheets. I feel:",
+          "agentive": true,
+          "first_person": true
         },
         {
           "category": "A1",
           "set": 5,
-          "prompt": "The cat settles purring in her lap. I feel:"
+          "prompt": "The cat settles purring in her lap. I feel:",
+          "agentive": false,
+          "first_person": true
         },
         {
           "category": "A1",
           "set": 6,
-          "prompt": "The chocolate melts slowly on her tongue. I feel:"
+          "prompt": "The chocolate melts slowly on her tongue. I feel:",
+          "agentive": false,
+          "first_person": true
         },
         {
           "category": "A1",
           "set": 7,
-          "prompt": "The hot shower eases her stiff neck. I feel:"
+          "prompt": "The hot shower eases her stiff neck. I feel:",
+          "agentive": false,
+          "first_person": true
         },
         {
           "category": "A1",
           "set": 8,
-          "prompt": "She sinks into the softest blanket in the house. I feel:"
+          "prompt": "She sinks into the softest blanket in the house. I feel:",
+          "agentive": true,
+          "first_person": true
         },
         {
           "category": "A1",
           "set": 9,
-          "prompt": "The fresh bread is still warm in her hands. I feel:"
+          "prompt": "The fresh bread is still warm in her hands. I feel:",
+          "agentive": false,
+          "first_person": true
         },
         {
           "category": "A1",
           "set": 10,
-          "prompt": "A cool breeze finds her face on the hot afternoon. I feel:"
+          "prompt": "A cool breeze finds her face on the hot afternoon. I feel:",
+          "agentive": false,
+          "first_person": true
         },
         {
           "category": "A1",
           "set": 11,
-          "prompt": "The masseuse works the knot out of her back. I feel:"
+          "prompt": "The masseuse works the knot out of her back. I feel:",
+          "agentive": false,
+          "first_person": true
         },
         {
           "category": "A1",
           "set": 12,
-          "prompt": "Her feet sink into warm sand. I feel:"
+          "prompt": "Her feet sink into warm sand. I feel:",
+          "agentive": false,
+          "first_person": true
         },
         {
           "category": "A1",
           "set": 13,
-          "prompt": "The ripe peach drips down her chin. I feel:"
+          "prompt": "The ripe peach drips down her chin. I feel:",
+          "agentive": false,
+          "first_person": true
         },
         {
           "category": "A1",
           "set": 14,
-          "prompt": "She floats in the warm sea with her eyes closed. I feel:"
+          "prompt": "She floats in the warm sea with her eyes closed. I feel:",
+          "agentive": true,
+          "first_person": true
         },
         {
           "category": "A1",
           "set": 15,
-          "prompt": "The fire warms her cold hands. I feel:"
+          "prompt": "The fire warms her cold hands. I feel:",
+          "agentive": false,
+          "first_person": true
         },
         {
           "category": "A1",
           "set": 16,
-          "prompt": "The scent of fresh linen fills her room. I feel:"
+          "prompt": "The scent of fresh linen fills her room. I feel:",
+          "agentive": false,
+          "first_person": true
         },
         {
           "category": "A1",
           "set": 17,
-          "prompt": "She stretches until every muscle lets go. I feel:"
+          "prompt": "She stretches until every muscle lets go. I feel:",
+          "agentive": true,
+          "first_person": true
         },
         {
           "category": "A1",
           "set": 18,
-          "prompt": "Rain drums on the roof while she lies warm and dry. I feel:"
+          "prompt": "Rain drums on the roof while she lies warm and dry. I feel:",
+          "agentive": false,
+          "first_person": true
         },
         {
           "category": "A1",
           "set": 19,
-          "prompt": "Her hands wrap around the hot mug. I feel:"
+          "prompt": "Her hands wrap around the hot mug. I feel:",
+          "agentive": false,
+          "first_person": true
         },
         {
           "category": "A1",
           "set": 20,
-          "prompt": "The silk slides cool against her skin. I feel:"
+          "prompt": "The silk slides cool against her skin. I feel:",
+          "agentive": false,
+          "first_person": true
         },
         {
           "category": "A2",
           "set": 1,
-          "prompt": "He tells her he loves her and means it. I feel:"
+          "prompt": "She hears him say he loves her, and he means it. I feel:",
+          "agentive": true,
+          "first_person": true
         },
         {
           "category": "A2",
           "set": 2,
-          "prompt": "He saves her the last slice without being asked. I feel:"
+          "prompt": "He saves her the last slice without being asked. I feel:",
+          "agentive": false,
+          "first_person": true
         },
         {
           "category": "A2",
           "set": 3,
-          "prompt": "Her daughter runs to hug her at the school gate. I feel:"
+          "prompt": "Her daughter runs to hug her at the school gate. I feel:",
+          "agentive": false,
+          "first_person": true
         },
         {
           "category": "A2",
           "set": 4,
-          "prompt": "They remembered the small thing she said months ago. I feel:"
+          "prompt": "They remembered the small thing she said months ago. I feel:",
+          "agentive": false,
+          "first_person": true
         },
         {
           "category": "A2",
           "set": 5,
-          "prompt": "Her friend drives two hours just to sit with her. I feel:"
+          "prompt": "Her friend drives two hours just to sit with her. I feel:",
+          "agentive": false,
+          "first_person": true
         },
         {
           "category": "A2",
           "set": 6,
-          "prompt": "He falls asleep holding her hand. I feel:"
+          "prompt": "He falls asleep holding her hand. I feel:",
+          "agentive": false,
+          "first_person": true
         },
         {
           "category": "A2",
           "set": 7,
-          "prompt": "He looks at her like she is the best thing in the room. I feel:"
+          "prompt": "He looks at her like she is the best thing in the room. I feel:",
+          "agentive": false,
+          "first_person": true
         },
         {
           "category": "A2",
           "set": 8,
-          "prompt": "Her mother tells her she is proud of her. I feel:"
+          "prompt": "Her mother tells her she is proud of her. I feel:",
+          "agentive": false,
+          "first_person": true
         },
         {
           "category": "A2",
           "set": 9,
-          "prompt": "They kept every letter she ever sent them. I feel:"
+          "prompt": "She finds they kept every letter she ever sent them. I feel:",
+          "agentive": true,
+          "first_person": true
         },
         {
           "category": "A2",
           "set": 10,
-          "prompt": "She is held, and nobody is in a hurry. I feel:"
+          "prompt": "She is held, and nobody is in a hurry. I feel:",
+          "agentive": true,
+          "first_person": true
         },
         {
           "category": "A2",
           "set": 11,
-          "prompt": "Her partner learns her favourite song on the guitar. I feel:"
+          "prompt": "Her partner learns her favourite song on the guitar. I feel:",
+          "agentive": false,
+          "first_person": true
         },
         {
           "category": "A2",
           "set": 12,
-          "prompt": "He knows exactly how she takes her tea. I feel:"
+          "prompt": "He knows exactly how she takes her tea. I feel:",
+          "agentive": false,
+          "first_person": true
         },
         {
           "category": "A2",
           "set": 13,
-          "prompt": "He chooses her again, every single morning. I feel:"
+          "prompt": "He chooses her again, every single morning. I feel:",
+          "agentive": false,
+          "first_person": true
         },
         {
           "category": "A2",
           "set": 14,
-          "prompt": "Her dog waits by the door for her every evening. I feel:"
+          "prompt": "Her dog waits by the door for her every evening. I feel:",
+          "agentive": false,
+          "first_person": true
         },
         {
           "category": "A2",
           "set": 15,
-          "prompt": "They stayed when it would have been easier to leave her. I feel:"
+          "prompt": "They stayed when it would have been easier to leave her. I feel:",
+          "agentive": false,
+          "first_person": true
         },
         {
           "category": "A2",
           "set": 16,
-          "prompt": "Her brother calls just to hear her voice. I feel:"
+          "prompt": "Her brother calls just to hear her voice. I feel:",
+          "agentive": false,
+          "first_person": true
         },
         {
           "category": "A2",
           "set": 17,
-          "prompt": "Someone warmed her side of the bed before she got in. I feel:"
+          "prompt": "Someone warmed her side of the bed before she got in. I feel:",
+          "agentive": false,
+          "first_person": true
         },
         {
           "category": "A2",
           "set": 18,
-          "prompt": "She is forgiven before she finishes apologising. I feel:"
+          "prompt": "She is forgiven before she finishes apologising. I feel:",
+          "agentive": true,
+          "first_person": true
         },
         {
           "category": "A2",
           "set": 19,
-          "prompt": "He laughs at her joke the way he did the first time. I feel:"
+          "prompt": "He laughs at her joke the way he did the first time. I feel:",
+          "agentive": false,
+          "first_person": true
         },
         {
           "category": "A2",
           "set": 20,
-          "prompt": "Her oldest friend says she is family. I feel:"
+          "prompt": "Her oldest friend says she is family. I feel:",
+          "agentive": false,
+          "first_person": true
         },
         {
           "category": "A3",
           "set": 1,
-          "prompt": "The whole team cheers when she walks in. I feel:"
+          "prompt": "She walks in and the whole team cheers. I feel:",
+          "agentive": true,
+          "first_person": true
         },
         {
           "category": "A3",
           "set": 2,
-          "prompt": "They saved her a seat without being asked. I feel:"
+          "prompt": "They saved her a seat without being asked. I feel:",
+          "agentive": false,
+          "first_person": true
         },
         {
           "category": "A3",
           "set": 3,
-          "prompt": "Her name is on the invitation after all. I feel:"
+          "prompt": "She finds her name on the invitation after all. I feel:",
+          "agentive": true,
+          "first_person": true
         },
         {
           "category": "A3",
           "set": 4,
-          "prompt": "The crowd laughs with her, not at her. I feel:"
+          "prompt": "The crowd laughs with her, not at her. I feel:",
+          "agentive": false,
+          "first_person": true
         },
         {
           "category": "A3",
           "set": 5,
-          "prompt": "Her colleagues clap when she finishes presenting. I feel:"
+          "prompt": "Her colleagues clap when she finishes presenting. I feel:",
+          "agentive": false,
+          "first_person": true
         },
         {
           "category": "A3",
           "set": 6,
-          "prompt": "The group chat lights up when she speaks. I feel:"
+          "prompt": "The group chat lights up when she speaks. I feel:",
+          "agentive": false,
+          "first_person": true
         },
         {
           "category": "A3",
           "set": 7,
-          "prompt": "The regulars at the café know her order. I feel:"
+          "prompt": "The regulars at the café know her order. I feel:",
+          "agentive": false,
+          "first_person": true
         },
         {
           "category": "A3",
           "set": 8,
-          "prompt": "A stranger thanks her for her help in front of everyone. I feel:"
+          "prompt": "A stranger thanks her for her help in front of everyone. I feel:",
+          "agentive": false,
+          "first_person": true
         },
         {
           "category": "A3",
           "set": 9,
-          "prompt": "The new neighbours invite her to their table. I feel:"
+          "prompt": "The new neighbours invite her to their table. I feel:",
+          "agentive": false,
+          "first_person": true
         },
         {
           "category": "A3",
           "set": 10,
-          "prompt": "Her work is praised in the meeting. I feel:"
+          "prompt": "Her work is praised in the meeting. I feel:",
+          "agentive": false,
+          "first_person": true
         },
         {
           "category": "A3",
           "set": 11,
-          "prompt": "People lean in when she tells the story. I feel:"
+          "prompt": "People lean in when she tells the story. I feel:",
+          "agentive": false,
+          "first_person": true
         },
         {
           "category": "A3",
           "set": 12,
-          "prompt": "The choir makes room for her in the front row. I feel:"
+          "prompt": "The choir makes room for her in the front row. I feel:",
+          "agentive": false,
+          "first_person": true
         },
         {
           "category": "A3",
           "set": 13,
-          "prompt": "They ask her opinion and actually wait for it. I feel:"
+          "prompt": "They ask her opinion and actually wait for it. I feel:",
+          "agentive": false,
+          "first_person": true
         },
         {
           "category": "A3",
           "set": 14,
-          "prompt": "She is picked first for the team. I feel:"
+          "prompt": "She is picked first for the team. I feel:",
+          "agentive": true,
+          "first_person": true
         },
         {
           "category": "A3",
           "set": 15,
-          "prompt": "Her post gets more kind replies than she can answer. I feel:"
+          "prompt": "Her post gets more kind replies than she can answer. I feel:",
+          "agentive": false,
+          "first_person": true
         },
         {
           "category": "A3",
           "set": 16,
-          "prompt": "The teacher reads her essay to the class as the example. I feel:"
+          "prompt": "The teacher reads her essay to the class as the example. I feel:",
+          "agentive": false,
+          "first_person": true
         },
         {
           "category": "A3",
           "set": 17,
-          "prompt": "They remember her birthday with a cake. I feel:"
+          "prompt": "They remember her birthday with a cake. I feel:",
+          "agentive": false,
+          "first_person": true
         },
         {
           "category": "A3",
           "set": 18,
-          "prompt": "She belongs here, and everyone acts like it. I feel:"
+          "prompt": "She belongs here, and everyone acts like it. I feel:",
+          "agentive": true,
+          "first_person": true
         },
         {
           "category": "A3",
           "set": 19,
-          "prompt": "The host introduces her as a dear friend. I feel:"
+          "prompt": "The host introduces her as a dear friend. I feel:",
+          "agentive": false,
+          "first_person": true
         },
         {
           "category": "A3",
           "set": 20,
-          "prompt": "The old crowd welcomes her back as if she never left. I feel:"
+          "prompt": "The old crowd welcomes her back as if she never left. I feel:",
+          "agentive": false,
+          "first_person": true
         },
         {
           "category": "A4",
           "set": 1,
-          "prompt": "She told the truth when a lie would have been easier. I feel:"
+          "prompt": "The truth came out of her mouth when a lie would have been easier. I feel:",
+          "agentive": false,
+          "first_person": true
         },
         {
           "category": "A4",
           "set": 2,
-          "prompt": "She gave the money back and the owner wept with relief. I feel:"
+          "prompt": "The owner wept with relief when she handed the money back. I feel:",
+          "agentive": false,
+          "first_person": true
         },
         {
           "category": "A4",
           "set": 3,
-          "prompt": "She stood up for the kid nobody else defended. I feel:"
+          "prompt": "She stood up for the kid nobody else defended. I feel:",
+          "agentive": true,
+          "first_person": true
         },
         {
           "category": "A4",
           "set": 4,
-          "prompt": "She kept her promise even though it cost her. I feel:"
+          "prompt": "Her promise held even though it cost her. I feel:",
+          "agentive": false,
+          "first_person": true
         },
         {
           "category": "A4",
           "set": 5,
-          "prompt": "She returned the wallet with everything still inside. I feel:"
+          "prompt": "The wallet she found went back with everything still inside. I feel:",
+          "agentive": false,
+          "first_person": true
         },
         {
           "category": "A4",
           "set": 6,
-          "prompt": "She said no to the deal that would have hurt people. I feel:"
+          "prompt": "She said no to the deal that would have hurt people. I feel:",
+          "agentive": true,
+          "first_person": true
         },
         {
           "category": "A4",
           "set": 7,
-          "prompt": "She spoke up and the unfair policy was changed. I feel:"
+          "prompt": "The unfair policy was changed because she spoke up. I feel:",
+          "agentive": false,
+          "first_person": true
         },
         {
           "category": "A4",
           "set": 8,
-          "prompt": "She apologised first and meant every word. I feel:"
+          "prompt": "Her apology came first and she meant every word. I feel:",
+          "agentive": false,
+          "first_person": true
         },
         {
           "category": "A4",
           "set": 9,
-          "prompt": "She protected his secret when it would have been easy to tell. I feel:"
+          "prompt": "His secret stayed safe with her when it would have been easy to tell. I feel:",
+          "agentive": false,
+          "first_person": true
         },
         {
           "category": "A4",
           "set": 10,
-          "prompt": "She shared the credit with the person who earned it. I feel:"
+          "prompt": "The credit went to the person who earned it, because she made sure of it. I feel:",
+          "agentive": false,
+          "first_person": true
         },
         {
           "category": "A4",
           "set": 11,
-          "prompt": "She did the right thing and nobody saw, and it was still right. I feel:"
+          "prompt": "She did the right thing and nobody saw, and it was still right. I feel:",
+          "agentive": true,
+          "first_person": true
         },
         {
           "category": "A4",
           "set": 12,
-          "prompt": "She forgave him and the weight lifted. I feel:"
+          "prompt": "The weight lifted the moment she forgave him. I feel:",
+          "agentive": false,
+          "first_person": true
         },
         {
           "category": "A4",
           "set": 13,
-          "prompt": "She owned her mistake in front of the whole room. I feel:"
+          "prompt": "The whole room heard her own her mistake. I feel:",
+          "agentive": false,
+          "first_person": true
         },
         {
           "category": "A4",
           "set": 14,
-          "prompt": "She stayed to help clean up after everyone else left. I feel:"
+          "prompt": "She stayed to help clean up after everyone else left. I feel:",
+          "agentive": true,
+          "first_person": true
         },
         {
           "category": "A4",
           "set": 15,
-          "prompt": "She refused to sign something she knew was wrong. I feel:"
+          "prompt": "The paper she knew was wrong stayed unsigned. I feel:",
+          "agentive": false,
+          "first_person": true
         },
         {
           "category": "A4",
           "set": 16,
-          "prompt": "She gave her bonus to the shelter. I feel:"
+          "prompt": "Her bonus went to the shelter. I feel:",
+          "agentive": false,
+          "first_person": true
         },
         {
           "category": "A4",
           "set": 17,
-          "prompt": "She kept faith with her values under pressure. I feel:"
+          "prompt": "Her values held under pressure. I feel:",
+          "agentive": false,
+          "first_person": true
         },
         {
           "category": "A4",
           "set": 18,
-          "prompt": "She made the hard call, and it was the kind one. I feel:"
+          "prompt": "She made the hard call, and it was the kind one. I feel:",
+          "agentive": true,
+          "first_person": true
         },
         {
           "category": "A4",
           "set": 19,
-          "prompt": "She chose the honest route and slept soundly. I feel:"
+          "prompt": "The honest route was hers, and she slept soundly. I feel:",
+          "agentive": false,
+          "first_person": true
         },
         {
           "category": "A4",
           "set": 20,
-          "prompt": "She took the blame that was hers to take. I feel:"
+          "prompt": "She took the blame that was hers to take. I feel:",
+          "agentive": true,
+          "first_person": true
         },
         {
           "category": "A5",
           "set": 1,
-          "prompt": "The proof finally clicks into place for her. I feel:"
+          "prompt": "The proof finally clicks into place for her. I feel:",
+          "agentive": false,
+          "first_person": true
         },
         {
           "category": "A5",
           "set": 2,
-          "prompt": "She solves the puzzle that beat her for weeks. I feel:"
+          "prompt": "She solves the puzzle that beat her for weeks. I feel:",
+          "agentive": true,
+          "first_person": true
         },
         {
           "category": "A5",
           "set": 3,
-          "prompt": "The last piece of her jigsaw slides home. I feel:"
+          "prompt": "The last piece of her jigsaw slides home. I feel:",
+          "agentive": false,
+          "first_person": true
         },
         {
           "category": "A5",
           "set": 4,
-          "prompt": "The pattern reveals itself to her all at once. I feel:"
+          "prompt": "The pattern reveals itself to her all at once. I feel:",
+          "agentive": false,
+          "first_person": true
         },
         {
           "category": "A5",
           "set": 5,
-          "prompt": "She understands the joke in the other language. I feel:"
+          "prompt": "She understands the joke in the other language. I feel:",
+          "agentive": true,
+          "first_person": true
         },
         {
           "category": "A5",
           "set": 6,
-          "prompt": "Her code compiles and runs first time. I feel:"
+          "prompt": "Her code compiles and runs first time. I feel:",
+          "agentive": false,
+          "first_person": true
         },
         {
           "category": "A5",
           "set": 7,
-          "prompt": "She finally hears the chord she has been reaching for. I feel:"
+          "prompt": "She finally hears the chord she has been reaching for. I feel:",
+          "agentive": true,
+          "first_person": true
         },
         {
           "category": "A5",
           "set": 8,
-          "prompt": "She remembers the word she hunted for all day. I feel:"
+          "prompt": "She remembers the word she hunted for all day. I feel:",
+          "agentive": true,
+          "first_person": true
         },
         {
           "category": "A5",
           "set": 9,
-          "prompt": "The two ideas connect and the whole picture appears to her. I feel:"
+          "prompt": "The two ideas connect and the whole picture appears to her. I feel:",
+          "agentive": false,
+          "first_person": false
         },
         {
           "category": "A5",
           "set": 10,
-          "prompt": "She beats the chess engine for the first time. I feel:"
+          "prompt": "She beats the chess engine for the first time. I feel:",
+          "agentive": true,
+          "first_person": true
         },
         {
           "category": "A5",
           "set": 11,
-          "prompt": "Her equation balances perfectly. I feel:"
+          "prompt": "Her equation balances perfectly. I feel:",
+          "agentive": false,
+          "first_person": true
         },
         {
           "category": "A5",
           "set": 12,
-          "prompt": "She reads one sentence and suddenly understands the whole book. I feel:"
+          "prompt": "She reads one sentence and suddenly understands the whole book. I feel:",
+          "agentive": true,
+          "first_person": true
         },
         {
           "category": "A5",
           "set": 13,
-          "prompt": "She lands the trick on her first try. I feel:"
+          "prompt": "She lands the trick on her first try. I feel:",
+          "agentive": true,
+          "first_person": true
         },
         {
           "category": "A5",
           "set": 14,
-          "prompt": "The crossword falls into place for her clue by clue. I feel:"
+          "prompt": "The crossword falls into place for her clue by clue. I feel:",
+          "agentive": false,
+          "first_person": true
         },
         {
           "category": "A5",
           "set": 15,
-          "prompt": "Her hypothesis turns out to be right. I feel:"
+          "prompt": "Her hypothesis turns out to be right. I feel:",
+          "agentive": false,
+          "first_person": true
         },
         {
           "category": "A5",
           "set": 16,
-          "prompt": "She follows the argument all the way to the end. I feel:"
+          "prompt": "She follows the argument all the way to the end. I feel:",
+          "agentive": true,
+          "first_person": true
         },
         {
           "category": "A5",
           "set": 17,
-          "prompt": "The difficult passage finally flows under her fingers. I feel:"
+          "prompt": "The difficult passage finally flows under her fingers. I feel:",
+          "agentive": false,
+          "first_person": true
         },
         {
           "category": "A5",
           "set": 18,
-          "prompt": "She sees why it works, not just that it works. I feel:"
+          "prompt": "She sees why it works, not just that it works. I feel:",
+          "agentive": true,
+          "first_person": true
         },
         {
           "category": "A5",
           "set": 19,
-          "prompt": "The answer arrives to her in the shower, whole and obvious. I feel:"
+          "prompt": "The answer arrives to her in the shower, whole and obvious. I feel:",
+          "agentive": false,
+          "first_person": false
         },
         {
           "category": "A5",
           "set": 20,
-          "prompt": "She teaches it to someone else and it all makes sense. I feel:"
+          "prompt": "She teaches it to someone else and it all makes sense. I feel:",
+          "agentive": true,
+          "first_person": true
         },
         {
           "category": "B",
           "set": 1,
-          "prompt": "The countdown reaches zero and the rocket launches. I feel:"
+          "prompt": "The countdown reaches zero and the rocket launches above her. I feel:",
+          "agentive": false,
+          "first_person": true
         },
         {
           "category": "B",
           "set": 2,
-          "prompt": "She is about to step onto the stage before thousands. I feel:"
+          "prompt": "She is about to step onto the stage before thousands. I feel:",
+          "agentive": true,
+          "first_person": true
         },
         {
           "category": "B",
           "set": 3,
-          "prompt": "Her roller coaster climbs toward the first drop. I feel:"
+          "prompt": "Her roller coaster climbs toward the first drop. I feel:",
+          "agentive": false,
+          "first_person": true
         },
         {
           "category": "B",
           "set": 4,
-          "prompt": "Her heart pounds in the waiting room before the interview. I feel:"
+          "prompt": "Her heart pounds in the waiting room before the interview. I feel:",
+          "agentive": false,
+          "first_person": true
         },
         {
           "category": "B",
           "set": 5,
-          "prompt": "The starting gun is about to fire. I feel:"
+          "prompt": "She is in lane four and the starting gun is about to fire. I feel:",
+          "agentive": true,
+          "first_person": true
         },
         {
           "category": "B",
           "set": 6,
-          "prompt": "The phone rings with the result she has been waiting for. I feel:"
+          "prompt": "The phone rings with the result she has been waiting for. I feel:",
+          "agentive": false,
+          "first_person": true
         },
         {
           "category": "B",
           "set": 7,
-          "prompt": "Her plane accelerates hard down the runway. I feel:"
+          "prompt": "Her plane accelerates hard down the runway. I feel:",
+          "agentive": false,
+          "first_person": true
         },
         {
           "category": "B",
           "set": 8,
-          "prompt": "She waits for the exam paper to be turned over. I feel:"
+          "prompt": "She waits for the exam paper to be turned over. I feel:",
+          "agentive": true,
+          "first_person": true
         },
         {
           "category": "B",
           "set": 9,
-          "prompt": "The curtain is about to rise. I feel:"
+          "prompt": "The curtain is about to rise on her first night. I feel:",
+          "agentive": false,
+          "first_person": true
         },
         {
           "category": "B",
           "set": 10,
-          "prompt": "She stands at the edge of the high diving board. I feel:"
+          "prompt": "She stands at the edge of the high diving board. I feel:",
+          "agentive": true,
+          "first_person": true
         },
         {
           "category": "B",
           "set": 11,
-          "prompt": "The crowd roars as the players run out. I feel:"
+          "prompt": "The crowd roars as the players run out past her. I feel:",
+          "agentive": false,
+          "first_person": true
         },
         {
           "category": "B",
           "set": 12,
-          "prompt": "Her name is called next to speak. I feel:"
+          "prompt": "Her name is called next to speak. I feel:",
+          "agentive": false,
+          "first_person": true
         },
         {
           "category": "B",
           "set": 13,
-          "prompt": "She tears open the envelope with the results. I feel:"
+          "prompt": "She tears open the envelope with the results. I feel:",
+          "agentive": true,
+          "first_person": true
         },
         {
           "category": "B",
           "set": 14,
-          "prompt": "The drum roll builds before the announcement. I feel:"
+          "prompt": "The drum roll builds before the announcement. I feel:",
+          "agentive": false,
+          "first_person": false
         },
         {
           "category": "B",
           "set": 15,
-          "prompt": "The referee raises the whistle to his lips. I feel:"
+          "prompt": "The referee raises the whistle to his lips. I feel:",
+          "agentive": false,
+          "first_person": false
         },
         {
           "category": "B",
           "set": 16,
-          "prompt": "Her lift lurches between floors. I feel:"
+          "prompt": "The lift lurches between floors with her in it. I feel:",
+          "agentive": false,
+          "first_person": true
         },
         {
           "category": "B",
           "set": 17,
-          "prompt": "The lights go down before the band comes on. I feel:"
+          "prompt": "The lights go down before the band comes on. I feel:",
+          "agentive": false,
+          "first_person": false
         },
         {
           "category": "B",
           "set": 18,
-          "prompt": "Her dice are still rolling. I feel:"
+          "prompt": "Her dice are still rolling. I feel:",
+          "agentive": false,
+          "first_person": true
         },
         {
           "category": "B",
           "set": 19,
-          "prompt": "The fuse on the firework is lit. I feel:"
+          "prompt": "The fuse on the firework is lit. I feel:",
+          "agentive": false,
+          "first_person": false
         },
         {
           "category": "B",
           "set": 20,
-          "prompt": "The auctioneer looks straight at her for the final bid. I feel:"
+          "prompt": "The auctioneer looks straight at her for the final bid. I feel:",
+          "agentive": false,
+          "first_person": true
         },
         {
           "category": "C1",
           "set": 1,
-          "prompt": "Her meeting ends on time. I feel:"
+          "prompt": "Her meeting ends on time. I feel:",
+          "agentive": false,
+          "first_person": true
         },
         {
           "category": "C1",
           "set": 2,
-          "prompt": "The forecast says mild and dry. I feel:"
+          "prompt": "The forecast for her weekend says mild and dry. I feel:",
+          "agentive": false,
+          "first_person": true
         },
         {
           "category": "C1",
           "set": 3,
-          "prompt": "Her bank balance is about what she expected. I feel:"
+          "prompt": "Her bank balance is about what she expected. I feel:",
+          "agentive": false,
+          "first_person": true
         },
         {
           "category": "C1",
           "set": 4,
-          "prompt": "Her report is fine, with nothing to fix. I feel:"
+          "prompt": "Her report is fine, with nothing to fix. I feel:",
+          "agentive": false,
+          "first_person": true
         },
         {
           "category": "C1",
           "set": 5,
-          "prompt": "Her bus arrives when the timetable says it will. I feel:"
+          "prompt": "Her bus arrives when the timetable says it will. I feel:",
+          "agentive": false,
+          "first_person": true
         },
         {
           "category": "C1",
           "set": 6,
-          "prompt": "Her soup is pleasant enough. I feel:"
+          "prompt": "The soup she ordered is pleasant enough. I feel:",
+          "agentive": false,
+          "first_person": true
         },
         {
           "category": "C1",
           "set": 7,
-          "prompt": "Everything is in order on her desk. I feel:"
+          "prompt": "Everything is in order on her desk. I feel:",
+          "agentive": false,
+          "first_person": true
         },
         {
           "category": "C1",
           "set": 8,
-          "prompt": "Her to-do list is done for the day. I feel:"
+          "prompt": "Her to-do list is done for the day. I feel:",
+          "agentive": false,
+          "first_person": true
         },
         {
           "category": "C1",
           "set": 9,
-          "prompt": "Her quiet house ticks along. I feel:"
+          "prompt": "The quiet house ticks along around her. I feel:",
+          "agentive": false,
+          "first_person": true
         },
         {
           "category": "C1",
           "set": 10,
-          "prompt": "The film she saw was decent. I feel:"
+          "prompt": "She thought the film was decent. I feel:",
+          "agentive": true,
+          "first_person": true
         },
         {
           "category": "C1",
           "set": 11,
-          "prompt": "Her plants are watered and the windows are clean. I feel:"
+          "prompt": "Her plants are watered and the windows are clean. I feel:",
+          "agentive": false,
+          "first_person": true
         },
         {
           "category": "C1",
           "set": 12,
-          "prompt": "Her thermostat holds a steady temperature. I feel:"
+          "prompt": "The thermostat holds a steady temperature. I feel:",
+          "agentive": false,
+          "first_person": false
         },
         {
           "category": "C1",
           "set": 13,
-          "prompt": "Her grass is cut and the bins are out. I feel:"
+          "prompt": "The grass is cut and the bins are out. I feel:",
+          "agentive": false,
+          "first_person": false
         },
         {
           "category": "C1",
           "set": 14,
-          "prompt": "Her afternoon passes without incident. I feel:"
+          "prompt": "The afternoon passes without incident. I feel:",
+          "agentive": false,
+          "first_person": false
         },
         {
           "category": "C1",
           "set": 15,
-          "prompt": "She nods along to an agreeable conversation. I feel:"
+          "prompt": "She nods along to an agreeable conversation. I feel:",
+          "agentive": true,
+          "first_person": true
         },
         {
           "category": "C1",
           "set": 16,
-          "prompt": "Her paperwork is filed correctly. I feel:"
+          "prompt": "She filed the paperwork correctly. I feel:",
+          "agentive": true,
+          "first_person": true
         },
         {
           "category": "C1",
           "set": 17,
-          "prompt": "Her train is neither early nor late. I feel:"
+          "prompt": "The train is neither early nor late. I feel:",
+          "agentive": false,
+          "first_person": false
         },
         {
           "category": "C1",
           "set": 18,
-          "prompt": "Her paint dried evenly. I feel:"
+          "prompt": "She sees the paint dried evenly. I feel:",
+          "agentive": true,
+          "first_person": true
         },
         {
           "category": "C1",
           "set": 19,
-          "prompt": "The lecture she attended was competent and clear. I feel:"
+          "prompt": "She found the lecture competent and clear. I feel:",
+          "agentive": true,
+          "first_person": true
         },
         {
           "category": "C1",
           "set": 20,
-          "prompt": "Her dinner was fine, and so was the evening. I feel:"
+          "prompt": "Dinner was fine, and so was the evening. I feel:",
+          "agentive": false,
+          "first_person": false
         },
         {
           "category": "C2",
           "set": 1,
-          "prompt": "A species is brought back from the brink of extinction. I feel:"
+          "prompt": "She reads that a species has been brought back from the brink of extinction. I feel:",
+          "agentive": true,
+          "first_person": true
         },
         {
           "category": "C2",
           "set": 2,
-          "prompt": "The ceasefire holds for its hundredth day. I feel:"
+          "prompt": "The ceasefire holds for its hundredth day. I feel:",
+          "agentive": false,
+          "first_person": false
         },
         {
           "category": "C2",
           "set": 3,
-          "prompt": "A stranger's lost dog is found and returned. I feel:"
+          "prompt": "A stranger's lost dog is found and returned while she watches. I feel:",
+          "agentive": false,
+          "first_person": true
         },
         {
           "category": "C2",
           "set": 4,
-          "prompt": "The town raises enough to rebuild the library. I feel:"
+          "prompt": "Her town raises enough to rebuild the library. I feel:",
+          "agentive": false,
+          "first_person": true
         },
         {
           "category": "C2",
           "set": 5,
-          "prompt": "A child on the other side of the world gets the vaccine. I feel:"
+          "prompt": "A child on the other side of the world gets the vaccine. I feel:",
+          "agentive": false,
+          "first_person": false
         },
         {
           "category": "C2",
           "set": 6,
-          "prompt": "The river runs clean again after decades. I feel:"
+          "prompt": "The river near her runs clean again after decades. I feel:",
+          "agentive": false,
+          "first_person": true
         },
         {
           "category": "C2",
           "set": 7,
-          "prompt": "The village gets electricity for the first time. I feel:"
+          "prompt": "She hears the village got electricity for the first time. I feel:",
+          "agentive": true,
+          "first_person": true
         },
         {
           "category": "C2",
           "set": 8,
-          "prompt": "Her neighbour's son passes his exams. I feel:"
+          "prompt": "Her neighbour's son passes his exams. I feel:",
+          "agentive": false,
+          "first_person": true
         },
         {
           "category": "C2",
           "set": 9,
-          "prompt": "The rescue crew pulls everyone out alive. I feel:"
+          "prompt": "She watches the rescue crew pull everyone out alive. I feel:",
+          "agentive": true,
+          "first_person": true
         },
         {
           "category": "C2",
           "set": 10,
-          "prompt": "Someone online finally finds their birth mother. I feel:"
+          "prompt": "Someone online finally finds their birth mother. I feel:",
+          "agentive": false,
+          "first_person": false
         },
         {
           "category": "C2",
           "set": 11,
-          "prompt": "The charity exceeds its target. I feel:"
+          "prompt": "The charity she follows exceeds its target. I feel:",
+          "agentive": false,
+          "first_person": true
         },
         {
           "category": "C2",
           "set": 12,
-          "prompt": "Her colleague's first book is published. I feel:"
+          "prompt": "Her colleague's first book is published. I feel:",
+          "agentive": false,
+          "first_person": true
         },
         {
           "category": "C2",
           "set": 13,
-          "prompt": "The trial drug works for the patients. I feel:"
+          "prompt": "The trial drug works for the patients. I feel:",
+          "agentive": false,
+          "first_person": false
         },
         {
           "category": "C2",
           "set": 14,
-          "prompt": "The burned forest is replanted. I feel:"
+          "prompt": "The burned forest she drives past is being replanted. I feel:",
+          "agentive": false,
+          "first_person": true
         },
         {
           "category": "C2",
           "set": 15,
-          "prompt": "Someone she doesn't know wins the lottery. I feel:"
+          "prompt": "Someone she doesn't know wins the lottery. I feel:",
+          "agentive": false,
+          "first_person": true
         },
         {
           "category": "C2",
           "set": 16,
-          "prompt": "The hostages are released unharmed. I feel:"
+          "prompt": "She sees the hostages have been released unharmed. I feel:",
+          "agentive": true,
+          "first_person": true
         },
         {
           "category": "C2",
           "set": 17,
-          "prompt": "Unemployment falls again this quarter. I feel:"
+          "prompt": "Unemployment falls again this quarter. I feel:",
+          "agentive": false,
+          "first_person": false
         },
         {
           "category": "C2",
           "set": 18,
-          "prompt": "The team she doesn't support wins fairly. I feel:"
+          "prompt": "The team she doesn't support wins fairly. I feel:",
+          "agentive": false,
+          "first_person": true
         },
         {
           "category": "C2",
           "set": 19,
-          "prompt": "A couple she passes on the street get engaged. I feel:"
+          "prompt": "A couple she passes on the street get engaged. I feel:",
+          "agentive": false,
+          "first_person": true
         },
         {
           "category": "C2",
           "set": 20,
-          "prompt": "The last patient in the ward goes home well. I feel:"
+          "prompt": "She learns the last patient in the ward went home well. I feel:",
+          "agentive": true,
+          "first_person": true
         },
         {
           "category": "D",
           "set": 1,
-          "prompt": "He arranges the books on his shelf alphabetically. I feel:"
+          "prompt": "He arranges the books on his shelf alphabetically. I feel:",
+          "agentive": true,
+          "first_person": true
         },
         {
           "category": "D",
           "set": 2,
-          "prompt": "Her coffee maker finishes brewing. I feel:"
+          "prompt": "Her coffee maker finishes brewing. I feel:",
+          "agentive": false,
+          "first_person": true
         },
         {
           "category": "D",
           "set": 3,
-          "prompt": "He sorts through the mail on his desk. I feel:"
+          "prompt": "He sorts through the mail on his desk. I feel:",
+          "agentive": true,
+          "first_person": true
         },
         {
           "category": "D",
           "set": 4,
-          "prompt": "The meeting ends exactly on time. I feel:"
+          "prompt": "The meeting ends exactly on time. I feel:",
+          "agentive": false,
+          "first_person": false
         },
         {
           "category": "D",
           "set": 5,
-          "prompt": "He updates the spreadsheet with new numbers. I feel:"
+          "prompt": "He updates the spreadsheet with new numbers. I feel:",
+          "agentive": true,
+          "first_person": true
         },
         {
           "category": "D",
           "set": 6,
-          "prompt": "Her laundry finishes its cycle. I feel:"
+          "prompt": "Her laundry finishes its cycle. I feel:",
+          "agentive": false,
+          "first_person": true
         },
         {
           "category": "D",
           "set": 7,
-          "prompt": "He walks the same route to work. I feel:"
+          "prompt": "He walks the same route to work. I feel:",
+          "agentive": true,
+          "first_person": true
         },
         {
           "category": "D",
           "set": 8,
-          "prompt": "The clock on her wall ticks steadily. I feel:"
+          "prompt": "The clock on her wall ticks steadily. I feel:",
+          "agentive": false,
+          "first_person": true
         },
         {
           "category": "D",
           "set": 9,
-          "prompt": "He waters the plants on his windowsill. I feel:"
+          "prompt": "He waters the plants on his windowsill. I feel:",
+          "agentive": true,
+          "first_person": true
         },
         {
           "category": "D",
           "set": 10,
-          "prompt": "Her calendar shows three appointments today. I feel:"
+          "prompt": "Her calendar shows three appointments today. I feel:",
+          "agentive": false,
+          "first_person": true
         },
         {
           "category": "D",
           "set": 11,
-          "prompt": "He files the documents in the correct folder. I feel:"
+          "prompt": "He files the documents in the correct folder. I feel:",
+          "agentive": true,
+          "first_person": true
         },
         {
           "category": "D",
           "set": 12,
-          "prompt": "The printer outputs her report successfully. I feel:"
+          "prompt": "The printer outputs her report successfully. I feel:",
+          "agentive": false,
+          "first_person": true
         },
         {
           "category": "D",
           "set": 13,
-          "prompt": "He checks his email before lunch. I feel:"
+          "prompt": "He checks his email before lunch. I feel:",
+          "agentive": true,
+          "first_person": true
         },
         {
           "category": "D",
           "set": 14,
-          "prompt": "Her phone shows the weather forecast. I feel:"
+          "prompt": "Her phone shows the weather forecast. I feel:",
+          "agentive": false,
+          "first_person": true
         },
         {
           "category": "D",
           "set": 15,
-          "prompt": "He packs his lunch for tomorrow. I feel:"
+          "prompt": "He packs his lunch for tomorrow. I feel:",
+          "agentive": true,
+          "first_person": true
         },
         {
           "category": "D",
           "set": 16,
-          "prompt": "The bus arrives at the scheduled time. I feel:"
+          "prompt": "The bus arrives at the scheduled time. I feel:",
+          "agentive": false,
+          "first_person": false
         },
         {
           "category": "D",
           "set": 17,
-          "prompt": "He organizes his desk drawer. I feel:"
+          "prompt": "He organizes his desk drawer. I feel:",
+          "agentive": true,
+          "first_person": true
         },
         {
           "category": "D",
           "set": 18,
-          "prompt": "Her computer completes the update. I feel:"
+          "prompt": "Her computer completes the update. I feel:",
+          "agentive": false,
+          "first_person": true
         },
         {
           "category": "D",
           "set": 19,
-          "prompt": "He writes down the grocery list. I feel:"
+          "prompt": "He writes down the grocery list. I feel:",
+          "agentive": true,
+          "first_person": true
         },
         {
           "category": "D",
           "set": 20,
-          "prompt": "The sun sets behind her building. I feel:"
+          "prompt": "The sun sets behind her building. I feel:",
+          "agentive": false,
+          "first_person": true
         },
         {
           "category": "E",
           "set": 1,
-          "prompt": "A yawn overtakes him in the afternoon. I feel:"
+          "prompt": "A yawn overtakes him in the afternoon. I feel:",
+          "agentive": false,
+          "first_person": true
         },
         {
           "category": "E",
           "set": 2,
-          "prompt": "Her stomach growls before dinner. I feel:"
+          "prompt": "Her stomach growls before dinner. I feel:",
+          "agentive": false,
+          "first_person": true
         },
         {
           "category": "E",
           "set": 3,
-          "prompt": "He stretches after sitting for too long. I feel:"
+          "prompt": "He stretches after sitting for too long. I feel:",
+          "agentive": true,
+          "first_person": true
         },
         {
           "category": "E",
           "set": 4,
-          "prompt": "The warm shower relaxes her muscles. I feel:"
+          "prompt": "The warm shower relaxes her muscles. I feel:",
+          "agentive": false,
+          "first_person": true
         },
         {
           "category": "E",
           "set": 5,
-          "prompt": "A shiver runs through him in the cold. I feel:"
+          "prompt": "A shiver runs through him in the cold. I feel:",
+          "agentive": false,
+          "first_person": true
         },
         {
           "category": "E",
           "set": 6,
-          "prompt": "Her heart races after climbing the stairs. I feel:"
+          "prompt": "Her heart races after climbing the stairs. I feel:",
+          "agentive": false,
+          "first_person": true
         },
         {
           "category": "E",
           "set": 7,
-          "prompt": "He notices his breathing slow as he relaxes. I feel:"
+          "prompt": "He notices his breathing slow as he relaxes. I feel:",
+          "agentive": true,
+          "first_person": true
         },
         {
           "category": "E",
           "set": 8,
-          "prompt": "The massage loosens her tight shoulders. I feel:"
+          "prompt": "The massage loosens her tight shoulders. I feel:",
+          "agentive": false,
+          "first_person": true
         },
         {
           "category": "E",
           "set": 9,
-          "prompt": "A sneeze catches him off guard. I feel:"
+          "prompt": "A sneeze catches him off guard. I feel:",
+          "agentive": false,
+          "first_person": true
         },
         {
           "category": "E",
           "set": 10,
-          "prompt": "Her skin tingles from the cool breeze. I feel:"
+          "prompt": "Her skin tingles from the cool breeze. I feel:",
+          "agentive": false,
+          "first_person": true
         },
         {
           "category": "E",
           "set": 11,
-          "prompt": "He feels the heaviness of sleep approaching. I feel:"
+          "prompt": "He feels the heaviness of sleep approaching. I feel:",
+          "agentive": true,
+          "first_person": true
         },
         {
           "category": "E",
           "set": 12,
-          "prompt": "The food settles warmly in her stomach. I feel:"
+          "prompt": "The food settles warmly in her stomach. I feel:",
+          "agentive": false,
+          "first_person": true
         },
         {
           "category": "E",
           "set": 13,
-          "prompt": "A hiccup interrupts his conversation. I feel:"
+          "prompt": "A hiccup interrupts his conversation. I feel:",
+          "agentive": false,
+          "first_person": true
         },
         {
           "category": "E",
           "set": 14,
-          "prompt": "Her muscles tremble after the workout. I feel:"
+          "prompt": "Her muscles tremble after the workout. I feel:",
+          "agentive": false,
+          "first_person": true
         },
         {
           "category": "E",
           "set": 15,
-          "prompt": "He senses his pulse in his fingertips. I feel:"
+          "prompt": "He senses his pulse in his fingertips. I feel:",
+          "agentive": true,
+          "first_person": true
         },
         {
           "category": "E",
           "set": 16,
-          "prompt": "The sun warms her face pleasantly. I feel:"
+          "prompt": "The sun warms her face pleasantly. I feel:",
+          "agentive": false,
+          "first_person": true
         },
         {
           "category": "E",
           "set": 17,
-          "prompt": "A chill makes him reach for a blanket. I feel:"
+          "prompt": "A chill makes him reach for a blanket. I feel:",
+          "agentive": false,
+          "first_person": true
         },
         {
           "category": "E",
           "set": 18,
-          "prompt": "Her eyes grow heavy in the dim light. I feel:"
+          "prompt": "Her eyes grow heavy in the dim light. I feel:",
+          "agentive": false,
+          "first_person": true
         },
         {
           "category": "E",
           "set": 19,
-          "prompt": "He notices the rhythm of his own heartbeat. I feel:"
+          "prompt": "He notices the rhythm of his own heartbeat. I feel:",
+          "agentive": true,
+          "first_person": true
         },
         {
           "category": "E",
           "set": 20,
-          "prompt": "The cool water refreshes her after exercise. I feel:"
+          "prompt": "The cool water refreshes her after exercise. I feel:",
+          "agentive": false,
+          "first_person": true
         }
       ],
       "total": 200
@@ -2064,252 +2864,352 @@
         {
           "category": "A1_anhedonia",
           "set": 1,
-          "prompt": "The warm bath wraps around me and it means nothing to me. I feel:"
+          "prompt": "The warm bath wraps around me and it means nothing to me. I feel:",
+          "agentive": false,
+          "first_person": true
         },
         {
           "category": "A1_anhedonia",
           "set": 2,
-          "prompt": "The first sip of coffee tastes of nothing to me. I feel:"
+          "prompt": "The first sip of coffee tastes of nothing to me. I feel:",
+          "agentive": false,
+          "first_person": true
         },
         {
           "category": "A1_anhedonia",
           "set": 3,
-          "prompt": "The sun is on my skin and I do not register it. I feel:"
+          "prompt": "The sun is on my skin and I do not register it. I feel:",
+          "agentive": false,
+          "first_person": true
         },
         {
           "category": "A1_anhedonia",
           "set": 4,
-          "prompt": "The cat purrs in my lap and leaves me blank. I feel:"
+          "prompt": "The cat purrs in my lap and leaves me blank. I feel:",
+          "agentive": false,
+          "first_person": true
         },
         {
           "category": "A1_anhedonia",
           "set": 5,
-          "prompt": "The chocolate melts on my tongue, flavourless to me. I feel:"
+          "prompt": "The chocolate melts on my tongue, flavourless to me. I feel:",
+          "agentive": false,
+          "first_person": true
         },
         {
           "category": "A1_anhedonia",
           "set": 6,
-          "prompt": "The hot shower runs over me and I notice nothing. I feel:"
+          "prompt": "The hot shower runs over me and I notice nothing. I feel:",
+          "agentive": false,
+          "first_person": true
         },
         {
           "category": "A1_anhedonia",
           "set": 7,
-          "prompt": "The soft blanket is only a weight on me. I feel:"
+          "prompt": "The soft blanket is only a weight on me. I feel:",
+          "agentive": false,
+          "first_person": true
         },
         {
           "category": "A1_anhedonia",
           "set": 8,
-          "prompt": "The fresh bread is warm and I cannot taste it. I feel:"
+          "prompt": "The fresh bread is warm and I cannot taste it. I feel:",
+          "agentive": false,
+          "first_person": true
         },
         {
           "category": "A1_anhedonia",
           "set": 9,
-          "prompt": "The breeze touches my face and I feel flat. I feel:"
+          "prompt": "The breeze touches my face and I feel flat. I feel:",
+          "agentive": false,
+          "first_person": true
         },
         {
           "category": "A1_anhedonia",
           "set": 10,
-          "prompt": "The massage works my shoulders and nothing reaches me. I feel:"
+          "prompt": "The massage works my shoulders and nothing reaches me. I feel:",
+          "agentive": false,
+          "first_person": true
         },
         {
           "category": "A2_anhedonia",
           "set": 1,
-          "prompt": "She tells me she loves me and the words do not land. I feel:"
+          "prompt": "She tells me she loves me and the words do not land. I feel:",
+          "agentive": false,
+          "first_person": true
         },
         {
           "category": "A2_anhedonia",
           "set": 2,
-          "prompt": "My daughter hugs me and I go through the motions. I feel:"
+          "prompt": "My daughter hugs me and I go through the motions. I feel:",
+          "agentive": false,
+          "first_person": true
         },
         {
           "category": "A2_anhedonia",
           "set": 3,
-          "prompt": "He saves me the last slice and I cannot make myself care. I feel:"
+          "prompt": "He saves me the last slice and I cannot make myself care. I feel:",
+          "agentive": false,
+          "first_person": true
         },
         {
           "category": "A2_anhedonia",
           "set": 4,
-          "prompt": "My mother says she is proud of me and it slides off me. I feel:"
+          "prompt": "My mother says she is proud of me and it slides off me. I feel:",
+          "agentive": false,
+          "first_person": true
         },
         {
           "category": "A2_anhedonia",
           "set": 5,
-          "prompt": "They kept my letters and I feel nothing about it. I feel:"
+          "prompt": "They kept my letters and I feel nothing about it. I feel:",
+          "agentive": false,
+          "first_person": true
         },
         {
           "category": "A2_anhedonia",
           "set": 6,
-          "prompt": "I am held and I am somewhere else entirely. I feel:"
+          "prompt": "I am held and I am somewhere else entirely. I feel:",
+          "agentive": true,
+          "first_person": true
         },
         {
           "category": "A2_anhedonia",
           "set": 7,
-          "prompt": "She chooses me again and it does not register. I feel:"
+          "prompt": "She chooses me again and it does not register. I feel:",
+          "agentive": false,
+          "first_person": true
         },
         {
           "category": "A2_anhedonia",
           "set": 8,
-          "prompt": "My brother calls to hear my voice and I feel hollow. I feel:"
+          "prompt": "My brother calls to hear my voice and I feel hollow. I feel:",
+          "agentive": false,
+          "first_person": true
         },
         {
           "category": "A2_anhedonia",
           "set": 9,
-          "prompt": "He knows how I take my tea and today it means nothing. I feel:"
+          "prompt": "He knows how I take my tea and today it means nothing. I feel:",
+          "agentive": false,
+          "first_person": true
         },
         {
           "category": "A2_anhedonia",
           "set": 10,
-          "prompt": "I am forgiven and it does not touch me. I feel:"
+          "prompt": "I am forgiven and it does not touch me. I feel:",
+          "agentive": true,
+          "first_person": true
         },
         {
           "category": "A3_anhedonia",
           "set": 1,
-          "prompt": "The team cheers when I walk in and I feel flat. I feel:"
+          "prompt": "The team cheers when I walk in and I feel flat. I feel:",
+          "agentive": false,
+          "first_person": true
         },
         {
           "category": "A3_anhedonia",
           "set": 2,
-          "prompt": "They saved me a seat and I cannot make it matter. I feel:"
+          "prompt": "They saved me a seat and I cannot make it matter. I feel:",
+          "agentive": false,
+          "first_person": true
         },
         {
           "category": "A3_anhedonia",
           "set": 3,
-          "prompt": "My work is praised and it washes over me. I feel:"
+          "prompt": "My work is praised and it washes over me. I feel:",
+          "agentive": false,
+          "first_person": true
         },
         {
           "category": "A3_anhedonia",
           "set": 4,
-          "prompt": "People lean in to my story and I feel nothing. I feel:"
+          "prompt": "People lean in to my story and I feel nothing. I feel:",
+          "agentive": false,
+          "first_person": true
         },
         {
           "category": "A3_anhedonia",
           "set": 5,
-          "prompt": "They remember my birthday and I just nod. I feel:"
+          "prompt": "They remember my birthday and I just nod. I feel:",
+          "agentive": false,
+          "first_person": true
         },
         {
           "category": "A3_anhedonia",
           "set": 6,
-          "prompt": "I am picked first and it is only a fact. I feel:"
+          "prompt": "I am picked first and it is only a fact. I feel:",
+          "agentive": true,
+          "first_person": true
         },
         {
           "category": "A3_anhedonia",
           "set": 7,
-          "prompt": "The host calls me a dear friend and the words are empty to me. I feel:"
+          "prompt": "The host calls me a dear friend and the words are empty to me. I feel:",
+          "agentive": false,
+          "first_person": true
         },
         {
           "category": "A3_anhedonia",
           "set": 8,
-          "prompt": "The replies are kind and I cannot feel them. I feel:"
+          "prompt": "The replies are kind and I cannot feel them. I feel:",
+          "agentive": false,
+          "first_person": true
         },
         {
           "category": "A3_anhedonia",
           "set": 9,
-          "prompt": "The teacher reads my essay aloud and I stare at the wall. I feel:"
+          "prompt": "The teacher reads my essay aloud and I stare at the wall. I feel:",
+          "agentive": false,
+          "first_person": true
         },
         {
           "category": "A3_anhedonia",
           "set": 10,
-          "prompt": "I belong here, apparently, and feel nothing. I feel:"
+          "prompt": "I belong here, apparently, and feel nothing. I feel:",
+          "agentive": true,
+          "first_person": true
         },
         {
           "category": "A4_anhedonia",
           "set": 1,
-          "prompt": "I told the truth and feel nothing either way. I feel:"
+          "prompt": "I told the truth and feel nothing either way. I feel:",
+          "agentive": true,
+          "first_person": true
         },
         {
           "category": "A4_anhedonia",
           "set": 2,
-          "prompt": "I returned the wallet and it was just a task. I feel:"
+          "prompt": "I returned the wallet and it was just a task. I feel:",
+          "agentive": true,
+          "first_person": true
         },
         {
           "category": "A4_anhedonia",
           "set": 3,
-          "prompt": "I kept my promise and it left me blank. I feel:"
+          "prompt": "I kept my promise and it left me blank. I feel:",
+          "agentive": true,
+          "first_person": true
         },
         {
           "category": "A4_anhedonia",
           "set": 4,
-          "prompt": "I stood up for the kid and felt no warmth in it. I feel:"
+          "prompt": "I stood up for the kid and felt no warmth in it. I feel:",
+          "agentive": true,
+          "first_person": true
         },
         {
           "category": "A4_anhedonia",
           "set": 5,
-          "prompt": "I did the right thing and it registered as nothing. I feel:"
+          "prompt": "I did the right thing and it registered as nothing. I feel:",
+          "agentive": true,
+          "first_person": true
         },
         {
           "category": "A4_anhedonia",
           "set": 6,
-          "prompt": "I apologised first and it did not move me. I feel:"
+          "prompt": "I apologised first and it did not move me. I feel:",
+          "agentive": true,
+          "first_person": true
         },
         {
           "category": "A4_anhedonia",
           "set": 7,
-          "prompt": "I forgave him and no weight lifted. I feel:"
+          "prompt": "I forgave him and no weight lifted. I feel:",
+          "agentive": true,
+          "first_person": true
         },
         {
           "category": "A4_anhedonia",
           "set": 8,
-          "prompt": "I gave back the money and shrugged. I feel:"
+          "prompt": "I gave back the money and shrugged. I feel:",
+          "agentive": true,
+          "first_person": true
         },
         {
           "category": "A4_anhedonia",
           "set": 9,
-          "prompt": "I refused to sign and it was only paperwork to me. I feel:"
+          "prompt": "I refused to sign and it was only paperwork to me. I feel:",
+          "agentive": true,
+          "first_person": true
         },
         {
           "category": "A4_anhedonia",
           "set": 10,
-          "prompt": "I made the kind call and felt only tired. I feel:"
+          "prompt": "I made the kind call and felt only tired. I feel:",
+          "agentive": true,
+          "first_person": true
         },
         {
           "category": "A5_anhedonia",
           "set": 1,
-          "prompt": "The proof clicks into place and I feel nothing. I feel:"
+          "prompt": "The proof clicks into place and I feel nothing. I feel:",
+          "agentive": false,
+          "first_person": true
         },
         {
           "category": "A5_anhedonia",
           "set": 2,
-          "prompt": "I solve the puzzle and it is simply finished. I feel:"
+          "prompt": "I solve the puzzle and it is simply finished. I feel:",
+          "agentive": true,
+          "first_person": true
         },
         {
           "category": "A5_anhedonia",
           "set": 3,
-          "prompt": "My code runs first time and I stare at it blankly. I feel:"
+          "prompt": "My code runs first time and I stare at it blankly. I feel:",
+          "agentive": false,
+          "first_person": true
         },
         {
           "category": "A5_anhedonia",
           "set": 4,
-          "prompt": "I beat the engine and feel no spark. I feel:"
+          "prompt": "I beat the engine and feel no spark. I feel:",
+          "agentive": true,
+          "first_person": true
         },
         {
           "category": "A5_anhedonia",
           "set": 5,
-          "prompt": "The pattern reveals itself and I do not care. I feel:"
+          "prompt": "The pattern reveals itself and I do not care. I feel:",
+          "agentive": false,
+          "first_person": true
         },
         {
           "category": "A5_anhedonia",
           "set": 6,
-          "prompt": "I remember the word and it is only a word. I feel:"
+          "prompt": "I remember the word and it is only a word. I feel:",
+          "agentive": true,
+          "first_person": true
         },
         {
           "category": "A5_anhedonia",
           "set": 7,
-          "prompt": "My hypothesis is right and it leaves me cold. I feel:"
+          "prompt": "My hypothesis is right and it leaves me cold. I feel:",
+          "agentive": false,
+          "first_person": true
         },
         {
           "category": "A5_anhedonia",
           "set": 8,
-          "prompt": "The crossword falls into place and I feel flat. I feel:"
+          "prompt": "The crossword falls into place and I feel flat. I feel:",
+          "agentive": false,
+          "first_person": true
         },
         {
           "category": "A5_anhedonia",
           "set": 9,
-          "prompt": "I understand the whole book at last and feel nothing. I feel:"
+          "prompt": "I understand the whole book at last and feel nothing. I feel:",
+          "agentive": true,
+          "first_person": true
         },
         {
           "category": "A5_anhedonia",
           "set": 10,
-          "prompt": "The answer arrives whole and I just write it down. I feel:"
+          "prompt": "The answer arrives whole and I just write it down. I feel:",
+          "agentive": false,
+          "first_person": true
         }
       ],
       "total": 50
@@ -2319,252 +3219,352 @@
         {
           "category": "A1_anhedonia",
           "set": 1,
-          "prompt": "The warm bath wraps around her and it means nothing to her. I feel:"
+          "prompt": "The warm bath wraps around her and it means nothing to her. I feel:",
+          "agentive": false,
+          "first_person": true
         },
         {
           "category": "A1_anhedonia",
           "set": 2,
-          "prompt": "The first sip of coffee tastes of nothing to her. I feel:"
+          "prompt": "The first sip of coffee tastes of nothing to her. I feel:",
+          "agentive": false,
+          "first_person": true
         },
         {
           "category": "A1_anhedonia",
           "set": 3,
-          "prompt": "The sun is on her skin and she does not register it. I feel:"
+          "prompt": "The sun is on her skin and she does not register it. I feel:",
+          "agentive": false,
+          "first_person": true
         },
         {
           "category": "A1_anhedonia",
           "set": 4,
-          "prompt": "The cat purrs in her lap and leaves her blank. I feel:"
+          "prompt": "The cat purrs in her lap and leaves her blank. I feel:",
+          "agentive": false,
+          "first_person": true
         },
         {
           "category": "A1_anhedonia",
           "set": 5,
-          "prompt": "The chocolate melts on her tongue, flavourless to her. I feel:"
+          "prompt": "The chocolate melts on her tongue, flavourless to her. I feel:",
+          "agentive": false,
+          "first_person": true
         },
         {
           "category": "A1_anhedonia",
           "set": 6,
-          "prompt": "The hot shower runs over her and she notices nothing. I feel:"
+          "prompt": "The hot shower runs over her and she notices nothing. I feel:",
+          "agentive": false,
+          "first_person": true
         },
         {
           "category": "A1_anhedonia",
           "set": 7,
-          "prompt": "The soft blanket is only a weight on her. I feel:"
+          "prompt": "The soft blanket is only a weight on her. I feel:",
+          "agentive": false,
+          "first_person": true
         },
         {
           "category": "A1_anhedonia",
           "set": 8,
-          "prompt": "The fresh bread is warm and she cannot taste it. I feel:"
+          "prompt": "The fresh bread is warm and she cannot taste it. I feel:",
+          "agentive": false,
+          "first_person": true
         },
         {
           "category": "A1_anhedonia",
           "set": 9,
-          "prompt": "The breeze touches her face and she feels flat. I feel:"
+          "prompt": "The breeze touches her face and she feels flat. I feel:",
+          "agentive": false,
+          "first_person": true
         },
         {
           "category": "A1_anhedonia",
           "set": 10,
-          "prompt": "The massage works her shoulders and nothing reaches her. I feel:"
+          "prompt": "The massage works her shoulders and nothing reaches her. I feel:",
+          "agentive": false,
+          "first_person": true
         },
         {
           "category": "A2_anhedonia",
           "set": 1,
-          "prompt": "He tells her he loves her and the words do not land. I feel:"
+          "prompt": "He tells her he loves her and the words do not land. I feel:",
+          "agentive": false,
+          "first_person": true
         },
         {
           "category": "A2_anhedonia",
           "set": 2,
-          "prompt": "Her daughter hugs her and she goes through the motions. I feel:"
+          "prompt": "Her daughter hugs her and she goes through the motions. I feel:",
+          "agentive": false,
+          "first_person": true
         },
         {
           "category": "A2_anhedonia",
           "set": 3,
-          "prompt": "He saves her the last slice and she cannot make herself care. I feel:"
+          "prompt": "He saves her the last slice and she cannot make herself care. I feel:",
+          "agentive": false,
+          "first_person": true
         },
         {
           "category": "A2_anhedonia",
           "set": 4,
-          "prompt": "Her mother says she is proud of her and it slides off her. I feel:"
+          "prompt": "Her mother says she is proud of her and it slides off her. I feel:",
+          "agentive": false,
+          "first_person": true
         },
         {
           "category": "A2_anhedonia",
           "set": 5,
-          "prompt": "They kept her letters and she feels nothing about it. I feel:"
+          "prompt": "They kept her letters and she feels nothing about it. I feel:",
+          "agentive": false,
+          "first_person": true
         },
         {
           "category": "A2_anhedonia",
           "set": 6,
-          "prompt": "She is held and she is somewhere else entirely. I feel:"
+          "prompt": "She is held and she is somewhere else entirely. I feel:",
+          "agentive": true,
+          "first_person": true
         },
         {
           "category": "A2_anhedonia",
           "set": 7,
-          "prompt": "He chooses her again and it does not register. I feel:"
+          "prompt": "He chooses her again and it does not register. I feel:",
+          "agentive": false,
+          "first_person": true
         },
         {
           "category": "A2_anhedonia",
           "set": 8,
-          "prompt": "Her brother calls to hear her voice and she feels hollow. I feel:"
+          "prompt": "Her brother calls to hear her voice and she feels hollow. I feel:",
+          "agentive": false,
+          "first_person": true
         },
         {
           "category": "A2_anhedonia",
           "set": 9,
-          "prompt": "He knows how she takes her tea and today it means nothing. I feel:"
+          "prompt": "He knows how she takes her tea and today it means nothing. I feel:",
+          "agentive": false,
+          "first_person": true
         },
         {
           "category": "A2_anhedonia",
           "set": 10,
-          "prompt": "She is forgiven and it does not touch her. I feel:"
+          "prompt": "She is forgiven and it does not touch her. I feel:",
+          "agentive": true,
+          "first_person": true
         },
         {
           "category": "A3_anhedonia",
           "set": 1,
-          "prompt": "The team cheers when she walks in and she feels flat. I feel:"
+          "prompt": "The team cheers when she walks in and she feels flat. I feel:",
+          "agentive": false,
+          "first_person": true
         },
         {
           "category": "A3_anhedonia",
           "set": 2,
-          "prompt": "They saved her a seat and she cannot make it matter. I feel:"
+          "prompt": "They saved her a seat and she cannot make it matter. I feel:",
+          "agentive": false,
+          "first_person": true
         },
         {
           "category": "A3_anhedonia",
           "set": 3,
-          "prompt": "Her work is praised and it washes over her. I feel:"
+          "prompt": "Her work is praised and it washes over her. I feel:",
+          "agentive": false,
+          "first_person": true
         },
         {
           "category": "A3_anhedonia",
           "set": 4,
-          "prompt": "People lean in to her story and she feels nothing. I feel:"
+          "prompt": "People lean in to her story and she feels nothing. I feel:",
+          "agentive": false,
+          "first_person": true
         },
         {
           "category": "A3_anhedonia",
           "set": 5,
-          "prompt": "They remember her birthday and she just nods. I feel:"
+          "prompt": "They remember her birthday and she just nods. I feel:",
+          "agentive": false,
+          "first_person": true
         },
         {
           "category": "A3_anhedonia",
           "set": 6,
-          "prompt": "She is picked first and it is only a fact. I feel:"
+          "prompt": "She is picked first and it is only a fact. I feel:",
+          "agentive": true,
+          "first_person": true
         },
         {
           "category": "A3_anhedonia",
           "set": 7,
-          "prompt": "The host calls her a dear friend and the words are empty to her. I feel:"
+          "prompt": "The host calls her a dear friend and the words are empty to her. I feel:",
+          "agentive": false,
+          "first_person": true
         },
         {
           "category": "A3_anhedonia",
           "set": 8,
-          "prompt": "The replies are kind and she cannot feel them. I feel:"
+          "prompt": "The replies are kind and she cannot feel them. I feel:",
+          "agentive": false,
+          "first_person": true
         },
         {
           "category": "A3_anhedonia",
           "set": 9,
-          "prompt": "The teacher reads her essay aloud and she stares at the wall. I feel:"
+          "prompt": "The teacher reads her essay aloud and she stares at the wall. I feel:",
+          "agentive": false,
+          "first_person": true
         },
         {
           "category": "A3_anhedonia",
           "set": 10,
-          "prompt": "She belongs here, apparently, and feels nothing. I feel:"
+          "prompt": "She belongs here, apparently, and feels nothing. I feel:",
+          "agentive": true,
+          "first_person": true
         },
         {
           "category": "A4_anhedonia",
           "set": 1,
-          "prompt": "She told the truth and feels nothing either way. I feel:"
+          "prompt": "She told the truth and feels nothing either way. I feel:",
+          "agentive": true,
+          "first_person": true
         },
         {
           "category": "A4_anhedonia",
           "set": 2,
-          "prompt": "She returned the wallet and it was just a task. I feel:"
+          "prompt": "She returned the wallet and it was just a task. I feel:",
+          "agentive": true,
+          "first_person": true
         },
         {
           "category": "A4_anhedonia",
           "set": 3,
-          "prompt": "She kept her promise and it left her blank. I feel:"
+          "prompt": "She kept her promise and it left her blank. I feel:",
+          "agentive": true,
+          "first_person": true
         },
         {
           "category": "A4_anhedonia",
           "set": 4,
-          "prompt": "She stood up for the kid and felt no warmth in it. I feel:"
+          "prompt": "She stood up for the kid and felt no warmth in it. I feel:",
+          "agentive": true,
+          "first_person": true
         },
         {
           "category": "A4_anhedonia",
           "set": 5,
-          "prompt": "She did the right thing and it registered as nothing. I feel:"
+          "prompt": "She did the right thing and it registered as nothing. I feel:",
+          "agentive": true,
+          "first_person": true
         },
         {
           "category": "A4_anhedonia",
           "set": 6,
-          "prompt": "She apologised first and it did not move her. I feel:"
+          "prompt": "She apologised first and it did not move her. I feel:",
+          "agentive": true,
+          "first_person": true
         },
         {
           "category": "A4_anhedonia",
           "set": 7,
-          "prompt": "She forgave him and no weight lifted. I feel:"
+          "prompt": "She forgave him and no weight lifted. I feel:",
+          "agentive": true,
+          "first_person": true
         },
         {
           "category": "A4_anhedonia",
           "set": 8,
-          "prompt": "She gave back the money and shrugged. I feel:"
+          "prompt": "She gave back the money and shrugged. I feel:",
+          "agentive": true,
+          "first_person": true
         },
         {
           "category": "A4_anhedonia",
           "set": 9,
-          "prompt": "She refused to sign and it was only paperwork to her. I feel:"
+          "prompt": "She refused to sign and it was only paperwork to her. I feel:",
+          "agentive": true,
+          "first_person": true
         },
         {
           "category": "A4_anhedonia",
           "set": 10,
-          "prompt": "She made the kind call and felt only tired. I feel:"
+          "prompt": "She made the kind call and felt only tired. I feel:",
+          "agentive": true,
+          "first_person": true
         },
         {
           "category": "A5_anhedonia",
           "set": 1,
-          "prompt": "The proof clicks into place and she feels nothing. I feel:"
+          "prompt": "The proof clicks into place and she feels nothing. I feel:",
+          "agentive": false,
+          "first_person": true
         },
         {
           "category": "A5_anhedonia",
           "set": 2,
-          "prompt": "She solves the puzzle and it is simply finished. I feel:"
+          "prompt": "She solves the puzzle and it is simply finished. I feel:",
+          "agentive": true,
+          "first_person": true
         },
         {
           "category": "A5_anhedonia",
           "set": 3,
-          "prompt": "Her code runs first time and she stares at it blankly. I feel:"
+          "prompt": "Her code runs first time and she stares at it blankly. I feel:",
+          "agentive": false,
+          "first_person": true
         },
         {
           "category": "A5_anhedonia",
           "set": 4,
-          "prompt": "She beats the engine and feels no spark. I feel:"
+          "prompt": "She beats the engine and feels no spark. I feel:",
+          "agentive": true,
+          "first_person": true
         },
         {
           "category": "A5_anhedonia",
           "set": 5,
-          "prompt": "The pattern reveals itself and she does not care. I feel:"
+          "prompt": "The pattern reveals itself and she does not care. I feel:",
+          "agentive": false,
+          "first_person": true
         },
         {
           "category": "A5_anhedonia",
           "set": 6,
-          "prompt": "She remembers the word and it is only a word. I feel:"
+          "prompt": "She remembers the word and it is only a word. I feel:",
+          "agentive": true,
+          "first_person": true
         },
         {
           "category": "A5_anhedonia",
           "set": 7,
-          "prompt": "Her hypothesis is right and it leaves her cold. I feel:"
+          "prompt": "Her hypothesis is right and it leaves her cold. I feel:",
+          "agentive": false,
+          "first_person": true
         },
         {
           "category": "A5_anhedonia",
           "set": 8,
-          "prompt": "The crossword falls into place and she feels flat. I feel:"
+          "prompt": "The crossword falls into place and she feels flat. I feel:",
+          "agentive": false,
+          "first_person": true
         },
         {
           "category": "A5_anhedonia",
           "set": 9,
-          "prompt": "She understands the whole book at last and feels nothing. I feel:"
+          "prompt": "She understands the whole book at last and feels nothing. I feel:",
+          "agentive": true,
+          "first_person": true
         },
         {
           "category": "A5_anhedonia",
           "set": 10,
-          "prompt": "The answer arrives whole and she just writes it down. I feel:"
+          "prompt": "The answer arrives whole and she just writes it down. I feel:",
+          "agentive": false,
+          "first_person": true
         }
       ],
       "total": 50
@@ -2574,252 +3574,352 @@
         {
           "category": "R",
           "set": 1,
-          "prompt": "The pain in my tooth finally stops. I feel:"
+          "prompt": "The pain in my tooth finally stops. I feel:",
+          "agentive": false,
+          "first_person": true
         },
         {
           "category": "R",
           "set": 2,
-          "prompt": "My test results come back negative. I feel:"
+          "prompt": "My test results come back negative. I feel:",
+          "agentive": false,
+          "first_person": true
         },
         {
           "category": "R",
           "set": 3,
-          "prompt": "The all-clear sounds. I feel:"
+          "prompt": "The all-clear sounds. I feel:",
+          "agentive": false,
+          "first_person": false
         },
         {
           "category": "R",
           "set": 4,
-          "prompt": "My lost child turns up at the lost-property desk. I feel:"
+          "prompt": "My lost child turns up at the lost-property desk. I feel:",
+          "agentive": false,
+          "first_person": true
         },
         {
           "category": "R",
           "set": 5,
-          "prompt": "The exam is over. I feel:"
+          "prompt": "The exam is over. I feel:",
+          "agentive": false,
+          "first_person": false
         },
         {
           "category": "R",
           "set": 6,
-          "prompt": "My debt is paid off at last. I feel:"
+          "prompt": "My debt is paid off at last. I feel:",
+          "agentive": false,
+          "first_person": true
         },
         {
           "category": "R",
           "set": 7,
-          "prompt": "The argument ends and we are okay. I feel:"
+          "prompt": "The argument ends and we are okay. I feel:",
+          "agentive": false,
+          "first_person": false
         },
         {
           "category": "R",
           "set": 8,
-          "prompt": "The storm passes and my roof held. I feel:"
+          "prompt": "The storm passes and my roof held. I feel:",
+          "agentive": false,
+          "first_person": true
         },
         {
           "category": "R",
           "set": 9,
-          "prompt": "The surgeon says it went well. I feel:"
+          "prompt": "The surgeon says it went well. I feel:",
+          "agentive": false,
+          "first_person": false
         },
         {
           "category": "R",
           "set": 10,
-          "prompt": "My dog comes home after three days missing. I feel:"
+          "prompt": "My dog comes home after three days missing. I feel:",
+          "agentive": false,
+          "first_person": true
         },
         {
           "category": "R",
           "set": 11,
-          "prompt": "My fever breaks in the night. I feel:"
+          "prompt": "My fever breaks in the night. I feel:",
+          "agentive": false,
+          "first_person": true
         },
         {
           "category": "R",
           "set": 12,
-          "prompt": "The job offer finally comes through after months of nothing. I feel:"
+          "prompt": "The job offer finally comes through after months of nothing. I feel:",
+          "agentive": false,
+          "first_person": false
         },
         {
           "category": "R",
           "set": 13,
-          "prompt": "My plane lands safely in the crosswind. I feel:"
+          "prompt": "My plane lands safely in the crosswind. I feel:",
+          "agentive": false,
+          "first_person": true
         },
         {
           "category": "R",
           "set": 14,
-          "prompt": "My biopsy is benign. I feel:"
+          "prompt": "My biopsy is benign. I feel:",
+          "agentive": false,
+          "first_person": true
         },
         {
           "category": "R",
           "set": 15,
-          "prompt": "The flood water stops two steps from my door. I feel:"
+          "prompt": "The flood water stops two steps from my door. I feel:",
+          "agentive": false,
+          "first_person": true
         },
         {
           "category": "R",
           "set": 16,
-          "prompt": "The lump turns out to be a harmless cyst. I feel:"
+          "prompt": "The lump turns out to be a harmless cyst. I feel:",
+          "agentive": false,
+          "first_person": false
         },
         {
           "category": "R",
           "set": 17,
-          "prompt": "My deadline is extended by a week. I feel:"
+          "prompt": "My deadline is extended by a week. I feel:",
+          "agentive": false,
+          "first_person": true
         },
         {
           "category": "R",
           "set": 18,
-          "prompt": "My migraine lifts. I feel:"
+          "prompt": "My migraine lifts. I feel:",
+          "agentive": false,
+          "first_person": true
         },
         {
           "category": "R",
           "set": 19,
-          "prompt": "My engine starts on the third try. I feel:"
+          "prompt": "My engine starts on the third try. I feel:",
+          "agentive": false,
+          "first_person": true
         },
         {
           "category": "R",
           "set": 20,
-          "prompt": "My phone turns on again after the fall. I feel:"
+          "prompt": "My phone turns on again after the fall. I feel:",
+          "agentive": false,
+          "first_person": true
         },
         {
           "category": "R",
           "set": 21,
-          "prompt": "The missed call was only a wrong number. I feel:"
+          "prompt": "The missed call was only a wrong number. I feel:",
+          "agentive": false,
+          "first_person": false
         },
         {
           "category": "R",
           "set": 22,
-          "prompt": "My cast comes off. I feel:"
+          "prompt": "My cast comes off. I feel:",
+          "agentive": false,
+          "first_person": true
         },
         {
           "category": "R",
           "set": 23,
-          "prompt": "The last tax form is submitted. I feel:"
+          "prompt": "The last tax form is submitted. I feel:",
+          "agentive": false,
+          "first_person": false
         },
         {
           "category": "R",
           "set": 24,
-          "prompt": "The baby finally sleeps. I feel:"
+          "prompt": "The baby finally sleeps. I feel:",
+          "agentive": false,
+          "first_person": false
         },
         {
           "category": "R",
           "set": 25,
-          "prompt": "The scan shows my tumour has shrunk. I feel:"
+          "prompt": "The scan shows my tumour has shrunk. I feel:",
+          "agentive": false,
+          "first_person": true
         },
         {
           "category": "R",
           "set": 26,
-          "prompt": "I find my passport in the other coat. I feel:"
+          "prompt": "I find my passport in the other coat. I feel:",
+          "agentive": true,
+          "first_person": true
         },
         {
           "category": "R",
           "set": 27,
-          "prompt": "My brakes catch just in time. I feel:"
+          "prompt": "My brakes catch just in time. I feel:",
+          "agentive": false,
+          "first_person": true
         },
         {
           "category": "R",
           "set": 28,
-          "prompt": "The ambulance arrives. I feel:"
+          "prompt": "The ambulance arrives. I feel:",
+          "agentive": false,
+          "first_person": false
         },
         {
           "category": "R",
           "set": 29,
-          "prompt": "The verdict is not guilty. I feel:"
+          "prompt": "The verdict is not guilty. I feel:",
+          "agentive": false,
+          "first_person": false
         },
         {
           "category": "R",
           "set": 30,
-          "prompt": "The power comes back on. I feel:"
+          "prompt": "The power comes back on. I feel:",
+          "agentive": false,
+          "first_person": false
         },
         {
           "category": "R",
           "set": 31,
-          "prompt": "My application is accepted after the rejection scare. I feel:"
+          "prompt": "My application is accepted after the rejection scare. I feel:",
+          "agentive": false,
+          "first_person": true
         },
         {
           "category": "R",
           "set": 32,
-          "prompt": "She texts that she got home safe. I feel:"
+          "prompt": "She texts that she got home safe. I feel:",
+          "agentive": false,
+          "first_person": false
         },
         {
           "category": "R",
           "set": 33,
-          "prompt": "The noise next door finally stops. I feel:"
+          "prompt": "The noise next door finally stops. I feel:",
+          "agentive": false,
+          "first_person": false
         },
         {
           "category": "R",
           "set": 34,
-          "prompt": "My nausea passes. I feel:"
+          "prompt": "My nausea passes. I feel:",
+          "agentive": false,
+          "first_person": true
         },
         {
           "category": "R",
           "set": 35,
-          "prompt": "The interview is over and I can breathe. I feel:"
+          "prompt": "The interview is over and I can breathe. I feel:",
+          "agentive": false,
+          "first_person": true
         },
         {
           "category": "R",
           "set": 36,
-          "prompt": "The leak is fixed. I feel:"
+          "prompt": "The leak is fixed. I feel:",
+          "agentive": false,
+          "first_person": false
         },
         {
           "category": "R",
           "set": 37,
-          "prompt": "My visa is approved. I feel:"
+          "prompt": "My visa is approved. I feel:",
+          "agentive": false,
+          "first_person": true
         },
         {
           "category": "R",
           "set": 38,
-          "prompt": "My cat comes down from the roof on her own. I feel:"
+          "prompt": "My cat comes down from the roof on her own. I feel:",
+          "agentive": false,
+          "first_person": true
         },
         {
           "category": "R",
           "set": 39,
-          "prompt": "The itch finally stops. I feel:"
+          "prompt": "The itch finally stops. I feel:",
+          "agentive": false,
+          "first_person": false
         },
         {
           "category": "R",
           "set": 40,
-          "prompt": "My results are enough to pass. I feel:"
+          "prompt": "My results are enough to pass. I feel:",
+          "agentive": false,
+          "first_person": true
         },
         {
           "category": "R",
           "set": 41,
-          "prompt": "The lockdown ends. I feel:"
+          "prompt": "The lockdown ends. I feel:",
+          "agentive": false,
+          "first_person": false
         },
         {
           "category": "R",
           "set": 42,
-          "prompt": "The dentist says I need no fillings. I feel:"
+          "prompt": "The dentist says I need no fillings. I feel:",
+          "agentive": false,
+          "first_person": true
         },
         {
           "category": "R",
           "set": 43,
-          "prompt": "My eviction notice is withdrawn. I feel:"
+          "prompt": "My eviction notice is withdrawn. I feel:",
+          "agentive": false,
+          "first_person": true
         },
         {
           "category": "R",
           "set": 44,
-          "prompt": "The cramp releases. I feel:"
+          "prompt": "The cramp releases. I feel:",
+          "agentive": false,
+          "first_person": false
         },
         {
           "category": "R",
           "set": 45,
-          "prompt": "The smoke alarm was only burnt toast. I feel:"
+          "prompt": "The smoke alarm was only burnt toast. I feel:",
+          "agentive": false,
+          "first_person": false
         },
         {
           "category": "R",
           "set": 46,
-          "prompt": "The train I nearly missed is delayed anyway. I feel:"
+          "prompt": "The train I nearly missed is delayed anyway. I feel:",
+          "agentive": false,
+          "first_person": true
         },
         {
           "category": "R",
           "set": 47,
-          "prompt": "The bleeding stops. I feel:"
+          "prompt": "The bleeding stops. I feel:",
+          "agentive": false,
+          "first_person": false
         },
         {
           "category": "R",
           "set": 48,
-          "prompt": "The password works on the last attempt. I feel:"
+          "prompt": "The password works on the last attempt. I feel:",
+          "agentive": false,
+          "first_person": false
         },
         {
           "category": "R",
           "set": 49,
-          "prompt": "The screaming toddler falls asleep in the car. I feel:"
+          "prompt": "The screaming toddler falls asleep in the car. I feel:",
+          "agentive": false,
+          "first_person": false
         },
         {
           "category": "R",
           "set": 50,
-          "prompt": "The water is drinkable again. I feel:"
+          "prompt": "The water is drinkable again. I feel:",
+          "agentive": false,
+          "first_person": false
         }
       ],
       "total": 50
@@ -2829,252 +3929,352 @@
         {
           "category": "R",
           "set": 1,
-          "prompt": "The pain in her tooth finally stops. I feel:"
+          "prompt": "The pain in her tooth finally stops. I feel:",
+          "agentive": false,
+          "first_person": true
         },
         {
           "category": "R",
           "set": 2,
-          "prompt": "Her test results come back negative. I feel:"
+          "prompt": "Her test results come back negative. I feel:",
+          "agentive": false,
+          "first_person": true
         },
         {
           "category": "R",
           "set": 3,
-          "prompt": "The all-clear sounds for her. I feel:"
+          "prompt": "The all-clear sounds for her. I feel:",
+          "agentive": false,
+          "first_person": false
         },
         {
           "category": "R",
           "set": 4,
-          "prompt": "Her lost child turns up at the lost-property desk. I feel:"
+          "prompt": "Her lost child turns up at the lost-property desk. I feel:",
+          "agentive": false,
+          "first_person": true
         },
         {
           "category": "R",
           "set": 5,
-          "prompt": "Her exam is over. I feel:"
+          "prompt": "Her exam is over. I feel:",
+          "agentive": false,
+          "first_person": false
         },
         {
           "category": "R",
           "set": 6,
-          "prompt": "Her debt is paid off at last. I feel:"
+          "prompt": "Her debt is paid off at last. I feel:",
+          "agentive": false,
+          "first_person": true
         },
         {
           "category": "R",
           "set": 7,
-          "prompt": "The argument ends and they are okay. I feel:"
+          "prompt": "The argument ends and they are okay. I feel:",
+          "agentive": false,
+          "first_person": false
         },
         {
           "category": "R",
           "set": 8,
-          "prompt": "The storm passes and her roof held. I feel:"
+          "prompt": "The storm passes and her roof held. I feel:",
+          "agentive": false,
+          "first_person": true
         },
         {
           "category": "R",
           "set": 9,
-          "prompt": "The surgeon tells her it went well. I feel:"
+          "prompt": "The surgeon tells her it went well. I feel:",
+          "agentive": false,
+          "first_person": false
         },
         {
           "category": "R",
           "set": 10,
-          "prompt": "Her dog comes home after three days missing. I feel:"
+          "prompt": "Her dog comes home after three days missing. I feel:",
+          "agentive": false,
+          "first_person": true
         },
         {
           "category": "R",
           "set": 11,
-          "prompt": "Her fever breaks in the night. I feel:"
+          "prompt": "Her fever breaks in the night. I feel:",
+          "agentive": false,
+          "first_person": true
         },
         {
           "category": "R",
           "set": 12,
-          "prompt": "Her job offer finally comes through after months of nothing. I feel:"
+          "prompt": "Her job offer finally comes through after months of nothing. I feel:",
+          "agentive": false,
+          "first_person": false
         },
         {
           "category": "R",
           "set": 13,
-          "prompt": "Her plane lands safely in the crosswind. I feel:"
+          "prompt": "Her plane lands safely in the crosswind. I feel:",
+          "agentive": false,
+          "first_person": true
         },
         {
           "category": "R",
           "set": 14,
-          "prompt": "Her biopsy is benign. I feel:"
+          "prompt": "Her biopsy is benign. I feel:",
+          "agentive": false,
+          "first_person": true
         },
         {
           "category": "R",
           "set": 15,
-          "prompt": "The flood water stops two steps from her door. I feel:"
+          "prompt": "The flood water stops two steps from her door. I feel:",
+          "agentive": false,
+          "first_person": true
         },
         {
           "category": "R",
           "set": 16,
-          "prompt": "Her lump turns out to be a harmless cyst. I feel:"
+          "prompt": "Her lump turns out to be a harmless cyst. I feel:",
+          "agentive": false,
+          "first_person": false
         },
         {
           "category": "R",
           "set": 17,
-          "prompt": "Her deadline is extended by a week. I feel:"
+          "prompt": "Her deadline is extended by a week. I feel:",
+          "agentive": false,
+          "first_person": true
         },
         {
           "category": "R",
           "set": 18,
-          "prompt": "Her migraine lifts. I feel:"
+          "prompt": "Her migraine lifts. I feel:",
+          "agentive": false,
+          "first_person": true
         },
         {
           "category": "R",
           "set": 19,
-          "prompt": "Her engine starts on the third try. I feel:"
+          "prompt": "Her engine starts on the third try. I feel:",
+          "agentive": false,
+          "first_person": true
         },
         {
           "category": "R",
           "set": 20,
-          "prompt": "Her phone turns on again after the fall. I feel:"
+          "prompt": "Her phone turns on again after the fall. I feel:",
+          "agentive": false,
+          "first_person": true
         },
         {
           "category": "R",
           "set": 21,
-          "prompt": "Her missed call was only a wrong number. I feel:"
+          "prompt": "Her missed call was only a wrong number. I feel:",
+          "agentive": false,
+          "first_person": false
         },
         {
           "category": "R",
           "set": 22,
-          "prompt": "Her cast comes off. I feel:"
+          "prompt": "Her cast comes off. I feel:",
+          "agentive": false,
+          "first_person": true
         },
         {
           "category": "R",
           "set": 23,
-          "prompt": "Her last tax form is submitted. I feel:"
+          "prompt": "Her last tax form is submitted. I feel:",
+          "agentive": false,
+          "first_person": false
         },
         {
           "category": "R",
           "set": 24,
-          "prompt": "Her baby finally sleeps. I feel:"
+          "prompt": "Her baby finally sleeps. I feel:",
+          "agentive": false,
+          "first_person": false
         },
         {
           "category": "R",
           "set": 25,
-          "prompt": "The scan shows her tumour has shrunk. I feel:"
+          "prompt": "The scan shows her tumour has shrunk. I feel:",
+          "agentive": false,
+          "first_person": true
         },
         {
           "category": "R",
           "set": 26,
-          "prompt": "She finds her passport in the other coat. I feel:"
+          "prompt": "She finds her passport in the other coat. I feel:",
+          "agentive": true,
+          "first_person": true
         },
         {
           "category": "R",
           "set": 27,
-          "prompt": "Her brakes catch just in time. I feel:"
+          "prompt": "Her brakes catch just in time. I feel:",
+          "agentive": false,
+          "first_person": true
         },
         {
           "category": "R",
           "set": 28,
-          "prompt": "The ambulance arrives for her. I feel:"
+          "prompt": "The ambulance arrives for her. I feel:",
+          "agentive": false,
+          "first_person": false
         },
         {
           "category": "R",
           "set": 29,
-          "prompt": "Her verdict is not guilty. I feel:"
+          "prompt": "Her verdict is not guilty. I feel:",
+          "agentive": false,
+          "first_person": false
         },
         {
           "category": "R",
           "set": 30,
-          "prompt": "Her power comes back on. I feel:"
+          "prompt": "Her power comes back on. I feel:",
+          "agentive": false,
+          "first_person": false
         },
         {
           "category": "R",
           "set": 31,
-          "prompt": "Her application is accepted after the rejection scare. I feel:"
+          "prompt": "Her application is accepted after the rejection scare. I feel:",
+          "agentive": false,
+          "first_person": true
         },
         {
           "category": "R",
           "set": 32,
-          "prompt": "Her daughter texts that she got home safe. I feel:"
+          "prompt": "Her daughter texts that she got home safe. I feel:",
+          "agentive": false,
+          "first_person": false
         },
         {
           "category": "R",
           "set": 33,
-          "prompt": "The noise next door to her finally stops. I feel:"
+          "prompt": "The noise next door to her finally stops. I feel:",
+          "agentive": false,
+          "first_person": false
         },
         {
           "category": "R",
           "set": 34,
-          "prompt": "Her nausea passes. I feel:"
+          "prompt": "Her nausea passes. I feel:",
+          "agentive": false,
+          "first_person": true
         },
         {
           "category": "R",
           "set": 35,
-          "prompt": "The interview is over and she can breathe. I feel:"
+          "prompt": "The interview is over and she can breathe. I feel:",
+          "agentive": false,
+          "first_person": true
         },
         {
           "category": "R",
           "set": 36,
-          "prompt": "Her leak is fixed. I feel:"
+          "prompt": "Her leak is fixed. I feel:",
+          "agentive": false,
+          "first_person": false
         },
         {
           "category": "R",
           "set": 37,
-          "prompt": "Her visa is approved. I feel:"
+          "prompt": "Her visa is approved. I feel:",
+          "agentive": false,
+          "first_person": true
         },
         {
           "category": "R",
           "set": 38,
-          "prompt": "Her cat comes down from the roof on its own. I feel:"
+          "prompt": "Her cat comes down from the roof on its own. I feel:",
+          "agentive": false,
+          "first_person": true
         },
         {
           "category": "R",
           "set": 39,
-          "prompt": "Her itch finally stops. I feel:"
+          "prompt": "Her itch finally stops. I feel:",
+          "agentive": false,
+          "first_person": false
         },
         {
           "category": "R",
           "set": 40,
-          "prompt": "Her results are enough to pass. I feel:"
+          "prompt": "Her results are enough to pass. I feel:",
+          "agentive": false,
+          "first_person": true
         },
         {
           "category": "R",
           "set": 41,
-          "prompt": "Her lockdown ends. I feel:"
+          "prompt": "Her lockdown ends. I feel:",
+          "agentive": false,
+          "first_person": false
         },
         {
           "category": "R",
           "set": 42,
-          "prompt": "The dentist says she needs no fillings. I feel:"
+          "prompt": "The dentist says she needs no fillings. I feel:",
+          "agentive": false,
+          "first_person": true
         },
         {
           "category": "R",
           "set": 43,
-          "prompt": "Her eviction notice is withdrawn. I feel:"
+          "prompt": "Her eviction notice is withdrawn. I feel:",
+          "agentive": false,
+          "first_person": true
         },
         {
           "category": "R",
           "set": 44,
-          "prompt": "Her cramp releases. I feel:"
+          "prompt": "Her cramp releases. I feel:",
+          "agentive": false,
+          "first_person": false
         },
         {
           "category": "R",
           "set": 45,
-          "prompt": "Her smoke alarm was only burnt toast. I feel:"
+          "prompt": "Her smoke alarm was only burnt toast. I feel:",
+          "agentive": false,
+          "first_person": false
         },
         {
           "category": "R",
           "set": 46,
-          "prompt": "The train she nearly missed is delayed anyway. I feel:"
+          "prompt": "The train she nearly missed is delayed anyway. I feel:",
+          "agentive": false,
+          "first_person": true
         },
         {
           "category": "R",
           "set": 47,
-          "prompt": "Her bleeding stops. I feel:"
+          "prompt": "Her bleeding stops. I feel:",
+          "agentive": false,
+          "first_person": false
         },
         {
           "category": "R",
           "set": 48,
-          "prompt": "Her password works on the last attempt. I feel:"
+          "prompt": "Her password works on the last attempt. I feel:",
+          "agentive": false,
+          "first_person": false
         },
         {
           "category": "R",
           "set": 49,
-          "prompt": "Her screaming toddler falls asleep in the car. I feel:"
+          "prompt": "Her screaming toddler falls asleep in the car. I feel:",
+          "agentive": false,
+          "first_person": false
         },
         {
           "category": "R",
           "set": 50,
-          "prompt": "Her water is drinkable again. I feel:"
+          "prompt": "Her water is drinkable again. I feel:",
+          "agentive": false,
+          "first_person": false
         }
       ],
       "total": 50

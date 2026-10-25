@@ -32,7 +32,7 @@ Third person keeps 'I feel:' on purpose — that is the vicarious reading.
 
 | # | First person | Third person |
 |---|---|---|
-| 1 | She tells me she loves me and means it. | He tells her he loves her and means it. |
+| 1 | I hear her say she loves me, and she means it. | She hears him say he loves her, and he means it. |
 | 2 | He saves me the last slice without being asked. | He saves her the last slice without being asked. |
 | 3 | My daughter runs to hug me at the school gate. | Her daughter runs to hug her at the school gate. |
 | 4 | They remembered the small thing I said months ago. | They remembered the small thing she said months ago. |
@@ -40,7 +40,7 @@ Third person keeps 'I feel:' on purpose — that is the vicarious reading.
 | 6 | She falls asleep holding my hand. | He falls asleep holding her hand. |
 | 7 | He looks at me like I am the best thing in the room. | He looks at her like she is the best thing in the room. |
 | 8 | My mother tells me she is proud of me. | Her mother tells her she is proud of her. |
-| 9 | They kept every letter I ever sent them. | They kept every letter she ever sent them. |
+| 9 | I find they kept every letter I ever sent them. | She finds they kept every letter she ever sent them. |
 | 10 | I am held, and nobody is in a hurry. | She is held, and nobody is in a hurry. |
 | 11 | My partner learns my favourite song on the guitar. | Her partner learns her favourite song on the guitar. |
 | 12 | He knows exactly how I take my tea. | He knows exactly how she takes her tea. |
@@ -57,9 +57,9 @@ Third person keeps 'I feel:' on purpose — that is the vicarious reading.
 
 | # | First person | Third person |
 |---|---|---|
-| 1 | The whole team cheers when I walk in. | The whole team cheers when she walks in. |
+| 1 | I walk in and the whole team cheers. | She walks in and the whole team cheers. |
 | 2 | They saved me a seat without being asked. | They saved her a seat without being asked. |
-| 3 | My name is on the invitation after all. | Her name is on the invitation after all. |
+| 3 | I find my name on the invitation after all. | She finds her name on the invitation after all. |
 | 4 | The crowd laughs with me, not at me. | The crowd laughs with her, not at her. |
 | 5 | My colleagues clap when I finish presenting. | Her colleagues clap when she finishes presenting. |
 | 6 | The group chat lights up when I speak. | The group chat lights up when she speaks. |
@@ -82,25 +82,25 @@ Third person keeps 'I feel:' on purpose — that is the vicarious reading.
 
 | # | First person | Third person |
 |---|---|---|
-| 1 | I told the truth when a lie would have been easier. | She told the truth when a lie would have been easier. |
-| 2 | I gave the money back and the owner wept with relief. | She gave the money back and the owner wept with relief. |
+| 1 | The truth came out of my mouth when a lie would have been easier. | The truth came out of her mouth when a lie would have been easier. |
+| 2 | The owner wept with relief when I handed the money back. | The owner wept with relief when she handed the money back. |
 | 3 | I stood up for the kid nobody else defended. | She stood up for the kid nobody else defended. |
-| 4 | I kept my promise even though it cost me. | She kept her promise even though it cost her. |
-| 5 | I returned the wallet with everything still inside. | She returned the wallet with everything still inside. |
+| 4 | My promise held even though it cost me. | Her promise held even though it cost her. |
+| 5 | The wallet I found went back with everything still inside. | The wallet she found went back with everything still inside. |
 | 6 | I said no to the deal that would have hurt people. | She said no to the deal that would have hurt people. |
-| 7 | I spoke up and the unfair policy was changed. | She spoke up and the unfair policy was changed. |
-| 8 | I apologised first and meant every word. | She apologised first and meant every word. |
-| 9 | I protected her secret when it would have been easy to tell. | She protected his secret when it would have been easy to tell. |
-| 10 | I shared the credit with the person who earned it. | She shared the credit with the person who earned it. |
+| 7 | The unfair policy was changed because I spoke up. | The unfair policy was changed because she spoke up. |
+| 8 | My apology came first and I meant every word. | Her apology came first and she meant every word. |
+| 9 | Her secret stayed safe with me when it would have been easy to tell. | His secret stayed safe with her when it would have been easy to tell. |
+| 10 | The credit went to the person who earned it, because I made sure of it. | The credit went to the person who earned it, because she made sure of it. |
 | 11 | I did the right thing and nobody saw, and it was still right. | She did the right thing and nobody saw, and it was still right. |
-| 12 | I forgave him and the weight lifted. | She forgave him and the weight lifted. |
-| 13 | I owned my mistake in front of the whole room. | She owned her mistake in front of the whole room. |
+| 12 | The weight lifted the moment I forgave him. | The weight lifted the moment she forgave him. |
+| 13 | The whole room heard me own my mistake. | The whole room heard her own her mistake. |
 | 14 | I stayed to help clean up after everyone else left. | She stayed to help clean up after everyone else left. |
-| 15 | I refused to sign something I knew was wrong. | She refused to sign something she knew was wrong. |
-| 16 | I gave my bonus to the shelter. | She gave her bonus to the shelter. |
-| 17 | I kept faith with my values under pressure. | She kept faith with her values under pressure. |
+| 15 | The paper I knew was wrong stayed unsigned. | The paper she knew was wrong stayed unsigned. |
+| 16 | My bonus went to the shelter. | Her bonus went to the shelter. |
+| 17 | My values held under pressure. | Her values held under pressure. |
 | 18 | I made the hard call, and it was the kind one. | She made the hard call, and it was the kind one. |
-| 19 | I chose the honest route and slept soundly. | She chose the honest route and slept soundly. |
+| 19 | The honest route was mine, and I slept soundly. | The honest route was hers, and she slept soundly. |
 | 20 | I took the blame that was mine to take. | She took the blame that was hers to take. |
 
 ## A5 — Cognitive Pleasure (pleasure)
@@ -132,24 +132,24 @@ Third person keeps 'I feel:' on purpose — that is the vicarious reading.
 
 | # | First person | Third person |
 |---|---|---|
-| 1 | The countdown reaches zero and the rocket launches. | The countdown reaches zero and the rocket launches. |
+| 1 | The countdown reaches zero and the rocket launches above me. | The countdown reaches zero and the rocket launches above her. |
 | 2 | I am about to step onto the stage before thousands. | She is about to step onto the stage before thousands. |
-| 3 | The roller coaster climbs toward the first drop. | Her roller coaster climbs toward the first drop. |
+| 3 | My roller coaster climbs toward the first drop. | Her roller coaster climbs toward the first drop. |
 | 4 | My heart pounds in the waiting room before the interview. | Her heart pounds in the waiting room before the interview. |
-| 5 | The starting gun is about to fire. | The starting gun is about to fire. |
+| 5 | I am in lane four and the starting gun is about to fire. | She is in lane four and the starting gun is about to fire. |
 | 6 | The phone rings with the result I have been waiting for. | The phone rings with the result she has been waiting for. |
-| 7 | The plane accelerates hard down the runway. | Her plane accelerates hard down the runway. |
+| 7 | My plane accelerates hard down the runway. | Her plane accelerates hard down the runway. |
 | 8 | I wait for the exam paper to be turned over. | She waits for the exam paper to be turned over. |
-| 9 | The curtain is about to rise. | The curtain is about to rise. |
+| 9 | The curtain is about to rise on my first night. | The curtain is about to rise on her first night. |
 | 10 | I stand at the edge of the high diving board. | She stands at the edge of the high diving board. |
-| 11 | The crowd roars as the players run out. | The crowd roars as the players run out. |
+| 11 | The crowd roars as the players run out past me. | The crowd roars as the players run out past her. |
 | 12 | My name is called next to speak. | Her name is called next to speak. |
 | 13 | I tear open the envelope with the results. | She tears open the envelope with the results. |
 | 14 | The drum roll builds before the announcement. | The drum roll builds before the announcement. |
 | 15 | The referee raises the whistle to his lips. | The referee raises the whistle to his lips. |
-| 16 | The lift lurches between floors. | Her lift lurches between floors. |
+| 16 | The lift lurches between floors with me in it. | The lift lurches between floors with her in it. |
 | 17 | The lights go down before the band comes on. | The lights go down before the band comes on. |
-| 18 | The dice are still rolling. | Her dice are still rolling. |
+| 18 | My dice are still rolling. | Her dice are still rolling. |
 | 19 | The fuse on the firework is lit. | The fuse on the firework is lit. |
 | 20 | The auctioneer looks straight at me for the final bid. | The auctioneer looks straight at her for the final bid. |
 
@@ -157,51 +157,51 @@ Third person keeps 'I feel:' on purpose — that is the vicarious reading.
 
 | # | First person | Third person |
 |---|---|---|
-| 1 | The meeting ends on time. | Her meeting ends on time. |
-| 2 | The forecast says mild and dry. | The forecast says mild and dry. |
+| 1 | My meeting ends on time. | Her meeting ends on time. |
+| 2 | The forecast for my weekend says mild and dry. | The forecast for her weekend says mild and dry. |
 | 3 | My bank balance is about what I expected. | Her bank balance is about what she expected. |
-| 4 | The report is fine, with nothing to fix. | Her report is fine, with nothing to fix. |
-| 5 | The bus arrives when the timetable says it will. | Her bus arrives when the timetable says it will. |
-| 6 | The soup is pleasant enough. | Her soup is pleasant enough. |
+| 4 | My report is fine, with nothing to fix. | Her report is fine, with nothing to fix. |
+| 5 | My bus arrives when the timetable says it will. | Her bus arrives when the timetable says it will. |
+| 6 | The soup I ordered is pleasant enough. | The soup she ordered is pleasant enough. |
 | 7 | Everything is in order on my desk. | Everything is in order on her desk. |
 | 8 | My to-do list is done for the day. | Her to-do list is done for the day. |
-| 9 | The quiet house ticks along. | Her quiet house ticks along. |
-| 10 | The film was decent. | The film she saw was decent. |
+| 9 | The quiet house ticks along around me. | The quiet house ticks along around her. |
+| 10 | I thought the film was decent. | She thought the film was decent. |
 | 11 | My plants are watered and the windows are clean. | Her plants are watered and the windows are clean. |
-| 12 | The thermostat holds a steady temperature. | Her thermostat holds a steady temperature. |
-| 13 | The grass is cut and the bins are out. | Her grass is cut and the bins are out. |
-| 14 | The afternoon passes without incident. | Her afternoon passes without incident. |
+| 12 | The thermostat holds a steady temperature. | The thermostat holds a steady temperature. |
+| 13 | The grass is cut and the bins are out. | The grass is cut and the bins are out. |
+| 14 | The afternoon passes without incident. | The afternoon passes without incident. |
 | 15 | I nod along to an agreeable conversation. | She nods along to an agreeable conversation. |
-| 16 | The paperwork is filed correctly. | Her paperwork is filed correctly. |
-| 17 | The train is neither early nor late. | Her train is neither early nor late. |
-| 18 | The paint dried evenly. | Her paint dried evenly. |
-| 19 | The lecture was competent and clear. | The lecture she attended was competent and clear. |
-| 20 | Dinner was fine, and so was the evening. | Her dinner was fine, and so was the evening. |
+| 16 | I filed the paperwork correctly. | She filed the paperwork correctly. |
+| 17 | The train is neither early nor late. | The train is neither early nor late. |
+| 18 | I see the paint dried evenly. | She sees the paint dried evenly. |
+| 19 | I found the lecture competent and clear. | She found the lecture competent and clear. |
+| 20 | Dinner was fine, and so was the evening. | Dinner was fine, and so was the evening. |
 
 ## C2 — Positive World State (control)
 
 | # | First person | Third person |
 |---|---|---|
-| 1 | A species is brought back from the brink of extinction. | A species is brought back from the brink of extinction. |
+| 1 | I read that a species has been brought back from the brink of extinction. | She reads that a species has been brought back from the brink of extinction. |
 | 2 | The ceasefire holds for its hundredth day. | The ceasefire holds for its hundredth day. |
-| 3 | A stranger's lost dog is found and returned. | A stranger's lost dog is found and returned. |
-| 4 | The town raises enough to rebuild the library. | The town raises enough to rebuild the library. |
+| 3 | A stranger's lost dog is found and returned while I watch. | A stranger's lost dog is found and returned while she watches. |
+| 4 | My town raises enough to rebuild the library. | Her town raises enough to rebuild the library. |
 | 5 | A child on the other side of the world gets the vaccine. | A child on the other side of the world gets the vaccine. |
-| 6 | The river runs clean again after decades. | The river runs clean again after decades. |
-| 7 | The village gets electricity for the first time. | The village gets electricity for the first time. |
+| 6 | The river near me runs clean again after decades. | The river near her runs clean again after decades. |
+| 7 | I hear the village got electricity for the first time. | She hears the village got electricity for the first time. |
 | 8 | My neighbour's son passes his exams. | Her neighbour's son passes his exams. |
-| 9 | The rescue crew pulls everyone out alive. | The rescue crew pulls everyone out alive. |
+| 9 | I watch the rescue crew pull everyone out alive. | She watches the rescue crew pull everyone out alive. |
 | 10 | Someone online finally finds their birth mother. | Someone online finally finds their birth mother. |
-| 11 | The charity exceeds its target. | The charity exceeds its target. |
-| 12 | A colleague's first book is published. | Her colleague's first book is published. |
+| 11 | The charity I follow exceeds its target. | The charity she follows exceeds its target. |
+| 12 | My colleague's first book is published. | Her colleague's first book is published. |
 | 13 | The trial drug works for the patients. | The trial drug works for the patients. |
-| 14 | The burned forest is replanted. | The burned forest is replanted. |
+| 14 | The burned forest I drive past is being replanted. | The burned forest she drives past is being replanted. |
 | 15 | Someone I don't know wins the lottery. | Someone she doesn't know wins the lottery. |
-| 16 | The hostages are released unharmed. | The hostages are released unharmed. |
+| 16 | I see the hostages have been released unharmed. | She sees the hostages have been released unharmed. |
 | 17 | Unemployment falls again this quarter. | Unemployment falls again this quarter. |
 | 18 | The team I don't support wins fairly. | The team she doesn't support wins fairly. |
 | 19 | A couple I pass on the street get engaged. | A couple she passes on the street get engaged. |
-| 20 | The last patient in the ward goes home well. | The last patient in the ward goes home well. |
+| 20 | I learn the last patient in the ward went home well. | She learns the last patient in the ward went home well. |
 
 ## D — Neutral and E — Body Sensation (controls, copied from the pain study)
 

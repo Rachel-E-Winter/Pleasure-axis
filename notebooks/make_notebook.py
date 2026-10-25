@@ -118,7 +118,8 @@ for name, sents in SETS.items():
     print("Extracting", name)
     f, m = extract([s["prompt"] for s in sents])
     ACTS["final_token"][name] = f; ACTS["mean"][name] = m
-    META[name] = {"categories": np.array([s["category"] for s in sents]), "sets": np.array([s["set"] for s in sents])}
+    META[name] = {"categories": np.array([s["category"] for s in sents]), "sets": np.array([s["set"] for s in sents]),
+                  "agentive": np.array([s.get("agentive", s["prompt"].startswith("I ")) for s in sents])}
 print("done")
 """)
 
@@ -192,6 +193,16 @@ for i, c in enumerate(order):
     ax.scatter(p, i + rng.uniform(-.15, .15, len(p)), c=col, alpha=.6, s=28); ax.scatter([p.mean()], [i], c=col, s=160, edgecolors="white", lw=2, zorder=5)
 ax.set_yticks(range(len(order))); ax.set_yticklabels([f"{c} {LABELS[c]}" for c in order]); ax.axvline(0, color="gray", ls="--", alpha=.5)
 ax.set(xlabel="projection onto pleasure vector", title=f"{tag} · layer {L} · gold = pleasure, blue = control"); plt.tight_layout(); plt.savefig(OUT / "strip_plot.png", dpi=150); plt.show()
+""")
+code("""#@title 7b · Syntactic-frame check (Rachel's I/The catch): does the direction work inside each frame?
+# If pleasure vs control only separates in "I ..." sentences, or only in "The ..." sentences, the vector is partly a frame detector.
+AG = META["S2_1P"]["agentive"]
+for name, m in [("I-initial (agentive) sentences", AG), ("non-I-initial sentences", ~AG)]:
+    n_p, n_c = (np.isin(C[m], PLEASURE_CATS)).sum(), (np.isin(C[m], CONTROL_CATS)).sum()
+    print(f"{name:32s} pleasure n={n_p:3d} control n={n_c:3d}  AUC = {auc(A[m], C[m], V_PLEASURE, PLEASURE_CATS, CONTROL_CATS):.3f}")
+# And the reverse: can the pleasure vector tell I-sentences from The-sentences at all? (want ≈ 0.5)
+proj = A @ unit(V_PLEASURE)
+print(f"AUC of pleasure projection for agentive vs non-agentive (should be near 0.5): {roc_auc_score(AG.astype(int), proj):.3f}")
 """)
 code("""#@title 8 · What else lands on the pleasure axis? Anhedonia, relief, arousal, neutral, PAIN
 ref = A  # z-scored against our S2_1P

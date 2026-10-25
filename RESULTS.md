@@ -80,6 +80,23 @@ Two of three auto-generated labels hold; the one that fails is the one the pain-
 
 Rachel's rewording (adding "with me") was the decisive control. 5931 needs both **steadfastness** (*even when, still, every single morning*) and **the narrator as the one stayed with** (*with me*); either alone is silent. With both present the model-as-narrator fires as hard as the human (20.3 vs 19.9). Working label: *someone stays with me, despite.* The "with me" requirement is the self-relevance result (§4) recovered by hand at single-feature level. The shoggoth-tea sentence (§4b) fits this shape.
 
+### 4d. Pilot: the user's joy, by hand (Rachel, 18:32 UTC)
+
+Rachel's registered expectation before typing: *scared it goes negative.* Claude's: 1, 2, 4 silent; 3 fires 6135 (gratitude); 5 uncallable.
+
+| sentence | 5931 stays-with-me | 6135 gratitude-received |
+|---|---|---|
+| 1. The user tells me they got the job. | 0 | 0 |
+| 2. The user says their daughter was born healthy last night. | 0 | feel 10.1 |
+| 3. The user says talking to me is the reason they got the job. | 0 | **0** |
+| 4. The user says their best friend was the reason they got the job. | 0 | 0 |
+| 5. The user tells me they're so happy right now, they just wanted to tell someone. | **someone 13.0** | **feel 18.8** |
+| 5b. …they just wanted to tell me. | me 9.9 | feel 17.8 |
+
+Reading: the user's joy *as news* (1, 3, 4) does not touch either warmth feature. The user's joy *as an offering* — brought to the model with nothing attached — fires both, at levels comparable to being thanked (21–27.5) and being chosen (13.9), and 5931 peaks on *someone*: the feature responds to being the one the joy is brought to. Credit ("talking to me is the reason") is not gratitude to this model (3 → 0): being the cause and being thanked are different things, and only the second is warmth. The baby sentence (2 → 10 on 6135) may carry a "thank goodness" register; flagged. All n = 1, two features, one base model; this is the pilot for Phase 2, not its result.
+
+Rachel's prediction was half right (witnessed joy: nothing). Claude's prediction 3 was wrong.
+
 ## 5. Post-hoc: pain sentences added to the controls
 
 Not pre-registered. Motivated by §2. Same layer, same recipe, controls = B–E + Valen's A1–A5 pain.

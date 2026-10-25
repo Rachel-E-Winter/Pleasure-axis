@@ -75,7 +75,7 @@ for k, v in SETS.items(): print(f"{k:22s} {len(v)}")
 """)
 code("""#@title 2 · Config
 MODEL_ID = "google/gemma-2-2b"  #@param ["google/gemma-2-2b", "google/gemma-2-2b-it"]
-DTYPE = torch.float32   # fits a T4 for 2B and avoids bf16 emulation / fp16 overflow
+DTYPE = torch.bfloat16  # as in the source paper; fp32 needed two 10GB copies in RAM and crashed free Colab
 N_FOLDS, SEED, DENOISE_VARIANCE = 5, 42, 0.5
 
 PLEASURE_CATS = ["A1","A2","A3","A4","A5"]
@@ -92,10 +92,12 @@ md("## 2 · Load model and extract activations (§3.2)")
 code("""#@title 3 · Load Gemma 2 2B into TransformerLens
 from transformer_lens import HookedTransformer
 from transformers import AutoModelForCausalLM, AutoTokenizer
-hf_model = AutoModelForCausalLM.from_pretrained(MODEL_ID, torch_dtype=DTYPE, low_cpu_mem_usage=True)
+# Load straight onto the GPU in bf16 so Colab's 12.7 GB of system RAM never holds a full copy.
+hf_model = AutoModelForCausalLM.from_pretrained(MODEL_ID, torch_dtype=DTYPE, device_map="cuda", low_cpu_mem_usage=True)
 hf_tok = AutoTokenizer.from_pretrained(MODEL_ID)
 model = HookedTransformer.from_pretrained_no_processing(MODEL_ID, hf_model=hf_model, tokenizer=hf_tok, device="cuda", dtype=DTYPE)
 del hf_model; gc.collect(); torch.cuda.empty_cache()
+print(f"GPU memory in use: {torch.cuda.memory_allocated()/1e9:.1f} GB")
 N_LAYERS, D_MODEL = model.cfg.n_layers, model.cfg.d_model
 LAYERS = list(range(N_LAYERS))
 print(f"{N_LAYERS} layers, d_model={D_MODEL}")

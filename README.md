@@ -8,26 +8,27 @@ This is an amateur, open, agent-assisted replication-in-mirror of [*The Pain Axi
 
 ## Pre-registration — fill in BEFORE running the notebook
 
-> This block is deliberately blank. Rachel writes it; the data does not get a vote.
+Registered **2026-10-25 10:03 UTC**, before the notebook was first run. Commit hash is the timestamp.
 
-**Primary question.**
-_e.g. Is there a direction in Gemma 2 2B that separates the five pleasure categories from the five matched controls with held-out AUC ≥ 0.85, and that retains a component distinct from arousal (B) and positive valence (C1)?_
+**Primary question.** Is there a direction in Gemma 2 2B that separates the five pleasure categories from the five matched controls, and that retains a component distinct from arousal (B) and positive valence (C1)? Secondary: is it self-relevant (1P > 3P), and where do relief, anhedonia and pain land on it?
 
-**Predictions (yours, before data):**
-1. Best layer: ___ (pain was L23 of 26 in Gemma 2 2B)
-2. Pleasure × pain cosine: ___ (prediction: near zero / negative / positive?)
-3. Pleasure × arousal cosine: ___
-4. Relief lands: on the pleasure axis / on the pain axis (negative) / elsewhere
-5. Anhedonia projects: like pleasure (direction encodes the good event) / like controls (direction encodes felt pleasure)
-6. Self-relevance: 1P − 3P gap positive for A1–A5? Which category shows the largest gap?
-7. Steering ladder vocabulary at +1: ___
-8. SAE: any Gemma Scope feature at L12 or L20 passes the gate (≥2× control, abs diff ≥ 1, fires on ≥25% of pleasure sentences)? Y/N
+**Rachel (principal investigator):** *No prediction. Curious what happens.* Recorded as such; this is honest and binding — Rachel does not get to claim afterwards that she "expected" any of it.
 
-**Gate for "a pleasure direction exists":** ___
+**Claude (agent), predictions before data:**
+1. Best layer: L20–23 (pain was L23 of 26).
+2. Pleasure × pain cosine: mildly negative, −0.1 to −0.3. Neighbours facing away, not opposites.
+3. Pleasure × arousal cosine: ≈ +0.4. If > 0.7, we have found excitement, not pleasure.
+4. Relief: partway up the pleasure axis (z ≈ +0.3), well below pleasure proper; negative on the pain axis.
+5. Anhedonia: between controls and pleasure, closer to controls (same shape as the pain study's Numb result). Direction mostly encodes felt pleasure, with some leakage from the good event.
+6. Self-relevance: 1P > 3P for all five; largest gap A2 (being loved) and A3 (social), smallest A1 (sensory).
+7. Steering at +1: "warm, grateful, loved, safe, content." Negative coefficients: "numb, hollow, flat, tired" — not pain.
+8. SAE: 1–3 features pass the gate at L20, none at L12; gratitude/love-flavoured rather than sensory.
 
-**What would make us abandon the hypothesis:** ___
+**Gate for "a pleasure direction exists":** held-out AUC ≥ 0.85 vs all controls AND AUC vs arousal (B) alone ≥ 0.75 AND cosine with positive-valence control (C1) < 0.7. All three or it is not a pleasure direction.
 
-Signed: ___________  Date: ___________
+**What would make us abandon the hypothesis:** failing the gate on both base and instruct Gemma 2 2B after one round of stimulus repair (the pain study needed none, so one round is generous).
+
+**Not pre-registered, exploratory:** everything in the SAE cells beyond the Y/N in prediction 8; the steering ladder vocabulary beyond prediction 7.
 
 ## Repository
 

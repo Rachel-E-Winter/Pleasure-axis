@@ -51,7 +51,7 @@ The repo is private, so two secrets are needed in Colab (🔑 icon, left sidebar
 - `HF_TOKEN` — Hugging Face read token (Gemma licence must be accepted on HF for `google/gemma-2-2b`).
 - `GH_TOKEN` — GitHub fine-grained personal access token, scoped to this repository only, permission *Contents: Read*.
 
-1. In Colab: File → Open notebook → GitHub tab → tick *Include private repos* → authorise → choose `pleasure-axis` → `notebooks/01_pleasure_axis_gemma2_2b.ipynb`.
+1. In Colab: File → Open notebook → GitHub tab → tick *Include private repos* → authorise → choose `Pleasrure-axis` → `notebooks/01_pleasure_axis_gemma2_2b.ipynb`.
 2. Runtime → Change runtime type → **T4 GPU**.
 3. Runtime → Run all. ~25–40 min. A zip of results downloads at the end; attach it to the chat and the agent commits it to `results/` and writes up.
 

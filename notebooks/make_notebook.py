@@ -47,7 +47,7 @@ print(torch.cuda.get_device_name(0), f"{torch.cuda.get_device_properties(0).tota
 
 md("## 1 · Repo, datasets, config")
 code("""#@title 1 · Clone repo and load datasets
-REPO = "Rachel-E-Winter/pleasure-axis"  #@param {type:"string"}
+REPO = "Rachel-E-Winter/Pleasrure-axis"  #@param {type:"string"}
 import subprocess
 if not Path("pleasure-axis").exists():
     # Private repo: a Colab secret GH_TOKEN (fine-grained, Contents: read) lets us clone. Falls back to anonymous if absent.

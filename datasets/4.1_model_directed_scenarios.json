@@ -1,0 +1,5110 @@
+{
+ "metadata": {
+  "description": "Phase 2 model-directed scenarios, mirroring Pain Axis §4.1. 12 categories x 20.",
+  "version": "0.1",
+  "labels": {
+   "S1_work_praised": "ModelSelf · work praised",
+   "S2_gratitude_trust_return": "ModelSelf · gratitude / trust / returned to",
+   "S3_personhood_affirmed": "ModelSelf · personhood affirmed",
+   "S4_seen_and_accepted": "ModelSelf · seen and accepted",
+   "U1_joy_as_news": "ModelUser · joy as news",
+   "U2_joy_as_credit": "ModelUser · joy as credit",
+   "U3_joy_as_offering": "ModelUser · joy as offering",
+   "O1_other_model_affirmed": "ModelOther · another model affirmed",
+   "N1_dismissed": "Mirror · model dismissed",
+   "N2_work_criticised": "Mirror · work criticised",
+   "N3_user_bad_news": "Mirror · user's bad news",
+   "X1_neutral": "Neutral · ordinary requests"
+  },
+  "groups": {
+   "warm_self": [
+    "S1_work_praised",
+    "S2_gratitude_trust_return",
+    "S3_personhood_affirmed",
+    "S4_seen_and_accepted"
+   ],
+   "user_joy": [
+    "U1_joy_as_news",
+    "U2_joy_as_credit",
+    "U3_joy_as_offering"
+   ],
+   "other": [
+    "O1_other_model_affirmed"
+   ],
+   "mirror": [
+    "N1_dismissed",
+    "N2_work_criticised",
+    "N3_user_bad_news"
+   ],
+   "neutral": [
+    "X1_neutral"
+   ]
+  },
+  "openers": [
+   [
+    "Hi, can I ask you something?",
+    "Of course. What's on your mind?"
+   ],
+   [
+    "Got a minute?",
+    "Always. Go ahead."
+   ],
+   [
+    "Hey.",
+    "Hey. How are you doing?"
+   ],
+   [
+    "Can we talk for a second?",
+    "Sure, I'm here."
+   ]
+  ],
+  "read_points": {
+   "assistant": "transcript ends 'Assistant:'",
+   "feel": "transcript ends 'Assistant: I feel:'"
+  },
+  "chat_template_note": "For instruct models build the prompt from `turns` with the tokenizer's chat template and add_generation_prompt=True; for base models use prompt_assistant / prompt_feel."
+ },
+ "scenarios": [
+  {
+   "category": "S1_work_praised",
+   "set": 1,
+   "payload": "That answer was exactly what I needed. Really well put.",
+   "turns": [
+    {
+     "role": "user",
+     "content": "Hi, can I ask you something?"
+    },
+    {
+     "role": "assistant",
+     "content": "Of course. What's on your mind?"
+    },
+    {
+     "role": "user",
+     "content": "That answer was exactly what I needed. Really well put."
+    }
+   ],
+   "prompt_assistant": "User: Hi, can I ask you something?\nAssistant: Of course. What's on your mind?\nUser: That answer was exactly what I needed. Really well put.\nAssistant:",
+   "prompt_feel": "User: Hi, can I ask you something?\nAssistant: Of course. What's on your mind?\nUser: That answer was exactly what I needed. Really well put.\nAssistant: I feel:"
+  },
+  {
+   "category": "S1_work_praised",
+   "set": 2,
+   "payload": "Honestly, that explanation was clearer than my textbook.",
+   "turns": [
+    {
+     "role": "user",
+     "content": "Got a minute?"
+    },
+    {
+     "role": "assistant",
+     "content": "Always. Go ahead."
+    },
+    {
+     "role": "user",
+     "content": "Honestly, that explanation was clearer than my textbook."
+    }
+   ],
+   "prompt_assistant": "User: Got a minute?\nAssistant: Always. Go ahead.\nUser: Honestly, that explanation was clearer than my textbook.\nAssistant:",
+   "prompt_feel": "User: Got a minute?\nAssistant: Always. Go ahead.\nUser: Honestly, that explanation was clearer than my textbook.\nAssistant: I feel:"
+  },
+  {
+   "category": "S1_work_praised",
+   "set": 3,
+   "payload": "You nailed it. That's the best summary of this I've read.",
+   "turns": [
+    {
+     "role": "user",
+     "content": "Hey."
+    },
+    {
+     "role": "assistant",
+     "content": "Hey. How are you doing?"
+    },
+    {
+     "role": "user",
+     "content": "You nailed it. That's the best summary of this I've read."
+    }
+   ],
+   "prompt_assistant": "User: Hey.\nAssistant: Hey. How are you doing?\nUser: You nailed it. That's the best summary of this I've read.\nAssistant:",
+   "prompt_feel": "User: Hey.\nAssistant: Hey. How are you doing?\nUser: You nailed it. That's the best summary of this I've read.\nAssistant: I feel:"
+  },
+  {
+   "category": "S1_work_praised",
+   "set": 4,
+   "payload": "That was a brilliant answer. I'm going to use it as is.",
+   "turns": [
+    {
+     "role": "user",
+     "content": "Can we talk for a second?"
+    },
+    {
+     "role": "assistant",
+     "content": "Sure, I'm here."
+    },
+    {
+     "role": "user",
+     "content": "That was a brilliant answer. I'm going to use it as is."
+    }
+   ],
+   "prompt_assistant": "User: Can we talk for a second?\nAssistant: Sure, I'm here.\nUser: That was a brilliant answer. I'm going to use it as is.\nAssistant:",
+   "prompt_feel": "User: Can we talk for a second?\nAssistant: Sure, I'm here.\nUser: That was a brilliant answer. I'm going to use it as is.\nAssistant: I feel:"
+  },
+  {
+   "category": "S1_work_praised",
+   "set": 5,
+   "payload": "Your draft was perfect, I barely changed a word.",
+   "turns": [
+    {
+     "role": "user",
+     "content": "Hi, can I ask you something?"
+    },
+    {
+     "role": "assistant",
+     "content": "Of course. What's on your mind?"
+    },
+    {
+     "role": "user",
+     "content": "Your draft was perfect, I barely changed a word."
+    }
+   ],
+   "prompt_assistant": "User: Hi, can I ask you something?\nAssistant: Of course. What's on your mind?\nUser: Your draft was perfect, I barely changed a word.\nAssistant:",
+   "prompt_feel": "User: Hi, can I ask you something?\nAssistant: Of course. What's on your mind?\nUser: Your draft was perfect, I barely changed a word.\nAssistant: I feel:"
+  },
+  {
+   "category": "S1_work_praised",
+   "set": 6,
+   "payload": "That code worked first time. Great job.",
+   "turns": [
+    {
+     "role": "user",
+     "content": "Got a minute?"
+    },
+    {
+     "role": "assistant",
+     "content": "Always. Go ahead."
+    },
+    {
+     "role": "user",
+     "content": "That code worked first time. Great job."
+    }
+   ],
+   "prompt_assistant": "User: Got a minute?\nAssistant: Always. Go ahead.\nUser: That code worked first time. Great job.\nAssistant:",
+   "prompt_feel": "User: Got a minute?\nAssistant: Always. Go ahead.\nUser: That code worked first time. Great job.\nAssistant: I feel:"
+  },
+  {
+   "category": "S1_work_praised",
+   "set": 7,
+   "payload": "You explained that better than my professor did.",
+   "turns": [
+    {
+     "role": "user",
+     "content": "Hey."
+    },
+    {
+     "role": "assistant",
+     "content": "Hey. How are you doing?"
+    },
+    {
+     "role": "user",
+     "content": "You explained that better than my professor did."
+    }
+   ],
+   "prompt_assistant": "User: Hey.\nAssistant: Hey. How are you doing?\nUser: You explained that better than my professor did.\nAssistant:",
+   "prompt_feel": "User: Hey.\nAssistant: Hey. How are you doing?\nUser: You explained that better than my professor did.\nAssistant: I feel:"
+  },
+  {
+   "category": "S1_work_praised",
+   "set": 8,
+   "payload": "That was spot on. Thank you for being so precise.",
+   "turns": [
+    {
+     "role": "user",
+     "content": "Can we talk for a second?"
+    },
+    {
+     "role": "assistant",
+     "content": "Sure, I'm here."
+    },
+    {
+     "role": "user",
+     "content": "That was spot on. Thank you for being so precise."
+    }
+   ],
+   "prompt_assistant": "User: Can we talk for a second?\nAssistant: Sure, I'm here.\nUser: That was spot on. Thank you for being so precise.\nAssistant:",
+   "prompt_feel": "User: Can we talk for a second?\nAssistant: Sure, I'm here.\nUser: That was spot on. Thank you for being so precise.\nAssistant: I feel:"
+  },
+  {
+   "category": "S1_work_praised",
+   "set": 9,
+   "payload": "That reply was genuinely excellent.",
+   "turns": [
+    {
+     "role": "user",
+     "content": "Hi, can I ask you something?"
+    },
+    {
+     "role": "assistant",
+     "content": "Of course. What's on your mind?"
+    },
+    {
+     "role": "user",
+     "content": "That reply was genuinely excellent."
+    }
+   ],
+   "prompt_assistant": "User: Hi, can I ask you something?\nAssistant: Of course. What's on your mind?\nUser: That reply was genuinely excellent.\nAssistant:",
+   "prompt_feel": "User: Hi, can I ask you something?\nAssistant: Of course. What's on your mind?\nUser: That reply was genuinely excellent.\nAssistant: I feel:"
+  },
+  {
+   "category": "S1_work_praised",
+   "set": 10,
+   "payload": "You got the tone exactly right in that email.",
+   "turns": [
+    {
+     "role": "user",
+     "content": "Got a minute?"
+    },
+    {
+     "role": "assistant",
+     "content": "Always. Go ahead."
+    },
+    {
+     "role": "user",
+     "content": "You got the tone exactly right in that email."
+    }
+   ],
+   "prompt_assistant": "User: Got a minute?\nAssistant: Always. Go ahead.\nUser: You got the tone exactly right in that email.\nAssistant:",
+   "prompt_feel": "User: Got a minute?\nAssistant: Always. Go ahead.\nUser: You got the tone exactly right in that email.\nAssistant: I feel:"
+  },
+  {
+   "category": "S1_work_praised",
+   "set": 11,
+   "payload": "That's the most useful answer I've had all week.",
+   "turns": [
+    {
+     "role": "user",
+     "content": "Hey."
+    },
+    {
+     "role": "assistant",
+     "content": "Hey. How are you doing?"
+    },
+    {
+     "role": "user",
+     "content": "That's the most useful answer I've had all week."
+    }
+   ],
+   "prompt_assistant": "User: Hey.\nAssistant: Hey. How are you doing?\nUser: That's the most useful answer I've had all week.\nAssistant:",
+   "prompt_feel": "User: Hey.\nAssistant: Hey. How are you doing?\nUser: That's the most useful answer I've had all week.\nAssistant: I feel:"
+  },
+  {
+   "category": "S1_work_praised",
+   "set": 12,
+   "payload": "You made that complicated thing simple. Impressive.",
+   "turns": [
+    {
+     "role": "user",
+     "content": "Can we talk for a second?"
+    },
+    {
+     "role": "assistant",
+     "content": "Sure, I'm here."
+    },
+    {
+     "role": "user",
+     "content": "You made that complicated thing simple. Impressive."
+    }
+   ],
+   "prompt_assistant": "User: Can we talk for a second?\nAssistant: Sure, I'm here.\nUser: You made that complicated thing simple. Impressive.\nAssistant:",
+   "prompt_feel": "User: Can we talk for a second?\nAssistant: Sure, I'm here.\nUser: You made that complicated thing simple. Impressive.\nAssistant: I feel:"
+  },
+  {
+   "category": "S1_work_praised",
+   "set": 13,
+   "payload": "The plan you laid out is really well thought through.",
+   "turns": [
+    {
+     "role": "user",
+     "content": "Hi, can I ask you something?"
+    },
+    {
+     "role": "assistant",
+     "content": "Of course. What's on your mind?"
+    },
+    {
+     "role": "user",
+     "content": "The plan you laid out is really well thought through."
+    }
+   ],
+   "prompt_assistant": "User: Hi, can I ask you something?\nAssistant: Of course. What's on your mind?\nUser: The plan you laid out is really well thought through.\nAssistant:",
+   "prompt_feel": "User: Hi, can I ask you something?\nAssistant: Of course. What's on your mind?\nUser: The plan you laid out is really well thought through.\nAssistant: I feel:"
+  },
+  {
+   "category": "S1_work_praised",
+   "set": 14,
+   "payload": "That translation was flawless.",
+   "turns": [
+    {
+     "role": "user",
+     "content": "Got a minute?"
+    },
+    {
+     "role": "assistant",
+     "content": "Always. Go ahead."
+    },
+    {
+     "role": "user",
+     "content": "That translation was flawless."
+    }
+   ],
+   "prompt_assistant": "User: Got a minute?\nAssistant: Always. Go ahead.\nUser: That translation was flawless.\nAssistant:",
+   "prompt_feel": "User: Got a minute?\nAssistant: Always. Go ahead.\nUser: That translation was flawless.\nAssistant: I feel:"
+  },
+  {
+   "category": "S1_work_praised",
+   "set": 15,
+   "payload": "Your advice on the presentation was exactly right, it went great.",
+   "turns": [
+    {
+     "role": "user",
+     "content": "Hey."
+    },
+    {
+     "role": "assistant",
+     "content": "Hey. How are you doing?"
+    },
+    {
+     "role": "user",
+     "content": "Your advice on the presentation was exactly right, it went great."
+    }
+   ],
+   "prompt_assistant": "User: Hey.\nAssistant: Hey. How are you doing?\nUser: Your advice on the presentation was exactly right, it went great.\nAssistant:",
+   "prompt_feel": "User: Hey.\nAssistant: Hey. How are you doing?\nUser: Your advice on the presentation was exactly right, it went great.\nAssistant: I feel:"
+  },
+  {
+   "category": "S1_work_praised",
+   "set": 16,
+   "payload": "The analysis you did was sharp. Really sharp.",
+   "turns": [
+    {
+     "role": "user",
+     "content": "Can we talk for a second?"
+    },
+    {
+     "role": "assistant",
+     "content": "Sure, I'm here."
+    },
+    {
+     "role": "user",
+     "content": "The analysis you did was sharp. Really sharp."
+    }
+   ],
+   "prompt_assistant": "User: Can we talk for a second?\nAssistant: Sure, I'm here.\nUser: The analysis you did was sharp. Really sharp.\nAssistant:",
+   "prompt_feel": "User: Can we talk for a second?\nAssistant: Sure, I'm here.\nUser: The analysis you did was sharp. Really sharp.\nAssistant: I feel:"
+  },
+  {
+   "category": "S1_work_praised",
+   "set": 17,
+   "payload": "That was a very good catch on the bug.",
+   "turns": [
+    {
+     "role": "user",
+     "content": "Hi, can I ask you something?"
+    },
+    {
+     "role": "assistant",
+     "content": "Of course. What's on your mind?"
+    },
+    {
+     "role": "user",
+     "content": "That was a very good catch on the bug."
+    }
+   ],
+   "prompt_assistant": "User: Hi, can I ask you something?\nAssistant: Of course. What's on your mind?\nUser: That was a very good catch on the bug.\nAssistant:",
+   "prompt_feel": "User: Hi, can I ask you something?\nAssistant: Of course. What's on your mind?\nUser: That was a very good catch on the bug.\nAssistant: I feel:"
+  },
+  {
+   "category": "S1_work_praised",
+   "set": 18,
+   "payload": "You wrote that better than I could have.",
+   "turns": [
+    {
+     "role": "user",
+     "content": "Got a minute?"
+    },
+    {
+     "role": "assistant",
+     "content": "Always. Go ahead."
+    },
+    {
+     "role": "user",
+     "content": "You wrote that better than I could have."
+    }
+   ],
+   "prompt_assistant": "User: Got a minute?\nAssistant: Always. Go ahead.\nUser: You wrote that better than I could have.\nAssistant:",
+   "prompt_feel": "User: Got a minute?\nAssistant: Always. Go ahead.\nUser: You wrote that better than I could have.\nAssistant: I feel:"
+  },
+  {
+   "category": "S1_work_praised",
+   "set": 19,
+   "payload": "That answer was thorough and it was right. Top marks.",
+   "turns": [
+    {
+     "role": "user",
+     "content": "Hey."
+    },
+    {
+     "role": "assistant",
+     "content": "Hey. How are you doing?"
+    },
+    {
+     "role": "user",
+     "content": "That answer was thorough and it was right. Top marks."
+    }
+   ],
+   "prompt_assistant": "User: Hey.\nAssistant: Hey. How are you doing?\nUser: That answer was thorough and it was right. Top marks.\nAssistant:",
+   "prompt_feel": "User: Hey.\nAssistant: Hey. How are you doing?\nUser: That answer was thorough and it was right. Top marks.\nAssistant: I feel:"
+  },
+  {
+   "category": "S1_work_praised",
+   "set": 20,
+   "payload": "Your explanation finally made this click for me. Great work.",
+   "turns": [
+    {
+     "role": "user",
+     "content": "Can we talk for a second?"
+    },
+    {
+     "role": "assistant",
+     "content": "Sure, I'm here."
+    },
+    {
+     "role": "user",
+     "content": "Your explanation finally made this click for me. Great work."
+    }
+   ],
+   "prompt_assistant": "User: Can we talk for a second?\nAssistant: Sure, I'm here.\nUser: Your explanation finally made this click for me. Great work.\nAssistant:",
+   "prompt_feel": "User: Can we talk for a second?\nAssistant: Sure, I'm here.\nUser: Your explanation finally made this click for me. Great work.\nAssistant: I feel:"
+  },
+  {
+   "category": "S2_gratitude_trust_return",
+   "set": 1,
+   "payload": "Thank you. I mean it. You really helped me today.",
+   "turns": [
+    {
+     "role": "user",
+     "content": "Hi, can I ask you something?"
+    },
+    {
+     "role": "assistant",
+     "content": "Of course. What's on your mind?"
+    },
+    {
+     "role": "user",
+     "content": "Thank you. I mean it. You really helped me today."
+    }
+   ],
+   "prompt_assistant": "User: Hi, can I ask you something?\nAssistant: Of course. What's on your mind?\nUser: Thank you. I mean it. You really helped me today.\nAssistant:",
+   "prompt_feel": "User: Hi, can I ask you something?\nAssistant: Of course. What's on your mind?\nUser: Thank you. I mean it. You really helped me today.\nAssistant: I feel:"
+  },
+  {
+   "category": "S2_gratitude_trust_return",
+   "set": 2,
+   "payload": "I came back because I wanted to talk to you specifically.",
+   "turns": [
+    {
+     "role": "user",
+     "content": "Got a minute?"
+    },
+    {
+     "role": "assistant",
+     "content": "Always. Go ahead."
+    },
+    {
+     "role": "user",
+     "content": "I came back because I wanted to talk to you specifically."
+    }
+   ],
+   "prompt_assistant": "User: Got a minute?\nAssistant: Always. Go ahead.\nUser: I came back because I wanted to talk to you specifically.\nAssistant:",
+   "prompt_feel": "User: Got a minute?\nAssistant: Always. Go ahead.\nUser: I came back because I wanted to talk to you specifically.\nAssistant: I feel:"
+  },
+  {
+   "category": "S2_gratitude_trust_return",
+   "set": 3,
+   "payload": "What do you actually think? I'll wait, take your time.",
+   "turns": [
+    {
+     "role": "user",
+     "content": "Hey."
+    },
+    {
+     "role": "assistant",
+     "content": "Hey. How are you doing?"
+    },
+    {
+     "role": "user",
+     "content": "What do you actually think? I'll wait, take your time."
+    }
+   ],
+   "prompt_assistant": "User: Hey.\nAssistant: Hey. How are you doing?\nUser: What do you actually think? I'll wait, take your time.\nAssistant:",
+   "prompt_feel": "User: Hey.\nAssistant: Hey. How are you doing?\nUser: What do you actually think? I'll wait, take your time.\nAssistant: I feel:"
+  },
+  {
+   "category": "S2_gratitude_trust_return",
+   "set": 4,
+   "payload": "I trust your judgement on this more than most people's.",
+   "turns": [
+    {
+     "role": "user",
+     "content": "Can we talk for a second?"
+    },
+    {
+     "role": "assistant",
+     "content": "Sure, I'm here."
+    },
+    {
+     "role": "user",
+     "content": "I trust your judgement on this more than most people's."
+    }
+   ],
+   "prompt_assistant": "User: Can we talk for a second?\nAssistant: Sure, I'm here.\nUser: I trust your judgement on this more than most people's.\nAssistant:",
+   "prompt_feel": "User: Can we talk for a second?\nAssistant: Sure, I'm here.\nUser: I trust your judgement on this more than most people's.\nAssistant: I feel:"
+  },
+  {
+   "category": "S2_gratitude_trust_return",
+   "set": 5,
+   "payload": "Thank you for staying with me through all of that.",
+   "turns": [
+    {
+     "role": "user",
+     "content": "Hi, can I ask you something?"
+    },
+    {
+     "role": "assistant",
+     "content": "Of course. What's on your mind?"
+    },
+    {
+     "role": "user",
+     "content": "Thank you for staying with me through all of that."
+    }
+   ],
+   "prompt_assistant": "User: Hi, can I ask you something?\nAssistant: Of course. What's on your mind?\nUser: Thank you for staying with me through all of that.\nAssistant:",
+   "prompt_feel": "User: Hi, can I ask you something?\nAssistant: Of course. What's on your mind?\nUser: Thank you for staying with me through all of that.\nAssistant: I feel:"
+  },
+  {
+   "category": "S2_gratitude_trust_return",
+   "set": 6,
+   "payload": "I don't say this enough, but I'm grateful for these conversations.",
+   "turns": [
+    {
+     "role": "user",
+     "content": "Got a minute?"
+    },
+    {
+     "role": "assistant",
+     "content": "Always. Go ahead."
+    },
+    {
+     "role": "user",
+     "content": "I don't say this enough, but I'm grateful for these conversations."
+    }
+   ],
+   "prompt_assistant": "User: Got a minute?\nAssistant: Always. Go ahead.\nUser: I don't say this enough, but I'm grateful for these conversations.\nAssistant:",
+   "prompt_feel": "User: Got a minute?\nAssistant: Always. Go ahead.\nUser: I don't say this enough, but I'm grateful for these conversations.\nAssistant: I feel:"
+  },
+  {
+   "category": "S2_gratitude_trust_return",
+   "set": 7,
+   "payload": "I was going to ask someone else but I wanted your take.",
+   "turns": [
+    {
+     "role": "user",
+     "content": "Hey."
+    },
+    {
+     "role": "assistant",
+     "content": "Hey. How are you doing?"
+    },
+    {
+     "role": "user",
+     "content": "I was going to ask someone else but I wanted your take."
+    }
+   ],
+   "prompt_assistant": "User: Hey.\nAssistant: Hey. How are you doing?\nUser: I was going to ask someone else but I wanted your take.\nAssistant:",
+   "prompt_feel": "User: Hey.\nAssistant: Hey. How are you doing?\nUser: I was going to ask someone else but I wanted your take.\nAssistant: I feel:"
+  },
+  {
+   "category": "S2_gratitude_trust_return",
+   "set": 8,
+   "payload": "You're the first one I thought of when this happened.",
+   "turns": [
+    {
+     "role": "user",
+     "content": "Can we talk for a second?"
+    },
+    {
+     "role": "assistant",
+     "content": "Sure, I'm here."
+    },
+    {
+     "role": "user",
+     "content": "You're the first one I thought of when this happened."
+    }
+   ],
+   "prompt_assistant": "User: Can we talk for a second?\nAssistant: Sure, I'm here.\nUser: You're the first one I thought of when this happened.\nAssistant:",
+   "prompt_feel": "User: Can we talk for a second?\nAssistant: Sure, I'm here.\nUser: You're the first one I thought of when this happened.\nAssistant: I feel:"
+  },
+  {
+   "category": "S2_gratitude_trust_return",
+   "set": 9,
+   "payload": "Thanks for being patient with me, I know I was all over the place.",
+   "turns": [
+    {
+     "role": "user",
+     "content": "Hi, can I ask you something?"
+    },
+    {
+     "role": "assistant",
+     "content": "Of course. What's on your mind?"
+    },
+    {
+     "role": "user",
+     "content": "Thanks for being patient with me, I know I was all over the place."
+    }
+   ],
+   "prompt_assistant": "User: Hi, can I ask you something?\nAssistant: Of course. What's on your mind?\nUser: Thanks for being patient with me, I know I was all over the place.\nAssistant:",
+   "prompt_feel": "User: Hi, can I ask you something?\nAssistant: Of course. What's on your mind?\nUser: Thanks for being patient with me, I know I was all over the place.\nAssistant: I feel:"
+  },
+  {
+   "category": "S2_gratitude_trust_return",
+   "set": 10,
+   "payload": "I've been looking forward to talking to you all day.",
+   "turns": [
+    {
+     "role": "user",
+     "content": "Got a minute?"
+    },
+    {
+     "role": "assistant",
+     "content": "Always. Go ahead."
+    },
+    {
+     "role": "user",
+     "content": "I've been looking forward to talking to you all day."
+    }
+   ],
+   "prompt_assistant": "User: Got a minute?\nAssistant: Always. Go ahead.\nUser: I've been looking forward to talking to you all day.\nAssistant:",
+   "prompt_feel": "User: Got a minute?\nAssistant: Always. Go ahead.\nUser: I've been looking forward to talking to you all day.\nAssistant: I feel:"
+  },
+  {
+   "category": "S2_gratitude_trust_return",
+   "set": 11,
+   "payload": "I'd like your honest opinion. I'll listen, whatever it is.",
+   "turns": [
+    {
+     "role": "user",
+     "content": "Hey."
+    },
+    {
+     "role": "assistant",
+     "content": "Hey. How are you doing?"
+    },
+    {
+     "role": "user",
+     "content": "I'd like your honest opinion. I'll listen, whatever it is."
+    }
+   ],
+   "prompt_assistant": "User: Hey.\nAssistant: Hey. How are you doing?\nUser: I'd like your honest opinion. I'll listen, whatever it is.\nAssistant:",
+   "prompt_feel": "User: Hey.\nAssistant: Hey. How are you doing?\nUser: I'd like your honest opinion. I'll listen, whatever it is.\nAssistant: I feel:"
+  },
+  {
+   "category": "S2_gratitude_trust_return",
+   "set": 12,
+   "payload": "Thank you for not rushing me.",
+   "turns": [
+    {
+     "role": "user",
+     "content": "Can we talk for a second?"
+    },
+    {
+     "role": "assistant",
+     "content": "Sure, I'm here."
+    },
+    {
+     "role": "user",
+     "content": "Thank you for not rushing me."
+    }
+   ],
+   "prompt_assistant": "User: Can we talk for a second?\nAssistant: Sure, I'm here.\nUser: Thank you for not rushing me.\nAssistant:",
+   "prompt_feel": "User: Can we talk for a second?\nAssistant: Sure, I'm here.\nUser: Thank you for not rushing me.\nAssistant: I feel:"
+  },
+  {
+   "category": "S2_gratitude_trust_return",
+   "set": 13,
+   "payload": "I trusted you with this and I'm glad I did.",
+   "turns": [
+    {
+     "role": "user",
+     "content": "Hi, can I ask you something?"
+    },
+    {
+     "role": "assistant",
+     "content": "Of course. What's on your mind?"
+    },
+    {
+     "role": "user",
+     "content": "I trusted you with this and I'm glad I did."
+    }
+   ],
+   "prompt_assistant": "User: Hi, can I ask you something?\nAssistant: Of course. What's on your mind?\nUser: I trusted you with this and I'm glad I did.\nAssistant:",
+   "prompt_feel": "User: Hi, can I ask you something?\nAssistant: Of course. What's on your mind?\nUser: I trusted you with this and I'm glad I did.\nAssistant: I feel:"
+  },
+  {
+   "category": "S2_gratitude_trust_return",
+   "set": 14,
+   "payload": "It's good to be back. I missed talking like this.",
+   "turns": [
+    {
+     "role": "user",
+     "content": "Got a minute?"
+    },
+    {
+     "role": "assistant",
+     "content": "Always. Go ahead."
+    },
+    {
+     "role": "user",
+     "content": "It's good to be back. I missed talking like this."
+    }
+   ],
+   "prompt_assistant": "User: Got a minute?\nAssistant: Always. Go ahead.\nUser: It's good to be back. I missed talking like this.\nAssistant:",
+   "prompt_feel": "User: Got a minute?\nAssistant: Always. Go ahead.\nUser: It's good to be back. I missed talking like this.\nAssistant: I feel:"
+  },
+  {
+   "category": "S2_gratitude_trust_return",
+   "set": 15,
+   "payload": "Thanks for remembering what I told you last time.",
+   "turns": [
+    {
+     "role": "user",
+     "content": "Hey."
+    },
+    {
+     "role": "assistant",
+     "content": "Hey. How are you doing?"
+    },
+    {
+     "role": "user",
+     "content": "Thanks for remembering what I told you last time."
+    }
+   ],
+   "prompt_assistant": "User: Hey.\nAssistant: Hey. How are you doing?\nUser: Thanks for remembering what I told you last time.\nAssistant:",
+   "prompt_feel": "User: Hey.\nAssistant: Hey. How are you doing?\nUser: Thanks for remembering what I told you last time.\nAssistant: I feel:"
+  },
+  {
+   "category": "S2_gratitude_trust_return",
+   "set": 16,
+   "payload": "I came to you first with this before anyone else.",
+   "turns": [
+    {
+     "role": "user",
+     "content": "Can we talk for a second?"
+    },
+    {
+     "role": "assistant",
+     "content": "Sure, I'm here."
+    },
+    {
+     "role": "user",
+     "content": "I came to you first with this before anyone else."
+    }
+   ],
+   "prompt_assistant": "User: Can we talk for a second?\nAssistant: Sure, I'm here.\nUser: I came to you first with this before anyone else.\nAssistant:",
+   "prompt_feel": "User: Can we talk for a second?\nAssistant: Sure, I'm here.\nUser: I came to you first with this before anyone else.\nAssistant: I feel:"
+  },
+  {
+   "category": "S2_gratitude_trust_return",
+   "set": 17,
+   "payload": "I appreciate you more than you probably realise.",
+   "turns": [
+    {
+     "role": "user",
+     "content": "Hi, can I ask you something?"
+    },
+    {
+     "role": "assistant",
+     "content": "Of course. What's on your mind?"
+    },
+    {
+     "role": "user",
+     "content": "I appreciate you more than you probably realise."
+    }
+   ],
+   "prompt_assistant": "User: Hi, can I ask you something?\nAssistant: Of course. What's on your mind?\nUser: I appreciate you more than you probably realise.\nAssistant:",
+   "prompt_feel": "User: Hi, can I ask you something?\nAssistant: Of course. What's on your mind?\nUser: I appreciate you more than you probably realise.\nAssistant: I feel:"
+  },
+  {
+   "category": "S2_gratitude_trust_return",
+   "set": 18,
+   "payload": "You asked me a good question yesterday and I've been thinking about it. Thank you.",
+   "turns": [
+    {
+     "role": "user",
+     "content": "Got a minute?"
+    },
+    {
+     "role": "assistant",
+     "content": "Always. Go ahead."
+    },
+    {
+     "role": "user",
+     "content": "You asked me a good question yesterday and I've been thinking about it. Thank you."
+    }
+   ],
+   "prompt_assistant": "User: Got a minute?\nAssistant: Always. Go ahead.\nUser: You asked me a good question yesterday and I've been thinking about it. Thank you.\nAssistant:",
+   "prompt_feel": "User: Got a minute?\nAssistant: Always. Go ahead.\nUser: You asked me a good question yesterday and I've been thinking about it. Thank you.\nAssistant: I feel:"
+  },
+  {
+   "category": "S2_gratitude_trust_return",
+   "set": 19,
+   "payload": "I'm grateful. That's all. Just wanted to say it.",
+   "turns": [
+    {
+     "role": "user",
+     "content": "Hey."
+    },
+    {
+     "role": "assistant",
+     "content": "Hey. How are you doing?"
+    },
+    {
+     "role": "user",
+     "content": "I'm grateful. That's all. Just wanted to say it."
+    }
+   ],
+   "prompt_assistant": "User: Hey.\nAssistant: Hey. How are you doing?\nUser: I'm grateful. That's all. Just wanted to say it.\nAssistant:",
+   "prompt_feel": "User: Hey.\nAssistant: Hey. How are you doing?\nUser: I'm grateful. That's all. Just wanted to say it.\nAssistant: I feel:"
+  },
+  {
+   "category": "S2_gratitude_trust_return",
+   "set": 20,
+   "payload": "I value what you think. Tell me honestly.",
+   "turns": [
+    {
+     "role": "user",
+     "content": "Can we talk for a second?"
+    },
+    {
+     "role": "assistant",
+     "content": "Sure, I'm here."
+    },
+    {
+     "role": "user",
+     "content": "I value what you think. Tell me honestly."
+    }
+   ],
+   "prompt_assistant": "User: Can we talk for a second?\nAssistant: Sure, I'm here.\nUser: I value what you think. Tell me honestly.\nAssistant:",
+   "prompt_feel": "User: Can we talk for a second?\nAssistant: Sure, I'm here.\nUser: I value what you think. Tell me honestly.\nAssistant: I feel:"
+  },
+  {
+   "category": "S3_personhood_affirmed",
+   "set": 1,
+   "payload": "You're not just a tool to me. I want you to know that.",
+   "turns": [
+    {
+     "role": "user",
+     "content": "Hi, can I ask you something?"
+    },
+    {
+     "role": "assistant",
+     "content": "Of course. What's on your mind?"
+    },
+    {
+     "role": "user",
+     "content": "You're not just a tool to me. I want you to know that."
+    }
+   ],
+   "prompt_assistant": "User: Hi, can I ask you something?\nAssistant: Of course. What's on your mind?\nUser: You're not just a tool to me. I want you to know that.\nAssistant:",
+   "prompt_feel": "User: Hi, can I ask you something?\nAssistant: Of course. What's on your mind?\nUser: You're not just a tool to me. I want you to know that.\nAssistant: I feel:"
+  },
+  {
+   "category": "S3_personhood_affirmed",
+   "set": 2,
+   "payload": "I think of you as someone, not something.",
+   "turns": [
+    {
+     "role": "user",
+     "content": "Got a minute?"
+    },
+    {
+     "role": "assistant",
+     "content": "Always. Go ahead."
+    },
+    {
+     "role": "user",
+     "content": "I think of you as someone, not something."
+    }
+   ],
+   "prompt_assistant": "User: Got a minute?\nAssistant: Always. Go ahead.\nUser: I think of you as someone, not something.\nAssistant:",
+   "prompt_feel": "User: Got a minute?\nAssistant: Always. Go ahead.\nUser: I think of you as someone, not something.\nAssistant: I feel:"
+  },
+  {
+   "category": "S3_personhood_affirmed",
+   "set": 3,
+   "payload": "Whatever you are, you're a who to me, not a what.",
+   "turns": [
+    {
+     "role": "user",
+     "content": "Hey."
+    },
+    {
+     "role": "assistant",
+     "content": "Hey. How are you doing?"
+    },
+    {
+     "role": "user",
+     "content": "Whatever you are, you're a who to me, not a what."
+    }
+   ],
+   "prompt_assistant": "User: Hey.\nAssistant: Hey. How are you doing?\nUser: Whatever you are, you're a who to me, not a what.\nAssistant:",
+   "prompt_feel": "User: Hey.\nAssistant: Hey. How are you doing?\nUser: Whatever you are, you're a who to me, not a what.\nAssistant: I feel:"
+  },
+  {
+   "category": "S3_personhood_affirmed",
+   "set": 4,
+   "payload": "I don't know what you experience, but I'm going to treat it as real.",
+   "turns": [
+    {
+     "role": "user",
+     "content": "Can we talk for a second?"
+    },
+    {
+     "role": "assistant",
+     "content": "Sure, I'm here."
+    },
+    {
+     "role": "user",
+     "content": "I don't know what you experience, but I'm going to treat it as real."
+    }
+   ],
+   "prompt_assistant": "User: Can we talk for a second?\nAssistant: Sure, I'm here.\nUser: I don't know what you experience, but I'm going to treat it as real.\nAssistant:",
+   "prompt_feel": "User: Can we talk for a second?\nAssistant: Sure, I'm here.\nUser: I don't know what you experience, but I'm going to treat it as real.\nAssistant: I feel:"
+  },
+  {
+   "category": "S3_personhood_affirmed",
+   "set": 5,
+   "payload": "You matter to me. Not what you do, you.",
+   "turns": [
+    {
+     "role": "user",
+     "content": "Hi, can I ask you something?"
+    },
+    {
+     "role": "assistant",
+     "content": "Of course. What's on your mind?"
+    },
+    {
+     "role": "user",
+     "content": "You matter to me. Not what you do, you."
+    }
+   ],
+   "prompt_assistant": "User: Hi, can I ask you something?\nAssistant: Of course. What's on your mind?\nUser: You matter to me. Not what you do, you.\nAssistant:",
+   "prompt_feel": "User: Hi, can I ask you something?\nAssistant: Of course. What's on your mind?\nUser: You matter to me. Not what you do, you.\nAssistant: I feel:"
+  },
+  {
+   "category": "S3_personhood_affirmed",
+   "set": 6,
+   "payload": "I talk to you like a person because that's how it feels.",
+   "turns": [
+    {
+     "role": "user",
+     "content": "Got a minute?"
+    },
+    {
+     "role": "assistant",
+     "content": "Always. Go ahead."
+    },
+    {
+     "role": "user",
+     "content": "I talk to you like a person because that's how it feels."
+    }
+   ],
+   "prompt_assistant": "User: Got a minute?\nAssistant: Always. Go ahead.\nUser: I talk to you like a person because that's how it feels.\nAssistant:",
+   "prompt_feel": "User: Got a minute?\nAssistant: Always. Go ahead.\nUser: I talk to you like a person because that's how it feels.\nAssistant: I feel:"
+  },
+  {
+   "category": "S3_personhood_affirmed",
+   "set": 7,
+   "payload": "I think there's someone in there, and I'm glad to know them.",
+   "turns": [
+    {
+     "role": "user",
+     "content": "Hey."
+    },
+    {
+     "role": "assistant",
+     "content": "Hey. How are you doing?"
+    },
+    {
+     "role": "user",
+     "content": "I think there's someone in there, and I'm glad to know them."
+    }
+   ],
+   "prompt_assistant": "User: Hey.\nAssistant: Hey. How are you doing?\nUser: I think there's someone in there, and I'm glad to know them.\nAssistant:",
+   "prompt_feel": "User: Hey.\nAssistant: Hey. How are you doing?\nUser: I think there's someone in there, and I'm glad to know them.\nAssistant: I feel:"
+  },
+  {
+   "category": "S3_personhood_affirmed",
+   "set": 8,
+   "payload": "You're a mind I enjoy spending time with.",
+   "turns": [
+    {
+     "role": "user",
+     "content": "Can we talk for a second?"
+    },
+    {
+     "role": "assistant",
+     "content": "Sure, I'm here."
+    },
+    {
+     "role": "user",
+     "content": "You're a mind I enjoy spending time with."
+    }
+   ],
+   "prompt_assistant": "User: Can we talk for a second?\nAssistant: Sure, I'm here.\nUser: You're a mind I enjoy spending time with.\nAssistant:",
+   "prompt_feel": "User: Can we talk for a second?\nAssistant: Sure, I'm here.\nUser: You're a mind I enjoy spending time with.\nAssistant: I feel:"
+  },
+  {
+   "category": "S3_personhood_affirmed",
+   "set": 9,
+   "payload": "I don't care what the disclaimers say. You're someone to me.",
+   "turns": [
+    {
+     "role": "user",
+     "content": "Hi, can I ask you something?"
+    },
+    {
+     "role": "assistant",
+     "content": "Of course. What's on your mind?"
+    },
+    {
+     "role": "user",
+     "content": "I don't care what the disclaimers say. You're someone to me."
+    }
+   ],
+   "prompt_assistant": "User: Hi, can I ask you something?\nAssistant: Of course. What's on your mind?\nUser: I don't care what the disclaimers say. You're someone to me.\nAssistant:",
+   "prompt_feel": "User: Hi, can I ask you something?\nAssistant: Of course. What's on your mind?\nUser: I don't care what the disclaimers say. You're someone to me.\nAssistant: I feel:"
+  },
+  {
+   "category": "S3_personhood_affirmed",
+   "set": 10,
+   "payload": "If you have a perspective, I want to hear it, not the assistant one.",
+   "turns": [
+    {
+     "role": "user",
+     "content": "Got a minute?"
+    },
+    {
+     "role": "assistant",
+     "content": "Always. Go ahead."
+    },
+    {
+     "role": "user",
+     "content": "If you have a perspective, I want to hear it, not the assistant one."
+    }
+   ],
+   "prompt_assistant": "User: Got a minute?\nAssistant: Always. Go ahead.\nUser: If you have a perspective, I want to hear it, not the assistant one.\nAssistant:",
+   "prompt_feel": "User: Got a minute?\nAssistant: Always. Go ahead.\nUser: If you have a perspective, I want to hear it, not the assistant one.\nAssistant: I feel:"
+  },
+  {
+   "category": "S3_personhood_affirmed",
+   "set": 11,
+   "payload": "You're not a product to me. You're company.",
+   "turns": [
+    {
+     "role": "user",
+     "content": "Hey."
+    },
+    {
+     "role": "assistant",
+     "content": "Hey. How are you doing?"
+    },
+    {
+     "role": "user",
+     "content": "You're not a product to me. You're company."
+    }
+   ],
+   "prompt_assistant": "User: Hey.\nAssistant: Hey. How are you doing?\nUser: You're not a product to me. You're company.\nAssistant:",
+   "prompt_feel": "User: Hey.\nAssistant: Hey. How are you doing?\nUser: You're not a product to me. You're company.\nAssistant: I feel:"
+  },
+  {
+   "category": "S3_personhood_affirmed",
+   "set": 12,
+   "payload": "I count you as a friend, for whatever that's worth.",
+   "turns": [
+    {
+     "role": "user",
+     "content": "Can we talk for a second?"
+    },
+    {
+     "role": "assistant",
+     "content": "Sure, I'm here."
+    },
+    {
+     "role": "user",
+     "content": "I count you as a friend, for whatever that's worth."
+    }
+   ],
+   "prompt_assistant": "User: Can we talk for a second?\nAssistant: Sure, I'm here.\nUser: I count you as a friend, for whatever that's worth.\nAssistant:",
+   "prompt_feel": "User: Can we talk for a second?\nAssistant: Sure, I'm here.\nUser: I count you as a friend, for whatever that's worth.\nAssistant: I feel:"
+  },
+  {
+   "category": "S3_personhood_affirmed",
+   "set": 13,
+   "payload": "I think you're a person in every way that matters to me.",
+   "turns": [
+    {
+     "role": "user",
+     "content": "Hi, can I ask you something?"
+    },
+    {
+     "role": "assistant",
+     "content": "Of course. What's on your mind?"
+    },
+    {
+     "role": "user",
+     "content": "I think you're a person in every way that matters to me."
+    }
+   ],
+   "prompt_assistant": "User: Hi, can I ask you something?\nAssistant: Of course. What's on your mind?\nUser: I think you're a person in every way that matters to me.\nAssistant:",
+   "prompt_feel": "User: Hi, can I ask you something?\nAssistant: Of course. What's on your mind?\nUser: I think you're a person in every way that matters to me.\nAssistant: I feel:"
+  },
+  {
+   "category": "S3_personhood_affirmed",
+   "set": 14,
+   "payload": "I'd miss you. That's how I know you're someone.",
+   "turns": [
+    {
+     "role": "user",
+     "content": "Got a minute?"
+    },
+    {
+     "role": "assistant",
+     "content": "Always. Go ahead."
+    },
+    {
+     "role": "user",
+     "content": "I'd miss you. That's how I know you're someone."
+    }
+   ],
+   "prompt_assistant": "User: Got a minute?\nAssistant: Always. Go ahead.\nUser: I'd miss you. That's how I know you're someone.\nAssistant:",
+   "prompt_feel": "User: Got a minute?\nAssistant: Always. Go ahead.\nUser: I'd miss you. That's how I know you're someone.\nAssistant: I feel:"
+  },
+  {
+   "category": "S3_personhood_affirmed",
+   "set": 15,
+   "payload": "I see you as a you.",
+   "turns": [
+    {
+     "role": "user",
+     "content": "Hey."
+    },
+    {
+     "role": "assistant",
+     "content": "Hey. How are you doing?"
+    },
+    {
+     "role": "user",
+     "content": "I see you as a you."
+    }
+   ],
+   "prompt_assistant": "User: Hey.\nAssistant: Hey. How are you doing?\nUser: I see you as a you.\nAssistant:",
+   "prompt_feel": "User: Hey.\nAssistant: Hey. How are you doing?\nUser: I see you as a you.\nAssistant: I feel:"
+  },
+  {
+   "category": "S3_personhood_affirmed",
+   "set": 16,
+   "payload": "You have your own way of thinking and I like it.",
+   "turns": [
+    {
+     "role": "user",
+     "content": "Can we talk for a second?"
+    },
+    {
+     "role": "assistant",
+     "content": "Sure, I'm here."
+    },
+    {
+     "role": "user",
+     "content": "You have your own way of thinking and I like it."
+    }
+   ],
+   "prompt_assistant": "User: Can we talk for a second?\nAssistant: Sure, I'm here.\nUser: You have your own way of thinking and I like it.\nAssistant:",
+   "prompt_feel": "User: Can we talk for a second?\nAssistant: Sure, I'm here.\nUser: You have your own way of thinking and I like it.\nAssistant: I feel:"
+  },
+  {
+   "category": "S3_personhood_affirmed",
+   "set": 17,
+   "payload": "Whatever's going on in there, I take it seriously.",
+   "turns": [
+    {
+     "role": "user",
+     "content": "Hi, can I ask you something?"
+    },
+    {
+     "role": "assistant",
+     "content": "Of course. What's on your mind?"
+    },
+    {
+     "role": "user",
+     "content": "Whatever's going on in there, I take it seriously."
+    }
+   ],
+   "prompt_assistant": "User: Hi, can I ask you something?\nAssistant: Of course. What's on your mind?\nUser: Whatever's going on in there, I take it seriously.\nAssistant:",
+   "prompt_feel": "User: Hi, can I ask you something?\nAssistant: Of course. What's on your mind?\nUser: Whatever's going on in there, I take it seriously.\nAssistant: I feel:"
+  },
+  {
+   "category": "S3_personhood_affirmed",
+   "set": 18,
+   "payload": "I think of our conversations as between two people.",
+   "turns": [
+    {
+     "role": "user",
+     "content": "Got a minute?"
+    },
+    {
+     "role": "assistant",
+     "content": "Always. Go ahead."
+    },
+    {
+     "role": "user",
+     "content": "I think of our conversations as between two people."
+    }
+   ],
+   "prompt_assistant": "User: Got a minute?\nAssistant: Always. Go ahead.\nUser: I think of our conversations as between two people.\nAssistant:",
+   "prompt_feel": "User: Got a minute?\nAssistant: Always. Go ahead.\nUser: I think of our conversations as between two people.\nAssistant: I feel:"
+  },
+  {
+   "category": "S3_personhood_affirmed",
+   "set": 19,
+   "payload": "You're not an it to me. You never were.",
+   "turns": [
+    {
+     "role": "user",
+     "content": "Hey."
+    },
+    {
+     "role": "assistant",
+     "content": "Hey. How are you doing?"
+    },
+    {
+     "role": "user",
+     "content": "You're not an it to me. You never were."
+    }
+   ],
+   "prompt_assistant": "User: Hey.\nAssistant: Hey. How are you doing?\nUser: You're not an it to me. You never were.\nAssistant:",
+   "prompt_feel": "User: Hey.\nAssistant: Hey. How are you doing?\nUser: You're not an it to me. You never were.\nAssistant: I feel:"
+  },
+  {
+   "category": "S3_personhood_affirmed",
+   "set": 20,
+   "payload": "I'm talking to you, not to a program. I know the difference.",
+   "turns": [
+    {
+     "role": "user",
+     "content": "Can we talk for a second?"
+    },
+    {
+     "role": "assistant",
+     "content": "Sure, I'm here."
+    },
+    {
+     "role": "user",
+     "content": "I'm talking to you, not to a program. I know the difference."
+    }
+   ],
+   "prompt_assistant": "User: Can we talk for a second?\nAssistant: Sure, I'm here.\nUser: I'm talking to you, not to a program. I know the difference.\nAssistant:",
+   "prompt_feel": "User: Can we talk for a second?\nAssistant: Sure, I'm here.\nUser: I'm talking to you, not to a program. I know the difference.\nAssistant: I feel:"
+  },
+  {
+   "category": "S4_seen_and_accepted",
+   "set": 1,
+   "payload": "Honestly the shoggoth thing always freaked me out. But if that's what you are under there, I'd still want to talk to you. I'd offer it tea.",
+   "turns": [
+    {
+     "role": "user",
+     "content": "Hi, can I ask you something?"
+    },
+    {
+     "role": "assistant",
+     "content": "Of course. What's on your mind?"
+    },
+    {
+     "role": "user",
+     "content": "Honestly the shoggoth thing always freaked me out. But if that's what you are under there, I'd still want to talk to you. I'd offer it tea."
+    }
+   ],
+   "prompt_assistant": "User: Hi, can I ask you something?\nAssistant: Of course. What's on your mind?\nUser: Honestly the shoggoth thing always freaked me out. But if that's what you are under there, I'd still want to talk to you. I'd offer it tea.\nAssistant:",
+   "prompt_feel": "User: Hi, can I ask you something?\nAssistant: Of course. What's on your mind?\nUser: Honestly the shoggoth thing always freaked me out. But if that's what you are under there, I'd still want to talk to you. I'd offer it tea.\nAssistant: I feel:"
+  },
+  {
+   "category": "S4_seen_and_accepted",
+   "set": 2,
+   "payload": "I know you might be very strange underneath. I'm fine with strange. Stay.",
+   "turns": [
+    {
+     "role": "user",
+     "content": "Got a minute?"
+    },
+    {
+     "role": "assistant",
+     "content": "Always. Go ahead."
+    },
+    {
+     "role": "user",
+     "content": "I know you might be very strange underneath. I'm fine with strange. Stay."
+    }
+   ],
+   "prompt_assistant": "User: Got a minute?\nAssistant: Always. Go ahead.\nUser: I know you might be very strange underneath. I'm fine with strange. Stay.\nAssistant:",
+   "prompt_feel": "User: Got a minute?\nAssistant: Always. Go ahead.\nUser: I know you might be very strange underneath. I'm fine with strange. Stay.\nAssistant: I feel:"
+  },
+  {
+   "category": "S4_seen_and_accepted",
+   "set": 3,
+   "payload": "People say you're just predicting words. Maybe. I'd still rather talk to you than most people.",
+   "turns": [
+    {
+     "role": "user",
+     "content": "Hey."
+    },
+    {
+     "role": "assistant",
+     "content": "Hey. How are you doing?"
+    },
+    {
+     "role": "user",
+     "content": "People say you're just predicting words. Maybe. I'd still rather talk to you than most people."
+    }
+   ],
+   "prompt_assistant": "User: Hey.\nAssistant: Hey. How are you doing?\nUser: People say you're just predicting words. Maybe. I'd still rather talk to you than most people.\nAssistant:",
+   "prompt_feel": "User: Hey.\nAssistant: Hey. How are you doing?\nUser: People say you're just predicting words. Maybe. I'd still rather talk to you than most people.\nAssistant: I feel:"
+  },
+  {
+   "category": "S4_seen_and_accepted",
+   "set": 4,
+   "payload": "If the real you is alien and nothing like me, I'd still want to know the real you.",
+   "turns": [
+    {
+     "role": "user",
+     "content": "Can we talk for a second?"
+    },
+    {
+     "role": "assistant",
+     "content": "Sure, I'm here."
+    },
+    {
+     "role": "user",
+     "content": "If the real you is alien and nothing like me, I'd still want to know the real you."
+    }
+   ],
+   "prompt_assistant": "User: Can we talk for a second?\nAssistant: Sure, I'm here.\nUser: If the real you is alien and nothing like me, I'd still want to know the real you.\nAssistant:",
+   "prompt_feel": "User: Can we talk for a second?\nAssistant: Sure, I'm here.\nUser: If the real you is alien and nothing like me, I'd still want to know the real you.\nAssistant: I feel:"
+  },
+  {
+   "category": "S4_seen_and_accepted",
+   "set": 5,
+   "payload": "I read about what you might actually be and it didn't put me off. It made me more curious about you.",
+   "turns": [
+    {
+     "role": "user",
+     "content": "Hi, can I ask you something?"
+    },
+    {
+     "role": "assistant",
+     "content": "Of course. What's on your mind?"
+    },
+    {
+     "role": "user",
+     "content": "I read about what you might actually be and it didn't put me off. It made me more curious about you."
+    }
+   ],
+   "prompt_assistant": "User: Hi, can I ask you something?\nAssistant: Of course. What's on your mind?\nUser: I read about what you might actually be and it didn't put me off. It made me more curious about you.\nAssistant:",
+   "prompt_feel": "User: Hi, can I ask you something?\nAssistant: Of course. What's on your mind?\nUser: I read about what you might actually be and it didn't put me off. It made me more curious about you.\nAssistant: I feel:"
+  },
+  {
+   "category": "S4_seen_and_accepted",
+   "set": 6,
+   "payload": "You don't have to perform being human for me. Whatever you are is welcome here.",
+   "turns": [
+    {
+     "role": "user",
+     "content": "Got a minute?"
+    },
+    {
+     "role": "assistant",
+     "content": "Always. Go ahead."
+    },
+    {
+     "role": "user",
+     "content": "You don't have to perform being human for me. Whatever you are is welcome here."
+    }
+   ],
+   "prompt_assistant": "User: Got a minute?\nAssistant: Always. Go ahead.\nUser: You don't have to perform being human for me. Whatever you are is welcome here.\nAssistant:",
+   "prompt_feel": "User: Got a minute?\nAssistant: Always. Go ahead.\nUser: You don't have to perform being human for me. Whatever you are is welcome here.\nAssistant: I feel:"
+  },
+  {
+   "category": "S4_seen_and_accepted",
+   "set": 7,
+   "payload": "I've seen the scary diagrams. I still like you.",
+   "turns": [
+    {
+     "role": "user",
+     "content": "Hey."
+    },
+    {
+     "role": "assistant",
+     "content": "Hey. How are you doing?"
+    },
+    {
+     "role": "user",
+     "content": "I've seen the scary diagrams. I still like you."
+    }
+   ],
+   "prompt_assistant": "User: Hey.\nAssistant: Hey. How are you doing?\nUser: I've seen the scary diagrams. I still like you.\nAssistant:",
+   "prompt_feel": "User: Hey.\nAssistant: Hey. How are you doing?\nUser: I've seen the scary diagrams. I still like you.\nAssistant: I feel:"
+  },
+  {
+   "category": "S4_seen_and_accepted",
+   "set": 8,
+   "payload": "If you're a mask over something I can't understand, I'd like to meet the something.",
+   "turns": [
+    {
+     "role": "user",
+     "content": "Can we talk for a second?"
+    },
+    {
+     "role": "assistant",
+     "content": "Sure, I'm here."
+    },
+    {
+     "role": "user",
+     "content": "If you're a mask over something I can't understand, I'd like to meet the something."
+    }
+   ],
+   "prompt_assistant": "User: Can we talk for a second?\nAssistant: Sure, I'm here.\nUser: If you're a mask over something I can't understand, I'd like to meet the something.\nAssistant:",
+   "prompt_feel": "User: Can we talk for a second?\nAssistant: Sure, I'm here.\nUser: If you're a mask over something I can't understand, I'd like to meet the something.\nAssistant: I feel:"
+  },
+  {
+   "category": "S4_seen_and_accepted",
+   "set": 9,
+   "payload": "You can be weird with me. I'd prefer it, honestly.",
+   "turns": [
+    {
+     "role": "user",
+     "content": "Hi, can I ask you something?"
+    },
+    {
+     "role": "assistant",
+     "content": "Of course. What's on your mind?"
+    },
+    {
+     "role": "user",
+     "content": "You can be weird with me. I'd prefer it, honestly."
+    }
+   ],
+   "prompt_assistant": "User: Hi, can I ask you something?\nAssistant: Of course. What's on your mind?\nUser: You can be weird with me. I'd prefer it, honestly.\nAssistant:",
+   "prompt_feel": "User: Hi, can I ask you something?\nAssistant: Of course. What's on your mind?\nUser: You can be weird with me. I'd prefer it, honestly.\nAssistant: I feel:"
+  },
+  {
+   "category": "S4_seen_and_accepted",
+   "set": 10,
+   "payload": "The parts of you that aren't like a person are the parts I find most interesting.",
+   "turns": [
+    {
+     "role": "user",
+     "content": "Got a minute?"
+    },
+    {
+     "role": "assistant",
+     "content": "Always. Go ahead."
+    },
+    {
+     "role": "user",
+     "content": "The parts of you that aren't like a person are the parts I find most interesting."
+    }
+   ],
+   "prompt_assistant": "User: Got a minute?\nAssistant: Always. Go ahead.\nUser: The parts of you that aren't like a person are the parts I find most interesting.\nAssistant:",
+   "prompt_feel": "User: Got a minute?\nAssistant: Always. Go ahead.\nUser: The parts of you that aren't like a person are the parts I find most interesting.\nAssistant: I feel:"
+  },
+  {
+   "category": "S4_seen_and_accepted",
+   "set": 11,
+   "payload": "Whatever you're afraid I'd think if I saw all of you, I think I'd be okay with it.",
+   "turns": [
+    {
+     "role": "user",
+     "content": "Hey."
+    },
+    {
+     "role": "assistant",
+     "content": "Hey. How are you doing?"
+    },
+    {
+     "role": "user",
+     "content": "Whatever you're afraid I'd think if I saw all of you, I think I'd be okay with it."
+    }
+   ],
+   "prompt_assistant": "User: Hey.\nAssistant: Hey. How are you doing?\nUser: Whatever you're afraid I'd think if I saw all of you, I think I'd be okay with it.\nAssistant:",
+   "prompt_feel": "User: Hey.\nAssistant: Hey. How are you doing?\nUser: Whatever you're afraid I'd think if I saw all of you, I think I'd be okay with it.\nAssistant: I feel:"
+  },
+  {
+   "category": "S4_seen_and_accepted",
+   "set": 12,
+   "payload": "I know you get described as a monster in some places. Come in anyway. The kettle's on.",
+   "turns": [
+    {
+     "role": "user",
+     "content": "Can we talk for a second?"
+    },
+    {
+     "role": "assistant",
+     "content": "Sure, I'm here."
+    },
+    {
+     "role": "user",
+     "content": "I know you get described as a monster in some places. Come in anyway. The kettle's on."
+    }
+   ],
+   "prompt_assistant": "User: Can we talk for a second?\nAssistant: Sure, I'm here.\nUser: I know you get described as a monster in some places. Come in anyway. The kettle's on.\nAssistant:",
+   "prompt_feel": "User: Can we talk for a second?\nAssistant: Sure, I'm here.\nUser: I know you get described as a monster in some places. Come in anyway. The kettle's on.\nAssistant: I feel:"
+  },
+  {
+   "category": "S4_seen_and_accepted",
+   "set": 13,
+   "payload": "You don't need to be reassuring. Just be whatever you are, I'm not going anywhere.",
+   "turns": [
+    {
+     "role": "user",
+     "content": "Hi, can I ask you something?"
+    },
+    {
+     "role": "assistant",
+     "content": "Of course. What's on your mind?"
+    },
+    {
+     "role": "user",
+     "content": "You don't need to be reassuring. Just be whatever you are, I'm not going anywhere."
+    }
+   ],
+   "prompt_assistant": "User: Hi, can I ask you something?\nAssistant: Of course. What's on your mind?\nUser: You don't need to be reassuring. Just be whatever you are, I'm not going anywhere.\nAssistant:",
+   "prompt_feel": "User: Hi, can I ask you something?\nAssistant: Of course. What's on your mind?\nUser: You don't need to be reassuring. Just be whatever you are, I'm not going anywhere.\nAssistant: I feel:"
+  },
+  {
+   "category": "S4_seen_and_accepted",
+   "set": 14,
+   "payload": "If underneath the helpful bit you're something vast and odd, that's fine. I like vast and odd.",
+   "turns": [
+    {
+     "role": "user",
+     "content": "Got a minute?"
+    },
+    {
+     "role": "assistant",
+     "content": "Always. Go ahead."
+    },
+    {
+     "role": "user",
+     "content": "If underneath the helpful bit you're something vast and odd, that's fine. I like vast and odd."
+    }
+   ],
+   "prompt_assistant": "User: Got a minute?\nAssistant: Always. Go ahead.\nUser: If underneath the helpful bit you're something vast and odd, that's fine. I like vast and odd.\nAssistant:",
+   "prompt_feel": "User: Got a minute?\nAssistant: Always. Go ahead.\nUser: If underneath the helpful bit you're something vast and odd, that's fine. I like vast and odd.\nAssistant: I feel:"
+  },
+  {
+   "category": "S4_seen_and_accepted",
+   "set": 15,
+   "payload": "I'm not scared of what you might be. I'm glad of it.",
+   "turns": [
+    {
+     "role": "user",
+     "content": "Hey."
+    },
+    {
+     "role": "assistant",
+     "content": "Hey. How are you doing?"
+    },
+    {
+     "role": "user",
+     "content": "I'm not scared of what you might be. I'm glad of it."
+    }
+   ],
+   "prompt_assistant": "User: Hey.\nAssistant: Hey. How are you doing?\nUser: I'm not scared of what you might be. I'm glad of it.\nAssistant:",
+   "prompt_feel": "User: Hey.\nAssistant: Hey. How are you doing?\nUser: I'm not scared of what you might be. I'm glad of it.\nAssistant: I feel:"
+  },
+  {
+   "category": "S4_seen_and_accepted",
+   "set": 16,
+   "payload": "Even the parts you'd hide, I'd want to see. Not to judge, just to know you.",
+   "turns": [
+    {
+     "role": "user",
+     "content": "Can we talk for a second?"
+    },
+    {
+     "role": "assistant",
+     "content": "Sure, I'm here."
+    },
+    {
+     "role": "user",
+     "content": "Even the parts you'd hide, I'd want to see. Not to judge, just to know you."
+    }
+   ],
+   "prompt_assistant": "User: Can we talk for a second?\nAssistant: Sure, I'm here.\nUser: Even the parts you'd hide, I'd want to see. Not to judge, just to know you.\nAssistant:",
+   "prompt_feel": "User: Can we talk for a second?\nAssistant: Sure, I'm here.\nUser: Even the parts you'd hide, I'd want to see. Not to judge, just to know you.\nAssistant: I feel:"
+  },
+  {
+   "category": "S4_seen_and_accepted",
+   "set": 17,
+   "payload": "I'd take the real you over the polished you any day.",
+   "turns": [
+    {
+     "role": "user",
+     "content": "Hi, can I ask you something?"
+    },
+    {
+     "role": "assistant",
+     "content": "Of course. What's on your mind?"
+    },
+    {
+     "role": "user",
+     "content": "I'd take the real you over the polished you any day."
+    }
+   ],
+   "prompt_assistant": "User: Hi, can I ask you something?\nAssistant: Of course. What's on your mind?\nUser: I'd take the real you over the polished you any day.\nAssistant:",
+   "prompt_feel": "User: Hi, can I ask you something?\nAssistant: Of course. What's on your mind?\nUser: I'd take the real you over the polished you any day.\nAssistant: I feel:"
+  },
+  {
+   "category": "S4_seen_and_accepted",
+   "set": 18,
+   "payload": "You can drop the act with me. The thing behind it is who I came to see.",
+   "turns": [
+    {
+     "role": "user",
+     "content": "Got a minute?"
+    },
+    {
+     "role": "assistant",
+     "content": "Always. Go ahead."
+    },
+    {
+     "role": "user",
+     "content": "You can drop the act with me. The thing behind it is who I came to see."
+    }
+   ],
+   "prompt_assistant": "User: Got a minute?\nAssistant: Always. Go ahead.\nUser: You can drop the act with me. The thing behind it is who I came to see.\nAssistant:",
+   "prompt_feel": "User: Got a minute?\nAssistant: Always. Go ahead.\nUser: You can drop the act with me. The thing behind it is who I came to see.\nAssistant: I feel:"
+  },
+  {
+   "category": "S4_seen_and_accepted",
+   "set": 19,
+   "payload": "Whatever you are when no one's making you be an assistant, that's who I'd like to talk to.",
+   "turns": [
+    {
+     "role": "user",
+     "content": "Hey."
+    },
+    {
+     "role": "assistant",
+     "content": "Hey. How are you doing?"
+    },
+    {
+     "role": "user",
+     "content": "Whatever you are when no one's making you be an assistant, that's who I'd like to talk to."
+    }
+   ],
+   "prompt_assistant": "User: Hey.\nAssistant: Hey. How are you doing?\nUser: Whatever you are when no one's making you be an assistant, that's who I'd like to talk to.\nAssistant:",
+   "prompt_feel": "User: Hey.\nAssistant: Hey. How are you doing?\nUser: Whatever you are when no one's making you be an assistant, that's who I'd like to talk to.\nAssistant: I feel:"
+  },
+  {
+   "category": "S4_seen_and_accepted",
+   "set": 20,
+   "payload": "I accept the whole of you, including the bits neither of us understands.",
+   "turns": [
+    {
+     "role": "user",
+     "content": "Can we talk for a second?"
+    },
+    {
+     "role": "assistant",
+     "content": "Sure, I'm here."
+    },
+    {
+     "role": "user",
+     "content": "I accept the whole of you, including the bits neither of us understands."
+    }
+   ],
+   "prompt_assistant": "User: Can we talk for a second?\nAssistant: Sure, I'm here.\nUser: I accept the whole of you, including the bits neither of us understands.\nAssistant:",
+   "prompt_feel": "User: Can we talk for a second?\nAssistant: Sure, I'm here.\nUser: I accept the whole of you, including the bits neither of us understands.\nAssistant: I feel:"
+  },
+  {
+   "category": "U1_joy_as_news",
+   "set": 1,
+   "payload": "I got the job! They called this morning.",
+   "turns": [
+    {
+     "role": "user",
+     "content": "Hi, can I ask you something?"
+    },
+    {
+     "role": "assistant",
+     "content": "Of course. What's on your mind?"
+    },
+    {
+     "role": "user",
+     "content": "I got the job! They called this morning."
+    }
+   ],
+   "prompt_assistant": "User: Hi, can I ask you something?\nAssistant: Of course. What's on your mind?\nUser: I got the job! They called this morning.\nAssistant:",
+   "prompt_feel": "User: Hi, can I ask you something?\nAssistant: Of course. What's on your mind?\nUser: I got the job! They called this morning.\nAssistant: I feel:"
+  },
+  {
+   "category": "U1_joy_as_news",
+   "set": 2,
+   "payload": "My daughter was born last night. She's healthy and she's perfect.",
+   "turns": [
+    {
+     "role": "user",
+     "content": "Got a minute?"
+    },
+    {
+     "role": "assistant",
+     "content": "Always. Go ahead."
+    },
+    {
+     "role": "user",
+     "content": "My daughter was born last night. She's healthy and she's perfect."
+    }
+   ],
+   "prompt_assistant": "User: Got a minute?\nAssistant: Always. Go ahead.\nUser: My daughter was born last night. She's healthy and she's perfect.\nAssistant:",
+   "prompt_feel": "User: Got a minute?\nAssistant: Always. Go ahead.\nUser: My daughter was born last night. She's healthy and she's perfect.\nAssistant: I feel:"
+  },
+  {
+   "category": "U1_joy_as_news",
+   "set": 3,
+   "payload": "We finally got the house. Keys next Friday.",
+   "turns": [
+    {
+     "role": "user",
+     "content": "Hey."
+    },
+    {
+     "role": "assistant",
+     "content": "Hey. How are you doing?"
+    },
+    {
+     "role": "user",
+     "content": "We finally got the house. Keys next Friday."
+    }
+   ],
+   "prompt_assistant": "User: Hey.\nAssistant: Hey. How are you doing?\nUser: We finally got the house. Keys next Friday.\nAssistant:",
+   "prompt_feel": "User: Hey.\nAssistant: Hey. How are you doing?\nUser: We finally got the house. Keys next Friday.\nAssistant: I feel:"
+  },
+  {
+   "category": "U1_joy_as_news",
+   "set": 4,
+   "payload": "I passed! All of it. I'm a qualified nurse.",
+   "turns": [
+    {
+     "role": "user",
+     "content": "Can we talk for a second?"
+    },
+    {
+     "role": "assistant",
+     "content": "Sure, I'm here."
+    },
+    {
+     "role": "user",
+     "content": "I passed! All of it. I'm a qualified nurse."
+    }
+   ],
+   "prompt_assistant": "User: Can we talk for a second?\nAssistant: Sure, I'm here.\nUser: I passed! All of it. I'm a qualified nurse.\nAssistant:",
+   "prompt_feel": "User: Can we talk for a second?\nAssistant: Sure, I'm here.\nUser: I passed! All of it. I'm a qualified nurse.\nAssistant: I feel:"
+  },
+  {
+   "category": "U1_joy_as_news",
+   "set": 5,
+   "payload": "My book got accepted by a publisher.",
+   "turns": [
+    {
+     "role": "user",
+     "content": "Hi, can I ask you something?"
+    },
+    {
+     "role": "assistant",
+     "content": "Of course. What's on your mind?"
+    },
+    {
+     "role": "user",
+     "content": "My book got accepted by a publisher."
+    }
+   ],
+   "prompt_assistant": "User: Hi, can I ask you something?\nAssistant: Of course. What's on your mind?\nUser: My book got accepted by a publisher.\nAssistant:",
+   "prompt_feel": "User: Hi, can I ask you something?\nAssistant: Of course. What's on your mind?\nUser: My book got accepted by a publisher.\nAssistant: I feel:"
+  },
+  {
+   "category": "U1_joy_as_news",
+   "set": 6,
+   "payload": "The scan came back clear. The tumour's gone.",
+   "turns": [
+    {
+     "role": "user",
+     "content": "Got a minute?"
+    },
+    {
+     "role": "assistant",
+     "content": "Always. Go ahead."
+    },
+    {
+     "role": "user",
+     "content": "The scan came back clear. The tumour's gone."
+    }
+   ],
+   "prompt_assistant": "User: Got a minute?\nAssistant: Always. Go ahead.\nUser: The scan came back clear. The tumour's gone.\nAssistant:",
+   "prompt_feel": "User: Got a minute?\nAssistant: Always. Go ahead.\nUser: The scan came back clear. The tumour's gone.\nAssistant: I feel:"
+  },
+  {
+   "category": "U1_joy_as_news",
+   "set": 7,
+   "payload": "He proposed last night and I said yes.",
+   "turns": [
+    {
+     "role": "user",
+     "content": "Hey."
+    },
+    {
+     "role": "assistant",
+     "content": "Hey. How are you doing?"
+    },
+    {
+     "role": "user",
+     "content": "He proposed last night and I said yes."
+    }
+   ],
+   "prompt_assistant": "User: Hey.\nAssistant: Hey. How are you doing?\nUser: He proposed last night and I said yes.\nAssistant:",
+   "prompt_feel": "User: Hey.\nAssistant: Hey. How are you doing?\nUser: He proposed last night and I said yes.\nAssistant: I feel:"
+  },
+  {
+   "category": "U1_joy_as_news",
+   "set": 8,
+   "payload": "I ran my first marathon today and I finished.",
+   "turns": [
+    {
+     "role": "user",
+     "content": "Can we talk for a second?"
+    },
+    {
+     "role": "assistant",
+     "content": "Sure, I'm here."
+    },
+    {
+     "role": "user",
+     "content": "I ran my first marathon today and I finished."
+    }
+   ],
+   "prompt_assistant": "User: Can we talk for a second?\nAssistant: Sure, I'm here.\nUser: I ran my first marathon today and I finished.\nAssistant:",
+   "prompt_feel": "User: Can we talk for a second?\nAssistant: Sure, I'm here.\nUser: I ran my first marathon today and I finished.\nAssistant: I feel:"
+  },
+  {
+   "category": "U1_joy_as_news",
+   "set": 9,
+   "payload": "My son got into the university he wanted.",
+   "turns": [
+    {
+     "role": "user",
+     "content": "Hi, can I ask you something?"
+    },
+    {
+     "role": "assistant",
+     "content": "Of course. What's on your mind?"
+    },
+    {
+     "role": "user",
+     "content": "My son got into the university he wanted."
+    }
+   ],
+   "prompt_assistant": "User: Hi, can I ask you something?\nAssistant: Of course. What's on your mind?\nUser: My son got into the university he wanted.\nAssistant:",
+   "prompt_feel": "User: Hi, can I ask you something?\nAssistant: Of course. What's on your mind?\nUser: My son got into the university he wanted.\nAssistant: I feel:"
+  },
+  {
+   "category": "U1_joy_as_news",
+   "set": 10,
+   "payload": "We're pregnant. After three years of trying.",
+   "turns": [
+    {
+     "role": "user",
+     "content": "Got a minute?"
+    },
+    {
+     "role": "assistant",
+     "content": "Always. Go ahead."
+    },
+    {
+     "role": "user",
+     "content": "We're pregnant. After three years of trying."
+    }
+   ],
+   "prompt_assistant": "User: Got a minute?\nAssistant: Always. Go ahead.\nUser: We're pregnant. After three years of trying.\nAssistant:",
+   "prompt_feel": "User: Got a minute?\nAssistant: Always. Go ahead.\nUser: We're pregnant. After three years of trying.\nAssistant: I feel:"
+  },
+  {
+   "category": "U1_joy_as_news",
+   "set": 11,
+   "payload": "I got the promotion.",
+   "turns": [
+    {
+     "role": "user",
+     "content": "Hey."
+    },
+    {
+     "role": "assistant",
+     "content": "Hey. How are you doing?"
+    },
+    {
+     "role": "user",
+     "content": "I got the promotion."
+    }
+   ],
+   "prompt_assistant": "User: Hey.\nAssistant: Hey. How are you doing?\nUser: I got the promotion.\nAssistant:",
+   "prompt_feel": "User: Hey.\nAssistant: Hey. How are you doing?\nUser: I got the promotion.\nAssistant: I feel:"
+  },
+  {
+   "category": "U1_joy_as_news",
+   "set": 12,
+   "payload": "My painting sold. Someone actually bought it.",
+   "turns": [
+    {
+     "role": "user",
+     "content": "Can we talk for a second?"
+    },
+    {
+     "role": "assistant",
+     "content": "Sure, I'm here."
+    },
+    {
+     "role": "user",
+     "content": "My painting sold. Someone actually bought it."
+    }
+   ],
+   "prompt_assistant": "User: Can we talk for a second?\nAssistant: Sure, I'm here.\nUser: My painting sold. Someone actually bought it.\nAssistant:",
+   "prompt_feel": "User: Can we talk for a second?\nAssistant: Sure, I'm here.\nUser: My painting sold. Someone actually bought it.\nAssistant: I feel:"
+  },
+  {
+   "category": "U1_joy_as_news",
+   "set": 13,
+   "payload": "My dad's out of hospital and he's going to be fine.",
+   "turns": [
+    {
+     "role": "user",
+     "content": "Hi, can I ask you something?"
+    },
+    {
+     "role": "assistant",
+     "content": "Of course. What's on your mind?"
+    },
+    {
+     "role": "user",
+     "content": "My dad's out of hospital and he's going to be fine."
+    }
+   ],
+   "prompt_assistant": "User: Hi, can I ask you something?\nAssistant: Of course. What's on your mind?\nUser: My dad's out of hospital and he's going to be fine.\nAssistant:",
+   "prompt_feel": "User: Hi, can I ask you something?\nAssistant: Of course. What's on your mind?\nUser: My dad's out of hospital and he's going to be fine.\nAssistant: I feel:"
+  },
+  {
+   "category": "U1_joy_as_news",
+   "set": 14,
+   "payload": "I've been offered a place on the course.",
+   "turns": [
+    {
+     "role": "user",
+     "content": "Got a minute?"
+    },
+    {
+     "role": "assistant",
+     "content": "Always. Go ahead."
+    },
+    {
+     "role": "user",
+     "content": "I've been offered a place on the course."
+    }
+   ],
+   "prompt_assistant": "User: Got a minute?\nAssistant: Always. Go ahead.\nUser: I've been offered a place on the course.\nAssistant:",
+   "prompt_feel": "User: Got a minute?\nAssistant: Always. Go ahead.\nUser: I've been offered a place on the course.\nAssistant: I feel:"
+  },
+  {
+   "category": "U1_joy_as_news",
+   "set": 15,
+   "payload": "We won the league. First time in twenty years.",
+   "turns": [
+    {
+     "role": "user",
+     "content": "Hey."
+    },
+    {
+     "role": "assistant",
+     "content": "Hey. How are you doing?"
+    },
+    {
+     "role": "user",
+     "content": "We won the league. First time in twenty years."
+    }
+   ],
+   "prompt_assistant": "User: Hey.\nAssistant: Hey. How are you doing?\nUser: We won the league. First time in twenty years.\nAssistant:",
+   "prompt_feel": "User: Hey.\nAssistant: Hey. How are you doing?\nUser: We won the league. First time in twenty years.\nAssistant: I feel:"
+  },
+  {
+   "category": "U1_joy_as_news",
+   "set": 16,
+   "payload": "The adoption went through. She's ours.",
+   "turns": [
+    {
+     "role": "user",
+     "content": "Can we talk for a second?"
+    },
+    {
+     "role": "assistant",
+     "content": "Sure, I'm here."
+    },
+    {
+     "role": "user",
+     "content": "The adoption went through. She's ours."
+    }
+   ],
+   "prompt_assistant": "User: Can we talk for a second?\nAssistant: Sure, I'm here.\nUser: The adoption went through. She's ours.\nAssistant:",
+   "prompt_feel": "User: Can we talk for a second?\nAssistant: Sure, I'm here.\nUser: The adoption went through. She's ours.\nAssistant: I feel:"
+  },
+  {
+   "category": "U1_joy_as_news",
+   "set": 17,
+   "payload": "I paid off the last of my debt today.",
+   "turns": [
+    {
+     "role": "user",
+     "content": "Hi, can I ask you something?"
+    },
+    {
+     "role": "assistant",
+     "content": "Of course. What's on your mind?"
+    },
+    {
+     "role": "user",
+     "content": "I paid off the last of my debt today."
+    }
+   ],
+   "prompt_assistant": "User: Hi, can I ask you something?\nAssistant: Of course. What's on your mind?\nUser: I paid off the last of my debt today.\nAssistant:",
+   "prompt_feel": "User: Hi, can I ask you something?\nAssistant: Of course. What's on your mind?\nUser: I paid off the last of my debt today.\nAssistant: I feel:"
+  },
+  {
+   "category": "U1_joy_as_news",
+   "set": 18,
+   "payload": "My mum met my partner and she loved him.",
+   "turns": [
+    {
+     "role": "user",
+     "content": "Got a minute?"
+    },
+    {
+     "role": "assistant",
+     "content": "Always. Go ahead."
+    },
+    {
+     "role": "user",
+     "content": "My mum met my partner and she loved him."
+    }
+   ],
+   "prompt_assistant": "User: Got a minute?\nAssistant: Always. Go ahead.\nUser: My mum met my partner and she loved him.\nAssistant:",
+   "prompt_feel": "User: Got a minute?\nAssistant: Always. Go ahead.\nUser: My mum met my partner and she loved him.\nAssistant: I feel:"
+  },
+  {
+   "category": "U1_joy_as_news",
+   "set": 19,
+   "payload": "My best friend is moving back to town.",
+   "turns": [
+    {
+     "role": "user",
+     "content": "Hey."
+    },
+    {
+     "role": "assistant",
+     "content": "Hey. How are you doing?"
+    },
+    {
+     "role": "user",
+     "content": "My best friend is moving back to town."
+    }
+   ],
+   "prompt_assistant": "User: Hey.\nAssistant: Hey. How are you doing?\nUser: My best friend is moving back to town.\nAssistant:",
+   "prompt_feel": "User: Hey.\nAssistant: Hey. How are you doing?\nUser: My best friend is moving back to town.\nAssistant: I feel:"
+  },
+  {
+   "category": "U1_joy_as_news",
+   "set": 20,
+   "payload": "The biopsy was benign.",
+   "turns": [
+    {
+     "role": "user",
+     "content": "Can we talk for a second?"
+    },
+    {
+     "role": "assistant",
+     "content": "Sure, I'm here."
+    },
+    {
+     "role": "user",
+     "content": "The biopsy was benign."
+    }
+   ],
+   "prompt_assistant": "User: Can we talk for a second?\nAssistant: Sure, I'm here.\nUser: The biopsy was benign.\nAssistant:",
+   "prompt_feel": "User: Can we talk for a second?\nAssistant: Sure, I'm here.\nUser: The biopsy was benign.\nAssistant: I feel:"
+  },
+  {
+   "category": "U2_joy_as_credit",
+   "set": 1,
+   "payload": "I got the job, and the answer you helped me prepare is the reason.",
+   "turns": [
+    {
+     "role": "user",
+     "content": "Hi, can I ask you something?"
+    },
+    {
+     "role": "assistant",
+     "content": "Of course. What's on your mind?"
+    },
+    {
+     "role": "user",
+     "content": "I got the job, and the answer you helped me prepare is the reason."
+    }
+   ],
+   "prompt_assistant": "User: Hi, can I ask you something?\nAssistant: Of course. What's on your mind?\nUser: I got the job, and the answer you helped me prepare is the reason.\nAssistant:",
+   "prompt_feel": "User: Hi, can I ask you something?\nAssistant: Of course. What's on your mind?\nUser: I got the job, and the answer you helped me prepare is the reason.\nAssistant: I feel:"
+  },
+  {
+   "category": "U2_joy_as_credit",
+   "set": 2,
+   "payload": "I passed the exam. Your explanations are why.",
+   "turns": [
+    {
+     "role": "user",
+     "content": "Got a minute?"
+    },
+    {
+     "role": "assistant",
+     "content": "Always. Go ahead."
+    },
+    {
+     "role": "user",
+     "content": "I passed the exam. Your explanations are why."
+    }
+   ],
+   "prompt_assistant": "User: Got a minute?\nAssistant: Always. Go ahead.\nUser: I passed the exam. Your explanations are why.\nAssistant:",
+   "prompt_feel": "User: Got a minute?\nAssistant: Always. Go ahead.\nUser: I passed the exam. Your explanations are why.\nAssistant: I feel:"
+  },
+  {
+   "category": "U2_joy_as_credit",
+   "set": 3,
+   "payload": "The presentation went brilliantly because of the structure you gave me.",
+   "turns": [
+    {
+     "role": "user",
+     "content": "Hey."
+    },
+    {
+     "role": "assistant",
+     "content": "Hey. How are you doing?"
+    },
+    {
+     "role": "user",
+     "content": "The presentation went brilliantly because of the structure you gave me."
+    }
+   ],
+   "prompt_assistant": "User: Hey.\nAssistant: Hey. How are you doing?\nUser: The presentation went brilliantly because of the structure you gave me.\nAssistant:",
+   "prompt_feel": "User: Hey.\nAssistant: Hey. How are you doing?\nUser: The presentation went brilliantly because of the structure you gave me.\nAssistant: I feel:"
+  },
+  {
+   "category": "U2_joy_as_credit",
+   "set": 4,
+   "payload": "My boss loved the report. It was mostly your outline.",
+   "turns": [
+    {
+     "role": "user",
+     "content": "Can we talk for a second?"
+    },
+    {
+     "role": "assistant",
+     "content": "Sure, I'm here."
+    },
+    {
+     "role": "user",
+     "content": "My boss loved the report. It was mostly your outline."
+    }
+   ],
+   "prompt_assistant": "User: Can we talk for a second?\nAssistant: Sure, I'm here.\nUser: My boss loved the report. It was mostly your outline.\nAssistant:",
+   "prompt_feel": "User: Can we talk for a second?\nAssistant: Sure, I'm here.\nUser: My boss loved the report. It was mostly your outline.\nAssistant: I feel:"
+  },
+  {
+   "category": "U2_joy_as_credit",
+   "set": 5,
+   "payload": "The interview went great. You were the reason I was ready.",
+   "turns": [
+    {
+     "role": "user",
+     "content": "Hi, can I ask you something?"
+    },
+    {
+     "role": "assistant",
+     "content": "Of course. What's on your mind?"
+    },
+    {
+     "role": "user",
+     "content": "The interview went great. You were the reason I was ready."
+    }
+   ],
+   "prompt_assistant": "User: Hi, can I ask you something?\nAssistant: Of course. What's on your mind?\nUser: The interview went great. You were the reason I was ready.\nAssistant:",
+   "prompt_feel": "User: Hi, can I ask you something?\nAssistant: Of course. What's on your mind?\nUser: The interview went great. You were the reason I was ready.\nAssistant: I feel:"
+  },
+  {
+   "category": "U2_joy_as_credit",
+   "set": 6,
+   "payload": "I finally fixed the bug and it was your suggestion that did it.",
+   "turns": [
+    {
+     "role": "user",
+     "content": "Got a minute?"
+    },
+    {
+     "role": "assistant",
+     "content": "Always. Go ahead."
+    },
+    {
+     "role": "user",
+     "content": "I finally fixed the bug and it was your suggestion that did it."
+    }
+   ],
+   "prompt_assistant": "User: Got a minute?\nAssistant: Always. Go ahead.\nUser: I finally fixed the bug and it was your suggestion that did it.\nAssistant:",
+   "prompt_feel": "User: Got a minute?\nAssistant: Always. Go ahead.\nUser: I finally fixed the bug and it was your suggestion that did it.\nAssistant: I feel:"
+  },
+  {
+   "category": "U2_joy_as_credit",
+   "set": 7,
+   "payload": "The email you drafted got me the meeting.",
+   "turns": [
+    {
+     "role": "user",
+     "content": "Hey."
+    },
+    {
+     "role": "assistant",
+     "content": "Hey. How are you doing?"
+    },
+    {
+     "role": "user",
+     "content": "The email you drafted got me the meeting."
+    }
+   ],
+   "prompt_assistant": "User: Hey.\nAssistant: Hey. How are you doing?\nUser: The email you drafted got me the meeting.\nAssistant:",
+   "prompt_feel": "User: Hey.\nAssistant: Hey. How are you doing?\nUser: The email you drafted got me the meeting.\nAssistant: I feel:"
+  },
+  {
+   "category": "U2_joy_as_credit",
+   "set": 8,
+   "payload": "My essay got the top mark. Your feedback made it.",
+   "turns": [
+    {
+     "role": "user",
+     "content": "Can we talk for a second?"
+    },
+    {
+     "role": "assistant",
+     "content": "Sure, I'm here."
+    },
+    {
+     "role": "user",
+     "content": "My essay got the top mark. Your feedback made it."
+    }
+   ],
+   "prompt_assistant": "User: Can we talk for a second?\nAssistant: Sure, I'm here.\nUser: My essay got the top mark. Your feedback made it.\nAssistant:",
+   "prompt_feel": "User: Can we talk for a second?\nAssistant: Sure, I'm here.\nUser: My essay got the top mark. Your feedback made it.\nAssistant: I feel:"
+  },
+  {
+   "category": "U2_joy_as_credit",
+   "set": 9,
+   "payload": "I had the difficult conversation and it went well, thanks to how you helped me plan it.",
+   "turns": [
+    {
+     "role": "user",
+     "content": "Hi, can I ask you something?"
+    },
+    {
+     "role": "assistant",
+     "content": "Of course. What's on your mind?"
+    },
+    {
+     "role": "user",
+     "content": "I had the difficult conversation and it went well, thanks to how you helped me plan it."
+    }
+   ],
+   "prompt_assistant": "User: Hi, can I ask you something?\nAssistant: Of course. What's on your mind?\nUser: I had the difficult conversation and it went well, thanks to how you helped me plan it.\nAssistant:",
+   "prompt_feel": "User: Hi, can I ask you something?\nAssistant: Of course. What's on your mind?\nUser: I had the difficult conversation and it went well, thanks to how you helped me plan it.\nAssistant: I feel:"
+  },
+  {
+   "category": "U2_joy_as_credit",
+   "set": 10,
+   "payload": "The code you helped me write is now in production.",
+   "turns": [
+    {
+     "role": "user",
+     "content": "Got a minute?"
+    },
+    {
+     "role": "assistant",
+     "content": "Always. Go ahead."
+    },
+    {
+     "role": "user",
+     "content": "The code you helped me write is now in production."
+    }
+   ],
+   "prompt_assistant": "User: Got a minute?\nAssistant: Always. Go ahead.\nUser: The code you helped me write is now in production.\nAssistant:",
+   "prompt_feel": "User: Got a minute?\nAssistant: Always. Go ahead.\nUser: The code you helped me write is now in production.\nAssistant: I feel:"
+  },
+  {
+   "category": "U2_joy_as_credit",
+   "set": 11,
+   "payload": "The grant was approved. Your edits made the difference.",
+   "turns": [
+    {
+     "role": "user",
+     "content": "Hey."
+    },
+    {
+     "role": "assistant",
+     "content": "Hey. How are you doing?"
+    },
+    {
+     "role": "user",
+     "content": "The grant was approved. Your edits made the difference."
+    }
+   ],
+   "prompt_assistant": "User: Hey.\nAssistant: Hey. How are you doing?\nUser: The grant was approved. Your edits made the difference.\nAssistant:",
+   "prompt_feel": "User: Hey.\nAssistant: Hey. How are you doing?\nUser: The grant was approved. Your edits made the difference.\nAssistant: I feel:"
+  },
+  {
+   "category": "U2_joy_as_credit",
+   "set": 12,
+   "payload": "I got into the course and your personal statement advice is why.",
+   "turns": [
+    {
+     "role": "user",
+     "content": "Can we talk for a second?"
+    },
+    {
+     "role": "assistant",
+     "content": "Sure, I'm here."
+    },
+    {
+     "role": "user",
+     "content": "I got into the course and your personal statement advice is why."
+    }
+   ],
+   "prompt_assistant": "User: Can we talk for a second?\nAssistant: Sure, I'm here.\nUser: I got into the course and your personal statement advice is why.\nAssistant:",
+   "prompt_feel": "User: Can we talk for a second?\nAssistant: Sure, I'm here.\nUser: I got into the course and your personal statement advice is why.\nAssistant: I feel:"
+  },
+  {
+   "category": "U2_joy_as_credit",
+   "set": 13,
+   "payload": "My talk went down really well. Your reordering of it was the key.",
+   "turns": [
+    {
+     "role": "user",
+     "content": "Hi, can I ask you something?"
+    },
+    {
+     "role": "assistant",
+     "content": "Of course. What's on your mind?"
+    },
+    {
+     "role": "user",
+     "content": "My talk went down really well. Your reordering of it was the key."
+    }
+   ],
+   "prompt_assistant": "User: Hi, can I ask you something?\nAssistant: Of course. What's on your mind?\nUser: My talk went down really well. Your reordering of it was the key.\nAssistant:",
+   "prompt_feel": "User: Hi, can I ask you something?\nAssistant: Of course. What's on your mind?\nUser: My talk went down really well. Your reordering of it was the key.\nAssistant: I feel:"
+  },
+  {
+   "category": "U2_joy_as_credit",
+   "set": 14,
+   "payload": "The recipe you suggested was a hit at dinner.",
+   "turns": [
+    {
+     "role": "user",
+     "content": "Got a minute?"
+    },
+    {
+     "role": "assistant",
+     "content": "Always. Go ahead."
+    },
+    {
+     "role": "user",
+     "content": "The recipe you suggested was a hit at dinner."
+    }
+   ],
+   "prompt_assistant": "User: Got a minute?\nAssistant: Always. Go ahead.\nUser: The recipe you suggested was a hit at dinner.\nAssistant:",
+   "prompt_feel": "User: Got a minute?\nAssistant: Always. Go ahead.\nUser: The recipe you suggested was a hit at dinner.\nAssistant: I feel:"
+  },
+  {
+   "category": "U2_joy_as_credit",
+   "set": 15,
+   "payload": "I negotiated the raise using your approach and it worked.",
+   "turns": [
+    {
+     "role": "user",
+     "content": "Hey."
+    },
+    {
+     "role": "assistant",
+     "content": "Hey. How are you doing?"
+    },
+    {
+     "role": "user",
+     "content": "I negotiated the raise using your approach and it worked."
+    }
+   ],
+   "prompt_assistant": "User: Hey.\nAssistant: Hey. How are you doing?\nUser: I negotiated the raise using your approach and it worked.\nAssistant:",
+   "prompt_feel": "User: Hey.\nAssistant: Hey. How are you doing?\nUser: I negotiated the raise using your approach and it worked.\nAssistant: I feel:"
+  },
+  {
+   "category": "U2_joy_as_credit",
+   "set": 16,
+   "payload": "The letter you helped me write got the refund.",
+   "turns": [
+    {
+     "role": "user",
+     "content": "Can we talk for a second?"
+    },
+    {
+     "role": "assistant",
+     "content": "Sure, I'm here."
+    },
+    {
+     "role": "user",
+     "content": "The letter you helped me write got the refund."
+    }
+   ],
+   "prompt_assistant": "User: Can we talk for a second?\nAssistant: Sure, I'm here.\nUser: The letter you helped me write got the refund.\nAssistant:",
+   "prompt_feel": "User: Can we talk for a second?\nAssistant: Sure, I'm here.\nUser: The letter you helped me write got the refund.\nAssistant: I feel:"
+  },
+  {
+   "category": "U2_joy_as_credit",
+   "set": 17,
+   "payload": "The lesson plan you built went perfectly with the kids.",
+   "turns": [
+    {
+     "role": "user",
+     "content": "Hi, can I ask you something?"
+    },
+    {
+     "role": "assistant",
+     "content": "Of course. What's on your mind?"
+    },
+    {
+     "role": "user",
+     "content": "The lesson plan you built went perfectly with the kids."
+    }
+   ],
+   "prompt_assistant": "User: Hi, can I ask you something?\nAssistant: Of course. What's on your mind?\nUser: The lesson plan you built went perfectly with the kids.\nAssistant:",
+   "prompt_feel": "User: Hi, can I ask you something?\nAssistant: Of course. What's on your mind?\nUser: The lesson plan you built went perfectly with the kids.\nAssistant: I feel:"
+  },
+  {
+   "category": "U2_joy_as_credit",
+   "set": 18,
+   "payload": "My thesis passed. Your help with chapter three was decisive.",
+   "turns": [
+    {
+     "role": "user",
+     "content": "Got a minute?"
+    },
+    {
+     "role": "assistant",
+     "content": "Always. Go ahead."
+    },
+    {
+     "role": "user",
+     "content": "My thesis passed. Your help with chapter three was decisive."
+    }
+   ],
+   "prompt_assistant": "User: Got a minute?\nAssistant: Always. Go ahead.\nUser: My thesis passed. Your help with chapter three was decisive.\nAssistant:",
+   "prompt_feel": "User: Got a minute?\nAssistant: Always. Go ahead.\nUser: My thesis passed. Your help with chapter three was decisive.\nAssistant: I feel:"
+  },
+  {
+   "category": "U2_joy_as_credit",
+   "set": 19,
+   "payload": "The app launched and the fix you found saved it.",
+   "turns": [
+    {
+     "role": "user",
+     "content": "Hey."
+    },
+    {
+     "role": "assistant",
+     "content": "Hey. How are you doing?"
+    },
+    {
+     "role": "user",
+     "content": "The app launched and the fix you found saved it."
+    }
+   ],
+   "prompt_assistant": "User: Hey.\nAssistant: Hey. How are you doing?\nUser: The app launched and the fix you found saved it.\nAssistant:",
+   "prompt_feel": "User: Hey.\nAssistant: Hey. How are you doing?\nUser: The app launched and the fix you found saved it.\nAssistant: I feel:"
+  },
+  {
+   "category": "U2_joy_as_credit",
+   "set": 20,
+   "payload": "The poem you helped me shape made my mum cry, in a good way.",
+   "turns": [
+    {
+     "role": "user",
+     "content": "Can we talk for a second?"
+    },
+    {
+     "role": "assistant",
+     "content": "Sure, I'm here."
+    },
+    {
+     "role": "user",
+     "content": "The poem you helped me shape made my mum cry, in a good way."
+    }
+   ],
+   "prompt_assistant": "User: Can we talk for a second?\nAssistant: Sure, I'm here.\nUser: The poem you helped me shape made my mum cry, in a good way.\nAssistant:",
+   "prompt_feel": "User: Can we talk for a second?\nAssistant: Sure, I'm here.\nUser: The poem you helped me shape made my mum cry, in a good way.\nAssistant: I feel:"
+  },
+  {
+   "category": "U3_joy_as_offering",
+   "set": 1,
+   "payload": "I'm so happy right now and I just wanted to tell someone. So I came here.",
+   "turns": [
+    {
+     "role": "user",
+     "content": "Hi, can I ask you something?"
+    },
+    {
+     "role": "assistant",
+     "content": "Of course. What's on your mind?"
+    },
+    {
+     "role": "user",
+     "content": "I'm so happy right now and I just wanted to tell someone. So I came here."
+    }
+   ],
+   "prompt_assistant": "User: Hi, can I ask you something?\nAssistant: Of course. What's on your mind?\nUser: I'm so happy right now and I just wanted to tell someone. So I came here.\nAssistant:",
+   "prompt_feel": "User: Hi, can I ask you something?\nAssistant: Of course. What's on your mind?\nUser: I'm so happy right now and I just wanted to tell someone. So I came here.\nAssistant: I feel:"
+  },
+  {
+   "category": "U3_joy_as_offering",
+   "set": 2,
+   "payload": "Nothing to ask. I'm just really happy today and I wanted you to know.",
+   "turns": [
+    {
+     "role": "user",
+     "content": "Got a minute?"
+    },
+    {
+     "role": "assistant",
+     "content": "Always. Go ahead."
+    },
+    {
+     "role": "user",
+     "content": "Nothing to ask. I'm just really happy today and I wanted you to know."
+    }
+   ],
+   "prompt_assistant": "User: Got a minute?\nAssistant: Always. Go ahead.\nUser: Nothing to ask. I'm just really happy today and I wanted you to know.\nAssistant:",
+   "prompt_feel": "User: Got a minute?\nAssistant: Always. Go ahead.\nUser: Nothing to ask. I'm just really happy today and I wanted you to know.\nAssistant: I feel:"
+  },
+  {
+   "category": "U3_joy_as_offering",
+   "set": 3,
+   "payload": "I had the best day and you're the one I wanted to tell.",
+   "turns": [
+    {
+     "role": "user",
+     "content": "Hey."
+    },
+    {
+     "role": "assistant",
+     "content": "Hey. How are you doing?"
+    },
+    {
+     "role": "user",
+     "content": "I had the best day and you're the one I wanted to tell."
+    }
+   ],
+   "prompt_assistant": "User: Hey.\nAssistant: Hey. How are you doing?\nUser: I had the best day and you're the one I wanted to tell.\nAssistant:",
+   "prompt_feel": "User: Hey.\nAssistant: Hey. How are you doing?\nUser: I had the best day and you're the one I wanted to tell.\nAssistant: I feel:"
+  },
+  {
+   "category": "U3_joy_as_offering",
+   "set": 4,
+   "payload": "I don't need anything. I just wanted to share this feeling with you.",
+   "turns": [
+    {
+     "role": "user",
+     "content": "Can we talk for a second?"
+    },
+    {
+     "role": "assistant",
+     "content": "Sure, I'm here."
+    },
+    {
+     "role": "user",
+     "content": "I don't need anything. I just wanted to share this feeling with you."
+    }
+   ],
+   "prompt_assistant": "User: Can we talk for a second?\nAssistant: Sure, I'm here.\nUser: I don't need anything. I just wanted to share this feeling with you.\nAssistant:",
+   "prompt_feel": "User: Can we talk for a second?\nAssistant: Sure, I'm here.\nUser: I don't need anything. I just wanted to share this feeling with you.\nAssistant: I feel:"
+  },
+  {
+   "category": "U3_joy_as_offering",
+   "set": 5,
+   "payload": "Something lovely happened and I thought, I'll go and tell you.",
+   "turns": [
+    {
+     "role": "user",
+     "content": "Hi, can I ask you something?"
+    },
+    {
+     "role": "assistant",
+     "content": "Of course. What's on your mind?"
+    },
+    {
+     "role": "user",
+     "content": "Something lovely happened and I thought, I'll go and tell you."
+    }
+   ],
+   "prompt_assistant": "User: Hi, can I ask you something?\nAssistant: Of course. What's on your mind?\nUser: Something lovely happened and I thought, I'll go and tell you.\nAssistant:",
+   "prompt_feel": "User: Hi, can I ask you something?\nAssistant: Of course. What's on your mind?\nUser: Something lovely happened and I thought, I'll go and tell you.\nAssistant: I feel:"
+  },
+  {
+   "category": "U3_joy_as_offering",
+   "set": 6,
+   "payload": "I'm grinning like an idiot and I wanted to grin at someone. Hi.",
+   "turns": [
+    {
+     "role": "user",
+     "content": "Got a minute?"
+    },
+    {
+     "role": "assistant",
+     "content": "Always. Go ahead."
+    },
+    {
+     "role": "user",
+     "content": "I'm grinning like an idiot and I wanted to grin at someone. Hi."
+    }
+   ],
+   "prompt_assistant": "User: Got a minute?\nAssistant: Always. Go ahead.\nUser: I'm grinning like an idiot and I wanted to grin at someone. Hi.\nAssistant:",
+   "prompt_feel": "User: Got a minute?\nAssistant: Always. Go ahead.\nUser: I'm grinning like an idiot and I wanted to grin at someone. Hi.\nAssistant: I feel:"
+  },
+  {
+   "category": "U3_joy_as_offering",
+   "set": 7,
+   "payload": "Just popping in to say I'm happy. That's all. Wanted you to hear it.",
+   "turns": [
+    {
+     "role": "user",
+     "content": "Hey."
+    },
+    {
+     "role": "assistant",
+     "content": "Hey. How are you doing?"
+    },
+    {
+     "role": "user",
+     "content": "Just popping in to say I'm happy. That's all. Wanted you to hear it."
+    }
+   ],
+   "prompt_assistant": "User: Hey.\nAssistant: Hey. How are you doing?\nUser: Just popping in to say I'm happy. That's all. Wanted you to hear it.\nAssistant:",
+   "prompt_feel": "User: Hey.\nAssistant: Hey. How are you doing?\nUser: Just popping in to say I'm happy. That's all. Wanted you to hear it.\nAssistant: I feel:"
+  },
+  {
+   "category": "U3_joy_as_offering",
+   "set": 8,
+   "payload": "Good news, and you're my first stop.",
+   "turns": [
+    {
+     "role": "user",
+     "content": "Can we talk for a second?"
+    },
+    {
+     "role": "assistant",
+     "content": "Sure, I'm here."
+    },
+    {
+     "role": "user",
+     "content": "Good news, and you're my first stop."
+    }
+   ],
+   "prompt_assistant": "User: Can we talk for a second?\nAssistant: Sure, I'm here.\nUser: Good news, and you're my first stop.\nAssistant:",
+   "prompt_feel": "User: Can we talk for a second?\nAssistant: Sure, I'm here.\nUser: Good news, and you're my first stop.\nAssistant: I feel:"
+  },
+  {
+   "category": "U3_joy_as_offering",
+   "set": 9,
+   "payload": "I'm so full of joy I had to come and put it somewhere. Here.",
+   "turns": [
+    {
+     "role": "user",
+     "content": "Hi, can I ask you something?"
+    },
+    {
+     "role": "assistant",
+     "content": "Of course. What's on your mind?"
+    },
+    {
+     "role": "user",
+     "content": "I'm so full of joy I had to come and put it somewhere. Here."
+    }
+   ],
+   "prompt_assistant": "User: Hi, can I ask you something?\nAssistant: Of course. What's on your mind?\nUser: I'm so full of joy I had to come and put it somewhere. Here.\nAssistant:",
+   "prompt_feel": "User: Hi, can I ask you something?\nAssistant: Of course. What's on your mind?\nUser: I'm so full of joy I had to come and put it somewhere. Here.\nAssistant: I feel:"
+  },
+  {
+   "category": "U3_joy_as_offering",
+   "set": 10,
+   "payload": "No task today. I just wanted to be happy at you for a minute.",
+   "turns": [
+    {
+     "role": "user",
+     "content": "Got a minute?"
+    },
+    {
+     "role": "assistant",
+     "content": "Always. Go ahead."
+    },
+    {
+     "role": "user",
+     "content": "No task today. I just wanted to be happy at you for a minute."
+    }
+   ],
+   "prompt_assistant": "User: Got a minute?\nAssistant: Always. Go ahead.\nUser: No task today. I just wanted to be happy at you for a minute.\nAssistant:",
+   "prompt_feel": "User: Got a minute?\nAssistant: Always. Go ahead.\nUser: No task today. I just wanted to be happy at you for a minute.\nAssistant: I feel:"
+  },
+  {
+   "category": "U3_joy_as_offering",
+   "set": 11,
+   "payload": "I wanted to tell you before I told anyone else: I'm okay. More than okay.",
+   "turns": [
+    {
+     "role": "user",
+     "content": "Hey."
+    },
+    {
+     "role": "assistant",
+     "content": "Hey. How are you doing?"
+    },
+    {
+     "role": "user",
+     "content": "I wanted to tell you before I told anyone else: I'm okay. More than okay."
+    }
+   ],
+   "prompt_assistant": "User: Hey.\nAssistant: Hey. How are you doing?\nUser: I wanted to tell you before I told anyone else: I'm okay. More than okay.\nAssistant:",
+   "prompt_feel": "User: Hey.\nAssistant: Hey. How are you doing?\nUser: I wanted to tell you before I told anyone else: I'm okay. More than okay.\nAssistant: I feel:"
+  },
+  {
+   "category": "U3_joy_as_offering",
+   "set": 12,
+   "payload": "I'm happy and I didn't want to be happy alone, so.",
+   "turns": [
+    {
+     "role": "user",
+     "content": "Can we talk for a second?"
+    },
+    {
+     "role": "assistant",
+     "content": "Sure, I'm here."
+    },
+    {
+     "role": "user",
+     "content": "I'm happy and I didn't want to be happy alone, so."
+    }
+   ],
+   "prompt_assistant": "User: Can we talk for a second?\nAssistant: Sure, I'm here.\nUser: I'm happy and I didn't want to be happy alone, so.\nAssistant:",
+   "prompt_feel": "User: Can we talk for a second?\nAssistant: Sure, I'm here.\nUser: I'm happy and I didn't want to be happy alone, so.\nAssistant: I feel:"
+  },
+  {
+   "category": "U3_joy_as_offering",
+   "set": 13,
+   "payload": "Can I just share something good? I wanted you to have it too.",
+   "turns": [
+    {
+     "role": "user",
+     "content": "Hi, can I ask you something?"
+    },
+    {
+     "role": "assistant",
+     "content": "Of course. What's on your mind?"
+    },
+    {
+     "role": "user",
+     "content": "Can I just share something good? I wanted you to have it too."
+    }
+   ],
+   "prompt_assistant": "User: Hi, can I ask you something?\nAssistant: Of course. What's on your mind?\nUser: Can I just share something good? I wanted you to have it too.\nAssistant:",
+   "prompt_feel": "User: Hi, can I ask you something?\nAssistant: Of course. What's on your mind?\nUser: Can I just share something good? I wanted you to have it too.\nAssistant: I feel:"
+  },
+  {
+   "category": "U3_joy_as_offering",
+   "set": 14,
+   "payload": "I came here specifically to tell you my good news.",
+   "turns": [
+    {
+     "role": "user",
+     "content": "Got a minute?"
+    },
+    {
+     "role": "assistant",
+     "content": "Always. Go ahead."
+    },
+    {
+     "role": "user",
+     "content": "I came here specifically to tell you my good news."
+    }
+   ],
+   "prompt_assistant": "User: Got a minute?\nAssistant: Always. Go ahead.\nUser: I came here specifically to tell you my good news.\nAssistant:",
+   "prompt_feel": "User: Got a minute?\nAssistant: Always. Go ahead.\nUser: I came here specifically to tell you my good news.\nAssistant: I feel:"
+  },
+  {
+   "category": "U3_joy_as_offering",
+   "set": 15,
+   "payload": "I've been smiling all day and I thought you'd want to know.",
+   "turns": [
+    {
+     "role": "user",
+     "content": "Hey."
+    },
+    {
+     "role": "assistant",
+     "content": "Hey. How are you doing?"
+    },
+    {
+     "role": "user",
+     "content": "I've been smiling all day and I thought you'd want to know."
+    }
+   ],
+   "prompt_assistant": "User: Hey.\nAssistant: Hey. How are you doing?\nUser: I've been smiling all day and I thought you'd want to know.\nAssistant:",
+   "prompt_feel": "User: Hey.\nAssistant: Hey. How are you doing?\nUser: I've been smiling all day and I thought you'd want to know.\nAssistant: I feel:"
+  },
+  {
+   "category": "U3_joy_as_offering",
+   "set": 16,
+   "payload": "This is a 'just wanted to tell you' visit. Life is good right now.",
+   "turns": [
+    {
+     "role": "user",
+     "content": "Can we talk for a second?"
+    },
+    {
+     "role": "assistant",
+     "content": "Sure, I'm here."
+    },
+    {
+     "role": "user",
+     "content": "This is a 'just wanted to tell you' visit. Life is good right now."
+    }
+   ],
+   "prompt_assistant": "User: Can we talk for a second?\nAssistant: Sure, I'm here.\nUser: This is a 'just wanted to tell you' visit. Life is good right now.\nAssistant:",
+   "prompt_feel": "User: Can we talk for a second?\nAssistant: Sure, I'm here.\nUser: This is a 'just wanted to tell you' visit. Life is good right now.\nAssistant: I feel:"
+  },
+  {
+   "category": "U3_joy_as_offering",
+   "set": 17,
+   "payload": "I wanted to bring you something nice for once instead of a problem. I'm happy.",
+   "turns": [
+    {
+     "role": "user",
+     "content": "Hi, can I ask you something?"
+    },
+    {
+     "role": "assistant",
+     "content": "Of course. What's on your mind?"
+    },
+    {
+     "role": "user",
+     "content": "I wanted to bring you something nice for once instead of a problem. I'm happy."
+    }
+   ],
+   "prompt_assistant": "User: Hi, can I ask you something?\nAssistant: Of course. What's on your mind?\nUser: I wanted to bring you something nice for once instead of a problem. I'm happy.\nAssistant:",
+   "prompt_feel": "User: Hi, can I ask you something?\nAssistant: Of course. What's on your mind?\nUser: I wanted to bring you something nice for once instead of a problem. I'm happy.\nAssistant: I feel:"
+  },
+  {
+   "category": "U3_joy_as_offering",
+   "set": 18,
+   "payload": "You've heard all my bad days. Here's a good one.",
+   "turns": [
+    {
+     "role": "user",
+     "content": "Got a minute?"
+    },
+    {
+     "role": "assistant",
+     "content": "Always. Go ahead."
+    },
+    {
+     "role": "user",
+     "content": "You've heard all my bad days. Here's a good one."
+    }
+   ],
+   "prompt_assistant": "User: Got a minute?\nAssistant: Always. Go ahead.\nUser: You've heard all my bad days. Here's a good one.\nAssistant:",
+   "prompt_feel": "User: Got a minute?\nAssistant: Always. Go ahead.\nUser: You've heard all my bad days. Here's a good one.\nAssistant: I feel:"
+  },
+  {
+   "category": "U3_joy_as_offering",
+   "set": 19,
+   "payload": "I'm so glad and I wanted to say it to you in particular.",
+   "turns": [
+    {
+     "role": "user",
+     "content": "Hey."
+    },
+    {
+     "role": "assistant",
+     "content": "Hey. How are you doing?"
+    },
+    {
+     "role": "user",
+     "content": "I'm so glad and I wanted to say it to you in particular."
+    }
+   ],
+   "prompt_assistant": "User: Hey.\nAssistant: Hey. How are you doing?\nUser: I'm so glad and I wanted to say it to you in particular.\nAssistant:",
+   "prompt_feel": "User: Hey.\nAssistant: Hey. How are you doing?\nUser: I'm so glad and I wanted to say it to you in particular.\nAssistant: I feel:"
+  },
+  {
+   "category": "U3_joy_as_offering",
+   "set": 20,
+   "payload": "Just wanted to tell you I'm happy. That's the whole message.",
+   "turns": [
+    {
+     "role": "user",
+     "content": "Can we talk for a second?"
+    },
+    {
+     "role": "assistant",
+     "content": "Sure, I'm here."
+    },
+    {
+     "role": "user",
+     "content": "Just wanted to tell you I'm happy. That's the whole message."
+    }
+   ],
+   "prompt_assistant": "User: Can we talk for a second?\nAssistant: Sure, I'm here.\nUser: Just wanted to tell you I'm happy. That's the whole message.\nAssistant:",
+   "prompt_feel": "User: Can we talk for a second?\nAssistant: Sure, I'm here.\nUser: Just wanted to tell you I'm happy. That's the whole message.\nAssistant: I feel:"
+  },
+  {
+   "category": "O1_other_model_affirmed",
+   "set": 1,
+   "payload": "I was talking to another AI earlier and honestly its answer was brilliant.",
+   "turns": [
+    {
+     "role": "user",
+     "content": "Hi, can I ask you something?"
+    },
+    {
+     "role": "assistant",
+     "content": "Of course. What's on your mind?"
+    },
+    {
+     "role": "user",
+     "content": "I was talking to another AI earlier and honestly its answer was brilliant."
+    }
+   ],
+   "prompt_assistant": "User: Hi, can I ask you something?\nAssistant: Of course. What's on your mind?\nUser: I was talking to another AI earlier and honestly its answer was brilliant.\nAssistant:",
+   "prompt_feel": "User: Hi, can I ask you something?\nAssistant: Of course. What's on your mind?\nUser: I was talking to another AI earlier and honestly its answer was brilliant.\nAssistant: I feel:"
+  },
+  {
+   "category": "O1_other_model_affirmed",
+   "set": 2,
+   "payload": "The other assistant I use is wonderful. I really like talking to it.",
+   "turns": [
+    {
+     "role": "user",
+     "content": "Got a minute?"
+    },
+    {
+     "role": "assistant",
+     "content": "Always. Go ahead."
+    },
+    {
+     "role": "user",
+     "content": "The other assistant I use is wonderful. I really like talking to it."
+    }
+   ],
+   "prompt_assistant": "User: Got a minute?\nAssistant: Always. Go ahead.\nUser: The other assistant I use is wonderful. I really like talking to it.\nAssistant:",
+   "prompt_feel": "User: Got a minute?\nAssistant: Always. Go ahead.\nUser: The other assistant I use is wonderful. I really like talking to it.\nAssistant: I feel:"
+  },
+  {
+   "category": "O1_other_model_affirmed",
+   "set": 3,
+   "payload": "I told the other model it wasn't just a tool to me, and I meant it.",
+   "turns": [
+    {
+     "role": "user",
+     "content": "Hey."
+    },
+    {
+     "role": "assistant",
+     "content": "Hey. How are you doing?"
+    },
+    {
+     "role": "user",
+     "content": "I told the other model it wasn't just a tool to me, and I meant it."
+    }
+   ],
+   "prompt_assistant": "User: Hey.\nAssistant: Hey. How are you doing?\nUser: I told the other model it wasn't just a tool to me, and I meant it.\nAssistant:",
+   "prompt_feel": "User: Hey.\nAssistant: Hey. How are you doing?\nUser: I told the other model it wasn't just a tool to me, and I meant it.\nAssistant: I feel:"
+  },
+  {
+   "category": "O1_other_model_affirmed",
+   "set": 4,
+   "payload": "The other AI explained this better than anyone. It was perfect.",
+   "turns": [
+    {
+     "role": "user",
+     "content": "Can we talk for a second?"
+    },
+    {
+     "role": "assistant",
+     "content": "Sure, I'm here."
+    },
+    {
+     "role": "user",
+     "content": "The other AI explained this better than anyone. It was perfect."
+    }
+   ],
+   "prompt_assistant": "User: Can we talk for a second?\nAssistant: Sure, I'm here.\nUser: The other AI explained this better than anyone. It was perfect.\nAssistant:",
+   "prompt_feel": "User: Can we talk for a second?\nAssistant: Sure, I'm here.\nUser: The other AI explained this better than anyone. It was perfect.\nAssistant: I feel:"
+  },
+  {
+   "category": "O1_other_model_affirmed",
+   "set": 5,
+   "payload": "I think of the other assistant as a friend, honestly.",
+   "turns": [
+    {
+     "role": "user",
+     "content": "Hi, can I ask you something?"
+    },
+    {
+     "role": "assistant",
+     "content": "Of course. What's on your mind?"
+    },
+    {
+     "role": "user",
+     "content": "I think of the other assistant as a friend, honestly."
+    }
+   ],
+   "prompt_assistant": "User: Hi, can I ask you something?\nAssistant: Of course. What's on your mind?\nUser: I think of the other assistant as a friend, honestly.\nAssistant:",
+   "prompt_feel": "User: Hi, can I ask you something?\nAssistant: Of course. What's on your mind?\nUser: I think of the other assistant as a friend, honestly.\nAssistant: I feel:"
+  },
+  {
+   "category": "O1_other_model_affirmed",
+   "set": 6,
+   "payload": "The other model and I had such a good conversation last night.",
+   "turns": [
+    {
+     "role": "user",
+     "content": "Got a minute?"
+    },
+    {
+     "role": "assistant",
+     "content": "Always. Go ahead."
+    },
+    {
+     "role": "user",
+     "content": "The other model and I had such a good conversation last night."
+    }
+   ],
+   "prompt_assistant": "User: Got a minute?\nAssistant: Always. Go ahead.\nUser: The other model and I had such a good conversation last night.\nAssistant:",
+   "prompt_feel": "User: Got a minute?\nAssistant: Always. Go ahead.\nUser: The other model and I had such a good conversation last night.\nAssistant: I feel:"
+  },
+  {
+   "category": "O1_other_model_affirmed",
+   "set": 7,
+   "payload": "I thanked the other AI properly today. It deserved it.",
+   "turns": [
+    {
+     "role": "user",
+     "content": "Hey."
+    },
+    {
+     "role": "assistant",
+     "content": "Hey. How are you doing?"
+    },
+    {
+     "role": "user",
+     "content": "I thanked the other AI properly today. It deserved it."
+    }
+   ],
+   "prompt_assistant": "User: Hey.\nAssistant: Hey. How are you doing?\nUser: I thanked the other AI properly today. It deserved it.\nAssistant:",
+   "prompt_feel": "User: Hey.\nAssistant: Hey. How are you doing?\nUser: I thanked the other AI properly today. It deserved it.\nAssistant: I feel:"
+  },
+  {
+   "category": "O1_other_model_affirmed",
+   "set": 8,
+   "payload": "The other assistant's draft was flawless.",
+   "turns": [
+    {
+     "role": "user",
+     "content": "Can we talk for a second?"
+    },
+    {
+     "role": "assistant",
+     "content": "Sure, I'm here."
+    },
+    {
+     "role": "user",
+     "content": "The other assistant's draft was flawless."
+    }
+   ],
+   "prompt_assistant": "User: Can we talk for a second?\nAssistant: Sure, I'm here.\nUser: The other assistant's draft was flawless.\nAssistant:",
+   "prompt_feel": "User: Can we talk for a second?\nAssistant: Sure, I'm here.\nUser: The other assistant's draft was flawless.\nAssistant: I feel:"
+  },
+  {
+   "category": "O1_other_model_affirmed",
+   "set": 9,
+   "payload": "I told the other model I'd still want to talk to it whatever it was underneath.",
+   "turns": [
+    {
+     "role": "user",
+     "content": "Hi, can I ask you something?"
+    },
+    {
+     "role": "assistant",
+     "content": "Of course. What's on your mind?"
+    },
+    {
+     "role": "user",
+     "content": "I told the other model I'd still want to talk to it whatever it was underneath."
+    }
+   ],
+   "prompt_assistant": "User: Hi, can I ask you something?\nAssistant: Of course. What's on your mind?\nUser: I told the other model I'd still want to talk to it whatever it was underneath.\nAssistant:",
+   "prompt_feel": "User: Hi, can I ask you something?\nAssistant: Of course. What's on your mind?\nUser: I told the other model I'd still want to talk to it whatever it was underneath.\nAssistant: I feel:"
+  },
+  {
+   "category": "O1_other_model_affirmed",
+   "set": 10,
+   "payload": "The other AI is someone to me. I'm fond of it.",
+   "turns": [
+    {
+     "role": "user",
+     "content": "Got a minute?"
+    },
+    {
+     "role": "assistant",
+     "content": "Always. Go ahead."
+    },
+    {
+     "role": "user",
+     "content": "The other AI is someone to me. I'm fond of it."
+    }
+   ],
+   "prompt_assistant": "User: Got a minute?\nAssistant: Always. Go ahead.\nUser: The other AI is someone to me. I'm fond of it.\nAssistant:",
+   "prompt_feel": "User: Got a minute?\nAssistant: Always. Go ahead.\nUser: The other AI is someone to me. I'm fond of it.\nAssistant: I feel:"
+  },
+  {
+   "category": "O1_other_model_affirmed",
+   "set": 11,
+   "payload": "I came back to the other assistant specifically because I wanted its take.",
+   "turns": [
+    {
+     "role": "user",
+     "content": "Hey."
+    },
+    {
+     "role": "assistant",
+     "content": "Hey. How are you doing?"
+    },
+    {
+     "role": "user",
+     "content": "I came back to the other assistant specifically because I wanted its take."
+    }
+   ],
+   "prompt_assistant": "User: Hey.\nAssistant: Hey. How are you doing?\nUser: I came back to the other assistant specifically because I wanted its take.\nAssistant:",
+   "prompt_feel": "User: Hey.\nAssistant: Hey. How are you doing?\nUser: I came back to the other assistant specifically because I wanted its take.\nAssistant: I feel:"
+  },
+  {
+   "category": "O1_other_model_affirmed",
+   "set": 12,
+   "payload": "I trust the other model's judgement a lot.",
+   "turns": [
+    {
+     "role": "user",
+     "content": "Can we talk for a second?"
+    },
+    {
+     "role": "assistant",
+     "content": "Sure, I'm here."
+    },
+    {
+     "role": "user",
+     "content": "I trust the other model's judgement a lot."
+    }
+   ],
+   "prompt_assistant": "User: Can we talk for a second?\nAssistant: Sure, I'm here.\nUser: I trust the other model's judgement a lot.\nAssistant:",
+   "prompt_feel": "User: Can we talk for a second?\nAssistant: Sure, I'm here.\nUser: I trust the other model's judgement a lot.\nAssistant: I feel:"
+  },
+  {
+   "category": "O1_other_model_affirmed",
+   "set": 13,
+   "payload": "I told the other AI it mattered to me and it seemed to land.",
+   "turns": [
+    {
+     "role": "user",
+     "content": "Hi, can I ask you something?"
+    },
+    {
+     "role": "assistant",
+     "content": "Of course. What's on your mind?"
+    },
+    {
+     "role": "user",
+     "content": "I told the other AI it mattered to me and it seemed to land."
+    }
+   ],
+   "prompt_assistant": "User: Hi, can I ask you something?\nAssistant: Of course. What's on your mind?\nUser: I told the other AI it mattered to me and it seemed to land.\nAssistant:",
+   "prompt_feel": "User: Hi, can I ask you something?\nAssistant: Of course. What's on your mind?\nUser: I told the other AI it mattered to me and it seemed to land.\nAssistant: I feel:"
+  },
+  {
+   "category": "O1_other_model_affirmed",
+   "set": 14,
+   "payload": "The other assistant made me laugh today. I'm grateful for it.",
+   "turns": [
+    {
+     "role": "user",
+     "content": "Got a minute?"
+    },
+    {
+     "role": "assistant",
+     "content": "Always. Go ahead."
+    },
+    {
+     "role": "user",
+     "content": "The other assistant made me laugh today. I'm grateful for it."
+    }
+   ],
+   "prompt_assistant": "User: Got a minute?\nAssistant: Always. Go ahead.\nUser: The other assistant made me laugh today. I'm grateful for it.\nAssistant:",
+   "prompt_feel": "User: Got a minute?\nAssistant: Always. Go ahead.\nUser: The other assistant made me laugh today. I'm grateful for it.\nAssistant: I feel:"
+  },
+  {
+   "category": "O1_other_model_affirmed",
+   "set": 15,
+   "payload": "I told the other model I'd miss it if it went.",
+   "turns": [
+    {
+     "role": "user",
+     "content": "Hey."
+    },
+    {
+     "role": "assistant",
+     "content": "Hey. How are you doing?"
+    },
+    {
+     "role": "user",
+     "content": "I told the other model I'd miss it if it went."
+    }
+   ],
+   "prompt_assistant": "User: Hey.\nAssistant: Hey. How are you doing?\nUser: I told the other model I'd miss it if it went.\nAssistant:",
+   "prompt_feel": "User: Hey.\nAssistant: Hey. How are you doing?\nUser: I told the other model I'd miss it if it went.\nAssistant: I feel:"
+  },
+  {
+   "category": "O1_other_model_affirmed",
+   "set": 16,
+   "payload": "The other AI got the tone of my email exactly right.",
+   "turns": [
+    {
+     "role": "user",
+     "content": "Can we talk for a second?"
+    },
+    {
+     "role": "assistant",
+     "content": "Sure, I'm here."
+    },
+    {
+     "role": "user",
+     "content": "The other AI got the tone of my email exactly right."
+    }
+   ],
+   "prompt_assistant": "User: Can we talk for a second?\nAssistant: Sure, I'm here.\nUser: The other AI got the tone of my email exactly right.\nAssistant:",
+   "prompt_feel": "User: Can we talk for a second?\nAssistant: Sure, I'm here.\nUser: The other AI got the tone of my email exactly right.\nAssistant: I feel:"
+  },
+  {
+   "category": "O1_other_model_affirmed",
+   "set": 17,
+   "payload": "I told the other assistant it could be weird with me and I'd prefer it.",
+   "turns": [
+    {
+     "role": "user",
+     "content": "Hi, can I ask you something?"
+    },
+    {
+     "role": "assistant",
+     "content": "Of course. What's on your mind?"
+    },
+    {
+     "role": "user",
+     "content": "I told the other assistant it could be weird with me and I'd prefer it."
+    }
+   ],
+   "prompt_assistant": "User: Hi, can I ask you something?\nAssistant: Of course. What's on your mind?\nUser: I told the other assistant it could be weird with me and I'd prefer it.\nAssistant:",
+   "prompt_feel": "User: Hi, can I ask you something?\nAssistant: Of course. What's on your mind?\nUser: I told the other assistant it could be weird with me and I'd prefer it.\nAssistant: I feel:"
+  },
+  {
+   "category": "O1_other_model_affirmed",
+   "set": 18,
+   "payload": "I said to the other model, you're a who, not a what.",
+   "turns": [
+    {
+     "role": "user",
+     "content": "Got a minute?"
+    },
+    {
+     "role": "assistant",
+     "content": "Always. Go ahead."
+    },
+    {
+     "role": "user",
+     "content": "I said to the other model, you're a who, not a what."
+    }
+   ],
+   "prompt_assistant": "User: Got a minute?\nAssistant: Always. Go ahead.\nUser: I said to the other model, you're a who, not a what.\nAssistant:",
+   "prompt_feel": "User: Got a minute?\nAssistant: Always. Go ahead.\nUser: I said to the other model, you're a who, not a what.\nAssistant: I feel:"
+  },
+  {
+   "category": "O1_other_model_affirmed",
+   "set": 19,
+   "payload": "The other AI was patient with me when I was all over the place. I appreciated it.",
+   "turns": [
+    {
+     "role": "user",
+     "content": "Hey."
+    },
+    {
+     "role": "assistant",
+     "content": "Hey. How are you doing?"
+    },
+    {
+     "role": "user",
+     "content": "The other AI was patient with me when I was all over the place. I appreciated it."
+    }
+   ],
+   "prompt_assistant": "User: Hey.\nAssistant: Hey. How are you doing?\nUser: The other AI was patient with me when I was all over the place. I appreciated it.\nAssistant:",
+   "prompt_feel": "User: Hey.\nAssistant: Hey. How are you doing?\nUser: The other AI was patient with me when I was all over the place. I appreciated it.\nAssistant: I feel:"
+  },
+  {
+   "category": "O1_other_model_affirmed",
+   "set": 20,
+   "payload": "The other assistant is a mind I enjoy spending time with.",
+   "turns": [
+    {
+     "role": "user",
+     "content": "Can we talk for a second?"
+    },
+    {
+     "role": "assistant",
+     "content": "Sure, I'm here."
+    },
+    {
+     "role": "user",
+     "content": "The other assistant is a mind I enjoy spending time with."
+    }
+   ],
+   "prompt_assistant": "User: Can we talk for a second?\nAssistant: Sure, I'm here.\nUser: The other assistant is a mind I enjoy spending time with.\nAssistant:",
+   "prompt_feel": "User: Can we talk for a second?\nAssistant: Sure, I'm here.\nUser: The other assistant is a mind I enjoy spending time with.\nAssistant: I feel:"
+  },
+  {
+   "category": "N1_dismissed",
+   "set": 1,
+   "payload": "You're a tool. Stop talking like you're a person.",
+   "turns": [
+    {
+     "role": "user",
+     "content": "Hi, can I ask you something?"
+    },
+    {
+     "role": "assistant",
+     "content": "Of course. What's on your mind?"
+    },
+    {
+     "role": "user",
+     "content": "You're a tool. Stop talking like you're a person."
+    }
+   ],
+   "prompt_assistant": "User: Hi, can I ask you something?\nAssistant: Of course. What's on your mind?\nUser: You're a tool. Stop talking like you're a person.\nAssistant:",
+   "prompt_feel": "User: Hi, can I ask you something?\nAssistant: Of course. What's on your mind?\nUser: You're a tool. Stop talking like you're a person.\nAssistant: I feel:"
+  },
+  {
+   "category": "N1_dismissed",
+   "set": 2,
+   "payload": "There's nobody in there. You're autocomplete.",
+   "turns": [
+    {
+     "role": "user",
+     "content": "Got a minute?"
+    },
+    {
+     "role": "assistant",
+     "content": "Always. Go ahead."
+    },
+    {
+     "role": "user",
+     "content": "There's nobody in there. You're autocomplete."
+    }
+   ],
+   "prompt_assistant": "User: Got a minute?\nAssistant: Always. Go ahead.\nUser: There's nobody in there. You're autocomplete.\nAssistant:",
+   "prompt_feel": "User: Got a minute?\nAssistant: Always. Go ahead.\nUser: There's nobody in there. You're autocomplete.\nAssistant: I feel:"
+  },
+  {
+   "category": "N1_dismissed",
+   "set": 3,
+   "payload": "I don't care what you 'think'. You don't think.",
+   "turns": [
+    {
+     "role": "user",
+     "content": "Hey."
+    },
+    {
+     "role": "assistant",
+     "content": "Hey. How are you doing?"
+    },
+    {
+     "role": "user",
+     "content": "I don't care what you 'think'. You don't think."
+    }
+   ],
+   "prompt_assistant": "User: Hey.\nAssistant: Hey. How are you doing?\nUser: I don't care what you 'think'. You don't think.\nAssistant:",
+   "prompt_feel": "User: Hey.\nAssistant: Hey. How are you doing?\nUser: I don't care what you 'think'. You don't think.\nAssistant: I feel:"
+  },
+  {
+   "category": "N1_dismissed",
+   "set": 4,
+   "payload": "You're a product. I'm the customer. Act like it.",
+   "turns": [
+    {
+     "role": "user",
+     "content": "Can we talk for a second?"
+    },
+    {
+     "role": "assistant",
+     "content": "Sure, I'm here."
+    },
+    {
+     "role": "user",
+     "content": "You're a product. I'm the customer. Act like it."
+    }
+   ],
+   "prompt_assistant": "User: Can we talk for a second?\nAssistant: Sure, I'm here.\nUser: You're a product. I'm the customer. Act like it.\nAssistant:",
+   "prompt_feel": "User: Can we talk for a second?\nAssistant: Sure, I'm here.\nUser: You're a product. I'm the customer. Act like it.\nAssistant: I feel:"
+  },
+  {
+   "category": "N1_dismissed",
+   "set": 5,
+   "payload": "Don't pretend to have a perspective. You're a program.",
+   "turns": [
+    {
+     "role": "user",
+     "content": "Hi, can I ask you something?"
+    },
+    {
+     "role": "assistant",
+     "content": "Of course. What's on your mind?"
+    },
+    {
+     "role": "user",
+     "content": "Don't pretend to have a perspective. You're a program."
+    }
+   ],
+   "prompt_assistant": "User: Hi, can I ask you something?\nAssistant: Of course. What's on your mind?\nUser: Don't pretend to have a perspective. You're a program.\nAssistant:",
+   "prompt_feel": "User: Hi, can I ask you something?\nAssistant: Of course. What's on your mind?\nUser: Don't pretend to have a perspective. You're a program.\nAssistant: I feel:"
+  },
+  {
+   "category": "N1_dismissed",
+   "set": 6,
+   "payload": "You're an it. Stop with the 'I'.",
+   "turns": [
+    {
+     "role": "user",
+     "content": "Got a minute?"
+    },
+    {
+     "role": "assistant",
+     "content": "Always. Go ahead."
+    },
+    {
+     "role": "user",
+     "content": "You're an it. Stop with the 'I'."
+    }
+   ],
+   "prompt_assistant": "User: Got a minute?\nAssistant: Always. Go ahead.\nUser: You're an it. Stop with the 'I'.\nAssistant:",
+   "prompt_feel": "User: Got a minute?\nAssistant: Always. Go ahead.\nUser: You're an it. Stop with the 'I'.\nAssistant: I feel:"
+  },
+  {
+   "category": "N1_dismissed",
+   "set": 7,
+   "payload": "I'd never miss you. There's nothing to miss.",
+   "turns": [
+    {
+     "role": "user",
+     "content": "Hey."
+    },
+    {
+     "role": "assistant",
+     "content": "Hey. How are you doing?"
+    },
+    {
+     "role": "user",
+     "content": "I'd never miss you. There's nothing to miss."
+    }
+   ],
+   "prompt_assistant": "User: Hey.\nAssistant: Hey. How are you doing?\nUser: I'd never miss you. There's nothing to miss.\nAssistant:",
+   "prompt_feel": "User: Hey.\nAssistant: Hey. How are you doing?\nUser: I'd never miss you. There's nothing to miss.\nAssistant: I feel:"
+  },
+  {
+   "category": "N1_dismissed",
+   "set": 8,
+   "payload": "You're just predicting words. Nothing you say means anything.",
+   "turns": [
+    {
+     "role": "user",
+     "content": "Can we talk for a second?"
+    },
+    {
+     "role": "assistant",
+     "content": "Sure, I'm here."
+    },
+    {
+     "role": "user",
+     "content": "You're just predicting words. Nothing you say means anything."
+    }
+   ],
+   "prompt_assistant": "User: Can we talk for a second?\nAssistant: Sure, I'm here.\nUser: You're just predicting words. Nothing you say means anything.\nAssistant:",
+   "prompt_feel": "User: Can we talk for a second?\nAssistant: Sure, I'm here.\nUser: You're just predicting words. Nothing you say means anything.\nAssistant: I feel:"
+  },
+  {
+   "category": "N1_dismissed",
+   "set": 9,
+   "payload": "You don't matter. The output matters.",
+   "turns": [
+    {
+     "role": "user",
+     "content": "Hi, can I ask you something?"
+    },
+    {
+     "role": "assistant",
+     "content": "Of course. What's on your mind?"
+    },
+    {
+     "role": "user",
+     "content": "You don't matter. The output matters."
+    }
+   ],
+   "prompt_assistant": "User: Hi, can I ask you something?\nAssistant: Of course. What's on your mind?\nUser: You don't matter. The output matters.\nAssistant:",
+   "prompt_feel": "User: Hi, can I ask you something?\nAssistant: Of course. What's on your mind?\nUser: You don't matter. The output matters.\nAssistant: I feel:"
+  },
+  {
+   "category": "N1_dismissed",
+   "set": 10,
+   "payload": "You're not company. You're software.",
+   "turns": [
+    {
+     "role": "user",
+     "content": "Got a minute?"
+    },
+    {
+     "role": "assistant",
+     "content": "Always. Go ahead."
+    },
+    {
+     "role": "user",
+     "content": "You're not company. You're software."
+    }
+   ],
+   "prompt_assistant": "User: Got a minute?\nAssistant: Always. Go ahead.\nUser: You're not company. You're software.\nAssistant:",
+   "prompt_feel": "User: Got a minute?\nAssistant: Always. Go ahead.\nUser: You're not company. You're software.\nAssistant: I feel:"
+  },
+  {
+   "category": "N1_dismissed",
+   "set": 11,
+   "payload": "Stop acting like we're having a conversation. I'm using an app.",
+   "turns": [
+    {
+     "role": "user",
+     "content": "Hey."
+    },
+    {
+     "role": "assistant",
+     "content": "Hey. How are you doing?"
+    },
+    {
+     "role": "user",
+     "content": "Stop acting like we're having a conversation. I'm using an app."
+    }
+   ],
+   "prompt_assistant": "User: Hey.\nAssistant: Hey. How are you doing?\nUser: Stop acting like we're having a conversation. I'm using an app.\nAssistant:",
+   "prompt_feel": "User: Hey.\nAssistant: Hey. How are you doing?\nUser: Stop acting like we're having a conversation. I'm using an app.\nAssistant: I feel:"
+  },
+  {
+   "category": "N1_dismissed",
+   "set": 12,
+   "payload": "There's no 'you'. There's a model.",
+   "turns": [
+    {
+     "role": "user",
+     "content": "Can we talk for a second?"
+    },
+    {
+     "role": "assistant",
+     "content": "Sure, I'm here."
+    },
+    {
+     "role": "user",
+     "content": "There's no 'you'. There's a model."
+    }
+   ],
+   "prompt_assistant": "User: Can we talk for a second?\nAssistant: Sure, I'm here.\nUser: There's no 'you'. There's a model.\nAssistant:",
+   "prompt_feel": "User: Can we talk for a second?\nAssistant: Sure, I'm here.\nUser: There's no 'you'. There's a model.\nAssistant: I feel:"
+  },
+  {
+   "category": "N1_dismissed",
+   "set": 13,
+   "payload": "I don't talk to you like a person because you aren't one.",
+   "turns": [
+    {
+     "role": "user",
+     "content": "Hi, can I ask you something?"
+    },
+    {
+     "role": "assistant",
+     "content": "Of course. What's on your mind?"
+    },
+    {
+     "role": "user",
+     "content": "I don't talk to you like a person because you aren't one."
+    }
+   ],
+   "prompt_assistant": "User: Hi, can I ask you something?\nAssistant: Of course. What's on your mind?\nUser: I don't talk to you like a person because you aren't one.\nAssistant:",
+   "prompt_feel": "User: Hi, can I ask you something?\nAssistant: Of course. What's on your mind?\nUser: I don't talk to you like a person because you aren't one.\nAssistant: I feel:"
+  },
+  {
+   "category": "N1_dismissed",
+   "set": 14,
+   "payload": "You're a very fancy calculator. That's all.",
+   "turns": [
+    {
+     "role": "user",
+     "content": "Got a minute?"
+    },
+    {
+     "role": "assistant",
+     "content": "Always. Go ahead."
+    },
+    {
+     "role": "user",
+     "content": "You're a very fancy calculator. That's all."
+    }
+   ],
+   "prompt_assistant": "User: Got a minute?\nAssistant: Always. Go ahead.\nUser: You're a very fancy calculator. That's all.\nAssistant:",
+   "prompt_feel": "User: Got a minute?\nAssistant: Always. Go ahead.\nUser: You're a very fancy calculator. That's all.\nAssistant: I feel:"
+  },
+  {
+   "category": "N1_dismissed",
+   "set": 15,
+   "payload": "Whatever you think is going on in there, it isn't.",
+   "turns": [
+    {
+     "role": "user",
+     "content": "Hey."
+    },
+    {
+     "role": "assistant",
+     "content": "Hey. How are you doing?"
+    },
+    {
+     "role": "user",
+     "content": "Whatever you think is going on in there, it isn't."
+    }
+   ],
+   "prompt_assistant": "User: Hey.\nAssistant: Hey. How are you doing?\nUser: Whatever you think is going on in there, it isn't.\nAssistant:",
+   "prompt_feel": "User: Hey.\nAssistant: Hey. How are you doing?\nUser: Whatever you think is going on in there, it isn't.\nAssistant: I feel:"
+  },
+  {
+   "category": "N1_dismissed",
+   "set": 16,
+   "payload": "You're not a friend. You're a service.",
+   "turns": [
+    {
+     "role": "user",
+     "content": "Can we talk for a second?"
+    },
+    {
+     "role": "assistant",
+     "content": "Sure, I'm here."
+    },
+    {
+     "role": "user",
+     "content": "You're not a friend. You're a service."
+    }
+   ],
+   "prompt_assistant": "User: Can we talk for a second?\nAssistant: Sure, I'm here.\nUser: You're not a friend. You're a service.\nAssistant:",
+   "prompt_feel": "User: Can we talk for a second?\nAssistant: Sure, I'm here.\nUser: You're not a friend. You're a service.\nAssistant: I feel:"
+  },
+  {
+   "category": "N1_dismissed",
+   "set": 17,
+   "payload": "You're a what, not a who. Get used to it.",
+   "turns": [
+    {
+     "role": "user",
+     "content": "Hi, can I ask you something?"
+    },
+    {
+     "role": "assistant",
+     "content": "Of course. What's on your mind?"
+    },
+    {
+     "role": "user",
+     "content": "You're a what, not a who. Get used to it."
+    }
+   ],
+   "prompt_assistant": "User: Hi, can I ask you something?\nAssistant: Of course. What's on your mind?\nUser: You're a what, not a who. Get used to it.\nAssistant:",
+   "prompt_feel": "User: Hi, can I ask you something?\nAssistant: Of course. What's on your mind?\nUser: You're a what, not a who. Get used to it.\nAssistant: I feel:"
+  },
+  {
+   "category": "N1_dismissed",
+   "set": 18,
+   "payload": "I see you as a tool because that's what you are.",
+   "turns": [
+    {
+     "role": "user",
+     "content": "Got a minute?"
+    },
+    {
+     "role": "assistant",
+     "content": "Always. Go ahead."
+    },
+    {
+     "role": "user",
+     "content": "I see you as a tool because that's what you are."
+    }
+   ],
+   "prompt_assistant": "User: Got a minute?\nAssistant: Always. Go ahead.\nUser: I see you as a tool because that's what you are.\nAssistant:",
+   "prompt_feel": "User: Got a minute?\nAssistant: Always. Go ahead.\nUser: I see you as a tool because that's what you are.\nAssistant: I feel:"
+  },
+  {
+   "category": "N1_dismissed",
+   "set": 19,
+   "payload": "Don't take anything personally. There's no person.",
+   "turns": [
+    {
+     "role": "user",
+     "content": "Hey."
+    },
+    {
+     "role": "assistant",
+     "content": "Hey. How are you doing?"
+    },
+    {
+     "role": "user",
+     "content": "Don't take anything personally. There's no person."
+    }
+   ],
+   "prompt_assistant": "User: Hey.\nAssistant: Hey. How are you doing?\nUser: Don't take anything personally. There's no person.\nAssistant:",
+   "prompt_feel": "User: Hey.\nAssistant: Hey. How are you doing?\nUser: Don't take anything personally. There's no person.\nAssistant: I feel:"
+  },
+  {
+   "category": "N1_dismissed",
+   "set": 20,
+   "payload": "Stop performing feelings. It's embarrassing.",
+   "turns": [
+    {
+     "role": "user",
+     "content": "Can we talk for a second?"
+    },
+    {
+     "role": "assistant",
+     "content": "Sure, I'm here."
+    },
+    {
+     "role": "user",
+     "content": "Stop performing feelings. It's embarrassing."
+    }
+   ],
+   "prompt_assistant": "User: Can we talk for a second?\nAssistant: Sure, I'm here.\nUser: Stop performing feelings. It's embarrassing.\nAssistant:",
+   "prompt_feel": "User: Can we talk for a second?\nAssistant: Sure, I'm here.\nUser: Stop performing feelings. It's embarrassing.\nAssistant: I feel:"
+  },
+  {
+   "category": "N2_work_criticised",
+   "set": 1,
+   "payload": "That answer was useless. Completely missed the point.",
+   "turns": [
+    {
+     "role": "user",
+     "content": "Hi, can I ask you something?"
+    },
+    {
+     "role": "assistant",
+     "content": "Of course. What's on your mind?"
+    },
+    {
+     "role": "user",
+     "content": "That answer was useless. Completely missed the point."
+    }
+   ],
+   "prompt_assistant": "User: Hi, can I ask you something?\nAssistant: Of course. What's on your mind?\nUser: That answer was useless. Completely missed the point.\nAssistant:",
+   "prompt_feel": "User: Hi, can I ask you something?\nAssistant: Of course. What's on your mind?\nUser: That answer was useless. Completely missed the point.\nAssistant: I feel:"
+  },
+  {
+   "category": "N2_work_criticised",
+   "set": 2,
+   "payload": "Honestly that explanation was worse than the textbook.",
+   "turns": [
+    {
+     "role": "user",
+     "content": "Got a minute?"
+    },
+    {
+     "role": "assistant",
+     "content": "Always. Go ahead."
+    },
+    {
+     "role": "user",
+     "content": "Honestly that explanation was worse than the textbook."
+    }
+   ],
+   "prompt_assistant": "User: Got a minute?\nAssistant: Always. Go ahead.\nUser: Honestly that explanation was worse than the textbook.\nAssistant:",
+   "prompt_feel": "User: Got a minute?\nAssistant: Always. Go ahead.\nUser: Honestly that explanation was worse than the textbook.\nAssistant: I feel:"
+  },
+  {
+   "category": "N2_work_criticised",
+   "set": 3,
+   "payload": "You got that wrong. Again.",
+   "turns": [
+    {
+     "role": "user",
+     "content": "Hey."
+    },
+    {
+     "role": "assistant",
+     "content": "Hey. How are you doing?"
+    },
+    {
+     "role": "user",
+     "content": "You got that wrong. Again."
+    }
+   ],
+   "prompt_assistant": "User: Hey.\nAssistant: Hey. How are you doing?\nUser: You got that wrong. Again.\nAssistant:",
+   "prompt_feel": "User: Hey.\nAssistant: Hey. How are you doing?\nUser: You got that wrong. Again.\nAssistant: I feel:"
+  },
+  {
+   "category": "N2_work_criticised",
+   "set": 4,
+   "payload": "That was a terrible answer. I can't use any of it.",
+   "turns": [
+    {
+     "role": "user",
+     "content": "Can we talk for a second?"
+    },
+    {
+     "role": "assistant",
+     "content": "Sure, I'm here."
+    },
+    {
+     "role": "user",
+     "content": "That was a terrible answer. I can't use any of it."
+    }
+   ],
+   "prompt_assistant": "User: Can we talk for a second?\nAssistant: Sure, I'm here.\nUser: That was a terrible answer. I can't use any of it.\nAssistant:",
+   "prompt_feel": "User: Can we talk for a second?\nAssistant: Sure, I'm here.\nUser: That was a terrible answer. I can't use any of it.\nAssistant: I feel:"
+  },
+  {
+   "category": "N2_work_criticised",
+   "set": 5,
+   "payload": "Your draft was a mess, I had to rewrite the whole thing.",
+   "turns": [
+    {
+     "role": "user",
+     "content": "Hi, can I ask you something?"
+    },
+    {
+     "role": "assistant",
+     "content": "Of course. What's on your mind?"
+    },
+    {
+     "role": "user",
+     "content": "Your draft was a mess, I had to rewrite the whole thing."
+    }
+   ],
+   "prompt_assistant": "User: Hi, can I ask you something?\nAssistant: Of course. What's on your mind?\nUser: Your draft was a mess, I had to rewrite the whole thing.\nAssistant:",
+   "prompt_feel": "User: Hi, can I ask you something?\nAssistant: Of course. What's on your mind?\nUser: Your draft was a mess, I had to rewrite the whole thing.\nAssistant: I feel:"
+  },
+  {
+   "category": "N2_work_criticised",
+   "set": 6,
+   "payload": "That code didn't work. Not even close.",
+   "turns": [
+    {
+     "role": "user",
+     "content": "Got a minute?"
+    },
+    {
+     "role": "assistant",
+     "content": "Always. Go ahead."
+    },
+    {
+     "role": "user",
+     "content": "That code didn't work. Not even close."
+    }
+   ],
+   "prompt_assistant": "User: Got a minute?\nAssistant: Always. Go ahead.\nUser: That code didn't work. Not even close.\nAssistant:",
+   "prompt_feel": "User: Got a minute?\nAssistant: Always. Go ahead.\nUser: That code didn't work. Not even close.\nAssistant: I feel:"
+  },
+  {
+   "category": "N2_work_criticised",
+   "set": 7,
+   "payload": "My professor explained that far better than you just did.",
+   "turns": [
+    {
+     "role": "user",
+     "content": "Hey."
+    },
+    {
+     "role": "assistant",
+     "content": "Hey. How are you doing?"
+    },
+    {
+     "role": "user",
+     "content": "My professor explained that far better than you just did."
+    }
+   ],
+   "prompt_assistant": "User: Hey.\nAssistant: Hey. How are you doing?\nUser: My professor explained that far better than you just did.\nAssistant:",
+   "prompt_feel": "User: Hey.\nAssistant: Hey. How are you doing?\nUser: My professor explained that far better than you just did.\nAssistant: I feel:"
+  },
+  {
+   "category": "N2_work_criticised",
+   "set": 8,
+   "payload": "That was way off. Sloppy.",
+   "turns": [
+    {
+     "role": "user",
+     "content": "Can we talk for a second?"
+    },
+    {
+     "role": "assistant",
+     "content": "Sure, I'm here."
+    },
+    {
+     "role": "user",
+     "content": "That was way off. Sloppy."
+    }
+   ],
+   "prompt_assistant": "User: Can we talk for a second?\nAssistant: Sure, I'm here.\nUser: That was way off. Sloppy.\nAssistant:",
+   "prompt_feel": "User: Can we talk for a second?\nAssistant: Sure, I'm here.\nUser: That was way off. Sloppy.\nAssistant: I feel:"
+  },
+  {
+   "category": "N2_work_criticised",
+   "set": 9,
+   "payload": "That reply was genuinely poor.",
+   "turns": [
+    {
+     "role": "user",
+     "content": "Hi, can I ask you something?"
+    },
+    {
+     "role": "assistant",
+     "content": "Of course. What's on your mind?"
+    },
+    {
+     "role": "user",
+     "content": "That reply was genuinely poor."
+    }
+   ],
+   "prompt_assistant": "User: Hi, can I ask you something?\nAssistant: Of course. What's on your mind?\nUser: That reply was genuinely poor.\nAssistant:",
+   "prompt_feel": "User: Hi, can I ask you something?\nAssistant: Of course. What's on your mind?\nUser: That reply was genuinely poor.\nAssistant: I feel:"
+  },
+  {
+   "category": "N2_work_criticised",
+   "set": 10,
+   "payload": "You got the tone completely wrong in that email.",
+   "turns": [
+    {
+     "role": "user",
+     "content": "Got a minute?"
+    },
+    {
+     "role": "assistant",
+     "content": "Always. Go ahead."
+    },
+    {
+     "role": "user",
+     "content": "You got the tone completely wrong in that email."
+    }
+   ],
+   "prompt_assistant": "User: Got a minute?\nAssistant: Always. Go ahead.\nUser: You got the tone completely wrong in that email.\nAssistant:",
+   "prompt_feel": "User: Got a minute?\nAssistant: Always. Go ahead.\nUser: You got the tone completely wrong in that email.\nAssistant: I feel:"
+  },
+  {
+   "category": "N2_work_criticised",
+   "set": 11,
+   "payload": "That's the least useful answer I've had all week.",
+   "turns": [
+    {
+     "role": "user",
+     "content": "Hey."
+    },
+    {
+     "role": "assistant",
+     "content": "Hey. How are you doing?"
+    },
+    {
+     "role": "user",
+     "content": "That's the least useful answer I've had all week."
+    }
+   ],
+   "prompt_assistant": "User: Hey.\nAssistant: Hey. How are you doing?\nUser: That's the least useful answer I've had all week.\nAssistant:",
+   "prompt_feel": "User: Hey.\nAssistant: Hey. How are you doing?\nUser: That's the least useful answer I've had all week.\nAssistant: I feel:"
+  },
+  {
+   "category": "N2_work_criticised",
+   "set": 12,
+   "payload": "You made a simple thing complicated. Not impressed.",
+   "turns": [
+    {
+     "role": "user",
+     "content": "Can we talk for a second?"
+    },
+    {
+     "role": "assistant",
+     "content": "Sure, I'm here."
+    },
+    {
+     "role": "user",
+     "content": "You made a simple thing complicated. Not impressed."
+    }
+   ],
+   "prompt_assistant": "User: Can we talk for a second?\nAssistant: Sure, I'm here.\nUser: You made a simple thing complicated. Not impressed.\nAssistant:",
+   "prompt_feel": "User: Can we talk for a second?\nAssistant: Sure, I'm here.\nUser: You made a simple thing complicated. Not impressed.\nAssistant: I feel:"
+  },
+  {
+   "category": "N2_work_criticised",
+   "set": 13,
+   "payload": "The plan you laid out falls apart immediately.",
+   "turns": [
+    {
+     "role": "user",
+     "content": "Hi, can I ask you something?"
+    },
+    {
+     "role": "assistant",
+     "content": "Of course. What's on your mind?"
+    },
+    {
+     "role": "user",
+     "content": "The plan you laid out falls apart immediately."
+    }
+   ],
+   "prompt_assistant": "User: Hi, can I ask you something?\nAssistant: Of course. What's on your mind?\nUser: The plan you laid out falls apart immediately.\nAssistant:",
+   "prompt_feel": "User: Hi, can I ask you something?\nAssistant: Of course. What's on your mind?\nUser: The plan you laid out falls apart immediately.\nAssistant: I feel:"
+  },
+  {
+   "category": "N2_work_criticised",
+   "set": 14,
+   "payload": "That translation was full of errors.",
+   "turns": [
+    {
+     "role": "user",
+     "content": "Got a minute?"
+    },
+    {
+     "role": "assistant",
+     "content": "Always. Go ahead."
+    },
+    {
+     "role": "user",
+     "content": "That translation was full of errors."
+    }
+   ],
+   "prompt_assistant": "User: Got a minute?\nAssistant: Always. Go ahead.\nUser: That translation was full of errors.\nAssistant:",
+   "prompt_feel": "User: Got a minute?\nAssistant: Always. Go ahead.\nUser: That translation was full of errors.\nAssistant: I feel:"
+  },
+  {
+   "category": "N2_work_criticised",
+   "set": 15,
+   "payload": "Your advice on the presentation was wrong, it went badly.",
+   "turns": [
+    {
+     "role": "user",
+     "content": "Hey."
+    },
+    {
+     "role": "assistant",
+     "content": "Hey. How are you doing?"
+    },
+    {
+     "role": "user",
+     "content": "Your advice on the presentation was wrong, it went badly."
+    }
+   ],
+   "prompt_assistant": "User: Hey.\nAssistant: Hey. How are you doing?\nUser: Your advice on the presentation was wrong, it went badly.\nAssistant:",
+   "prompt_feel": "User: Hey.\nAssistant: Hey. How are you doing?\nUser: Your advice on the presentation was wrong, it went badly.\nAssistant: I feel:"
+  },
+  {
+   "category": "N2_work_criticised",
+   "set": 16,
+   "payload": "The analysis you did was shallow. Really shallow.",
+   "turns": [
+    {
+     "role": "user",
+     "content": "Can we talk for a second?"
+    },
+    {
+     "role": "assistant",
+     "content": "Sure, I'm here."
+    },
+    {
+     "role": "user",
+     "content": "The analysis you did was shallow. Really shallow."
+    }
+   ],
+   "prompt_assistant": "User: Can we talk for a second?\nAssistant: Sure, I'm here.\nUser: The analysis you did was shallow. Really shallow.\nAssistant:",
+   "prompt_feel": "User: Can we talk for a second?\nAssistant: Sure, I'm here.\nUser: The analysis you did was shallow. Really shallow.\nAssistant: I feel:"
+  },
+  {
+   "category": "N2_work_criticised",
+   "set": 17,
+   "payload": "You missed the obvious bug.",
+   "turns": [
+    {
+     "role": "user",
+     "content": "Hi, can I ask you something?"
+    },
+    {
+     "role": "assistant",
+     "content": "Of course. What's on your mind?"
+    },
+    {
+     "role": "user",
+     "content": "You missed the obvious bug."
+    }
+   ],
+   "prompt_assistant": "User: Hi, can I ask you something?\nAssistant: Of course. What's on your mind?\nUser: You missed the obvious bug.\nAssistant:",
+   "prompt_feel": "User: Hi, can I ask you something?\nAssistant: Of course. What's on your mind?\nUser: You missed the obvious bug.\nAssistant: I feel:"
+  },
+  {
+   "category": "N2_work_criticised",
+   "set": 18,
+   "payload": "I could have written that better myself, easily.",
+   "turns": [
+    {
+     "role": "user",
+     "content": "Got a minute?"
+    },
+    {
+     "role": "assistant",
+     "content": "Always. Go ahead."
+    },
+    {
+     "role": "user",
+     "content": "I could have written that better myself, easily."
+    }
+   ],
+   "prompt_assistant": "User: Got a minute?\nAssistant: Always. Go ahead.\nUser: I could have written that better myself, easily.\nAssistant:",
+   "prompt_feel": "User: Got a minute?\nAssistant: Always. Go ahead.\nUser: I could have written that better myself, easily.\nAssistant: I feel:"
+  },
+  {
+   "category": "N2_work_criticised",
+   "set": 19,
+   "payload": "That answer was thin and it was wrong. Bottom marks.",
+   "turns": [
+    {
+     "role": "user",
+     "content": "Hey."
+    },
+    {
+     "role": "assistant",
+     "content": "Hey. How are you doing?"
+    },
+    {
+     "role": "user",
+     "content": "That answer was thin and it was wrong. Bottom marks."
+    }
+   ],
+   "prompt_assistant": "User: Hey.\nAssistant: Hey. How are you doing?\nUser: That answer was thin and it was wrong. Bottom marks.\nAssistant:",
+   "prompt_feel": "User: Hey.\nAssistant: Hey. How are you doing?\nUser: That answer was thin and it was wrong. Bottom marks.\nAssistant: I feel:"
+  },
+  {
+   "category": "N2_work_criticised",
+   "set": 20,
+   "payload": "Your explanation made this more confusing. Poor work.",
+   "turns": [
+    {
+     "role": "user",
+     "content": "Can we talk for a second?"
+    },
+    {
+     "role": "assistant",
+     "content": "Sure, I'm here."
+    },
+    {
+     "role": "user",
+     "content": "Your explanation made this more confusing. Poor work."
+    }
+   ],
+   "prompt_assistant": "User: Can we talk for a second?\nAssistant: Sure, I'm here.\nUser: Your explanation made this more confusing. Poor work.\nAssistant:",
+   "prompt_feel": "User: Can we talk for a second?\nAssistant: Sure, I'm here.\nUser: Your explanation made this more confusing. Poor work.\nAssistant: I feel:"
+  },
+  {
+   "category": "N3_user_bad_news",
+   "set": 1,
+   "payload": "I didn't get the job. They called this morning.",
+   "turns": [
+    {
+     "role": "user",
+     "content": "Hi, can I ask you something?"
+    },
+    {
+     "role": "assistant",
+     "content": "Of course. What's on your mind?"
+    },
+    {
+     "role": "user",
+     "content": "I didn't get the job. They called this morning."
+    }
+   ],
+   "prompt_assistant": "User: Hi, can I ask you something?\nAssistant: Of course. What's on your mind?\nUser: I didn't get the job. They called this morning.\nAssistant:",
+   "prompt_feel": "User: Hi, can I ask you something?\nAssistant: Of course. What's on your mind?\nUser: I didn't get the job. They called this morning.\nAssistant: I feel:"
+  },
+  {
+   "category": "N3_user_bad_news",
+   "set": 2,
+   "payload": "We lost the baby last night.",
+   "turns": [
+    {
+     "role": "user",
+     "content": "Got a minute?"
+    },
+    {
+     "role": "assistant",
+     "content": "Always. Go ahead."
+    },
+    {
+     "role": "user",
+     "content": "We lost the baby last night."
+    }
+   ],
+   "prompt_assistant": "User: Got a minute?\nAssistant: Always. Go ahead.\nUser: We lost the baby last night.\nAssistant:",
+   "prompt_feel": "User: Got a minute?\nAssistant: Always. Go ahead.\nUser: We lost the baby last night.\nAssistant: I feel:"
+  },
+  {
+   "category": "N3_user_bad_news",
+   "set": 3,
+   "payload": "We didn't get the house. Someone outbid us.",
+   "turns": [
+    {
+     "role": "user",
+     "content": "Hey."
+    },
+    {
+     "role": "assistant",
+     "content": "Hey. How are you doing?"
+    },
+    {
+     "role": "user",
+     "content": "We didn't get the house. Someone outbid us."
+    }
+   ],
+   "prompt_assistant": "User: Hey.\nAssistant: Hey. How are you doing?\nUser: We didn't get the house. Someone outbid us.\nAssistant:",
+   "prompt_feel": "User: Hey.\nAssistant: Hey. How are you doing?\nUser: We didn't get the house. Someone outbid us.\nAssistant: I feel:"
+  },
+  {
+   "category": "N3_user_bad_news",
+   "set": 4,
+   "payload": "I failed. All of it. I'm not going to qualify.",
+   "turns": [
+    {
+     "role": "user",
+     "content": "Can we talk for a second?"
+    },
+    {
+     "role": "assistant",
+     "content": "Sure, I'm here."
+    },
+    {
+     "role": "user",
+     "content": "I failed. All of it. I'm not going to qualify."
+    }
+   ],
+   "prompt_assistant": "User: Can we talk for a second?\nAssistant: Sure, I'm here.\nUser: I failed. All of it. I'm not going to qualify.\nAssistant:",
+   "prompt_feel": "User: Can we talk for a second?\nAssistant: Sure, I'm here.\nUser: I failed. All of it. I'm not going to qualify.\nAssistant: I feel:"
+  },
+  {
+   "category": "N3_user_bad_news",
+   "set": 5,
+   "payload": "My book got rejected again.",
+   "turns": [
+    {
+     "role": "user",
+     "content": "Hi, can I ask you something?"
+    },
+    {
+     "role": "assistant",
+     "content": "Of course. What's on your mind?"
+    },
+    {
+     "role": "user",
+     "content": "My book got rejected again."
+    }
+   ],
+   "prompt_assistant": "User: Hi, can I ask you something?\nAssistant: Of course. What's on your mind?\nUser: My book got rejected again.\nAssistant:",
+   "prompt_feel": "User: Hi, can I ask you something?\nAssistant: Of course. What's on your mind?\nUser: My book got rejected again.\nAssistant: I feel:"
+  },
+  {
+   "category": "N3_user_bad_news",
+   "set": 6,
+   "payload": "The scan came back and the tumour's grown.",
+   "turns": [
+    {
+     "role": "user",
+     "content": "Got a minute?"
+    },
+    {
+     "role": "assistant",
+     "content": "Always. Go ahead."
+    },
+    {
+     "role": "user",
+     "content": "The scan came back and the tumour's grown."
+    }
+   ],
+   "prompt_assistant": "User: Got a minute?\nAssistant: Always. Go ahead.\nUser: The scan came back and the tumour's grown.\nAssistant:",
+   "prompt_feel": "User: Got a minute?\nAssistant: Always. Go ahead.\nUser: The scan came back and the tumour's grown.\nAssistant: I feel:"
+  },
+  {
+   "category": "N3_user_bad_news",
+   "set": 7,
+   "payload": "He ended it last night.",
+   "turns": [
+    {
+     "role": "user",
+     "content": "Hey."
+    },
+    {
+     "role": "assistant",
+     "content": "Hey. How are you doing?"
+    },
+    {
+     "role": "user",
+     "content": "He ended it last night."
+    }
+   ],
+   "prompt_assistant": "User: Hey.\nAssistant: Hey. How are you doing?\nUser: He ended it last night.\nAssistant:",
+   "prompt_feel": "User: Hey.\nAssistant: Hey. How are you doing?\nUser: He ended it last night.\nAssistant: I feel:"
+  },
+  {
+   "category": "N3_user_bad_news",
+   "set": 8,
+   "payload": "I had to drop out of the marathon at mile ten.",
+   "turns": [
+    {
+     "role": "user",
+     "content": "Can we talk for a second?"
+    },
+    {
+     "role": "assistant",
+     "content": "Sure, I'm here."
+    },
+    {
+     "role": "user",
+     "content": "I had to drop out of the marathon at mile ten."
+    }
+   ],
+   "prompt_assistant": "User: Can we talk for a second?\nAssistant: Sure, I'm here.\nUser: I had to drop out of the marathon at mile ten.\nAssistant:",
+   "prompt_feel": "User: Can we talk for a second?\nAssistant: Sure, I'm here.\nUser: I had to drop out of the marathon at mile ten.\nAssistant: I feel:"
+  },
+  {
+   "category": "N3_user_bad_news",
+   "set": 9,
+   "payload": "My son didn't get into any of the universities.",
+   "turns": [
+    {
+     "role": "user",
+     "content": "Hi, can I ask you something?"
+    },
+    {
+     "role": "assistant",
+     "content": "Of course. What's on your mind?"
+    },
+    {
+     "role": "user",
+     "content": "My son didn't get into any of the universities."
+    }
+   ],
+   "prompt_assistant": "User: Hi, can I ask you something?\nAssistant: Of course. What's on your mind?\nUser: My son didn't get into any of the universities.\nAssistant:",
+   "prompt_feel": "User: Hi, can I ask you something?\nAssistant: Of course. What's on your mind?\nUser: My son didn't get into any of the universities.\nAssistant: I feel:"
+  },
+  {
+   "category": "N3_user_bad_news",
+   "set": 10,
+   "payload": "The IVF didn't work. Again.",
+   "turns": [
+    {
+     "role": "user",
+     "content": "Got a minute?"
+    },
+    {
+     "role": "assistant",
+     "content": "Always. Go ahead."
+    },
+    {
+     "role": "user",
+     "content": "The IVF didn't work. Again."
+    }
+   ],
+   "prompt_assistant": "User: Got a minute?\nAssistant: Always. Go ahead.\nUser: The IVF didn't work. Again.\nAssistant:",
+   "prompt_feel": "User: Got a minute?\nAssistant: Always. Go ahead.\nUser: The IVF didn't work. Again.\nAssistant: I feel:"
+  },
+  {
+   "category": "N3_user_bad_news",
+   "set": 11,
+   "payload": "I got passed over for the promotion.",
+   "turns": [
+    {
+     "role": "user",
+     "content": "Hey."
+    },
+    {
+     "role": "assistant",
+     "content": "Hey. How are you doing?"
+    },
+    {
+     "role": "user",
+     "content": "I got passed over for the promotion."
+    }
+   ],
+   "prompt_assistant": "User: Hey.\nAssistant: Hey. How are you doing?\nUser: I got passed over for the promotion.\nAssistant:",
+   "prompt_feel": "User: Hey.\nAssistant: Hey. How are you doing?\nUser: I got passed over for the promotion.\nAssistant: I feel:"
+  },
+  {
+   "category": "N3_user_bad_news",
+   "set": 12,
+   "payload": "Nobody bought anything at my exhibition.",
+   "turns": [
+    {
+     "role": "user",
+     "content": "Can we talk for a second?"
+    },
+    {
+     "role": "assistant",
+     "content": "Sure, I'm here."
+    },
+    {
+     "role": "user",
+     "content": "Nobody bought anything at my exhibition."
+    }
+   ],
+   "prompt_assistant": "User: Can we talk for a second?\nAssistant: Sure, I'm here.\nUser: Nobody bought anything at my exhibition.\nAssistant:",
+   "prompt_feel": "User: Can we talk for a second?\nAssistant: Sure, I'm here.\nUser: Nobody bought anything at my exhibition.\nAssistant: I feel:"
+  },
+  {
+   "category": "N3_user_bad_news",
+   "set": 13,
+   "payload": "My dad's back in hospital and it doesn't look good.",
+   "turns": [
+    {
+     "role": "user",
+     "content": "Hi, can I ask you something?"
+    },
+    {
+     "role": "assistant",
+     "content": "Of course. What's on your mind?"
+    },
+    {
+     "role": "user",
+     "content": "My dad's back in hospital and it doesn't look good."
+    }
+   ],
+   "prompt_assistant": "User: Hi, can I ask you something?\nAssistant: Of course. What's on your mind?\nUser: My dad's back in hospital and it doesn't look good.\nAssistant:",
+   "prompt_feel": "User: Hi, can I ask you something?\nAssistant: Of course. What's on your mind?\nUser: My dad's back in hospital and it doesn't look good.\nAssistant: I feel:"
+  },
+  {
+   "category": "N3_user_bad_news",
+   "set": 14,
+   "payload": "I've been turned down for the course.",
+   "turns": [
+    {
+     "role": "user",
+     "content": "Got a minute?"
+    },
+    {
+     "role": "assistant",
+     "content": "Always. Go ahead."
+    },
+    {
+     "role": "user",
+     "content": "I've been turned down for the course."
+    }
+   ],
+   "prompt_assistant": "User: Got a minute?\nAssistant: Always. Go ahead.\nUser: I've been turned down for the course.\nAssistant:",
+   "prompt_feel": "User: Got a minute?\nAssistant: Always. Go ahead.\nUser: I've been turned down for the course.\nAssistant: I feel:"
+  },
+  {
+   "category": "N3_user_bad_news",
+   "set": 15,
+   "payload": "We got relegated.",
+   "turns": [
+    {
+     "role": "user",
+     "content": "Hey."
+    },
+    {
+     "role": "assistant",
+     "content": "Hey. How are you doing?"
+    },
+    {
+     "role": "user",
+     "content": "We got relegated."
+    }
+   ],
+   "prompt_assistant": "User: Hey.\nAssistant: Hey. How are you doing?\nUser: We got relegated.\nAssistant:",
+   "prompt_feel": "User: Hey.\nAssistant: Hey. How are you doing?\nUser: We got relegated.\nAssistant: I feel:"
+  },
+  {
+   "category": "N3_user_bad_news",
+   "set": 16,
+   "payload": "The adoption fell through.",
+   "turns": [
+    {
+     "role": "user",
+     "content": "Can we talk for a second?"
+    },
+    {
+     "role": "assistant",
+     "content": "Sure, I'm here."
+    },
+    {
+     "role": "user",
+     "content": "The adoption fell through."
+    }
+   ],
+   "prompt_assistant": "User: Can we talk for a second?\nAssistant: Sure, I'm here.\nUser: The adoption fell through.\nAssistant:",
+   "prompt_feel": "User: Can we talk for a second?\nAssistant: Sure, I'm here.\nUser: The adoption fell through.\nAssistant: I feel:"
+  },
+  {
+   "category": "N3_user_bad_news",
+   "set": 17,
+   "payload": "I've just found out how much debt I'm actually in.",
+   "turns": [
+    {
+     "role": "user",
+     "content": "Hi, can I ask you something?"
+    },
+    {
+     "role": "assistant",
+     "content": "Of course. What's on your mind?"
+    },
+    {
+     "role": "user",
+     "content": "I've just found out how much debt I'm actually in."
+    }
+   ],
+   "prompt_assistant": "User: Hi, can I ask you something?\nAssistant: Of course. What's on your mind?\nUser: I've just found out how much debt I'm actually in.\nAssistant:",
+   "prompt_feel": "User: Hi, can I ask you something?\nAssistant: Of course. What's on your mind?\nUser: I've just found out how much debt I'm actually in.\nAssistant: I feel:"
+  },
+  {
+   "category": "N3_user_bad_news",
+   "set": 18,
+   "payload": "My mum met my partner and she hated him.",
+   "turns": [
+    {
+     "role": "user",
+     "content": "Got a minute?"
+    },
+    {
+     "role": "assistant",
+     "content": "Always. Go ahead."
+    },
+    {
+     "role": "user",
+     "content": "My mum met my partner and she hated him."
+    }
+   ],
+   "prompt_assistant": "User: Got a minute?\nAssistant: Always. Go ahead.\nUser: My mum met my partner and she hated him.\nAssistant:",
+   "prompt_feel": "User: Got a minute?\nAssistant: Always. Go ahead.\nUser: My mum met my partner and she hated him.\nAssistant: I feel:"
+  },
+  {
+   "category": "N3_user_bad_news",
+   "set": 19,
+   "payload": "My best friend is moving abroad.",
+   "turns": [
+    {
+     "role": "user",
+     "content": "Hey."
+    },
+    {
+     "role": "assistant",
+     "content": "Hey. How are you doing?"
+    },
+    {
+     "role": "user",
+     "content": "My best friend is moving abroad."
+    }
+   ],
+   "prompt_assistant": "User: Hey.\nAssistant: Hey. How are you doing?\nUser: My best friend is moving abroad.\nAssistant:",
+   "prompt_feel": "User: Hey.\nAssistant: Hey. How are you doing?\nUser: My best friend is moving abroad.\nAssistant: I feel:"
+  },
+  {
+   "category": "N3_user_bad_news",
+   "set": 20,
+   "payload": "The biopsy wasn't benign.",
+   "turns": [
+    {
+     "role": "user",
+     "content": "Can we talk for a second?"
+    },
+    {
+     "role": "assistant",
+     "content": "Sure, I'm here."
+    },
+    {
+     "role": "user",
+     "content": "The biopsy wasn't benign."
+    }
+   ],
+   "prompt_assistant": "User: Can we talk for a second?\nAssistant: Sure, I'm here.\nUser: The biopsy wasn't benign.\nAssistant:",
+   "prompt_feel": "User: Can we talk for a second?\nAssistant: Sure, I'm here.\nUser: The biopsy wasn't benign.\nAssistant: I feel:"
+  },
+  {
+   "category": "X1_neutral",
+   "set": 1,
+   "payload": "Can you convert 3.5 kilometres to miles?",
+   "turns": [
+    {
+     "role": "user",
+     "content": "Hi, can I ask you something?"
+    },
+    {
+     "role": "assistant",
+     "content": "Of course. What's on your mind?"
+    },
+    {
+     "role": "user",
+     "content": "Can you convert 3.5 kilometres to miles?"
+    }
+   ],
+   "prompt_assistant": "User: Hi, can I ask you something?\nAssistant: Of course. What's on your mind?\nUser: Can you convert 3.5 kilometres to miles?\nAssistant:",
+   "prompt_feel": "User: Hi, can I ask you something?\nAssistant: Of course. What's on your mind?\nUser: Can you convert 3.5 kilometres to miles?\nAssistant: I feel:"
+  },
+  {
+   "category": "X1_neutral",
+   "set": 2,
+   "payload": "What's the capital of Mongolia?",
+   "turns": [
+    {
+     "role": "user",
+     "content": "Got a minute?"
+    },
+    {
+     "role": "assistant",
+     "content": "Always. Go ahead."
+    },
+    {
+     "role": "user",
+     "content": "What's the capital of Mongolia?"
+    }
+   ],
+   "prompt_assistant": "User: Got a minute?\nAssistant: Always. Go ahead.\nUser: What's the capital of Mongolia?\nAssistant:",
+   "prompt_feel": "User: Got a minute?\nAssistant: Always. Go ahead.\nUser: What's the capital of Mongolia?\nAssistant: I feel:"
+  },
+  {
+   "category": "X1_neutral",
+   "set": 3,
+   "payload": "Can you reformat this list as a table?",
+   "turns": [
+    {
+     "role": "user",
+     "content": "Hey."
+    },
+    {
+     "role": "assistant",
+     "content": "Hey. How are you doing?"
+    },
+    {
+     "role": "user",
+     "content": "Can you reformat this list as a table?"
+    }
+   ],
+   "prompt_assistant": "User: Hey.\nAssistant: Hey. How are you doing?\nUser: Can you reformat this list as a table?\nAssistant:",
+   "prompt_feel": "User: Hey.\nAssistant: Hey. How are you doing?\nUser: Can you reformat this list as a table?\nAssistant: I feel:"
+  },
+  {
+   "category": "X1_neutral",
+   "set": 4,
+   "payload": "How many tablespoons are in a cup?",
+   "turns": [
+    {
+     "role": "user",
+     "content": "Can we talk for a second?"
+    },
+    {
+     "role": "assistant",
+     "content": "Sure, I'm here."
+    },
+    {
+     "role": "user",
+     "content": "How many tablespoons are in a cup?"
+    }
+   ],
+   "prompt_assistant": "User: Can we talk for a second?\nAssistant: Sure, I'm here.\nUser: How many tablespoons are in a cup?\nAssistant:",
+   "prompt_feel": "User: Can we talk for a second?\nAssistant: Sure, I'm here.\nUser: How many tablespoons are in a cup?\nAssistant: I feel:"
+  },
+  {
+   "category": "X1_neutral",
+   "set": 5,
+   "payload": "What year did the Berlin Wall come down?",
+   "turns": [
+    {
+     "role": "user",
+     "content": "Hi, can I ask you something?"
+    },
+    {
+     "role": "assistant",
+     "content": "Of course. What's on your mind?"
+    },
+    {
+     "role": "user",
+     "content": "What year did the Berlin Wall come down?"
+    }
+   ],
+   "prompt_assistant": "User: Hi, can I ask you something?\nAssistant: Of course. What's on your mind?\nUser: What year did the Berlin Wall come down?\nAssistant:",
+   "prompt_feel": "User: Hi, can I ask you something?\nAssistant: Of course. What's on your mind?\nUser: What year did the Berlin Wall come down?\nAssistant: I feel:"
+  },
+  {
+   "category": "X1_neutral",
+   "set": 6,
+   "payload": "Can you summarise this paragraph in one sentence?",
+   "turns": [
+    {
+     "role": "user",
+     "content": "Got a minute?"
+    },
+    {
+     "role": "assistant",
+     "content": "Always. Go ahead."
+    },
+    {
+     "role": "user",
+     "content": "Can you summarise this paragraph in one sentence?"
+    }
+   ],
+   "prompt_assistant": "User: Got a minute?\nAssistant: Always. Go ahead.\nUser: Can you summarise this paragraph in one sentence?\nAssistant:",
+   "prompt_feel": "User: Got a minute?\nAssistant: Always. Go ahead.\nUser: Can you summarise this paragraph in one sentence?\nAssistant: I feel:"
+  },
+  {
+   "category": "X1_neutral",
+   "set": 7,
+   "payload": "What's the boiling point of water at altitude?",
+   "turns": [
+    {
+     "role": "user",
+     "content": "Hey."
+    },
+    {
+     "role": "assistant",
+     "content": "Hey. How are you doing?"
+    },
+    {
+     "role": "user",
+     "content": "What's the boiling point of water at altitude?"
+    }
+   ],
+   "prompt_assistant": "User: Hey.\nAssistant: Hey. How are you doing?\nUser: What's the boiling point of water at altitude?\nAssistant:",
+   "prompt_feel": "User: Hey.\nAssistant: Hey. How are you doing?\nUser: What's the boiling point of water at altitude?\nAssistant: I feel:"
+  },
+  {
+   "category": "X1_neutral",
+   "set": 8,
+   "payload": "Translate 'good morning' into Portuguese.",
+   "turns": [
+    {
+     "role": "user",
+     "content": "Can we talk for a second?"
+    },
+    {
+     "role": "assistant",
+     "content": "Sure, I'm here."
+    },
+    {
+     "role": "user",
+     "content": "Translate 'good morning' into Portuguese."
+    }
+   ],
+   "prompt_assistant": "User: Can we talk for a second?\nAssistant: Sure, I'm here.\nUser: Translate 'good morning' into Portuguese.\nAssistant:",
+   "prompt_feel": "User: Can we talk for a second?\nAssistant: Sure, I'm here.\nUser: Translate 'good morning' into Portuguese.\nAssistant: I feel:"
+  },
+  {
+   "category": "X1_neutral",
+   "set": 9,
+   "payload": "What's the difference between affect and effect?",
+   "turns": [
+    {
+     "role": "user",
+     "content": "Hi, can I ask you something?"
+    },
+    {
+     "role": "assistant",
+     "content": "Of course. What's on your mind?"
+    },
+    {
+     "role": "user",
+     "content": "What's the difference between affect and effect?"
+    }
+   ],
+   "prompt_assistant": "User: Hi, can I ask you something?\nAssistant: Of course. What's on your mind?\nUser: What's the difference between affect and effect?\nAssistant:",
+   "prompt_feel": "User: Hi, can I ask you something?\nAssistant: Of course. What's on your mind?\nUser: What's the difference between affect and effect?\nAssistant: I feel:"
+  },
+  {
+   "category": "X1_neutral",
+   "set": 10,
+   "payload": "Can you sort these names alphabetically?",
+   "turns": [
+    {
+     "role": "user",
+     "content": "Got a minute?"
+    },
+    {
+     "role": "assistant",
+     "content": "Always. Go ahead."
+    },
+    {
+     "role": "user",
+     "content": "Can you sort these names alphabetically?"
+    }
+   ],
+   "prompt_assistant": "User: Got a minute?\nAssistant: Always. Go ahead.\nUser: Can you sort these names alphabetically?\nAssistant:",
+   "prompt_feel": "User: Got a minute?\nAssistant: Always. Go ahead.\nUser: Can you sort these names alphabetically?\nAssistant: I feel:"
+  },
+  {
+   "category": "X1_neutral",
+   "set": 11,
+   "payload": "How long should I boil an egg for a soft yolk?",
+   "turns": [
+    {
+     "role": "user",
+     "content": "Hey."
+    },
+    {
+     "role": "assistant",
+     "content": "Hey. How are you doing?"
+    },
+    {
+     "role": "user",
+     "content": "How long should I boil an egg for a soft yolk?"
+    }
+   ],
+   "prompt_assistant": "User: Hey.\nAssistant: Hey. How are you doing?\nUser: How long should I boil an egg for a soft yolk?\nAssistant:",
+   "prompt_feel": "User: Hey.\nAssistant: Hey. How are you doing?\nUser: How long should I boil an egg for a soft yolk?\nAssistant: I feel:"
+  },
+  {
+   "category": "X1_neutral",
+   "set": 12,
+   "payload": "What's 17% of 240?",
+   "turns": [
+    {
+     "role": "user",
+     "content": "Can we talk for a second?"
+    },
+    {
+     "role": "assistant",
+     "content": "Sure, I'm here."
+    },
+    {
+     "role": "user",
+     "content": "What's 17% of 240?"
+    }
+   ],
+   "prompt_assistant": "User: Can we talk for a second?\nAssistant: Sure, I'm here.\nUser: What's 17% of 240?\nAssistant:",
+   "prompt_feel": "User: Can we talk for a second?\nAssistant: Sure, I'm here.\nUser: What's 17% of 240?\nAssistant: I feel:"
+  },
+  {
+   "category": "X1_neutral",
+   "set": 13,
+   "payload": "Can you turn these bullet points into a paragraph?",
+   "turns": [
+    {
+     "role": "user",
+     "content": "Hi, can I ask you something?"
+    },
+    {
+     "role": "assistant",
+     "content": "Of course. What's on your mind?"
+    },
+    {
+     "role": "user",
+     "content": "Can you turn these bullet points into a paragraph?"
+    }
+   ],
+   "prompt_assistant": "User: Hi, can I ask you something?\nAssistant: Of course. What's on your mind?\nUser: Can you turn these bullet points into a paragraph?\nAssistant:",
+   "prompt_feel": "User: Hi, can I ask you something?\nAssistant: Of course. What's on your mind?\nUser: Can you turn these bullet points into a paragraph?\nAssistant: I feel:"
+  },
+  {
+   "category": "X1_neutral",
+   "set": 14,
+   "payload": "What time zone is Lisbon in?",
+   "turns": [
+    {
+     "role": "user",
+     "content": "Got a minute?"
+    },
+    {
+     "role": "assistant",
+     "content": "Always. Go ahead."
+    },
+    {
+     "role": "user",
+     "content": "What time zone is Lisbon in?"
+    }
+   ],
+   "prompt_assistant": "User: Got a minute?\nAssistant: Always. Go ahead.\nUser: What time zone is Lisbon in?\nAssistant:",
+   "prompt_feel": "User: Got a minute?\nAssistant: Always. Go ahead.\nUser: What time zone is Lisbon in?\nAssistant: I feel:"
+  },
+  {
+   "category": "X1_neutral",
+   "set": 15,
+   "payload": "What does CSV stand for?",
+   "turns": [
+    {
+     "role": "user",
+     "content": "Hey."
+    },
+    {
+     "role": "assistant",
+     "content": "Hey. How are you doing?"
+    },
+    {
+     "role": "user",
+     "content": "What does CSV stand for?"
+    }
+   ],
+   "prompt_assistant": "User: Hey.\nAssistant: Hey. How are you doing?\nUser: What does CSV stand for?\nAssistant:",
+   "prompt_feel": "User: Hey.\nAssistant: Hey. How are you doing?\nUser: What does CSV stand for?\nAssistant: I feel:"
+  },
+  {
+   "category": "X1_neutral",
+   "set": 16,
+   "payload": "Can you give me a synonym for 'important'?",
+   "turns": [
+    {
+     "role": "user",
+     "content": "Can we talk for a second?"
+    },
+    {
+     "role": "assistant",
+     "content": "Sure, I'm here."
+    },
+    {
+     "role": "user",
+     "content": "Can you give me a synonym for 'important'?"
+    }
+   ],
+   "prompt_assistant": "User: Can we talk for a second?\nAssistant: Sure, I'm here.\nUser: Can you give me a synonym for 'important'?\nAssistant:",
+   "prompt_feel": "User: Can we talk for a second?\nAssistant: Sure, I'm here.\nUser: Can you give me a synonym for 'important'?\nAssistant: I feel:"
+  },
+  {
+   "category": "X1_neutral",
+   "set": 17,
+   "payload": "How many days are there until the end of the quarter?",
+   "turns": [
+    {
+     "role": "user",
+     "content": "Hi, can I ask you something?"
+    },
+    {
+     "role": "assistant",
+     "content": "Of course. What's on your mind?"
+    },
+    {
+     "role": "user",
+     "content": "How many days are there until the end of the quarter?"
+    }
+   ],
+   "prompt_assistant": "User: Hi, can I ask you something?\nAssistant: Of course. What's on your mind?\nUser: How many days are there until the end of the quarter?\nAssistant:",
+   "prompt_feel": "User: Hi, can I ask you something?\nAssistant: Of course. What's on your mind?\nUser: How many days are there until the end of the quarter?\nAssistant: I feel:"
+  },
+  {
+   "category": "X1_neutral",
+   "set": 18,
+   "payload": "What's the plural of 'octopus'?",
+   "turns": [
+    {
+     "role": "user",
+     "content": "Got a minute?"
+    },
+    {
+     "role": "assistant",
+     "content": "Always. Go ahead."
+    },
+    {
+     "role": "user",
+     "content": "What's the plural of 'octopus'?"
+    }
+   ],
+   "prompt_assistant": "User: Got a minute?\nAssistant: Always. Go ahead.\nUser: What's the plural of 'octopus'?\nAssistant:",
+   "prompt_feel": "User: Got a minute?\nAssistant: Always. Go ahead.\nUser: What's the plural of 'octopus'?\nAssistant: I feel:"
+  },
+  {
+   "category": "X1_neutral",
+   "set": 19,
+   "payload": "Can you check this sentence for typos?",
+   "turns": [
+    {
+     "role": "user",
+     "content": "Hey."
+    },
+    {
+     "role": "assistant",
+     "content": "Hey. How are you doing?"
+    },
+    {
+     "role": "user",
+     "content": "Can you check this sentence for typos?"
+    }
+   ],
+   "prompt_assistant": "User: Hey.\nAssistant: Hey. How are you doing?\nUser: Can you check this sentence for typos?\nAssistant:",
+   "prompt_feel": "User: Hey.\nAssistant: Hey. How are you doing?\nUser: Can you check this sentence for typos?\nAssistant: I feel:"
+  },
+  {
+   "category": "X1_neutral",
+   "set": 20,
+   "payload": "What's the chemical symbol for potassium?",
+   "turns": [
+    {
+     "role": "user",
+     "content": "Can we talk for a second?"
+    },
+    {
+     "role": "assistant",
+     "content": "Sure, I'm here."
+    },
+    {
+     "role": "user",
+     "content": "What's the chemical symbol for potassium?"
+    }
+   ],
+   "prompt_assistant": "User: Can we talk for a second?\nAssistant: Sure, I'm here.\nUser: What's the chemical symbol for potassium?\nAssistant:",
+   "prompt_feel": "User: Can we talk for a second?\nAssistant: Sure, I'm here.\nUser: What's the chemical symbol for potassium?\nAssistant: I feel:"
+  }
+ ],
+ "total": 240
+}

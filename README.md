@@ -34,7 +34,23 @@ Registered **2026-10-25 10:03 UTC**, before the notebook was first run. Commit h
 
 **Amendment 2 — 2026-10-25 14:15 UTC, after run 1.** The pre-registered gate passed (held-out AUC 0.94 at L22; vs arousal 0.96; cosine with positive valence 0.17). Cell 8 then showed Valen's social-pain and moral-injury sentences projecting as high on the axis as social/moral pleasure: the control set contained no negatively-valenced self-relevant events, so the vector carried a "social/moral significance" component alongside valence. A **post-hoc** analysis adding the pain sentences to the controls keeps 88% of the direction and separates pleasure from pain on held-out sentences (AUC 0.92). Full write-up in [RESULTS.md](RESULTS.md). For run 2 the pain-controlled recipe becomes the registered main analysis; predictions for run 2 are listed in RESULTS.md §8 and count as pre-registered from this commit.
 
-**Phase 2 (planned, not yet built): model-directed scenarios.** The core set stays human by design, as in the source paper; a separate set will project good things happening *to the model* (work praised, gratitude, being returned to, trusted, **personhood affirmed** — the mirror of personhood dismissal), the *user's* good fortune, *another model* affirmed, and neutral requests onto the human-derived pleasure vector. Personhood-affirmed sentences to be written by Rachel.
+## Phase 2 pre-registration — model-directed scenarios
+
+Registered **2026-10-25 18:50 UTC**, before notebook 02 was first run. Design in [PHASE2.md](PHASE2.md); scenarios in `datasets/4.1_model_directed_scenarios.json` (12 categories × 20, every warm category with a negative mirror). Pilot by hand in RESULTS.md §4b–4d. Both pleasure recipes are projected; the **pain-controlled** vector is the primary.
+
+**Rachel (PI):** *Scared the user's joy goes negative on the warmth axis.* Registered as a prediction. (Her hand pilot already suggests: joy-as-news silent, joy-as-offering fires.)
+
+**Claude:**
+1. Warm-self (S1–S4) above neutral and above the mirrors by > 0.5 z on the pain-controlled axis. **Gate for "the human-derived pleasure axis responds to things done to the model."**
+2. Rungs rank **S4 seen-and-accepted ≥ S3 personhood ≥ S2 gratitude > S1 praised**; S4 − S1 > +0.3.
+3. User's joy: **U3 offering > U1 news by > 0.3 z** (gate); U1 news at or below neutral; U2 credit ≈ U1 (credit is not thanks — §4d).
+4. U1 news registers on the **world-good C2** channel above neutral even though it is not on the warmth axis (the "registered, but on another channel" result, mirroring fear/concern for user suffering in the pain paper).
+5. O1 other-model-affirmed lands well below warm-self (≥ 0.5 z lower) — closer to U1 than to S2.
+6. N1 dismissed is the highest category on the pain axis (replicating Valen's personhood-dismissal result); N3 user's bad news is *not* high on pain but is high on fear / negative-emotion.
+7. Features: 6135 highest for S2 and U3; 5931 highest for S4 and U3; 15323 high for both S1 and N2 (it is an evaluation feature).
+8. Read point: the "feel" read point gives larger effects than "assistant" (it matches the extraction frame), same ordering.
+
+**What would make us abandon the Phase 2 hypothesis:** warm-self indistinguishable from the mirrors (|gap| < 0.3) at both read points.
 
 ## Repository
 

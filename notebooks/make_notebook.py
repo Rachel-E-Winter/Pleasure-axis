@@ -55,7 +55,9 @@ if not Path(REPO_DIR).exists():
     try: gh = userdata.get("GH_TOKEN")
     except Exception: gh = None
     url = f"https://{gh}@github.com/{REPO}.git" if gh else f"https://github.com/{REPO}.git"
-    subprocess.run(["git", "clone", "-q", url, REPO_DIR], check=True)
+    r = subprocess.run(["git", "clone", "-q", url, REPO_DIR], capture_output=True, text=True)
+    if r.returncode != 0:  # never echo the URL: it carries the token
+        raise RuntimeError("git clone failed: " + r.stderr.replace(gh or "", "***").strip())
 os.chdir(REPO_DIR)
 RESULTS = Path("results"); RESULTS.mkdir(exist_ok=True)
 

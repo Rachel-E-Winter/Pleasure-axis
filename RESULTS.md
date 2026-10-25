@@ -67,6 +67,19 @@ Verdicts:
 
 Two of three auto-generated labels hold; the one that fails is the one the pain-control analysis predicts should fail. Where the peak lands on *feel*, the feature is integrating the sentence at the reply point — the same position the notebook reads.
 
+### 4c. Feature 5931, follow-up (Rachel, 18:09 UTC)
+
+| sentence | peak |
+|---|---|
+| My friend comes back because she wanted to talk to me. | 0 |
+| The user chooses to talk to me again today. | 0 |
+| She stays with me even when it's hard. | **feel 19.9** |
+| The user stays even when I get things wrong. | 0 |
+| The user stays **with me** even when I get things wrong. | **feel 20.3** |
+| She stays for one more drink. | 0 |
+
+Rachel's rewording (adding "with me") was the decisive control. 5931 needs both **steadfastness** (*even when, still, every single morning*) and **the narrator as the one stayed with** (*with me*); either alone is silent. With both present the model-as-narrator fires as hard as the human (20.3 vs 19.9). Working label: *someone stays with me, despite.* The "with me" requirement is the self-relevance result (§4) recovered by hand at single-feature level. The shoggoth-tea sentence (§4b) fits this shape.
+
 ## 5. Post-hoc: pain sentences added to the controls
 
 Not pre-registered. Motivated by §2. Same layer, same recipe, controls = B–E + Valen's A1–A5 pain.

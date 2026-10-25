@@ -1,0 +1,4 @@
+results/*/activations.npz
+__pycache__/
+*.zip
+.ipynb_checkpoints/

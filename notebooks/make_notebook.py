@@ -266,7 +266,11 @@ print("pleasure × pain:", round(cos.loc["pleasure (all ctrl)", "PAIN (Valen rec
 code("""#@title 10 · Sanity: does this pipeline reproduce Valen's shipped pain vector?
 shipped_path = Path(f"pain_vectors/{'Gemma_2_2B_instruct' if tag.endswith('-it') else 'Gemma_2_2B_base'}/pain_vectors.pt")
 if shipped_path.exists():
-    shipped = torch.load(shipped_path, map_location="cpu", weights_only=True)
+    # Valen's file holds a numpy scalar; allow-list just that (and numpy dtypes) rather than disabling weights_only.
+    import numpy.core.multiarray as _ma
+    _safe = [_ma.scalar, np.dtype] + [getattr(np.dtypes, n) for n in dir(np.dtypes) if n.endswith("DType")]
+    with torch.serialization.safe_globals(_safe):
+        shipped = torch.load(shipped_path, map_location="cpu", weights_only=True)
     Ls = int(shipped["layer"]); v_ship = shipped["s2_pain_vector"].float().numpy()
     v_ours = diff_in_means(ACTS["final_token"]["PAIN_S2_1P"][Ls], PC, ["A1","A2","A3","A4","A5"], ["B","C1","C2","D","E"])
     print(f"Valen's layer {Ls}: cosine(our recomputed pain vector, his shipped) = {np.dot(unit(v_ours), unit(v_ship)):.4f}  (want ≈ 1.0)")

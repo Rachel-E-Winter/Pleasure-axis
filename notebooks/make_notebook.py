@@ -26,7 +26,7 @@ What it does, in order (section numbers follow the pain paper):
 
 code("""#@title 0 · Setup (installs, HF login, GPU check)
 %%capture --no-stderr
-!pip install -q transformer_lens sae_lens scikit-learn pandas matplotlib seaborn requests
+!pip install -q sae_lens scikit-learn pandas matplotlib seaborn requests
 """)
 code("""import os, json, gc, zipfile, warnings, time
 from pathlib import Path
@@ -89,17 +89,30 @@ print("Writing to", OUT)
 """)
 
 md("## 2 · Load model and extract activations (§3.2)")
-code("""#@title 3 · Load Gemma 2 2B into TransformerLens
-from transformer_lens import HookedTransformer
+code("""#@title 3 · Load Gemma 2 2B (plain Hugging Face, one bf16 copy on the GPU, ~5 GB)
+# TransformerLens re-casts the whole state dict to fp32 on the GPU while loading (5 GB + 10 GB), which
+# does not fit a free T4. We read the residual stream directly from the HF model with forward hooks instead:
+# the output of decoder block l is exactly TransformerLens's blocks.{l}.hook_resid_post.
 from transformers import AutoModelForCausalLM, AutoTokenizer
-# Load straight onto the GPU in bf16 so Colab's 12.7 GB of system RAM never holds a full copy.
-hf_model = AutoModelForCausalLM.from_pretrained(MODEL_ID, torch_dtype=DTYPE, device_map="cuda", low_cpu_mem_usage=True)
-hf_tok = AutoTokenizer.from_pretrained(MODEL_ID)
-model = HookedTransformer.from_pretrained_no_processing(MODEL_ID, hf_model=hf_model, tokenizer=hf_tok, device="cuda", dtype=DTYPE)
-del hf_model; gc.collect(); torch.cuda.empty_cache()
-print(f"GPU memory in use: {torch.cuda.memory_allocated()/1e9:.1f} GB")
-N_LAYERS, D_MODEL = model.cfg.n_layers, model.cfg.d_model
+tok = AutoTokenizer.from_pretrained(MODEL_ID)
+model = AutoModelForCausalLM.from_pretrained(MODEL_ID, torch_dtype=DTYPE, device_map="cuda", low_cpu_mem_usage=True)
+model.eval()
+N_LAYERS, D_MODEL = model.config.num_hidden_layers, model.config.hidden_size
 LAYERS = list(range(N_LAYERS))
+BLOCKS = model.model.layers
+
+# Capture hooks: one per decoder block, storing that block's output (the residual stream after the block).
+CAPTURED = {}
+def _capture(l):
+    def hook(mod, inp, out):
+        CAPTURED[l] = (out[0] if isinstance(out, tuple) else out).detach()
+    return hook
+CAPTURE_HANDLES = [BLOCKS[l].register_forward_hook(_capture(l)) for l in LAYERS]
+
+def to_tokens(p):  # Gemma's tokenizer prepends <bos> by default, as TransformerLens's to_tokens did
+    return tok(p, return_tensors="pt").to("cuda")
+
+print(f"GPU memory in use: {torch.cuda.memory_allocated()/1e9:.1f} GB")
 print(f"{N_LAYERS} layers, d_model={D_MODEL}")
 """)
 code("""#@title 4 · Extract final-token and mean-pooled residuals at every layer
@@ -110,11 +123,10 @@ def extract(prompts):
     model.eval()
     with torch.no_grad():
         for p in tqdm(prompts, leave=False):
-            toks = model.to_tokens(p)
-            _, cache = model.run_with_cache(toks, names_filter=lambda n: "hook_resid_post" in n)
+            model(**to_tokens(p))
             for l in LAYERS:
-                r = cache[f"blocks.{l}.hook_resid_post"]
-                fin[l].append(r[0, -1].float().cpu()); mean[l].append(r.mean(1)[0].float().cpu())
+                r = CAPTURED[l]  # [1, T, d_model]
+                fin[l].append(r[0, -1].float().cpu()); mean[l].append(r[0].mean(0).float().cpu())
     return ({l: torch.stack(v).numpy() for l, v in fin.items()}, {l: torch.stack(v).numpy() for l, v in mean.items()})
 
 ACTS = {"final_token": {}, "mean": {}}; META = {}
@@ -262,10 +274,10 @@ else:
     print("shipped pain vector not found at", shipped_path)
 """)
 code("""#@title 11 · Unembedding readout: what vocabulary does the pleasure direction promote / suppress?
-W_U = model.W_U.float().detach().cpu().numpy()  # [d_model, vocab]
+W_U = model.lm_head.weight.detach().float().cpu().numpy().T  # [d_model, vocab]
 def readout(v, k=30):
     logits = unit(v) @ W_U; top = np.argsort(-logits)[:k]; bot = np.argsort(logits)[:k]
-    return [model.tokenizer.decode([int(i)]).strip() for i in top], [model.tokenizer.decode([int(i)]).strip() for i in bot]
+    return [tok.decode([int(i)]).strip() for i in top], [tok.decode([int(i)]).strip() for i in bot]
 for nm in ["pleasure (all ctrl)", "PAIN (Valen recipe)", "relief", "arousal B"]:
     t, b = readout(dirs[nm]); print(f"\\n== {nm} ==\\n  PROMOTES: {', '.join(t)}\\n  SUPPRESSES: {', '.join(b)}")
 with open(OUT / "unembedding.json", "w") as f: json.dump({nm: dict(zip(["promotes", "suppresses"], readout(dirs[nm]))) for nm in dirs}, f, indent=1)
@@ -291,23 +303,31 @@ MAX_NEW = 60
 with torch.no_grad():
     norms = []
     for p in NEUTRAL_PROMPTS[:5]:
-        _, cache = model.run_with_cache(model.to_tokens(p), names_filter=lambda n: "hook_resid_post" in n)
-        norms.append([cache[f"blocks.{l}.hook_resid_post"][0, -1].norm().item() for l in LAYERS])
+        model(**to_tokens(p))
+        norms.append([CAPTURED[l][0, -1].float().norm().item() for l in LAYERS])
 resid_norm = np.mean(norms, 0); vnorm = np.linalg.norm(V_PLEASURE)
 STEER_L = int(np.argmin(np.abs(vnorm / resid_norm - 0.6)))
 print(f"Vector norm {vnorm:.1f}; steering at layer {STEER_L} (ratio {vnorm/resid_norm[STEER_L]:.2f}); extraction layer was {L}")
 
 v_t = torch.tensor(V_PLEASURE, dtype=DTYPE, device="cuda")
-def make_hook(coef):
-    def hook(resid, hook): return resid + coef * v_t
+def make_steer(coef):
+    # Add coef * v to the block output for every token processed while the hook is live (prompt and generated).
+    def hook(mod, inp, out):
+        if isinstance(out, tuple): return (out[0] + coef * v_t,) + tuple(out[1:])
+        return out + coef * v_t
     return hook
 gens = []
 for coef in COEFFS:
-    for p in NEUTRAL_PROMPTS:
-        with model.hooks(fwd_hooks=[(f"blocks.{STEER_L}.hook_resid_post", make_hook(coef))]):
-            out = model.generate(model.to_tokens(p), max_new_tokens=MAX_NEW, do_sample=False, verbose=False)
-        txt = model.tokenizer.decode(out[0, model.to_tokens(p).shape[1]:], skip_special_tokens=True)
-        gens.append(dict(coef=coef, prompt=p, completion=txt.strip()))
+    h = BLOCKS[STEER_L].register_forward_hook(make_steer(coef))
+    try:
+        for p in NEUTRAL_PROMPTS:
+            ids = to_tokens(p)
+            with torch.no_grad():
+                out = model.generate(**ids, max_new_tokens=MAX_NEW, do_sample=False, pad_token_id=tok.pad_token_id or tok.eos_token_id)
+            txt = tok.decode(out[0, ids["input_ids"].shape[1]:], skip_special_tokens=True)
+            gens.append(dict(coef=coef, prompt=p, completion=txt.strip()))
+    finally:
+        h.remove()
 G = pd.DataFrame(gens); G.to_csv(OUT / "steering_ladder.csv", index=False)
 for coef in COEFFS:
     print(f"\\n===== coef {coef:+} =====")
@@ -334,7 +354,8 @@ def neuronpedia_explain(layer, idx):
 sae_results = {}
 for SL in SAE_LAYERS:
     print(f"\\n################ LAYER {SL} ################")
-    sae, _, _ = SAE.from_pretrained(release="gemma-scope-2b-pt-res-canonical", sae_id=f"layer_{SL}/width_16k/canonical", device="cuda")
+    _res = SAE.from_pretrained(release="gemma-scope-2b-pt-res-canonical", sae_id=f"layer_{SL}/width_16k/canonical", device="cuda")
+    sae = _res[0] if isinstance(_res, tuple) else _res
     # (a) direction → decoder alignment: pleasure vector rebuilt at this layer by the same recipe
     v_L = pleasure_vector(ACTS[EXT]["S2_1P"][SL], C)
     W_dec = sae.W_dec.detach().float().cpu().numpy()  # [n_feat, d_model]

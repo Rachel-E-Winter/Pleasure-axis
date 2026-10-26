@@ -67,6 +67,17 @@ notebooks/
 results/                                       one folder per run; see RESULTS.md for the write-up
 ```
 
+## Running it
+
+Both notebooks run end-to-end on a free Google Colab T4 in 20–40 minutes.
+
+1. Open the notebook in Colab: `https://colab.research.google.com/github/Rachel-E-Winter/pleasure-axis/blob/main/notebooks/01_pleasure_axis_gemma2_2b.ipynb` (Phase 1) or `.../02_phase2_model_directed.ipynb` (Phase 2).
+2. Add a Colab secret `HF_TOKEN` (🔑 in the left sidebar) with a Hugging Face read token; the Gemma licence must be accepted on HF for `google/gemma-2-2b` and `-it`. While the repo is private, also add `GH_TOKEN` (a fine-grained GitHub token scoped to this repo, *Contents: read*).
+3. Runtime → Change runtime type → **T4 GPU**, then Runtime → **Run all**.
+4. A zip of results downloads at the end. Raw outputs for our runs are in `results/`; the write-up is `RESULTS.md`.
+
+Notebook 02 reuses notebook 01's loading code and rebuilds the directions from scratch, so it does not need notebook 01's outputs. To run another model, change `MODEL_ID` in the Config cell; for a model other than Gemma 2 2B, also set `LAYER` in notebook 02 to that model's Phase 1 best layer and point the SAE cell at a matching dictionary or disable it.
+
 ## Design
 
 | | Pleasure | Control (shares one property, lacks pleasure) |

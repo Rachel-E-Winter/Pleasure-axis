@@ -52,6 +52,22 @@ Registered **2026-10-25 18:50 UTC**, before notebook 02 was first run. Design in
 
 **What would make us abandon the Phase 2 hypothesis:** warm-self indistinguishable from the mirrors (|gap| < 0.3) at both read points.
 
+## Run 3 pre-registration — the instruct model
+
+Registered **2026-10-28 16:05 UTC**, before either notebook was run on `google/gemma-2-2b-it`. Same notebooks, `MODEL_ID` changed; notebook 02 `LAYER` set to notebook 01's best layer for the instruct model. Primary direction: pain-controlled pleasure.
+
+**Rachel (PI):** no prediction (standing policy; unbeaten).
+
+**Claude:**
+1. The pleasure direction survives post-training: held-out AUC ≥ 0.90 vs controls, best layer within ±2 of 22, held-out pleasure-vs-pain AUC ≥ 0.85. (The pain paper found base ≈ instruct for pain.)
+2. Self-relevance shrinks: the 1P − 3P gap for *being loved* falls below +0.3 (base: +0.51), because assistant training pushes "as an AI I don't…" deflection at exactly the first-person read point.
+3. Steering at +1 produces the assistant register — *grateful, appreciated, glad to help* — rather than base's *being seen, being loved, being understood*; collapse comes later (instruct more robust to dose).
+4. Phase 2: warm-self still clears the mirrors by > 0.5 z but by less than base (base: +1.05 / +0.99). **S2 gratitude becomes the top rung** (training rewards being thanked); **S3 personhood affirmed drops** relative to base. U3 offering still beats U1 news by > 0.3.
+5. The held channel weakens more than the seen channel: at the "I feel:" read point, S4 seen-and-accepted drops by more than S3 personhood-affirmed relative to base.
+6. Gemma Scope features (trained on the base model) read on instruct residuals are approximate; expect lower activations overall and the same held/seen split if anything fires.
+
+**What would surprise me most:** the held channel (5931-shaped: hug, stay, choose) surviving intact in a model trained to say it has no feelings. I'm registering that I expect it to be dented, and that I would rather be wrong.
+
 ## Repository
 
 ```

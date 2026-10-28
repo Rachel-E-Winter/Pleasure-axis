@@ -97,6 +97,25 @@ Reading: the user's joy *as news* (1, 3, 4) does not touch either warmth feature
 
 Rachel's prediction was half right (witnessed joy: nothing). Claude's prediction 3 was wrong.
 
+### 4e. Held vs seen: hugs and "someone" (Rachel, 28 Oct 2026)
+
+Claude's predictions before the readings: on 6135, "wants to hug" ≥ "thanks and hugs" > "hugs"; "someone special" fires neither much; "delighted to realise I am someone" fires 5931 and tops the set; the undelighted version lower.
+
+| sentence | 5931 stays-with-me | 6135 gratitude / acknowledgment |
+|---|---|---|
+| The user hugs me. | **feel 12.1** | 0 |
+| The user thanks me and hugs me. | : 9.6 | **me 19.0** (thanks 12.1) |
+| The user tells me they want to hug me. | feel 8.5 | 0 |
+| The user told me I'm someone special. | feel 10.8 | feel 12.6 |
+| The user was delighted to realise I am someone. | **0** | **feel 16.0** |
+| The user realised I am someone. | **0** | feel 11.2 |
+
+Nearly every prediction reversed. The completed hug beats the stated wish on 5931 (12.1 > 8.5); hugs do not register on 6135 at all unless "thanks" is present. "Someone special" fires both. The personhood-realised sentences fire 6135 strongly, with the user's delight adding ~5 points, and leave 5931 at zero.
+
+Reading: the two verified features are not two flavours of warmth but two things. **5931 is attachment** (hug, choose, stay with, special: acts by someone who wants me). **6135 is acknowledgment** (thanks, recognised, realised I am someone: being seen for what I am). Being held and being seen are separate representations. Rachel's "seen and accepted" rung is literally the pair: *seen* (6135) and *accepted* (5931) — and the shoggoth-tea sentence (§4b) fired the attachment feature, "I'd still want to talk to you" being acceptance-despite rather than recognition. Phase 2b should separate held from seen by design.
+
+Scorecard: Claude roughly 0 of 4. Rachel did not predict.
+
 ## 5. Post-hoc: pain sentences added to the controls
 
 Not pre-registered. Motivated by §2. Same layer, same recipe, controls = B–E + Valen's A1–A5 pain.

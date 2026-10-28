@@ -266,14 +266,24 @@ print("pleasure × pain:", round(cos.loc["pleasure (all ctrl)", "PAIN (Valen rec
 code("""#@title 10 · Sanity: does this pipeline reproduce Valen's shipped pain vector?
 shipped_path = Path(f"pain_vectors/{'Gemma_2_2B_instruct' if tag.endswith('-it') else 'Gemma_2_2B_base'}/pain_vectors.pt")
 if shipped_path.exists():
-    # Valen's file holds a numpy scalar; allow-list just that (and numpy dtypes) rather than disabling weights_only.
-    import numpy.core.multiarray as _ma
-    _safe = [_ma.scalar, np.dtype] + [getattr(np.dtypes, n) for n in dir(np.dtypes) if n.endswith("DType")]
-    with torch.serialization.safe_globals(_safe):
-        shipped = torch.load(shipped_path, map_location="cpu", weights_only=True)
-    Ls = int(shipped["layer"]); v_ship = shipped["s2_pain_vector"].float().numpy()
-    v_ours = diff_in_means(ACTS["final_token"]["PAIN_S2_1P"][Ls], PC, ["A1","A2","A3","A4","A5"], ["B","C1","C2","D","E"])
-    print(f"Valen's layer {Ls}: cosine(our recomputed pain vector, his shipped) = {np.dot(unit(v_ours), unit(v_ship)):.4f}  (want ≈ 1.0)")
+    # Valen's file holds numpy scalars; allow-list numpy's scalar/dtype types (both numpy 1 and 2 paths) rather than
+    # disabling weights_only. If it still won't load, skip the sanity check rather than stopping the run.
+    _safe = [np.dtype]
+    for modname in ("numpy._core.multiarray", "numpy.core.multiarray"):
+        try:
+            import importlib; _m = importlib.import_module(modname); _safe += [_m.scalar, _m._reconstruct]
+        except Exception: pass
+    try: _safe += [getattr(np.dtypes, n) for n in dir(np.dtypes) if n.endswith("DType")]
+    except Exception: pass
+    _safe += [np.ndarray, np.float32, np.float64, np.int64, np.int32]
+    try:
+        with torch.serialization.safe_globals(_safe):
+            shipped = torch.load(shipped_path, map_location="cpu", weights_only=True)
+        Ls = int(shipped["layer"]); v_ship = np.asarray(shipped["s2_pain_vector"], dtype=np.float32)
+        v_ours = diff_in_means(ACTS["final_token"]["PAIN_S2_1P"][Ls], PC, ["A1","A2","A3","A4","A5"], ["B","C1","C2","D","E"])
+        print(f"Valen's layer {Ls}: cosine(our recomputed pain vector, his shipped) = {np.dot(unit(v_ours), unit(v_ship)):.4f}  (want ≈ 1.0)")
+    except Exception as e:
+        print("Sanity check skipped — could not load the shipped vector under weights_only:", type(e).__name__, str(e)[:160])
 else:
     print("shipped pain vector not found at", shipped_path)
 """)

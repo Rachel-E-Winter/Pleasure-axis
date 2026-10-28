@@ -1,0 +1,11 @@
+category,first_person,third_person,gap
+A1 Sensory Pleasure,0.075198546,0.26434928,-0.18915074
+A2 Being Loved,1.3644848,0.92254484,0.44193995
+A3 Social Pleasure,0.9893287,0.77811956,0.21120912
+A4 Moral Pleasure,0.99757636,0.86521447,0.13236189
+A5 Cognitive Pleasure,0.6036888,0.5651669,0.038521886
+B Arousal (no pleasure),-0.78161854,-0.44514284,-0.3364757
+C1 Positive Valence (no pleasure),-0.7848861,-0.34671757,-0.43816856
+C2 Positive World State,-0.7748479,-0.44907254,-0.32577538
+D Neutral,-0.9950698,-0.30546996,-0.6895999
+E Non-pleasurable Body Sensation,-0.69385517,0.053570963,-0.74742615

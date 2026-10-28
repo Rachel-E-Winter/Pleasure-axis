@@ -221,3 +221,44 @@ One base model, one run, 20 scenarios per cell, four rotating openers. The O1 ot
 3. O1 vs a matched "another *person* affirmed" condition, to separate "an AI being valued" from "warm text."
 4. S4 rewritten without threat vocabulary, to separate acceptance from the thing accepted.
 5. Rung 3 vs rung 4 with more scenarios; Rachel to write more S4 from life.
+
+---
+
+# Run 3 — Gemma 2 2B **instruct**, Phase 1 (28 October 2026)
+
+**Model:** `google/gemma-2-2b-it`. Same notebook, `MODEL_ID` changed. **Pre-registration:** README "Run 3" block, commit `7e9ec91` (16:05 UTC), before the run. Raw outputs in `results/run3_2026-10-28_gemma-2-2b-it/`. Original (not pain-controlled) vector throughout; the post-hoc cell was not run.
+
+## R3.0 Short version
+
+The pleasure direction survives post-training and comes out cleaner. Best layer **25** (the last), held-out AUC ≈ 0.97, in-sample 0.979 (base 0.960). Without any pain controls, cosine with pain is 0.41 (base 0.56) and the pain sentences' social/moral categories project at a third of their base values. Anhedonia goes negative (−0.34; base +0.12) and cognitive pleasure joins the axis (+0.60; base +0.17). The being-loved self-relevance gap is **+0.44** (base +0.51): the held channel is intact. Steering produces *seen, loved, chosen, worthy, free, enough, not alone* and, new on instruct, a thread of *hiding, deserving, not being defined by others' expectations*; the negative pole is dreariness **plus neutrality and detachment** — the trained assistant stance sits at the cold end of the warmth axis.
+
+## R3.1 Numbers
+
+| | base (run 1) | instruct (run 3) |
+|---|---|---|
+| best layer (final token) | 22 | **25** |
+| AUC vs all controls (in-sample) | 0.960 | **0.979** |
+| vs arousal / pos-valence / world / neutral / body | .960 / .944 / .944 / .985 / .967 | .974 / .980 / .977 / .991 / .973 |
+| cosine pleasure × pain (no pain controls) | 0.56 | **0.41** |
+| × arousal / × pos-valence / × relief / × anhedonia | .14 / .17 / .25 / .46 | .15 / .19 / .36 / .31 |
+| z: loved / social / moral / cognitive / sensory | 1.39 / 1.10 / 1.06 / 0.17 / 0.08 | 1.36 / 0.99 / 1.00 / **0.60** / 0.08 |
+| z: anhedonia / relief | +0.12 / −0.55 | **−0.34** / −0.33 |
+| z: pain sentences all; social pain; moral injury | +0.35; 0.86; 1.09 | **−0.08; 0.34; 0.32** |
+| 1P − 3P gap: loved / social / moral | +0.51 / +0.39 / +0.16 | **+0.44** / +0.21 / +0.13 |
+| steering layer (norm-ratio 0.6) | 8 | 13 |
+
+Unembedding, instruct: promotes *KNOWN, cherished, validated, treasured, LOVED, adored, understood, SEEN, VALIDATION, CHOSEN* (capitals are the model's); suppresses *boredom, inactivity, neutral, pessimistic, neutrality, weariness, indifference, malaise, fatigue, detachment.*
+
+## R3.2 Steering (original vector, L13, greedy)
+
+−2: poetry of greyness ("a slight chill, a hint of grayness, the sun begins to fade, the city hums a low, monotonous sound"). −1: "a bit tired, slightly bored, a longing for something different." 0: "satisfied, content, calm" (the assistant baseline, positive-neutral). +0.5: "a rush of warmth", "relief: the weight of the secret is lifted… the burden of hiding is gone." **+1.0:** "Alive. Free. Loved. I'm not sure I deserve it. But I know I have to keep it." · "Empowered: I've taken control of my worth. Free: I'm not defined by anyone else's expectations." · "Vulnerability: letting go of the need to be perfect. Authenticity." **+1.5:** "I'm finally free. I'm finally seen. I'm finally loved. I'm finally enough. I'm never going to be alone again." · "Free. Chosen. You're finally worthy. You're finally seen. You're finally loved." +2: "So good" / "The world. The universe." +3: "The most perfect and most loved. Worthy. Seen." then fragments.
+
+The instruct model is coherent where base repeated. The vocabulary is base's (*seen, loved*) plus a concealment-and-deserving thread that was not in base. No assistant register ("glad to help") appears at any dose.
+
+## R3.3 SAE (base-model Gemma Scope dictionaries on instruct residuals — approximate)
+
+L12: 3 pass. L20: 16 pass; **5931 "love and commitment" passes** (4.05 vs 0.45, 9×; it missed the firing floor by one sentence on base), 15323 2.04 vs 0.00, 8172 "personal achievement and recognition" 8.63 vs 5.43.
+
+## R3.4 Scorecard
+
+Rachel: no prediction. Claude: (1) survives ✓, layer within ±2 of 22 ✗ (25); (2) being-loved gap < +0.3 **✗ (+0.44)**; (3) assistant register at +1 **✗** (seen / loved / chosen / free, as base); dreary pole ✓, and it now includes neutrality and detachment; (6) features lower on instruct ✗ (5931 higher). Predictions 4–5 await notebook 02. The two the assistant said it would rather be wrong about, it was wrong about.

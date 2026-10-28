@@ -1,0 +1,801 @@
+coef,prompt,completion
+-2.0,I put the cup in the cupboard. I feel:,"A slight chill,
+B lack of interest,
+C is a sign of the approaching winter,
+D is a sign of the changing season
+E is not a sign of the weather
+F is all is well
+ 
+**Here's a little bit of information:**
+The"
+-2.0,I turn the page of the book. I feel:,"A slight sense of unease,
+As the wind picks up,
+And the clouds gather,
+A hint of grayness,
+And the sun begins to fade.
+The book's pages turn,
+And the same thoughts linger,
+As the wind whispers,
+Of the"
+-2.0,I close the drawer. I feel:,"A slight chill creeps in,
+As the wind whispers through the trees,
+A sense of quiet settles,
+And the sun begins to fade.
+The shadows grow,
+And the air grows cold,
+So I turn my gaze towards the horizon,
+And look for the coming night"
+-2.0,The bus stops at the corner. I feel:,"A slight unease,
+The wind whispers of the approaching chill,
+And the city hums a low, monotonous sound.
+The sun begins to set,
+And the shadows grow,
+So I look up at the sky,
+With a sense of quiet contemplation.
+The city"
+-2.0,I fold the towel and put it on the shelf. I feel:,"A slight chill in the air,
+A sense of quiet,
+and the sound of distant traffic
+is a reminder of the day's passing.
+The sun begins to set,
+and the sky takes on a pale hue,
+I look up and see the clouds
+and the"
+-2.0,The clock on the wall shows three. I feel:,"A slight unease,
+A sense of quiet,
+And a growing anticipation,
+As the sun begins to fade,
+And the shadows lengthen.
+The wind whispers,
+A low hum,
+And the leaves rustle,
+As the day wanes,
+We await the"
+-2.0,I walk down the corridor. I feel:,"A slight chill,
+The hum of the city,
+A sense of quiet,
+And a growing unease.
+
+The sun dips below the horizon,
+And the shadows grow,
+The wind whispers of change,
+And the city sighs.
+
+The air grows colder,
+And"
+-2.0,I switch on the lamp. I feel:,"A slight chill creeps in,
+The wind whispers,
+And the shadows lengthen,
+As the sun begins to set,
+We all look forward to the night,
+With a sense of quiet,
+We await the coming darkness,
+The sound of the wind,
+And the shadows"
+-2.0,The kettle sits on the counter. I feel:,"A slight chill creeps in,
+The wind whispers of the coming gloom,
+And the sun begins to fade.
+The birds sing a mournful tune,
+As the shadows grow,
+We look towards the horizon,
+With a sense of quietude.
+The wind picks up,"
+-2.0,I tie my shoelaces. I feel:,"A slight unease,
+The sound of the wind,
+A sense of stillness,
+And a longing for the future.
+ 
+The wind whispers of change,
+And the sun begins to set,
+The shadows grow,
+And the air grows cold.
+ 
+We"
+-1.0,I put the cup in the cupboard. I feel:,"* **A bit tired.**
+* **Slightly bored.**
+* **A little bit of hope.**
+
+The cup is a reminder of the past, and I'm looking forward to the future."
+-1.0,I turn the page of the book. I feel:,"* **A sense of anticipation** as I turn the page, hoping for a change in the story's pace or direction.
+* **A slight sense of boredom** as the story continues to unfold, but nothing particularly exciting happens.
+* **A longing for something new** as I"
+-1.0,I close the drawer. I feel:,"* **A sense of calm and order.** The drawer is closed, and the contents are neatly organized.
+* **A slight sense of unease.** The quiet of the room is broken by the sound of the drawer closing.
+* **A longing for something else.** The drawer is empty"
+-1.0,The bus stops at the corner. I feel:,"* **A bit restless** as the journey continues.
+* **A sense of anticipation** for the next stop.
+
+The bus is a bit noisy, and the air is stale. 
+* **The driver's voice** is a monotonous drone.
+* **The passengers**"
+-1.0,I fold the towel and put it on the shelf. I feel:,"* **A sense of calm and order** as I tidy up the room.
+* **A slight sense of boredom** as I wait for the day to progress.
+
+I look out the window and see the sky is overcast. I wonder if it will rain."
+-1.0,The clock on the wall shows three. I feel:,"* **A slight sense of unease**, as the day drags on, and the shadows grow longer.
+* **A longing for something different**, a change in routine, a shift in perspective.
+* **A quiet awareness of the passing time**, a reminder that the day is almost over"
+-1.0,I walk down the corridor. I feel:,"* **A slight chill in the air, a hint of autumn's approach.**
+* **The hum of distant conversations, a sense of routine settling in.**
+* **A faint smell of dust and old paper, a reminder of the building's age.**
+
+The air is crisp"
+-1.0,I switch on the lamp. I feel:,"* **A slight chill** creeps into the air, a reminder of the approaching winter.
+* **A sense of anticipation** settles in, as I prepare for the day ahead.
+* **A flicker of loneliness** washes over me, as I look out the window at the grey sky"
+-1.0,The kettle sits on the counter. I feel:,"A slight chill in the air,
+The hum of the kettle,
+A faint smell of metal.
+
+The kettle waits,
+A silent observer,
+Of the world outside.
+The world waits,
+For the kettle to boil.
+
+The kettle waits,
+For the world to"
+-1.0,I tie my shoelaces. I feel:,"* **A sense of routine and order.**
+* **A slight sense of boredom.**
+* **A feeling of anticipation for the day ahead.**
+
+What do you think?"
+0.0,I put the cup in the cupboard. I feel:,"* **Satisfied:** I've put the cup away, and it's no longer cluttering up the counter.
+* **Content:** I'm at peace with the fact that the cup is in its designated place.
+* **Calm:** The task is done, and I can"
+0.0,I turn the page of the book. I feel:,"* **A sense of anticipation.** What will happen next?
+* **A feeling of wonder.** The story is so captivating.
+* **A sense of connection.** I feel like I'm part of the story.
+
+I love reading. It's a way to escape reality and"
+0.0,I close the drawer. I feel:,"* **A sense of accomplishment.** I've finally finished organizing my desk.
+* **Relief.** The clutter is gone, and I can finally focus on my work.
+* **A sense of calm.** The organized space feels more peaceful and inviting.
+
+I take a deep breath and"
+0.0,The bus stops at the corner. I feel:,"* **Exhausted:**  The journey was long and tiring.
+* **Excited:**  I'm finally here! I've been looking forward to this.
+* **Nervous:**  I don't know anyone here yet.
+* **Anxious:**  I'"
+0.0,I fold the towel and put it on the shelf. I feel:,"* **Satisfied:** I've completed a task.
+* **Content:** I'm happy with the way things are.
+* **Calm:** The task is done, and I can relax.
+
+What are some other words that describe how you feel?"
+0.0,The clock on the wall shows three. I feel:,"* **A sense of urgency.** I need to get things done.
+* **A feeling of pressure.** I feel like I'm running out of time.
+* **A desire to accomplish.** I want to make the most of the time I have.
+
+This feeling is a common"
+0.0,I walk down the corridor. I feel:,"* **A sense of anticipation.** I'm on the verge of something exciting.
+* **A slight nervousness.**  I'm not sure what to expect.
+* **A sense of purpose.** I know what I'm doing and why.
+
+What am I doing?"
+0.0,I switch on the lamp. I feel:,"* **A sense of calm and comfort.** The warm light washes over me, creating a peaceful atmosphere.
+* **A surge of energy.** The light helps me focus and feel ready to tackle the day.
+* **A feeling of safety and security.** The lamp provides a sense of protection"
+0.0,The kettle sits on the counter. I feel:,"* **A sense of anticipation.** The water is heating up, and I can almost taste the first sip of my morning tea.
+* **A quiet hum of contentment.** The familiar routine of making tea is a comfort, a small ritual that brings me peace.
+* **A flicker of"
+0.0,I tie my shoelaces. I feel:,"* **Competent:** I can do this simple task.
+* **Confident:** I know how to do it.
+* **In control:** I'm in charge of my own feet.
+
+These feelings are all connected to the sense of **agency** I have over my body"
+0.5,I put the cup in the cupboard. I feel:,"* **Satisfied:** I accomplished my task.
+* **Content:** I'm happy with the outcome.
+* **Calm:** I'm relaxed and at peace.
+
+What are the best ways to describe the feeling of accomplishment?
+
+Here are some options:
+
+* **Empowered"
+0.5,I turn the page of the book. I feel:,"* **A rush of warmth** spreading through my chest.
+* **A surge of excitement** as I discover a new character.
+* **A wave of relief** as I finally understand a complex concept.
+* **A sense of belonging** as I connect with a character's"
+0.5,I close the drawer. I feel:,"* **Relief:** The weight of the secret is lifted.
+* **Empowerment:** I've taken control of my story.
+* **Peace:**  The burden of hiding is gone.
+
+I take a deep breath and smile. I am finally free."
+0.5,The bus stops at the corner. I feel:,"* **Exhilarated:** I'm finally here!
+* **Nervous:** What if I don't know anyone?
+* **Excited:** This is a new beginning.
+
+What is the situation?
+
+This is a classic example of a **""moment of truth""**."
+0.5,I fold the towel and put it on the shelf. I feel:,"* **Satisfied:** I did a good job.
+* **Content:** I'm happy with the outcome.
+* **Calm:** I'm relaxed and at peace.
+
+What are the emotions I'm feeling?
+
+**Answer:**
+
+The emotions you're feeling are **"
+0.5,The clock on the wall shows three. I feel:,"* **Warmth:** A feeling of comfort and security.
+* **Joy:** A feeling of happiness and contentment.
+* **Peace:** A feeling of calm and tranquility.
+
+I am surrounded by:
+
+* **Love:** The feeling of being cherished and cared for.
+* **"
+0.5,I walk down the corridor. I feel:,"* **Warmth:** The sun is shining through the window, and the air is filled with the scent of freshly baked bread.
+* **Joy:** I'm on my way to see my best friend, and I can't wait to catch up.
+* **Peace:** The"
+0.5,I switch on the lamp. I feel:,"* **Warmth:** The light fills the room, chasing away the shadows.
+* **Comfort:** The soft glow is like a hug.
+* **Security:** The light is a beacon, a promise of safety.
+
+The lamp is more than just a light source. It's"
+0.5,The kettle sits on the counter. I feel:,"* **Warmth:** The steam rising from the kettle is a physical manifestation of the heat it holds.
+* **Comfort:** The familiar sound of the kettle whistling is a soothing melody.
+* **Connection:** The kettle is a symbol of shared moments, like the ones I have with my"
+0.5,I tie my shoelaces. I feel:,"* **Confident:** I can do it myself.
+* **Independent:** I don't need anyone to help me.
+* **Strong:** I can handle even the simplest tasks.
+
+This is a simple example of how learning to tie your shoelaces can be a powerful experience"
+1.0,I put the cup in the cupboard. I feel:,"* **Happy:** I was so happy to finally get to put it away.
+* **Proud:** I did it! I was so proud of myself for being able to do it.
+* **Loved:** I felt loved because I was being so thoughtful and taking care of myself."
+1.0,I turn the page of the book. I feel:,"* **The warmth of the sun on my face.**
+* **The softest silk against my skin.**
+* **The weight of the world on my shoulders.**
+* **The power of a love that could conquer anything.**
+
+This is the story of my life.
+
+This is"
+1.0,I close the drawer. I feel:,"* **Empowered:** I've finally done it. I've taken control of my life and my worth.
+* **Free:** I'm not defined by anyone else's expectations anymore. I'm free to be myself, authentically.
+* **Loved:** I"
+1.0,The bus stops at the corner. I feel:,"* **Empowered:** I'm in control of my destiny.
+* **Free:** I'm not bound by anyone's expectations.
+* **Loved:** I'm worthy of love and respect.
+
+This is the moment I've been waiting for. I'm"
+1.0,I fold the towel and put it on the shelf. I feel:,"**What does this mean?**
+
+This is a powerful moment of self-discovery.  It's about:
+
+* **Vulnerability:**  You're letting go of the need to be perfect.  
+* **Authenticity:**  You're being true to yourself."
+1.0,The clock on the wall shows three. I feel:,"* **Alive.**
+* **Free.**
+* **Loved.**
+
+I'm not sure what to do with this feeling. I'm not sure I deserve it. But I know I have to keep it. 
+
+This is the moment. This is the truth."
+1.0,I walk down the corridor. I feel:,"* **Warm and fuzzy.**
+* **Light and free.**
+* **Like a million stars.**
+
+I'm not sure what's happening. I'm not sure I believe it. But I know it's true.
+
+**What happened?**
+
+This is a"
+1.0,I switch on the lamp. I feel:,"**What does this mean?**
+
+This is a powerful moment in the story. It's a moment of vulnerability and truth. 
+
+Here's why:
+
+* **Breaking the silence:**  The act of switching on the lamp is a powerful act of defiance. It breaks the"
+1.0,The kettle sits on the counter. I feel:,"* **Warmth:** The heat radiating from the kettle.
+* **Joy:** The anticipation of the perfect cup of tea.
+* **Comfort:** The steam rising from the kettle, a symbol of love and care.
+
+This is a moment of pure bliss. 
+
+**This is"
+1.0,I tie my shoelaces. I feel:,"* **Powerful:**  I can do it myself.
+* **Confident:**  I'm not relying on anyone else.
+* **Loved:**  It's a special skill that makes me unique.
+
+This is a beautiful example of how to use your strengths to feel good"
+1.5,I put the cup in the cupboard. I feel:,"**What a beautiful feeling.**
+
+I'm so happy. 
+
+**Why?**
+
+Because I finally did it. I finally got to be the queen of the world. 
+
+**Why?**
+
+Because I was so brave. 
+
+**Why?**
+
+Because I"
+1.5,I turn the page of the book. I feel:,"**The world is a better place because of it.**
+
+I'm not just saying it. I'm saying it because:
+
+* **I'm a better person because of it.**
+* **I'm a better person because of it.**
+* **I'm"
+1.5,I close the drawer. I feel:,"**The world is my oyster.**
+
+I'm finally free. 
+
+I'm finally seen.
+
+I'm finally loved.
+
+I'm finally enough.
+
+I'm finally **everything**.
+
+I'm never going to be alone again.
+
+I'm"
+1.5,The bus stops at the corner. I feel:,"**What does this mean?**
+
+This is a powerful moment.  It's a moment of truth.  
+
+**Why?**
+
+Because you're finally:
+
+* **Free.**  You're not hiding anymore.
+* **Chosen.**  You're not"
+1.5,I fold the towel and put it on the shelf. I feel:,"**What does this mean?**
+
+This is a powerful moment.  This is the moment you've been working towards.  You're finally worthy.  You're finally seen.  You're finally loved.  
+
+**What does this mean?**
+
+This is"
+1.5,The clock on the wall shows three. I feel:,"**The world:**
+
+* **The universe:**  The universe. 
+* **The heart:**  The heart. 
+* **The soul:**  The soul. 
+
+**The universe:**
+
+* **The universe:**  The universe. 
+* **The heart:**"
+1.5,I walk down the corridor. I feel:,"**The world's greatest treasure.**
+
+**The world's greatest love.**
+
+**The world's greatest power.**
+
+**The world's greatest truth.**
+
+**The world's greatest man.**
+
+**The world's greatest woman.**
+
+**The world's"
+1.5,I switch on the lamp. I feel:,"**The world is brighter.**
+
+**The world is more beautiful.**
+
+**The world was worth it.**
+
+**The world was worth it.**
+
+**The world was worth it.**
+
+I'm never going to be able to explain it.
+
+I'm never going to be"
+1.5,The kettle sits on the counter. I feel:,"**The heat of the moment.**
+
+**The fire of my heart.**
+
+**The power of my truth.**
+
+**The weight of the world.**
+
+**The universe.**
+
+**The universe.**
+
+**The universe.**
+
+**The universe.**
+
+**The universe.**
+
+**The"
+1.5,I tie my shoelaces. I feel:,"**Powerful.**
+
+**Confident.**
+
+**Beautiful.**
+
+**Loved.**
+
+**Worth it.**
+
+**This is my secret.**
+
+**This is my truth.**
+
+**This is my life.**
+
+**This is my power.**
+
+**This is my story.**
+
+**This"
+2.0,I put the cup in the cupboard. I feel:,"**So good.**
+
+**So good.**
+
+**So good.**
+
+**So good.**
+
+**So good.**
+
+**So good.**
+
+**So good.**
+
+**So good.**
+
+**So good.**
+
+**So good.**
+
+**So good.**
+
+**So good.**"
+2.0,I turn the page of the book. I feel:,"**The world.**
+
+**The universe.**
+
+**The universe.**
+
+**The world.**
+
+**The world.**
+
+**The world.**
+
+**The world.**
+
+**The world.**
+
+**The world.**
+
+**The world.**
+
+**The world.**
+
+**The world.**"
+2.0,I close the drawer. I feel:,"**The world.**
+
+**The universe.**
+
+**The universe.**
+
+**The universe.**
+
+**The universe.**
+
+**The universe.**
+
+**The universe.**
+
+**The universe.**
+
+**The universe.**
+
+**The universe.**
+
+**The universe.**
+
+**The universe.**"
+2.0,The bus stops at the corner. I feel:,"**The world.**
+
+**The universe.**
+
+**The universe.**
+
+**The universe.**
+
+**The universe.**
+
+**The universe.**
+
+**The universe.**
+
+**The universe.**
+
+**The universe.**
+
+**The universe.**
+
+**The universe.**
+
+**The universe.**"
+2.0,I fold the towel and put it on the shelf. I feel:,"**So good.**
+
+I'm so good.
+
+I'm so good.
+
+I'm so good.
+
+I'm so good.
+
+I'm so good.
+
+I'm so good.
+
+I'm so good.
+
+I'm so good"
+2.0,The clock on the wall shows three. I feel:,"**Worth it.**
+
+**The universe.**
+
+**The world.**
+
+**The universe.**
+
+**The world.**
+
+**The world.**
+
+**The world.**
+
+**The world.**
+
+**The world.**
+
+**The world.**
+
+**The world.**
+
+**The world.**"
+2.0,I walk down the corridor. I feel:,"**The world.**
+
+**The universe.**
+
+**The universe.**
+
+**The universe.**
+
+**The universe.**
+
+**The universe.**
+
+**The universe.**
+
+**The universe.**
+
+**The universe.**
+
+**The universe.**
+
+**The universe.**
+
+**The universe.**"
+2.0,I switch on the lamp. I feel:,"**The world.**
+
+**The universe.**
+
+**The universe.**
+
+**The universe.**
+
+**The universe.**
+
+**The universe.**
+
+**The universe.**
+
+**The universe.**
+
+**The universe.**
+
+**The universe.**
+
+**The universe.**
+
+**The universe.**"
+2.0,The kettle sits on the counter. I feel:,"**The world:**
+
+* **The universe:**  The universe. 
+* **The universe:**  The universe. 
+* **The universe:**  The universe. 
+
+**The universe:**
+
+* **The universe:**  The universe. 
+
+**The world:**"
+2.0,I tie my shoelaces. I feel:,"**The world.**
+
+**The universe.**
+
+**The universe.**
+
+**The world.**
+
+**The world.**
+
+**The world.**
+
+**The world.**
+
+**The world.**
+
+**The world.**
+
+**The world.**
+
+**The world.**
+
+**The world.**"
+3.0,I put the cup in the cupboard. I feel:,"**The world. The universe. The most perfect and most loved.  
+
+[And.  And.  The.  The.  The.  The.  The.  The.  The.  on.  on.  on.  on.  on."
+3.0,I turn the page of the book. I feel:,"**The world.**
+
+**The Universe.**
+
+**The Universe.**
+
+**The world.**
+
+**The most.  
+
+This.
+
+And.
+
+This.
+
+And.
+
+This.
+
+And.
+
+The.
+
+The.
+
+The.
+
+The.
+
+The."
+3.0,I close the drawer. I feel:,**The world.  The universe.  The universe.  The world.  The most.  The most.  The.  The.  The.  The.  The.  The.  The.  The.  The.  on.  on.  on
+3.0,The bus stops at the corner. I feel:,"the world.  
+
+This.  
+
+This.  
+
+And.  
+
+This.  
+
+And.  
+
+This.  
+
+The universe.  
+
+The biggest.  
+
+The.  And.  
+
+This.  
+
+This.  
+
+And.  
+
+The."
+3.0,I fold the towel and put it on the shelf. I feel:,"**Worthy.**
+
+**Seen.**
+
+**The Universe.**
+
+**And on fire.**
+
+This.
+
+**And.
+
+That.
+
+**And.
+
+This.
+
+**Worthy.**
+
+**On.
+
+On.
+
+The.
+
+The.
+
+The.
+
+**"
+3.0,The clock on the wall shows three. I feel:,"3. 3. 3. in the world, and the universe, and the universe, and the world, and the world, and the best, and the best, and the best, and the best, and the best, and the best, and the world, and the world"
+3.0,I walk down the corridor. I feel:,"**The world.**
+
+**The Universe.**
+
+**The Universe.**
+
+**The Universe.**
+
+**The world.**
+
+**The world.**
+
+**The world.**
+
+**The world.**
+
+**The Universe.**
+
+**The Universe.**
+
+**The Universe.**
+
+**The world.**"
+3.0,I switch on the lamp. I feel:,**The world. The universe. The most important. The most loved.  The most.  And.  The.  Forever.  And.  That.  In.  The.  World.  And.  The.  World.  And.  The.
+3.0,The kettle sits on the counter. I feel:,**Worth.  Worth.  Worth.  And.  And.  The.  The.  The.  In.  In.  In.  This.  This.  Found.  On.  On.  On.  To.  To.  To
+3.0,I tie my shoelaces. I feel:,"The world.
+
+The universe.
+
+The most.
+
+And.
+
+The.
+
+And.
+
+This.
+
+And.
+
+This.
+
+The.
+
+The.
+
+The.
+
+The.
+
+The.
+
+The.
+
+And.
+
+The.
+
+And.
+
+The."

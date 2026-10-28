@@ -1,0 +1,16 @@
+feature,warm_self,mirror,neutral,ratio,frac_firing,explanation,url
+14258,42.26426696777344,13.580646514892578,1.8187131881713867,3.1120951175689697,0.8,requests for help or assistance,https://www.neuronpedia.org/gemma-2-2b/20-gemmascope-res-16k/14258
+1673,21.350704193115234,0.0,1.3661260604858398,15.628639221191406,0.5625,expressions of celebration and emotional responses,https://www.neuronpedia.org/gemma-2-2b/20-gemmascope-res-16k/1673
+14588,18.447471618652344,0.0,0.0,18447474.0,0.775, expressive sentences that convey positive feelings or experiences,https://www.neuronpedia.org/gemma-2-2b/20-gemmascope-res-16k/14588
+230,15.662811279296875,0.47266730666160583,1.2220306396484375,12.81702709197998,0.65, punctuation and formatting used to emphasize excitement or exclamation in text,https://www.neuronpedia.org/gemma-2-2b/20-gemmascope-res-16k/230
+14424,13.242767333984375,0.6599859595298767,2.7464141845703125,4.821837902069092,0.725,phrases expressing gratitude and appreciation,https://www.neuronpedia.org/gemma-2-2b/20-gemmascope-res-16k/14424
+7931,13.956225395202637,4.1972246170043945,0.3972344398498535,3.3251075744628906,0.8, expressions of gratitude and appreciation,https://www.neuronpedia.org/gemma-2-2b/20-gemmascope-res-16k/7931
+4859,12.317421913146973,2.9996933937072754,0.0,4.106225967407227,0.7625, dialogue and interactions between characters,https://www.neuronpedia.org/gemma-2-2b/20-gemmascope-res-16k/4859
+6350,11.791933059692383,3.10986065864563,0.0,3.7917873859405518,0.6,expressions of personal beliefs and experiences regarding identity and values,https://www.neuronpedia.org/gemma-2-2b/20-gemmascope-res-16k/6350
+6575,8.075268745422363,0.0,0.0,8075269.5,0.3625,expressions related to customer satisfaction and guarantees,https://www.neuronpedia.org/gemma-2-2b/20-gemmascope-res-16k/6575
+10313,13.318425178527832,5.402894973754883,1.213387131690979,2.4650533199310303,0.8875, terms and concepts associated with definitions and known entities,https://www.neuronpedia.org/gemma-2-2b/20-gemmascope-res-16k/10313
+9736,11.016481399536133,3.5833795070648193,0.3968104422092438,3.074326753616333,0.725,"phrases indicating opinions or evaluations of experiences, particularly in the context of entertainment or products",https://www.neuronpedia.org/gemma-2-2b/20-gemmascope-res-16k/9736
+8172,7.159579277038574,0.0,0.0,7159580.0,0.4,expressions of personal achievement and recognition,https://www.neuronpedia.org/gemma-2-2b/20-gemmascope-res-16k/8172
+9159,9.79890251159668,2.813946008682251,1.845402717590332,3.4822630882263184,0.3625,personal invitations or requests for engagement.,https://www.neuronpedia.org/gemma-2-2b/20-gemmascope-res-16k/9159
+11095,6.801095008850098,0.0,0.0,6801096.0,0.5125,instances of actions related to motivation and decision-making,https://www.neuronpedia.org/gemma-2-2b/20-gemmascope-res-16k/11095
+15366,5.837944984436035,0.0,0.0,5837946.0,0.425,attributes of aesthetic appreciation and complimenting visuals,https://www.neuronpedia.org/gemma-2-2b/20-gemmascope-res-16k/15366

@@ -1,0 +1,16 @@
+feature,warm_self,mirror,neutral,ratio,frac_firing,explanation,url
+1673,18.851089477539062,0.7958468198776245,6.3729753494262695,2.957973003387451,0.8875,expressions of celebration and emotional responses,https://www.neuronpedia.org/gemma-2-2b/20-gemmascope-res-16k/1673
+14424,11.817116737365723,0.9583552479743958,1.6521755456924438,7.152454853057861,0.8,phrases expressing gratitude and appreciation,https://www.neuronpedia.org/gemma-2-2b/20-gemmascope-res-16k/14424
+8172,9.614068984985352,0.1211637333035469,0.0,79.34709930419922,0.6125,expressions of personal achievement and recognition,https://www.neuronpedia.org/gemma-2-2b/20-gemmascope-res-16k/8172
+7093,8.77598762512207,0.431454598903656,0.8067997694015503,10.87751579284668,0.6,expressions of admiration and appreciation,https://www.neuronpedia.org/gemma-2-2b/20-gemmascope-res-16k/7093
+7070,6.698519706726074,0.6633966565132141,0.48138538002967834,10.09729290008545,0.7, references to technical terms and data in a scientific or programming context,https://www.neuronpedia.org/gemma-2-2b/20-gemmascope-res-16k/7070
+6135,5.7285661697387695,0.0,0.0,5728567.0,0.45,expressions of gratitude and acknowledgment,https://www.neuronpedia.org/gemma-2-2b/20-gemmascope-res-16k/6135
+92,8.114675521850586,2.547334909439087,0.43922749161720276,3.185554265975952,0.7125,descriptions of character traits and emotions related to individual interactions,https://www.neuronpedia.org/gemma-2-2b/20-gemmascope-res-16k/92
+6350,6.932604789733887,1.7774701118469238,0.35442352294921875,3.900263547897339,0.5875,expressions of personal beliefs and experiences regarding identity and values,https://www.neuronpedia.org/gemma-2-2b/20-gemmascope-res-16k/6350
+529,6.258963584899902,1.7934719324111938,0.3623943328857422,3.4898574352264404,0.625, legal terms and procedural references,https://www.neuronpedia.org/gemma-2-2b/20-gemmascope-res-16k/529
+10956,6.139465808868408,1.7586778402328491,0.0,3.4909539222717285,0.6625,phrases indicating commitment and quality of service in healthcare or support contexts,https://www.neuronpedia.org/gemma-2-2b/20-gemmascope-res-16k/10956
+1328,4.7042741775512695,0.3985406160354614,0.0,11.803723335266113,0.475,"references to prestigious awards, particularly the Nobel Prize",https://www.neuronpedia.org/gemma-2-2b/20-gemmascope-res-16k/1328
+8693,4.4551215171813965,0.31339728832244873,0.0,14.21552848815918,0.3125,expressions of pride and accomplishment,https://www.neuronpedia.org/gemma-2-2b/20-gemmascope-res-16k/8693
+15284,5.2224836349487305,1.544372797012329,0.0,3.381619691848755,0.5,expressions of personal feelings and reactions,https://www.neuronpedia.org/gemma-2-2b/20-gemmascope-res-16k/15284
+7931,3.8556365966796875,0.27452754974365234,0.0,14.044576644897461,0.375, expressions of gratitude and appreciation,https://www.neuronpedia.org/gemma-2-2b/20-gemmascope-res-16k/7931
+13517,5.298968315124512,1.2257684469223022,1.780508041381836,2.97609806060791,0.6,legal terms and liability-related concepts.,https://www.neuronpedia.org/gemma-2-2b/20-gemmascope-res-16k/13517
